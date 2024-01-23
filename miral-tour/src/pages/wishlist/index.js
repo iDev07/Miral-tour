@@ -4,8 +4,8 @@ import Link from "next/link";
 import { Container } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { useAppSelector } from "../../store/store";
-import { removeItem } from "../../store/features/cartSlice";
+import { useAppSelector } from "../../../store/store";
+import { removeItem } from "../../../store/features/cartSlice";
 function Cart() {
   const cartQuantity = useAppSelector((state) => state.cart.quantity);
   const cart = useSelector((state) => state.cart.items);
