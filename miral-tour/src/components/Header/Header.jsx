@@ -391,10 +391,7 @@ function Header() {
           </div>
         </Container>
       </div>
-      <div
-        //  className={`hiddenDiv ${isDivVisible ? "" : "hidden"}`}
-        className={`hiddenDiv `}
-      >
+      <div className={`hiddenDiv ${isDivVisible ? "" : "hidden"}`}>
         <div className="inner_wrap">
           <div className="my_tabs">
             <Tabs defaultActiveKey="1" items={items} />
