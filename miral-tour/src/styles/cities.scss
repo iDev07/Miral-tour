@@ -1,0 +1,85 @@
+.city_about {
+  .city_wrapper {
+    .city_background {
+      position: relative;
+      height: 65vh;
+      background-repeat: no-repeat !important;
+      background-attachment: fixed !important;
+      background-size: cover !important;
+      .backround_wrapper {
+        height: 65vh;
+        background-color: #00000042;
+        .name_city {
+          position: absolute;
+          bottom: 100px;
+          left: 85px;
+          color: #fff;
+          font-size: 35px;
+        }
+      }
+    }
+    .content_boxes {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      .left_content_box {
+        section {
+          margin: 50px 0;
+        }
+        .title_section {
+          font-size: 28px;
+          margin-bottom: 25px;
+        }
+        .description_section {
+          font-size: 18px;
+          color: rgba(74, 74, 74, 1);
+          font-weight: 500;
+          margin: 10px 0;
+        }
+        .city_attractions {
+          .attractions_slider {
+            .silder_wrapper {
+              .slide {
+                position: relative;
+                height: 320px;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                border-radius: 10px;
+                &:hover {
+                  -webkit-box-shadow: 1px 5px 14px 15px rgba(34, 60, 80, 0.2);
+                  -moz-box-shadow: 1px 5px 14px 15px rgba(34, 60, 80, 0.2);
+                  box-shadow: 1px 5px 14px 15px rgba(34, 60, 80, 0.2);
+                }
+                .slide_wrapper {
+                  border-radius: 10px;
+                  height: 320px;
+                  background-color: #00000065;
+                  text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  .name_attraction {
+                    position: absolute;
+                    bottom: 20px;
+                    transition: 0.3s ease-in-out;
+                    h3 {
+                      color: #fff;
+                      font-size: 22px;
+                      max-width: 200px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      iframe {
+        width: 100%;
+        border-radius: 10px;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}

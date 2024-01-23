@@ -1,0 +1,191 @@
+.hidden_form_notification {
+  position: absolute;
+  bottom: 15%;
+}
+.rc-virtual-list-holder-inner {
+  text-align: center !important;
+}
+.night .ant-select-selector {
+  text-align: center;
+}
+.order_modal {
+  .ant-modal-body {
+    position: relative;
+  }
+  .order_modal_wrapper {
+    .class_filter {
+      @media (max-width: 768px) {
+        display: block;
+      }
+      display: grid;
+      grid-template-columns: 50% 50%;
+      p {
+        color: #000;
+        font-weight: 500;
+        margin: 5px 0;
+      }
+      .left_box_image {
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
+        margin-right: 20px;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .right_box {
+        .top_selecteds {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          .ant-select {
+            width: 100%;
+          }
+          .left_box {
+            margin-right: 20px;
+          }
+        }
+        .middle_selecteds {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          .ant-picker {
+            width: 92%;
+          }
+          .counts_wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .people_count {
+              .counter_wrapper {
+                padding: 3px;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #d9d9d9;
+                display: grid;
+                grid-template-columns: 25% 50% 25%;
+                margin-right: 5px;
+                input {
+                  text-align: center;
+                  width: 100%;
+                  border: none;
+                  font-size: 16px;
+                  height: 100%;
+                  margin-left: 3px;
+                }
+                button {
+                  border-radius: 8px;
+                  border: 1px solid #d9d9d9;
+                  background: #f7f7f7;
+                  width: 100%;
+                  font-size: 16px;
+                  text-align: center;
+                  transition: 0.3s ease;
+                  &:hover {
+                    background-color: #1677ff;
+                    color: #fff;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            .childs_wrap {
+              margin-left: 5px;
+              margin-right: 0 !important;
+            }
+          }
+        }
+        .bottom_selectds {
+          .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .left_box {
+              .ant-select {
+                width: 91% !important;
+              }
+            }
+            .right_box {
+              .ant-select {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+        .personal_info {
+          .ant-input {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .personal_info {
+      .wrapper {
+        position: relative;
+        .top_fields {
+          padding: 10px 0;
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+        .contacts {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+        .ant-input {
+          max-width: 100%;
+        }
+        .name {
+          .ant-input {
+            max-width: 91%;
+          }
+        }
+        .mail {
+          .ant-input {
+            max-width: 91%;
+          }
+        }
+        .top_label {
+          font-size: 14px;
+          color: #000;
+          margin-bottom: 5px;
+        }
+        .active_label,
+        .active_surname,
+        .active_mail,
+        .active_number {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+.hidden_form_notification {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  border-radius: 10px;
+  z-index: 10;
+  text-align: center;
+  .icon {
+    margin: 30px 0;
+  }
+  h3 {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  button {
+    @media (max-width: 768px) {
+      left: 37%;
+    }
+    margin: 10px 0;
+    background-color: #4ed36c;
+    color: #fff;
+    position: absolute;
+    left: 46%;
+    bottom: 50px;
+    &:hover {
+      border: 1px solid transparent !important;
+      color: #fff !important;
+    }
+  }
+}

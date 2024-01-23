@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+.category {
+  margin-top: 50px;
+}
+
+/* .pt_100 {
+  padding-top: 100px;
+} */
+
+.add_cart {
+  transition: 0.5s ease;
+}
+
+.col .tour_name {
+  height: 80px;
+}
+@media (min-width: 1200px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1400px !important;
+  }
+}
+.no_scroll {
+  overflow: hidden;
+}

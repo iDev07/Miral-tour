@@ -1,0 +1,103 @@
+.hiddenDiv {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  // padding: 10px;
+  border-radius: 6px;
+  top: 85px;
+  z-index: 100;
+  width: 90%;
+  left: 5%;
+  height: 86vh;
+  transition: max-height 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-height: 86vh; /* Set a value based on your content */
+  overflow-y: scroll;
+  .inner_wrap {
+    padding: 10px;
+    .services_tab_title {
+      display: flex;
+      align-items: center;
+    }
+    .guides {
+      .guides_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        grid-template-columns: 50% 50%;
+        flex-wrap: wrap;
+        .guide {
+          width: 49%;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          border-radius: 6px;
+          margin-top: 15px;
+          .guide_wrapper {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            padding: 5px;
+            position: relative;
+            .guide_image {
+              padding: 5px;
+              img {
+                width: 100%;
+                border-radius: 6px;
+              }
+            }
+            .guide_about {
+              margin-left: 10px;
+              .description {
+                font-size: 18px;
+                margin: 10px 0;
+              }
+              .guide_rating {
+                margin: 10px 0;
+                .rating_wrapper {
+                  display: flex;
+                  align-items: center;
+                  svg {
+                    font-size: 14px;
+                    color: #f38630;
+                  }
+                }
+              }
+              .guide_languages {
+                margin: 10px 0;
+                p {
+                  display: flex;
+                  justify-content: space-around;
+                  span {
+                    border: 1px solid #0073db;
+                    padding: 1px 5px;
+                    border-radius: 6px;
+                  }
+                }
+              }
+              .guide_price {
+                width: 100%;
+                position: absolute;
+                bottom: 10px;
+                .price_wrapper {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+                  .price {
+                    display: flex;
+                    margin-left: auto;
+                    p {
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  max-height: 0;
+}

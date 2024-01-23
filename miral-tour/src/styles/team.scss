@@ -1,0 +1,36 @@
+.team {
+  .team_wrapper {
+    .this_wrap {
+      max-width: 90%;
+      margin: 0 auto;
+      .intro {
+        margin: 20px 0;
+        h1 {
+          text-align: center;
+          color: #004074;
+          font-weight: 700;
+          font-size: 50px;
+        }
+      }
+      .persons_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .col {
+          text-align: center;
+          margin: 20px 30px;
+          img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 1px solid gray;
+          }
+          p {
+            color: #004074;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

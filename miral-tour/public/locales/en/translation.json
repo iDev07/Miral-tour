@@ -1,0 +1,157 @@
+{
+  "menu": {
+    "catalog": "Tour packages",
+    "ownTrip": "Make Your Trip",
+    "contacts": "Contacts",
+    "team": "Our team",
+    "search": "Search...",
+    "cart": "Your cart"
+  },
+  "countries": {
+    "countriesTitle": "Countries",
+    "localCountry": "Uzbekistan",
+    "foreignCountries": "Outbound tour packages",
+    "country1": "Krgyzstan",
+    "country2": "Tashkent",
+    "country3": "Samarkand",
+    "country4": "Kazakhstan",
+    "country5": "Tadjikistan"
+  },
+  "hero": {
+    "title": "The best place to plan a tour",
+    "subtitle1": "Tickets without leaving home",
+    "constructorBtn": "Tour Constructor"
+  },
+  "constructorForm": {
+    "heading1": "Departure Country",
+    "heading2": "Where",
+    "constCountry": "Uzbekistan",
+    "heading3": "Select days",
+    "heading4": "Number of days",
+    "heading5": "Number of tourists",
+    "personsSmall": "person",
+    "personsCapitalise": "Adults",
+    "heading6": "Children",
+    "typeOfTravel": "Type of Travel",
+    "typeTravel1": "Religious",
+    "typeTravel2": "Historical",
+    "typeTravel3": "Classic",
+    "typeTravel4": "Modern",
+    "typeTravel5": "Sports Tourism",
+    "typeTravel6": "Children's tourism",
+    "typeTravel7": "Health Tourism",
+    "typeTravel8": "Business Tourism",
+    "typeOfGroup": "Type of Group",
+    "typeGroup1": "Individual",
+    "typeGroup2": "Small group (up to 10 people)",
+    "typeGroup3": "Medium group (from 10 to 20 people)",
+    "typeGroup4": "Large group (from 20 people)",
+    "typeOfClass": "Class of travel",
+    "typeOfClass1": "Econom",
+    "typeOfClass2": "Semi Business",
+    "typeOfClass3": "Business",
+    "allCities": "Select all",
+    "cities": "Cities",
+    "currency": "Currency",
+    "findTourPackages": "Find tours",
+    "clientName": "Your Name",
+    "clientEmail": "Your e-mail",
+    "clientNumber": "Your phone number",
+    "submitForm": "Submit",
+    "notFound": "Tour packages not found"
+  },
+  "orderModal": {
+    "viewMore": "Book",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "select": "Select",
+    "from": "From",
+    "to": "To",
+    "departureDate": "Set dates",
+    "countPeople": "People",
+    "countChildren": "Children",
+    "type_group": "Group Type",
+    "class_travel": "Travel Class",
+    "user_name": "Name",
+    "name_placeholder": "Enter your name",
+    "user_surname": "Surname",
+    "surname_placeholder": "Enter your surname",
+    "user_mail": "Mail",
+    "mail_placeholder": "Email address",
+    "user_number": "Number",
+    "number_placeholder": "Your phone number",
+    "success": "Congratulations! Your information has been received",
+    "error": "Oops, something went wrong. Please try again later.",
+    "close": "Close"
+  },
+  "tourPackage": {
+    "price": "Price",
+    "onPerson": "$ per person",
+    "day": "day",
+    "itinerary": "Tour route",
+    "include": "Price includes",
+    "notInlcuded": "Price not included",
+    "book": "Book now",
+    "order": "Order now"
+  },
+  "category": {
+    "more": "More"
+  },
+  "business": {
+    "title": "Business tours",
+    "heading": "For those who want to expand their business and cooperate with Uzbek companies, we organize business tours",
+    "formBtn": "Fill out the form"
+  },
+  "businessForm": {
+    "heading1": "Company name",
+    "heading2": "Country",
+    "heading3": "Details",
+    "heading4": "Destination",
+    "heading5": "Arrival and departure data",
+    "heading6": "What hotel companies does he see",
+    "heading7": "Object of interest",
+    "heading8": "Volume of exports and imports of interest-bearing goods",
+    "heading9": "Composition of your delegation",
+    "heading10": "Contact person",
+    "heading11": "Phone number",
+    "heading12": "Email",
+    "submitForm": "Submit Form"
+  },
+  "autorent": {
+    "title": "Car rental",
+    "heading": "Make your travel dreams come true with reliable and affordable car rentals",
+    "formBtn": "Select auto"
+  },
+  "footer": {
+    "motto": "We have interesting tours and the best prices",
+    "usefulLinks": "Useful Links",
+    "link1": "Our team",
+    "link2": "Bron hotels",
+    "link3": "Car rental",
+    "contacts": "Contacts",
+    "paymentMethods": "Payment Methods",
+    "socialNetworks": "Social Networks",
+    "copyrights": "All rights reserved. Turbotour© "
+  },
+  "contactsPage": {
+    "callUs": "Call us if you have any questions",
+    "workingHours": "Working hours 24/7",
+    "address": "100059, Tashkent city, Yakkasaroy district, Khumo street, 57"
+  },
+  "cartPage": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "goHome": "Go to Home",
+    "remove": "Remove",
+    "viewMore": "More details"
+  },
+  "callBack": {
+    "title": "We will contact you shortly!",
+    "name": "Your name:",
+    "mail": "Email:",
+    "phone": "Phone number:",
+    "submit": "Submit"
+  },
+  "priceC": "Price is negotiable",
+  "skipBtn": "Skip"
+}

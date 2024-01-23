@@ -1,0 +1,158 @@
+{
+  "menu": {
+    "catalog": "Turpaketlar",
+    "ownTrip": "Make Your Trip",
+    "contacts": "Kontaktlar",
+    "team": "Bizning jamoamiz",
+    "search": "Qidirish...",
+    "cart": "Sizning savatingiz"
+  },
+  "countries": {
+    "countriesTitle": "Davlatlar",
+    "localCountry": "O'zbekiston",
+    "foreignCountries": "Chiqish turpaketlari",
+    "country1": "Qirg'iziston",
+    "country2": "Toshkent",
+    "country3": "Samarqand",
+    "country4": "Qozog'iston",
+    "country5": "Tojikiston"
+  },
+  "hero": {
+    "title": "Sayohatingizni rejalashtiring !",
+    "subtitle1": "Uydan chiqmasdan chiptalar",
+    "constructorBtn": "Tur yasash"
+  },
+  "constructorForm": {
+    "heading1": "Chiqish davlati",
+    "country1": "",
+    "heading2": "Qayerga",
+    "constCountry": "O'zbekiston",
+    "heading3": "Kunlarni tanlang",
+    "heading4": "Kunlar soni",
+    "heading5": "Turistlar soni",
+    "personsSmall": "kishi",
+    "personsCapitalise": "Kattalar",
+    "heading6": "Bolalar",
+    "typeOfTravel": "Sayohat turi",
+    "typeTravel1": "Diniy",
+    "typeTravel2": "Tarixiy",
+    "typeTravel3": "Klassik",
+    "typeTravel4": "Zamonaviy",
+    "typeTravel5": "Sport turizmi",
+    "typeTravel6": "Bolalar turizmi",
+    "typeTravel7": "Sog'liqni saqlash turizmi",
+    "typeTravel8": "Biznes turizmi",
+    "typeOfGroup": "Guruh turi",
+    "typeGroup1": "Individual",
+    "typeGroup2": "Kichik guruh (10 kishigacha)",
+    "typeGroup3": "O'rta guruh (10 dan 20 kishigacha)",
+    "typeGroup4": "Katta guruh (20 kishidan)",
+    "typeOfClass": "Sayohat klassi",
+    "typeOfClass1": "Ekonom",
+    "typeOfClass2": "Yarim biznes",
+    "typeOfClass3": "Binzes",
+    "allCities": "Barchasi",
+    "cities": "Shaharlar",
+    "currency": "Valyuta",
+    "findTourPackages": "Turlarni topish",
+    "clientName": "Ismingiz",
+    "clientEmail": "Sizning e-mail",
+    "clientNumber": "Telefon raqamingiz",
+    "submitForm": "Yuborish",
+    "notFound": "Tur paketlar topilmadi"
+  },
+  "orderModal": {
+    "viewMore": "Band qilish",
+    "select": "Tanlang",
+    "cancel": "Bekor qilish",
+    "submit": "Yuborish",
+    "from": "Qayerdan",
+    "to": "Qayerga",
+    "departureDate": "Sanalarni belgilang",
+    "countPeople": "Odamlar soni",
+    "countChildren": "Bolalar soni",
+    "type_group": "Guruh turi",
+    "class_travel": "Sayohat klassi",
+    "user_name": "Ism",
+    "name_placeholder": "Ismingizni kiriting",
+    "user_surname": "Familya",
+    "surname_placeholder": "Familyangizni kiriting",
+    "user_mail": "Pochta",
+    "mail_placeholder": "Elektron pochta manzili",
+    "user_number": "Raqam",
+    "number_placeholder": "Telefon raqamingiz",
+    "success": "Tabriklaymiz! Ma'lumotlaringiz qabuln qilindi!",
+    "error": "Oops, nimadir noto'g'ri ketdi. Iltimos, qayta urinib ko'ring",
+    "close": "Yopish"
+  },
+  "tourPackage": {
+    "price": "Narx",
+    "onPerson": " $ odam boshiga",
+    "day": "kun",
+    "itinerary": "Sayohat marshruti",
+    "include": "Narx o'z ichiga oladi",
+    "notInlcuded": "Narxga kiritilmagan",
+    "book": "Hozir band qiling",
+    "order": "Hozir buyurtma bering"
+  },
+  "category": {
+    "more": "Ko'proq"
+  },
+  "business": {
+    "title": "Biznes sayohatlar",
+    "heading": "O'z biznesini kengaytirish va O'zbekiston kompaniyalari bilan hamkorlik qilish istagida bo'lganlar uchun biznes-turlar tashkil qilamiz",
+    "formBtn": "Shaklni to'ldiring"
+  },
+  "businessForm": {
+    "heading1": "Biznes nomi",
+    "heading2": "Mamlakat",
+    "heading3": "Faoliyat",
+    "heading4": "Kerish maqsadi",
+    "heading5": "Kerish va ketish sanasi",
+    "heading6": "Qaysi kompaniyalarni ko'rishni xohlaysiz",
+    "heading7": "Qiziqarli mahsulot",
+    "heading8": "Qiziqarli mahsulot eksporti yoki importi hajmi",
+    "heading9": "Delegatsiyangiz tarkibi",
+    "heading10": "Aloqa qiluvchi shaxs",
+    "heading11": "Telefon raqami",
+    "heading12": "Elektron pochta",
+    "submitForm": "Shaklni yuborish"
+  },
+  "autorent": {
+    "title": "Avtomobil ijarasi",
+    "heading": "Ishonchli va arzon avtomobil ijarasi bilan sayohat orzularingizni ro'yobga chiqaring",
+    "formBtn": "Avtomobil tanlash"
+  },
+  "footer": {
+    "motto": "Bizda qiziqarli turlar va eng yaxshi narxlar",
+    "usefulLinks": "Foydali havolalar",
+    "link1": "Bizning jamoamiz",
+    "link2": "Bron mehmonxonalar",
+    "link3": "Avtomobil ijarasi",
+    "contacts": "Kontaktlar",
+    "paymentMethods": "To'lov usullari",
+    "socialNetworks": "Ijtimoiy tarmoqlar",
+    "copyrights": "Barcha huquqlar himoyalangan. Turbotour© "
+  },
+  "contactsPage": {
+    "callUs": "Agar sizda biron bir savol bo'lsa, bizga qo'ng'iroq qiling",
+    "workHours": "Ish vaqti 24/7",
+    "address": "100059, Toshkent shahar, Yakkasaroy tumani, Xumo koʻchasi, 57-uy"
+  },
+  "cartPage": {
+    "title": "Sizning savatingiz",
+    "empty": "Sizning savatingiz bo'sh",
+    "goHome": "Bosh sahifa",
+    "remove": "O'chirish",
+    "viewMore": "Batafsil"
+  },
+  "callBack": {
+    "title": "Tez orada siz bilan bog'lanamiz!",
+    "name": "Ismingiz:",
+    "mail": "Elektron pochta:",
+    "phone": "Telefon raqami:",
+    "submit": "Yuborish"
+  },
+  "priceC": "Narxi kelishiladi",
+  "skipBtn": "O'tkazib yuborish"
+}

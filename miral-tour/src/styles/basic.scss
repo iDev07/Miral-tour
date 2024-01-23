@@ -1,0 +1,107 @@
+.basic_category {
+  .religious_wrapper {
+    .this_wrap {
+      position: relative;
+      padding-bottom: 40px;
+      .intro {
+        h1 {
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
+      }
+      .tour_packages {
+        .this_wrapper {
+          @media (max-width: 768px) {
+            display: block;
+          }
+          display: flex;
+          justify-content: space-around;
+          .col {
+            @media (max-width: 768px) {
+              width: 100%;
+              margin: 0;
+              margin-bottom: 40px;
+              &:nth-child(1) {
+                margin-left: inherit;
+              }
+            }
+            background-color: #fff;
+            margin: 0 15px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 25%;
+            overflow: hidden;
+            &:nth-child(1) {
+              margin-left: 0;
+            }
+            &:nth-child(4) {
+              margin-right: 0;
+            }
+            &:hover {
+              img {
+                transform: scale(1.05);
+              }
+            }
+            .col_wrap {
+              .tour_img {
+                border-radius: 5px;
+                overflow: hidden;
+                position: relative;
+                img {
+                  transition: 0.3s ease;
+                  width: 100%;
+                  border-top-right-radius: 10px;
+                  border-top-left-radius: 10px;
+                  height: 330px;
+                }
+                .add_cart {
+                  position: absolute;
+                  bottom: 0;
+                  right: 10px;
+                  background-color: #fff;
+                  border: none;
+                  padding: 10px;
+                  border-top-right-radius: 5px;
+                  border-top-left-radius: 5px;
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
+              }
+              .tour_name {
+                text-align: center;
+                padding: 10px;
+                &:hover {
+                  color: #004074;
+                }
+              }
+              .tour_details {
+                padding: 10px;
+                display: flex;
+                p {
+                  font-size: 18px;
+                  &:nth-child(2) {
+                    margin-left: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .more {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        a {
+          color: #fff;
+          border-radius: 5px;
+          background: #4ee16e;
+          font-size: 17px;
+          font-weight: 600;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@keyframes animate_home {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.background_home_page {
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(229, 204, 175, 0.3) 0%,
+    rgba(255, 255, 255, 0) 52.08%,
+    rgba(229, 204, 175, 0.3) 100%
+  );
+  overflow: hidden;
+}
+.background_home_page li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  // background: rgba(255, 255, 255, 0.2);
+  animation: animate_home 19s linear infinite;
+  img {
+    width: 250px;
+    z-index: -1;
+  }
+}
+
+.background_home_page li:nth-child(0) {
+  left: 23%;
+  width: 180px;
+  height: 180px;
+  bottom: -180px;
+  animation-delay: 1s;
+}
+.background_home_page li:nth-child(1) {
+  left: 56%;
+  width: 131px;
+  height: 131px;
+  bottom: -131px;
+  animation-delay: 2s;
+}
+.background_home_page li:nth-child(2) {
+  left: 73%;
+  width: 128px;
+  height: 128px;
+  bottom: -128px;
+  animation-delay: 4s;
+}
+.background_home_page li:nth-child(3) {
+  left: 12%;
+  width: 143px;
+  height: 143px;
+  bottom: -143px;
+  animation-delay: 8s;
+}
+.background_home_page li:nth-child(4) {
+  left: 60%;
+  width: 168px;
+  height: 168px;
+  bottom: -168px;
+  animation-delay: 19s;
+}
+.background_home_page li:nth-child(5) {
+  left: 26%;
+  width: 176px;
+  height: 176px;
+  bottom: -176px;
+  animation-delay: 2s;
+}
+.background_home_page li:nth-child(6) {
+  left: 35%;
+  width: 139px;
+  height: 139px;
+  bottom: -139px;
+  animation-delay: 14s;
+}
+.background_home_page li:nth-child(7) {
+  left: 61%;
+  width: 191px;
+  height: 191px;
+  bottom: -191px;
+  animation-delay: 24s;
+}
+.background_home_page li:nth-child(8) {
+  left: 87%;
+  width: 101px;
+  height: 101px;
+  bottom: -101px;
+  animation-delay: 30s;
+}
+.background_home_page li:nth-child(9) {
+  left: 36%;
+  width: 132px;
+  height: 132px;
+  bottom: -132px;
+  animation-delay: 32s;
+}

@@ -1,0 +1,54 @@
+.hidden_welcome_modal {
+  display: none;
+}
+body {
+  // overflow-y: auto !important;
+}
+@import "../styles/header.scss";
+@import "../styles/hero.scss";
+@import "../styles/religious.scss";
+@import "../styles/business.scss";
+@import "../styles/basic.scss";
+@import "../styles/excursion.scss";
+@import "../styles/countries.scss";
+@import "../styles/autorent.scss";
+@import "../styles/footer.scss";
+@import "../styles/cart.scss";
+@import "../styles/category_page.scss";
+@import "../styles/tourpackage.scss";
+@import "../styles/team.scss";
+@import "../styles/contacts.scss";
+@import "../styles/mobheader.scss";
+@import "../styles/news.scss";
+@import "../styles/OrderModal.scss";
+@import "../styles/video.scss";
+@import "../styles/make_trip.scss";
+@import "../styles/banners.scss";
+@import "../styles/whatsapp.scss";
+@import "../styles/background.scss";
+@import "../styles/cities.scss";
+
+// Tourpackage
+
+.loeader_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  // background: linear-gradient(
+  //   270deg,
+  //   rgba(229, 204, 175, 0.3) 0%,
+  //   rgba(255, 255, 255, 0) 52.08%,
+  //   rgba(229, 204, 175, 0.3) 100%
+  // );
+  background: transparent;
+  svg {
+    margin-left: 50px;
+  }
+}
+
+.Process {
+  margin-top: 200px;
+  height: 100vh;
+  text-align: center;
+}

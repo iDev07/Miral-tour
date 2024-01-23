@@ -1,0 +1,371 @@
+.tourpackage {
+  .tourpakage_wrapper {
+    .this_wrapper {
+      .tourpackage_name {
+        h1 {
+          margin: 15px 0;
+        }
+      }
+      .tourpackage_wrap {
+        .class_wrapper {
+          @media (max-width: 768px) {
+            display: block;
+          }
+          display: grid;
+          grid-template-columns: 65% 35%;
+          .top_class {
+            @media (max-width: 768px) {
+              margin-right: 0;
+            }
+            margin-right: 50px;
+            .tour_images {
+              box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+              text-align: center;
+              img {
+                width: 100%;
+                border-radius: 5px;
+                background: lightgray -6.856px -495.936px / 100.449% 211.101%
+                  no-repeat;
+                margin: 0 auto;
+                height: 578px;
+                object-fit: cover;
+              }
+            }
+          }
+          .classes {
+            .classes_content {
+              .econom_content {
+                p {
+                  width: 100%;
+                  margin: 10px 0;
+                  display: flex;
+                  align-items: center;
+                  font-size: 16px;
+                  font-weight: 500;
+                  span {
+                    margin-left: 5px;
+                  }
+                  svg {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+              .ant-tabs-content-holder {
+                @media (max-width: 768px) {
+                  height: 400px;
+                }
+                height: 490px;
+              }
+            }
+            .booking {
+              width: 100%;
+              button {
+                position: relative;
+                text-align: center;
+                background-color: #0073db;
+                color: #fff;
+                padding: 5px 15px;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                width: 40%;
+                height: 30px;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                  background-color: #fff;
+                  border: 1px solid #0073db;
+                  color: #0073db;
+                  // font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+
+        .tour_details {
+          @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          display: grid;
+          grid-template-columns: 65% 35%;
+          padding: 50px 0;
+          h2 {
+            margin: 15px 0;
+          }
+          .timetable {
+            max-width: 95%;
+          }
+          .step_day {
+            span {
+              font-weight: 700;
+              margin-right: 5px;
+            }
+          }
+          .order_book {
+            margin: 15px 0;
+            width: 100%;
+            display: flex;
+            button {
+              border: none;
+              padding: 8px 10px;
+              color: #fff;
+              border-radius: 5px;
+              background: #4ee16e;
+              &:nth-child(2) {
+                margin-left: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    // .order_modal {
+    //   .ant-modal-body {
+    //     position: relative;
+    //   }
+    //   .order_modal_wrapper {
+    //     .class_filter {
+    //       @media (max-width: 768px) {
+    //         display: block;
+    //       }
+    //       display: grid;
+    //       grid-template-columns: 50% 50%;
+    //       p {
+    //         color: #000;
+    //         font-weight: 500;
+    //         margin: 5px 0;
+    //       }
+    //       .left_box_image {
+    //         @media (max-width: 768px) {
+    //           margin-right: 0;
+    //         }
+    //         margin-right: 20px;
+    //         img {
+    //           width: 100%;
+    //           border-radius: 10px;
+    //         }
+    //       }
+    //       .right_box {
+    //         .top_selecteds {
+    //           display: grid;
+    //           grid-template-columns: 50% 50%;
+    //           .ant-select {
+    //             width: 100%;
+    //           }
+    //           .left_box {
+    //             margin-right: 20px;
+    //           }
+    //         }
+    //         .middle_selecteds {
+    //           display: grid;
+    //           grid-template-columns: 50% 50%;
+    //           .ant-picker {
+    //             width: 92%;
+    //           }
+    //           .counts_wrapper {
+    //             display: grid;
+    //             grid-template-columns: 50% 50%;
+    //             .people_count {
+    //               .counter_wrapper {
+    //                 padding: 3px;
+    //                 background-color: #fff;
+    //                 border-radius: 5px;
+    //                 border: 1px solid #d9d9d9;
+    //                 display: grid;
+    //                 grid-template-columns: 25% 50% 25%;
+    //                 margin-right: 5px;
+    //                 input {
+    //                   text-align: center;
+    //                   width: 100%;
+    //                   border: none;
+    //                   font-size: 16px;
+    //                   height: 100%;
+    //                   margin-left: 3px;
+    //                 }
+    //                 button {
+    //                   border-radius: 8px;
+    //                   border: 1px solid #d9d9d9;
+    //                   background: #f7f7f7;
+    //                   width: 100%;
+    //                   font-size: 16px;
+    //                   text-align: center;
+    //                   transition: 0.3s ease;
+    //                   &:hover {
+    //                     background-color: #1677ff;
+    //                     color: #fff;
+    //                     cursor: pointer;
+    //                   }
+    //                 }
+    //               }
+    //             }
+    //             .childs_wrap {
+    //               margin-left: 5px;
+    //               margin-right: 0 !important;
+    //             }
+    //           }
+    //         }
+    //         .bottom_selectds {
+    //           .wrapper {
+    //             display: grid;
+    //             grid-template-columns: 50% 50%;
+    //             .left_box {
+    //               .ant-select {
+    //                 width: 91% !important;
+    //               }
+    //             }
+    //             .right_box {
+    //               .ant-select {
+    //                 width: 100% !important;
+    //               }
+    //             }
+    //           }
+    //         }
+    //         .personal_info {
+    //           .ant-input {
+    //             width: 100%;
+    //           }
+    //         }
+    //       }
+    //     }
+    //     .personal_info {
+    //       .wrapper {
+    //         position: relative;
+    //         .top_fields {
+    //           padding: 10px 0;
+    //           display: grid;
+    //           grid-template-columns: 50% 50%;
+    //         }
+    //         .contacts {
+    //           display: grid;
+    //           grid-template-columns: 50% 50%;
+    //         }
+    //         .ant-input {
+    //           max-width: 100%;
+    //         }
+    //         .name {
+    //           .ant-input {
+    //             max-width: 91%;
+    //           }
+    //         }
+    //         .mail {
+    //           .ant-input {
+    //             max-width: 91%;
+    //           }
+    //         }
+    //         .top_label {
+    //           font-size: 14px;
+    //           color: #000;
+    //           margin-bottom: 5px;
+    //         }
+    //         .active_label,
+    //         .active_surname,
+    //         .active_mail,
+    //         .active_number {
+    //           color: #000;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+.book_now_form {
+  label,
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0.3em;
+  }
+  .close_modal_span {
+    font-size: 45px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 300;
+  }
+  span {
+    font-weight: 700;
+    color: #102a43;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  input[type="submit"] {
+    background: #71d200;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em;
+  }
+
+  form {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .required-star {
+    color: #fc4366;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 1px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, 0.2);
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+    &:focus {
+      outline: none;
+      border: 1px solid #71d200;
+    }
+  }
+  button {
+    width: 100%;
+    background: #71d200;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.3em;
+    border: none;
+    padding: 10px 20px;
+  }
+}
+.css-1mtl09e {
+  @media (max-width: 768px) {
+    width: 340px !important;
+    h2 {
+      font-size: 30px !important;
+    }
+  }
+}
