@@ -9,7 +9,7 @@ function Guides() {
         <div className="guide">
           <div className="guide_wrapper">
             <div className="guide_image">
-              <img src="img/guide1.jpg" alt="Guide Tourism" />
+              <img src="/img/guide1.jpg" alt="Guide Tourism" />
             </div>
             <div className="guide_about">
               <div className="guide_name">
@@ -58,7 +58,7 @@ function Guides() {
         <div className="guide">
           <div className="guide_wrapper">
             <div className="guide_image">
-              <img src="img/guide2.jpg" alt="Guide Tourism" />
+              <img src="/img/guide2.jpg" alt="Guide Tourism" />
             </div>
             <div className="guide_about">
               <div className="guide_name">
