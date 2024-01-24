@@ -180,18 +180,6 @@ function Header() {
             <div className="links">
               <div className="links_wrap">
                 <ul className="parent_links">
-                  <li
-                    className={`ownTripBtn ${menuOpen ? "open" : ""}`}
-                    onClick={handleToggle}
-                  >
-                    <p>{t("menu.ownTrip")}</p>
-                    <div className="ham">
-                      <span className="hamburgerIcon"></span>
-                      <span className="hamburgerIcon middle"></span>
-                      <span className="hamburgerIcon"></span>
-                    </div>
-                    {/* Your modal component */}
-                  </li>
                   <li className="parent_link">
                     <Link href={"/"}>
                       {t("menu.catalog")}
@@ -219,91 +207,37 @@ function Header() {
                       <div className="wrapper">
                         <li className="parent_link_place">
                           <Link href={"/cities/tashkent"}>Tashkent</Link>
-                          {/* <ul className="sub_link_ul">
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="parent_link_place">
                           <Link href={"/cities/tashkent"}>Samarkand</Link>
-                          {/* <ul className="sub_link_ul">
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="parent_link_place">
                           <Link href={"/cities/tashkent"}>Fergana</Link>
-                          {/* <ul className="sub_link_ul">
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="parent_link_place">
                           <Link href={"/cities/tashkent"}>Tashkent</Link>
-                          {/* <ul className="sub_link_ul">
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                          </ul> */}
                         </li>
                         <li className="parent_link_place">
                           <Link href={"/cities/tashkent"}>Tashkent</Link>
-                          {/* <ul className="sub_link_ul">
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                            <li>
-                              <Link href={""}>National Library</Link>
-                            </li>
-                          </ul> */}
                         </li>
                       </div>
                     </ul>
+                  </li>
+                  <li
+                    className={`ownTripBtn ${menuOpen ? "open" : ""}`}
+                    onClick={handleToggle}
+                  >
+                    <p>{t("menu.ownTrip")}</p>
+                    <div className="ham">
+                      <span className="hamburgerIcon"></span>
+                      <span className="hamburgerIcon middle"></span>
+                      <span className="hamburgerIcon"></span>
+                    </div>
+                    {/* Your modal component */}
+                  </li>
+
+                  <li className="parent_link">
+                    <Link href={"/business_tours"}>Business tours</Link>
                   </li>
                   <li className="parent_link">
                     <Link href={"/contacts"}>{t("menu.contacts")}</Link>
@@ -358,7 +292,7 @@ function Header() {
                 )}
               </div>
             </div>
-            <div className="wishlist">
+            {/* <div className="wishlist">
               <Link href={"/wishlist"}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -374,7 +308,7 @@ function Header() {
                 </svg>
                 <span id="qty">{cartQuantity}</span>
               </Link>
-            </div>
+            </div> */}
             <div className="cart">
               <Link href={"/cart"}>
                 <ShoppingCartIcon />

@@ -949,6 +949,10 @@ function Tourpackage() {
                                 : steps.description_en,
                           }))}
                         />
+                        <div
+                          class="bokunWidget"
+                          data-src="https://widgets.bokun.io/online-sales/05c7dd7c-4ae8-4cea-993b-4ee29134f739/experience-calendar/835856"
+                        ></div>
                       </div>
                     </div>
                     <div className="price">
