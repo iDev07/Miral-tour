@@ -1,4 +1,7 @@
 .whatsapp {
+  @media (max-width: 768px) {
+    // display: none;
+  }
   position: fixed;
   bottom: 80px;
   right: 20px;

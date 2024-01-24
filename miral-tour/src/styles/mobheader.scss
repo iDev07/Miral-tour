@@ -4,7 +4,7 @@
   }
   transition: 0.3s ease;
   display: none;
-  position: absolute;
+  // position: absolute;
   padding: 20px 0;
   z-index: 1000;
   width: 100%;
@@ -46,6 +46,10 @@
           height: 15px;
           font-size: 13px;
           border-radius: 50px;
+        }
+        svg {
+          color: #0073db;
+          font-size: 28px;
         }
       }
       .language {
@@ -121,6 +125,8 @@
             z-index: 10;
             top: 40px;
             border: 1px solid #4ee16e;
+            height: 70vh;
+            overflow-y: auto;
             li {
               list-style: none;
               padding: 5px;
@@ -163,6 +169,7 @@
   }
 }
 .mobscrolled {
+  top: 0;
   padding: 10px 0;
   position: fixed;
   background-color: #fff;

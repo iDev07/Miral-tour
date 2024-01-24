@@ -2,6 +2,10 @@
   margin: 20px 0;
   .banners_wrap {
     .sliders {
+      @media (max-width: 776px) {
+        display: block;
+        height: 820px;
+      }
       display: grid;
       grid-template-columns: 70% 30%;
       height: 410px;

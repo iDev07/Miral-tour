@@ -10,7 +10,7 @@
   }
   .hero_wrapper {
     @media (max-width: 992px) {
-      height: 600px;
+      height: 420px;
     }
     // background: url("../../public/img/module_back-min.png"),
     //   rgb(241, 226, 226) 50% / cover no-repeat;
@@ -24,7 +24,7 @@
     background-size: cover;
     .this_wrap {
       @media (max-width: 992px) {
-        height: 600px;
+        height: 420px;
       }
       background-attachment: fixed;
       background: rgba(0, 0, 0, 0.137);
@@ -252,7 +252,7 @@
 .result {
   @media (max-width: 776px) {
     display: block;
-    height: 220px;
+    // height: 220px;
   }
   .loeader_main {
     position: absolute !important;
@@ -261,6 +261,9 @@
   // display: grid;
   // grid-template-columns: 22% 78%;
   .results_wrap {
+    @media (max-width: 776px) {
+      display: block;
+    }
     display: grid;
     grid-template-columns: 20% 80%;
     .filter_tours {
@@ -293,7 +296,7 @@
   }
   .result_tourpackages {
     @media (max-width: 768px) {
-      height: 220px;
+      height: 500px;
       width: 100%;
     }
     background-color: #fff;
@@ -320,6 +323,9 @@
     //   background-color: lightgrey; /* Color of the track */
     // }
     .tourpackage_card {
+      @media (max-width: 776px) {
+        display: block;
+      }
       display: flex;
       justify-content: start;
       flex-wrap: wrap;
@@ -328,6 +334,7 @@
       .card_wrapper {
         @media (max-width: 768px) {
           display: block;
+          width: 100%;
         }
         width: 32.5%;
         position: relative;
@@ -368,6 +375,8 @@
           button {
             @media (max-width: 768px) {
               margin: 10px 0;
+              margin-left: auto;
+              margin-right: 5px;
             }
             position: relative;
             text-align: center;
