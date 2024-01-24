@@ -3,7 +3,7 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "react-image-gallery/styles/css/image-gallery.css";
