@@ -517,6 +517,9 @@ function Tourpackage() {
               src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=05c7dd7c-4ae8-4cea-993b-4ee29134f739"
               async
             ></script>
+            <noscript>
+              Please enable javascript in your browser to book
+            </noscript>
           </Head>
           {/* <Modal
             open={open}
@@ -954,10 +957,6 @@ function Tourpackage() {
                                 : steps.description_en,
                           }))}
                         />
-                        <div
-                          class="bokunWidget"
-                          data-src="https://widgets.bokun.io/online-sales/05c7dd7c-4ae8-4cea-993b-4ee29134f739/experience-calendar/835856"
-                        ></div>
                       </div>
                     </div>
                     <div className="price">
@@ -988,12 +987,10 @@ function Tourpackage() {
                           }}
                         />
                       </div>
-                      {/* <div className="order_book">
-                        <button>{t("tourPackage.order")}</button>
-                        <Button type="button" onClick={handleOpen}>
-                          {t("tourPackage.book")}
-                        </Button>
-                      </div> */}
+                      <div
+                        class="bokunWidget"
+                        data-src="https://widgets.bokun.io/online-sales/05c7dd7c-4ae8-4cea-993b-4ee29134f739/experience-calendar/836607"
+                      ></div>
                     </div>
                   </div>
                 </div>
