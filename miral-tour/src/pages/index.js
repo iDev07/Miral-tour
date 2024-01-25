@@ -14,6 +14,7 @@ import Banners from "@/components/Home/Banners";
 import Background from "@/components/Home/Background";
 import TawkToScript from "@/components/TawkScript/TawkScript";
 import Socials from "@/components/Socials/Socials";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Process from "@/components/Proccess/Process";
 function HomePage() {
   const { t, i18n } = useTranslation();
@@ -107,6 +108,7 @@ function HomePage() {
       <Video />
       <Socials />
       <TawkToScript />
+      <SpeedInsights />
     </>
   );
 }
