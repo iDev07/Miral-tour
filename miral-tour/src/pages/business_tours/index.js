@@ -7,7 +7,7 @@ function BusinessTours() {
     <>
       <Head>
         <title>Business Tours</title>
-        <meta name="description" content={city.seo_description_en} />
+        <meta name="description" content={"Business Tours to Uzbekistan"} />
       </Head>
       <div className="business_tours">
         <div className="business_tours_wrapper">
