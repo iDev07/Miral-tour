@@ -1,18 +1,37 @@
 .hiddenDiv {
   position: absolute;
   background-color: #fff;
-  // padding: 10px;
   border-radius: 6px;
   top: 85px;
   z-index: 100;
-  width: 90%;
-  left: 5%;
-  height: 86vh;
+  width: 100%;
+  left: -0px;
+  height: 95vh;
   transition: max-height 0.5s ease-in-out;
-  overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  max-height: 86vh; /* Set a value based on your content */
-  overflow-y: scroll;
+  max-height: 95vh; /* Set a value based on your content */
+  overflow: hidden;
+  .ant-tabs-content {
+    height: 76vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: 5px; /* For Firefox */
+    scrollbar-color: #0073db #0073db; /* For Firefox */
+
+    /* For WebKit browsers (Chrome, Safari) */
+    &::-webkit-scrollbar {
+      width: 5px; /* Set the width of the scrollbar */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #0073db; /* Color of the thumb */
+      border-radius: 5px; /* Roundness of the thumb */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: lightgrey; /* Color of the track */
+    }
+  }
   .inner_wrap {
     padding: 10px;
     .services_tab_title {
@@ -24,14 +43,16 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 33% 33% 33%;
         flex-wrap: wrap;
         .guide {
-          width: 49%;
+          width: 32.5%;
+          height: 260px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           border-radius: 6px;
           margin-top: 15px;
           .guide_wrapper {
+            height: 260px;
             display: grid;
             grid-template-columns: 40% 60%;
             padding: 5px;
@@ -45,6 +66,7 @@
             }
             .guide_about {
               margin-left: 10px;
+              position: relative;
               .description {
                 font-size: 18px;
                 margin: 10px 0;
@@ -65,10 +87,13 @@
                 p {
                   display: flex;
                   justify-content: space-around;
+                  flex-wrap: wrap;
                   span {
-                    border: 1px solid #0073db;
-                    padding: 1px 5px;
-                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                      color: #4ee16e;
+                    }
                   }
                 }
               }
@@ -80,11 +105,22 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-around;
+                  .add_to_cart {
+                    button {
+                      display: flex;
+                      align-items: center;
+                      svg {
+                        margin-left: 5px;
+                        font-size: 20px;
+                      }
+                    }
+                  }
                   .price {
                     display: flex;
                     margin-left: auto;
                     p {
                       margin-right: 10px;
+                      font-weight: 700;
                     }
                   }
                 }

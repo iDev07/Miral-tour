@@ -85,9 +85,22 @@ function Header() {
         setLoading(false);
       });
   }, []);
+
   const [isDivVisible, setIsDivVisible] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(true);
+  useEffect(() => {
+    // Add or remove "no-scroll" class from body based on modal visibility
+    if (isDivVisible) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
 
+    // Cleanup: Remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, [isDivVisible]);
   const handleToggle = () => {
     setIsDivVisible(!isDivVisible);
     hideModal();
@@ -106,7 +119,7 @@ function Header() {
         </span>
       ),
       children: <Guides />,
-      icon: <DirectionsWalkIcon />,
+      // icon: <DirectionsWalkIcon />,
     },
     {
       key: "2",
@@ -233,7 +246,6 @@ function Header() {
                       <span className="hamburgerIcon middle"></span>
                       <span className="hamburgerIcon"></span>
                     </div>
-                    {/* Your modal component */}
                   </li>
 
                   <li className="parent_link">

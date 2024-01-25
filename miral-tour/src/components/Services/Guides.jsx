@@ -1,124 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import { Button } from "antd";
+import { Button, Select } from "antd";
+import DoneIcon from "@mui/icons-material/Done";
+import { ShoppingCart } from "@mui/icons-material";
+import axios from "axios";
 function Guides() {
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
+  };
+  const [languages, setLanguages] = useState([]);
+  const [guides, setGuides] = useState([]);
+  useEffect(() => {
+    // Fetch both tour packages and categories data
+    axios
+      .all([
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/guides`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/languages`),
+      ])
+      .then(
+        axios.spread((guidesRes, languagesRes) => {
+          setGuides(guidesRes.data);
+          setLanguages(languagesRes.data);
+          //  setLoading(false);
+        })
+      )
+      .catch((error) => {
+        console.error("An error occurred:", error);
+        //  setLoading(false);
+      });
+  }, []);
+  // console.log(guides);
+  // console.log(languages);
   return (
     <div className="guides">
-      <div className="guides_filter">We can add Filter for guides</div>
+      <div className="guides_filter">
+        <div className="this_wrapper">
+          <p>Filter:</p>
+          <div className="filter">
+            <Select
+              style={{ width: "100px" }}
+              value={"Select"}
+              options={languages.map((language) => ({
+                label: language.name_en,
+                value: language.value,
+              }))}
+            />
+          </div>
+        </div>
+      </div>
       <div className="guides_wrapper">
-        <div className="guide">
-          <div className="guide_wrapper">
-            <div className="guide_image">
-              <img src="/img/guide1.jpg" alt="Guide Tourism" />
-            </div>
-            <div className="guide_about">
-              <div className="guide_name">
-                <h3>Iroda Baxriddinovna</h3>
-                <span className="is_from">Tashkent, Uzbekistan</span>
-              </div>
-              <div className="description">
-                <p className="guide_slogan">
-                  <i>
-                    Travelling is not just places, it is living in dreams with
-                    open eyes.
-                  </i>
-                </p>
-              </div>
-              <div className="guide_rating">
-                <div className="rating_wrapper">
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                </div>
-              </div>
-              <div className="guide_languages">
-                <p>
-                  <span>Русский</span>
-                  <span>English</span>
-                  <span>Italian</span>
-                  <span>Uzbek(native)</span>
-                </p>
-              </div>
-              <div className="guide_price">
-                <div className="price_wrapper">
-                  <div className="read_more">
-                    <Button>Add to cart</Button>
-                  </div>
-                  <div className="price">
-                    <p>$ 12/h</p>
-                    {/* <Button>Book</Button> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="guide">
-          <div className="guide_wrapper">
-            <div className="guide_image">
-              <img src="/img/guide2.jpg" alt="Guide Tourism" />
-            </div>
-            <div className="guide_about">
-              <div className="guide_name">
-                <h3>Mels Hakimov</h3>
-                <span className="is_from">Tashkent, Uzbekistan</span>
-              </div>
-              <div className="description">
-                <p className="guide_slogan">
-                  <i>
-                    Travelling is not just places, it is living in dreams with
-                    open eyes.
-                  </i>
-                </p>
-              </div>
-              <div className="guide_rating">
-                <div className="rating_wrapper">
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                  <StarRateIcon />
-                </div>
-              </div>
-              <div className="guide_languages">
-                <p>
-                  <span>Русский</span>
-                  <span>English</span>
-                  <span>Italian</span>
-                  <span>Uzbek(native)</span>
-                </p>
-              </div>
-              <div className="guide_price">
-                <div className="price_wrapper">
-                  <div className="read_more">
-                    <Button>Read more</Button>
-                  </div>
-                  <div className="price">
-                    <p>$ 12/h</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="guide">
+        {guides &&
+          guides.length &&
+          guides.map((guide) => (
+            <div className="guide">
               <div className="guide_wrapper">
                 <div className="guide_image">
-                  <img src="img/guide1.jpg" alt="Guide Tourism" />
+                  <img
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/guide/${guide.image}`}
+                    alt="Guide Tourism"
+                  />
                 </div>
                 <div className="guide_about">
                   <div className="guide_name">
-                    <h3>Iroda Baxriddinovna</h3>
-                    <span className="is_from">Tashkent, Uzbekistan</span>
+                    <h3>{guide.name_en}</h3>
+                    <span className="is_from">{guide.location_en}</span>
                   </div>
                   <div className="description">
                     <p className="guide_slogan">
-                      <i>
-                        Travelling is not just places, it is living in dreams
-                        with open eyes.
-                      </i>
+                      <i>{guide.moto_en}</i>
                     </p>
                   </div>
                   <div className="guide_rating">
@@ -132,25 +81,32 @@ function Guides() {
                   </div>
                   <div className="guide_languages">
                     <p>
-                      <span>Русский</span>
-                      <span>English</span>
-                      <span>Italian</span>
-                      <span>Uzbek(native)</span>
+                      {guide.languages.map((language) => (
+                        <span>
+                          <DoneIcon />
+                          {language.language_en}
+                        </span>
+                      ))}
                     </p>
                   </div>
                   <div className="guide_price">
                     <div className="price_wrapper">
-                      <div className="read_more">
-                        <Button>Read more</Button>
+                      <div className="add_to_cart">
+                        <Button>
+                          {" "}
+                          Add to cart <ShoppingCart />
+                        </Button>
                       </div>
                       <div className="price">
-                        <p>$ 12/h</p>
+                        <p>$ {guide.price}/h</p>
+                        {/* <Button>Book</Button> */}
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
+          ))}
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export const TourPackageCard = ({ tourpackage }) => {
               alt={tourpackage.title_en}
             />
           </Link>
-          <button
+          {/* <button
             className="add_cart"
             id="addToCartBtn"
             onClick={() => addToCart(tourpackage)}
@@ -48,7 +48,7 @@ export const TourPackageCard = ({ tourpackage }) => {
                 fill="#0073DB"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
         <div className="tour_name">
           <Link href={`/tourpackage/${tourpackage.id}`}>

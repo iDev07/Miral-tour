@@ -512,6 +512,11 @@ function Tourpackage() {
                 ? tourpackage.title_ru
                 : tourpackage.title_en}
             </title>
+            <script
+              type="text/javascript"
+              src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=05c7dd7c-4ae8-4cea-993b-4ee29134f739"
+              async
+            ></script>
           </Head>
           {/* <Modal
             open={open}

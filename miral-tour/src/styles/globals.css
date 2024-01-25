@@ -33,6 +33,6 @@ a:hover {
     max-width: 1400px !important;
   }
 }
-.no_scroll {
-  overflow: hidden;
+.no-scroll {
+  overflow-y: hidden;
 }
