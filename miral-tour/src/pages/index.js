@@ -108,7 +108,6 @@ function HomePage() {
       <Video />
       <Socials />
       <TawkToScript />
-      <SpeedInsights />
     </>
   );
 }
