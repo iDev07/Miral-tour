@@ -2,17 +2,19 @@
   position: absolute;
   background-color: #fff;
   border-radius: 6px;
-  top: 85px;
+  top: 100px;
   z-index: 100;
-  width: 100%;
-  left: -0px;
-  height: 95vh;
+  width: 88%;
+  left: 6%;
+  height: 85vh;
   transition: max-height 0.5s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  max-height: 95vh; /* Set a value based on your content */
+  max-height: 85vh; /* Set a value based on your content */
   overflow: hidden;
+  .tab-list {
+  }
   .ant-tabs-content {
-    height: 76vh;
+    height: 70vh;
     overflow-y: scroll;
     overflow-x: hidden;
     scrollbar-width: 5px; /* For Firefox */
@@ -62,6 +64,8 @@
               img {
                 width: 100%;
                 border-radius: 6px;
+                height: 150px;
+                object-fit: cover;
               }
             }
             .guide_about {
@@ -70,6 +74,9 @@
               .description {
                 font-size: 18px;
                 margin: 10px 0;
+                .guide_slogan {
+                  font-size: 14px;
+                }
               }
               .guide_rating {
                 margin: 10px 0;
@@ -86,7 +93,7 @@
                 margin: 10px 0;
                 p {
                   display: flex;
-                  justify-content: space-around;
+                  justify-content: flex-start;
                   flex-wrap: wrap;
                   span {
                     display: flex;
@@ -97,31 +104,32 @@
                   }
                 }
               }
-              .guide_price {
-                width: 100%;
-                position: absolute;
-                bottom: 10px;
-                .price_wrapper {
-                  display: flex;
-                  align-items: center;
-                  justify-content: space-around;
-                  .add_to_cart {
-                    button {
-                      display: flex;
-                      align-items: center;
-                      svg {
-                        margin-left: 5px;
-                        font-size: 20px;
-                      }
+            }
+            .guide_price {
+              width: 100%;
+              position: absolute;
+              bottom: 10px;
+              left: 10px;
+              .price_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                .add_to_cart {
+                  button {
+                    display: flex;
+                    align-items: center;
+                    svg {
+                      margin-left: 5px;
+                      font-size: 20px;
                     }
                   }
-                  .price {
-                    display: flex;
-                    margin-left: auto;
-                    p {
-                      margin-right: 10px;
-                      font-weight: 700;
-                    }
+                }
+                .price {
+                  display: flex;
+                  margin-left: auto;
+                  p {
+                    margin-right: 20px;
+                    font-weight: 700;
                   }
                 }
               }

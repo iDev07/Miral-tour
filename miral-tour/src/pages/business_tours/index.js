@@ -1,12 +1,13 @@
-import { Container } from "@mui/material";
-import Head from "next/head";
 import React from "react";
+import Head from "next/head";
+import { Container } from "@mui/material";
 
 function BusinessTours() {
   return (
     <>
       <Head>
         <title>Business Tours</title>
+        <meta name="description" content={city.seo_description_en} />
       </Head>
       <div className="business_tours">
         <div className="business_tours_wrapper">

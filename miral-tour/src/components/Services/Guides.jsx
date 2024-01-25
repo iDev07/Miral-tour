@@ -5,11 +5,12 @@ import DoneIcon from "@mui/icons-material/Done";
 import { ShoppingCart } from "@mui/icons-material";
 import axios from "axios";
 function Guides() {
+  const [selectedLang, setSelectedLang] = useState({});
+  const [languages, setLanguages] = useState([]);
+  const [guides, setGuides] = useState([]);
   const handleChange = (value) => {
     console.log(`selected ${value}`);
   };
-  const [languages, setLanguages] = useState([]);
-  const [guides, setGuides] = useState([]);
   useEffect(() => {
     // Fetch both tour packages and categories data
     axios
@@ -39,7 +40,8 @@ function Guides() {
           <div className="filter">
             <Select
               style={{ width: "100px" }}
-              value={"Select"}
+              defaultValue={languages.name_en}
+              onChange={handleChange}
               options={languages.map((language) => ({
                 label: language.name_en,
                 value: language.value,
@@ -52,7 +54,7 @@ function Guides() {
         {guides &&
           guides.length &&
           guides.map((guide) => (
-            <div className="guide">
+            <div className="guide" key={guide.id}>
               <div className="guide_wrapper">
                 <div className="guide_image">
                   <img
@@ -70,15 +72,7 @@ function Guides() {
                       <i>{guide.moto_en}</i>
                     </p>
                   </div>
-                  <div className="guide_rating">
-                    <div className="rating_wrapper">
-                      <StarRateIcon />
-                      <StarRateIcon />
-                      <StarRateIcon />
-                      <StarRateIcon />
-                      <StarRateIcon />
-                    </div>
-                  </div>
+
                   <div className="guide_languages">
                     <p>
                       {guide.languages.map((language) => (
@@ -89,18 +83,27 @@ function Guides() {
                       ))}
                     </p>
                   </div>
-                  <div className="guide_price">
-                    <div className="price_wrapper">
-                      <div className="add_to_cart">
-                        <Button>
-                          {" "}
-                          Add to cart <ShoppingCart />
-                        </Button>
-                      </div>
-                      <div className="price">
-                        <p>$ {guide.price}/h</p>
-                        {/* <Button>Book</Button> */}
-                      </div>
+                  <div className="guide_rating">
+                    <div className="rating_wrapper">
+                      <StarRateIcon />
+                      <StarRateIcon />
+                      <StarRateIcon />
+                      <StarRateIcon />
+                      <StarRateIcon />
+                    </div>
+                  </div>
+                </div>
+                <div className="guide_price">
+                  <div className="price_wrapper">
+                    <div className="add_to_cart">
+                      <Button>
+                        {" "}
+                        Add to cart <ShoppingCart />
+                      </Button>
+                    </div>
+                    <div className="price">
+                      <p>$ {guide.price}/h</p>
+                      {/* <Button>Book</Button> */}
                     </div>
                   </div>
                 </div>

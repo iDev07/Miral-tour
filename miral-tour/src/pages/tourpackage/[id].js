@@ -24,7 +24,7 @@ function Tourpackage() {
   }, []);
   const router = useRouter();
   const { id } = router.query;
-
+  console.log(router);
   const { RangePicker } = DatePicker;
   const [tourpackages, setTourPackages] = useState([]);
   const tourpackage = tourpackages.find(

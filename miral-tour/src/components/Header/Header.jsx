@@ -19,12 +19,15 @@ import CarRentalIcon from "@mui/icons-material/CarRental";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Guides from "../Services/Guides";
+
 function Header() {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [tourpackages, setTourPackages] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [cities, setCities] = useState([]);
+
   const router = useRouter();
   const [scroll, setScroll] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
@@ -71,14 +74,17 @@ function Header() {
       .all([
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`),
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/categories`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`),
       ])
       .then(
-        axios.spread((tourPackagesResponse, categoriesResponse) => {
-          setTourPackages(tourPackagesResponse.data);
-          setCategories(categoriesResponse.data);
-
-          setLoading(false);
-        })
+        axios.spread(
+          (tourPackagesResponse, categoriesResponse, citiesResponse) => {
+            setTourPackages(tourPackagesResponse.data);
+            setCategories(categoriesResponse.data);
+            setCities(citiesResponse.data);
+            setLoading(false);
+          }
+        )
       )
       .catch((error) => {
         console.error("An error occurred:", error);
@@ -218,21 +224,13 @@ function Header() {
                     </Link>
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
-                        <li className="parent_link_place">
-                          <Link href={"/cities/tashkent"}>Tashkent</Link>
-                        </li>
-                        <li className="parent_link_place">
-                          <Link href={"/cities/tashkent"}>Samarkand</Link>
-                        </li>
-                        <li className="parent_link_place">
-                          <Link href={"/cities/tashkent"}>Fergana</Link>
-                        </li>
-                        <li className="parent_link_place">
-                          <Link href={"/cities/tashkent"}>Tashkent</Link>
-                        </li>
-                        <li className="parent_link_place">
-                          <Link href={"/cities/tashkent"}>Tashkent</Link>
-                        </li>
+                        {cities.map((city) => (
+                          <li className="parent_link_place">
+                            <Link href={`/cities/${city.seo_url}`}>
+                              {city.name_en}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
                     </ul>
                   </li>
@@ -351,3 +349,27 @@ function Header() {
 }
 
 export default dynamic(() => Promise.resolve(Header), { ssr: false });
+export const getStaticPaths = async () => {
+  const paths = cities.map((city) => ({
+    params: { seo_url: city.seo_url }, // Replace with the actual key for the SEO-friendly URL
+  }));
+
+  return { paths, fallback: true };
+};
+
+export const getStaticProps = async ({ params }) => {
+  const city = cities.find((city) => city.seo_url === params.seo_url);
+
+  if (!city) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {
+      city,
+    },
+    revalidate: 1, // In seconds. Controls how often the page is re-generated.
+  };
+};
