@@ -97,7 +97,7 @@ function BusinessTours() {
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Accommodation Arrangements </h3>
                         </div>
                       </div>
                     </div>
@@ -106,21 +106,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We organize seamless local transportation, from
+                          airport transfers to travel between business
+                          engagements, ensuring punctuality, comfort, and a
+                          stress-free experience.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service2.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Transportation Services</h3>
                         </div>
                       </div>
                     </div>
@@ -129,21 +129,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          Our dedicated team provides language support for
+                          effective communication during meetings, conferences,
+                          and negotiations, fostering smooth interactions across
+                          language barriers.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service3.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Translation and Interpretation</h3>
                         </div>
                       </div>
                     </div>
@@ -152,21 +152,20 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We guide you through the visa application process,
+                          streamlining paperwork and facilitating a hassle-free
+                          entry into Uzbekistan for your business purposes.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service4.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Visa Assistance</h3>
                         </div>
                       </div>
                     </div>
@@ -175,21 +174,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We facilitate meaningful connections by organizing
+                          exclusive networking events and introducing you to
+                          local business communities, fostering valuable
+                          collaborations and partnerships.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service5.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Networking Opportunities</h3>
                         </div>
                       </div>
                     </div>
@@ -198,21 +197,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We offer insightful cultural briefings and etiquette
+                          guidance, empowering you with the knowledge needed for
+                          successful and respectful business interactions in
+                          Uzbekistan.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service6.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Cultural Briefings</h3>
                         </div>
                       </div>
                     </div>
@@ -221,21 +220,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          Our knowledgeable local guides accompany you,
+                          providing in-depth insights into the business
+                          landscape and ensuring a smooth and enriching
+                          experience in unfamiliar surroundings.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service7.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Local Guides</h3>
                         </div>
                       </div>
                     </div>
@@ -244,21 +243,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We ensure you have the necessary technological
+                          resources and support for seamless presentations,
+                          conferences, and virtual meetings during your business
+                          tour.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service8.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Tech Support</h3>
                         </div>
                       </div>
                     </div>
@@ -267,21 +266,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          Your safety is our priority. We address concerns by
+                          offering information on safe areas and providing
+                          security services if required, ensuring peace of mind
+                          throughout your stay.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service9.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Security Services</h3>
                         </div>
                       </div>
                     </div>
@@ -290,21 +289,21 @@ function BusinessTours() {
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
                         <p>
-                          We meticulously craft tailored schedules aligned with
-                          your business goals, ensuring a seamless blend of
-                          meetings, site visits, and networking opportunities
-                          for a productive and efficient business tour.
+                          We efficiently coordinate and manage events or
+                          conferences planned as part of your business tour,
+                          ensuring a professionally executed and memorable
+                          experience.
                         </p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">
                           <img
-                            src="/img/service1.png"
+                            src="/img/service10.png"
                             alt="Miral Tour - Business Tours"
                           />
                         </div>
                         <div className="content_shows">
-                          <h3>Itinerary Planning </h3>
+                          <h3>Event Management</h3>
                         </div>
                       </div>
                     </div>
