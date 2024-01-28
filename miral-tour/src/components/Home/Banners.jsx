@@ -1,13 +1,16 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-// Import Swiper styles
 import "swiper/css";
 function Banners() {
+  const router = useRouter();
+  const { id } = router.query;
+
   return (
     <div className="Banners">
       <div className="banners_wrap">
@@ -34,7 +37,7 @@ function Banners() {
                             {/* <h2>Silk Road tour in Uzbekistan</h2> */}
                           </div>
                           <div className="read_more">
-                            <Link href="">Read more</Link>
+                            <Link href={`/tourpackage/1`}>Read more</Link>
                           </div>
                         </div>
                       </div>

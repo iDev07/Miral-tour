@@ -46,7 +46,7 @@ function HomePage() {
         setLoading(false);
       });
   }, []);
-
+  // console.log(categories[0]);
   return (
     <>
       <Head>
@@ -102,6 +102,15 @@ function HomePage() {
         />
       )}
       <Banners />
+      {loading ? (
+        <Loader />
+      ) : (
+        <CategorySection
+          id={categories[0].id}
+          tourpackages={tourpackages}
+          category={categories[0]}
+        />
+      )}
       <Business_category />
       <Countries_category />
       <Autorent />

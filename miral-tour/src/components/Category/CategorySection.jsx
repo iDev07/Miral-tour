@@ -9,6 +9,7 @@ export const CategorySection = ({ category, id, tourpackages }) => {
   const filteredTourPackages = tourpackages.filter(
     (tourpackage) => tourpackage.category_id === parseInt(id, 10)
   );
+  console.log(category);
   return (
     <div className="religious_category category">
       <div className="religious_wrapper">

@@ -98,9 +98,14 @@
             max-width: 95%;
           }
           .step_day {
+            font-weight: 600;
             span {
               font-weight: 700;
               margin-right: 5px;
+              padding: 5px;
+              background-color: #4ee16e;
+              color: #fff;
+              border-radius: 6px;
             }
           }
           .order_book {

@@ -5,6 +5,7 @@ import Providers from "./Providers";
 import MobileHeader from "./Mobile/header";
 import TopHeader from "./TopHeader/TopHeader";
 import Socials from "./Socials/Socials";
+import BackToTop from "./ToTop";
 
 function Layout({ children }) {
   return (
@@ -15,6 +16,7 @@ function Layout({ children }) {
         <MobileHeader />
         {children}
         <Socials />
+        <BackToTop />
         <Footer />
       </Providers>
     </div>
