@@ -310,6 +310,50 @@ function BusinessTours() {
                   </div>
                 </div>
               </div>
+              <div className="contact_form">
+                <form>
+                  <div className="contact_wrapper">
+                    <div className="left_box">
+                      <div className="this_wrapper">
+                        <div className="input">
+                          <input
+                            type="text"
+                            placeholder="Company name *"
+                            required
+                          />
+                        </div>
+                        <div className="input">
+                          <input type="text" placeholder="Name *" required />
+                        </div>
+                        <div className="input">
+                          <input type="text" placeholder="Surname " required />
+                        </div>
+                        <div className="input">
+                          <input
+                            type="number"
+                            placeholder="Phone number *"
+                            required
+                          />
+                        </div>
+                        <div className="input">
+                          <input type="mail" placeholder="E-mail" required />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="right_box">
+                      <div className="this_wrapper">
+                        <h2>Contact Us</h2>
+                        <p>
+                          Drop us a message! Share your event's purpose and
+                          timing, and let's work together to create and execute
+                          the ideal plan – 100% satisfaction guaranteed!
+                        </p>
+                        <button type="submit">Send form</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </Container>
           </div>
         </div>
