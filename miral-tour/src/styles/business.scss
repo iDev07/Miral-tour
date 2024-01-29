@@ -37,18 +37,23 @@
           font-weight: 700;
           line-height: normal;
         }
-        button {
+        a {
           @media (max-width: 768px) {
             font-size: 16px;
             padding: 5px 8px;
             margin-bottom: 10px;
           }
+          &:hover {
+            background-color: #fff;
+            color: #4ee16e;
+          }
+          transition: 0.3s ease;
           padding: 5px 20px 10px 20px;
           border-radius: 5px;
           background: #4ee16e;
           box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
           color: #fff;
-          border: none;
+          border: 1px solid transparent;
           font-weight: 600;
           font-size: 20px;
         }
@@ -124,7 +129,7 @@
   .submit_form {
     display: flex;
     justify-content: center;
-    button {
+    a {
       border-radius: 30px;
       background: #4ee16e;
       padding: 10px 35px;

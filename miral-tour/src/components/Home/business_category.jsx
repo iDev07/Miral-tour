@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Container, Modal, Box } from "@mui/material";
+import Link from "next/link";
 
 function Business_category() {
   const { t } = useTranslation();
@@ -95,7 +96,7 @@ function Business_category() {
             <div className="right_box">
               <div>
                 <h2>{t("business.heading")}</h2>
-                <Button onClick={handleOpen}>{t("business.formBtn")}</Button>
+                <Link href={"/business-tours"}>{t("business.formBtn")}</Link>
               </div>
             </div>
           </div>

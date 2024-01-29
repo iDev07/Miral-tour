@@ -247,7 +247,7 @@ function Header() {
                   </li>
 
                   <li className="parent_link">
-                    <Link href={"/business_tours"}>Business tours</Link>
+                    <Link href={"/business-tours"}>Business tours</Link>
                   </li>
                   <li className="parent_link">
                     <Link href={"/contacts"}>{t("menu.contacts")}</Link>
