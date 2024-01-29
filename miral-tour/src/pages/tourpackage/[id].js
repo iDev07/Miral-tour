@@ -949,12 +949,18 @@ function Tourpackage() {
                                   : steps.name_en}
                               </p>
                             ),
-                            children:
-                              i18n.language === "uz"
-                                ? steps.description_uz
-                                : i18n.language === "ru"
-                                ? steps.description_ru
-                                : steps.description_en,
+                            children: (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html:
+                                    i18n.language === "uz"
+                                      ? steps.description_uz
+                                      : i18n.language === "ru"
+                                      ? steps.description_ru
+                                      : steps.description_en,
+                                }}
+                              ></div>
+                            ),
                           }))}
                         />
                       </div>

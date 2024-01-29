@@ -455,13 +455,15 @@ const OrderModal = ({
               : tourpackage.title_en}
           </h3>
           <p
-          // dangerouslySetInnerHTML={{
-          //   __html: tourpackage.content_uz,
-          // }}
-          >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
-          </p>
+            dangerouslySetInnerHTML={{
+              __html:
+                i18n.language === "uz"
+                  ? tourpackage.content_uz
+                  : i18n.language === "ru"
+                  ? tourpackage.content_ru
+                  : tourpackage.content_en,
+            }}
+          ></p>
         </div>
         <div className="bron_button">
           <Link href={`/tourpackage/${tourpackage.id}`}>

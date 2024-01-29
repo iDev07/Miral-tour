@@ -1,8 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { Container } from "@mui/material";
 import Loader from "../Loader";
 import axios from "axios";
+import countryList from "react-select-country-list";
 import {
   Popover,
   Button,
@@ -15,7 +16,9 @@ import {
 import { useTranslation } from "react-i18next";
 import OrderModal from "../OrderModal/OrderModal";
 import { DownOutlined } from "@ant-design/icons";
-function Hero({ tourpackages, categories, cities }) {
+function Hero({ tourpackages, categories, cities, countriesBack }) {
+  const [value, setValue] = useState("");
+  const options = useMemo(() => countryList().getData(), []);
   const { t, i18n } = useTranslation();
   const [sortedTours, setSortedTours] = useState([]);
   const [dayFilter, setDayFilter] = useState("");
@@ -41,6 +44,9 @@ function Hero({ tourpackages, categories, cities }) {
     label: t("constructorForm.typeOfClass"),
   });
   const [showResults, setShowResults] = useState(false);
+  const changeHandler = (value) => {
+    setValue(value);
+  };
 
   const handleButtonClick = () => {
     setShowResults(!showResults);
@@ -294,6 +300,8 @@ function Hero({ tourpackages, categories, cities }) {
           title_en: filteredPackage.title_en,
           image: filteredPackage.image,
           content_uz: filteredPackage.content_uz,
+          content_en: filteredPackage.content_en,
+          content_ru: filteredPackage.content_ru,
           // Add more properties as needed
         };
       });
@@ -348,10 +356,15 @@ function Hero({ tourpackages, categories, cities }) {
                               <p>Loading...</p>
                             ) : (
                               <Select
-                                defaultValue={defaultCountry}
-                                onChange={handleCountryChange}
-                                options={countries}
+                                options={options}
+                                value={value}
+                                onChange={changeHandler}
                               />
+                              // <Select
+                              //   defaultValue={defaultCountry}
+                              //   onChange={handleCountryChange}
+                              //   options={countries}
+                              // />
                             )}
                           </div>
                         </div>

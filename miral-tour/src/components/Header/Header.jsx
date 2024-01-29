@@ -327,8 +327,8 @@ function Header() {
             </div>
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
-                <option value="en">EN</option>
                 <option value="ru">Ру</option>
+                <option value="en">EN</option>
                 <option value="uz">UZ</option>
               </select>
             </div>

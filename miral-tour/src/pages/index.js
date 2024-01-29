@@ -21,6 +21,7 @@ function HomePage() {
   const [loading, setLoading] = useState(true);
   const [tourpackages, setTourPackages] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [countriesBack, setCountriesBack] = useState([]);
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
@@ -30,14 +31,21 @@ function HomePage() {
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`),
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/categories`),
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/countries`),
       ])
       .then(
         axios.spread(
-          (tourPackagesResponse, categoriesResponse, citiesResponse) => {
+          (
+            tourPackagesResponse,
+            categoriesResponse,
+            citiesResponse,
+            countriesResponse
+          ) => {
+            setLoading(false);
             setTourPackages(tourPackagesResponse.data);
             setCategories(categoriesResponse.data);
             setCities(citiesResponse.data);
-            setLoading(false);
+            setCountriesBack(countriesResponse.data);
           }
         )
       )
@@ -99,10 +107,11 @@ function HomePage() {
           tourpackages={tourpackages}
           categories={categories}
           cities={cities}
+          countriesBack={countriesBack}
         />
       )}
       <Banners />
-      {loading ? (
+      {/* {loading ? (
         <Loader />
       ) : (
         <CategorySection
@@ -110,7 +119,7 @@ function HomePage() {
           tourpackages={tourpackages}
           category={categories[0]}
         />
-      )}
+      )} */}
       <Business_category />
       <Countries_category />
       <Autorent />
