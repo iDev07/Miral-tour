@@ -224,13 +224,12 @@ function Header() {
                     </Link>
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
-                        {cities.map((city) => (
-                          <li className="parent_link_place">
-                            <Link href={`/cities/${city.seo_url}`}>
-                              {city.name_en}
-                            </Link>
-                          </li>
-                        ))}
+                        <li className="parent_link_place">
+                          <Link href={`/cities/`}>Uzbekistan cities</Link>
+                        </li>
+                        <li className="parent_link_place">
+                          <Link href={`/cities/`}>Uzbekistan visa</Link>
+                        </li>
                       </div>
                     </ul>
                   </li>

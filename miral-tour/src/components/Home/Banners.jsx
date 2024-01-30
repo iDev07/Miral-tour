@@ -25,19 +25,21 @@ function Banners() {
                 <SwiperSlide>
                   <div className="swiper_banner">
                     <div className="swiper_banner_wrap">
-                      <div className="sw_banner_image">
-                        <img
-                          src="img/banner1.jpg"
-                          alt="Turbotour - Banner Samarqand"
-                        />
-                      </div>
+                      <Link href={""}>
+                        <div className="sw_banner_image">
+                          <img
+                            src="/img/banner_main.png"
+                            alt="Turbotour - Banner Samarqand"
+                          />
+                        </div>
+                      </Link>
                       <div className="banner_content">
                         <div className="if_bottom">
                           <div className="title">
-                            {/* <h2>Silk Road tour in Uzbekistan</h2> */}
+                            <h2>Samarkand - Crossroads of cultures</h2>
                           </div>
                           <div className="read_more">
-                            <Link href={`/tourpackage/1`}>Read more</Link>
+                            <Link href="/cities/samarkand">Read more</Link>
                           </div>
                         </div>
                       </div>

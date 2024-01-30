@@ -111,7 +111,7 @@ function HomePage() {
         />
       )}
       <Banners />
-      {/* {loading ? (
+      {loading ? (
         <Loader />
       ) : (
         <CategorySection
@@ -119,7 +119,7 @@ function HomePage() {
           tourpackages={tourpackages}
           category={categories[0]}
         />
-      )} */}
+      )}
       <Business_category />
       <Countries_category />
       <Autorent />
