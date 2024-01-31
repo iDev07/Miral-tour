@@ -233,7 +233,7 @@ function Header() {
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
-                          <Link href={`/cities/`}>Uzbekistan visa</Link>
+                          <Link href={`/visa`}>Uzbekistan visa</Link>
                         </li>
                         <p>
                           Uzbekistan cities <DownOutlined />
