@@ -494,66 +494,72 @@ function Tourpackage() {
   if (!tourpackage) {
     return <Loader />;
   }
-  // const renderTableOrMessage = () => {
-  //   if (tourpackage.prices && tourpackage.prices.length > 0) {
+  const renderTableOrMessage = () => {
+    if (tourpackage.prices && tourpackage.prices.length > 0) {
+      const columns = [
+        {
+          title: "Persons",
+          dataIndex: "persons",
+          key: "persons",
+        },
+        {
+          title: "Standart",
+          dataIndex: "standart",
+          key: "standart",
+        },
+        {
+          title: "Comfort",
+          dataIndex: "comfort",
+          key: "comfort",
+        },
+        {
+          title: "Business",
+          dataIndex: "business",
+          key: "business",
+        },
+      ];
+      const prices = [
+        {
+          key: "1",
+          persons: "1",
+          standart: `${tourpackage.prices[0].p_individual_econom} $`,
+          comfort: `${tourpackage.prices[0].p_individual_standart} $`,
+          business: `${tourpackage.prices[0].p_individual_comfort} $`,
+        },
+        {
+          key: "2",
+          persons: "2-3",
+          standart: `${tourpackage.prices[0].p_small_econom} $`,
+          comfort: `${tourpackage.prices[0].p_small_standart} $`,
+          business: `${tourpackage.prices[0].p_small_comfort} $`,
+        },
+        {
+          key: "3",
+          persons: "4-7",
+          standart: `${tourpackage.prices[0].p_middle_econom} $`,
+          comfort: `${tourpackage.prices[0].p_middle_standart} $`,
+          business: `${tourpackage.prices[0].p_middle_comfort} $`,
+        },
+        {
+          key: "4",
+          persons: "8-15",
+          standart: `${tourpackage.prices[0].p_large_econom} $`,
+          comfort: `${tourpackage.prices[0].p_large_standart} $`,
+          business: `${tourpackage.prices[0].p_large_comfort} $`,
+        },
+      ];
 
-  //     return <Table columns={columns} dataSource={prices} />;
-  //   } else {
-  //     return <p>Not found</p>;
-  //   }
-  // };
-  const columns = [
-    {
-      title: "Persons",
-      dataIndex: "persons",
-      key: "persons",
-    },
-    {
-      title: "Standart",
-      dataIndex: "standart",
-      key: "standart",
-    },
-    {
-      title: "Comfort",
-      dataIndex: "comfort",
-      key: "comfort",
-    },
-    {
-      title: "Business",
-      dataIndex: "business",
-      key: "business",
-    },
-  ];
-  const prices = [
-    {
-      key: "1",
-      persons: "1",
-      standart: `${tourpackage.prices[0].p_individual_econom} $`,
-      comfort: `${tourpackage.prices[0].p_individual_standart} $`,
-      business: `${tourpackage.prices[0].p_individual_comfort} $`,
-    },
-    {
-      key: "2",
-      persons: "2-3",
-      standart: `${tourpackage.prices[0].p_small_econom} $`,
-      comfort: `${tourpackage.prices[0].p_small_standart} $`,
-      business: `${tourpackage.prices[0].p_small_comfort} $`,
-    },
-    {
-      key: "3",
-      persons: "4-7",
-      standart: `${tourpackage.prices[0].p_middle_econom} $`,
-      comfort: `${tourpackage.prices[0].p_middle_standart} $`,
-      business: `${tourpackage.prices[0].p_middle_comfort} $`,
-    },
-    {
-      key: "4",
-      persons: "8-15",
-      standart: `${tourpackage.prices[0].p_large_econom} $`,
-      comfort: `${tourpackage.prices[0].p_large_standart} $`,
-      business: `${tourpackage.prices[0].p_large_comfort} $`,
-    },
-  ];
+      return (
+        <div className="prices">
+          <h2>Prices</h2>
+          <Table columns={columns} dataSource={prices} />
+        </div>
+      );
+    } else {
+      return;
+    }
+  };
+
   console.log(tourpackage);
   return (
     <>
@@ -964,8 +970,8 @@ function Tourpackage() {
                           }))}
                         />
                       </div>
-                      <h2>Prices</h2>
-                      <Table columns={columns} dataSource={prices} />
+
+                      {renderTableOrMessage()}
                     </div>
                     <div className="price">
                       <div className="price_iclude">
@@ -995,10 +1001,6 @@ function Tourpackage() {
                           }}
                         />
                       </div>
-                      <div
-                        class="bokunWidget"
-                        data-src="https://widgets.bokun.io/online-sales/05c7dd7c-4ae8-4cea-993b-4ee29134f739/experience-calendar/836607"
-                      ></div>
                     </div>
                   </div>
                 </div>
