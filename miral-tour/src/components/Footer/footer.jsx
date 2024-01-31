@@ -13,7 +13,7 @@ function Footer() {
             <div className="logo">
               <a href="">
                 {" "}
-                <img src="/img/new_logo.png" width={250} alt="Miral Tour" />
+                <img src="/img/main_logo.png" width={250} alt="Miral Tour" />
               </a>
             </div>
             <div className="motto">
@@ -44,7 +44,9 @@ function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <a href="mailto:info@all4u-tour.uz ">info@turbo-tour.uz</a>
+                    <a href="mailto:info@all4u-tour.uz ">
+                      miraltouruz@gmail.com
+                    </a>
                   </li>
                   {/* <li>Tashkent, Yakkasaray dis, Khumo 57</li> */}
                 </ul>

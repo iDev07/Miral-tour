@@ -194,7 +194,7 @@ function Header() {
             <div className="logo">
               <Link href={"/"}>
                 <img
-                  src="/img/new_logo.png"
+                  src="/img/main_logo.png"
                   width={200}
                   alt="Miral Tour logo"
                 />
@@ -330,9 +330,9 @@ function Header() {
             </div>
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
-                <option value="ru">Ру</option>
+                {/* <option value="ru">Ру</option> */}
                 <option value="en">EN</option>
-                <option value="uz">UZ</option>
+                {/* <option value="uz">UZ</option> */}
               </select>
             </div>
           </div>

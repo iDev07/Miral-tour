@@ -509,63 +509,6 @@ function Tourpackage() {
               Please enable javascript in your browser to book
             </noscript>
           </Head>
-          {/* <Modal
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
-            <Box sx={style}>
-              <Typography
-                id="modal-modal-title"
-                align="center"
-                variant="h4"
-                component="h2"
-              >
-                {t("callBack.title")}
-              </Typography>
-              <form id="myForm" className="book_now_form">
-                <ul>
-                  <li>
-                    <label for="name">
-                      <span>
-                        {t("callBack.name")}{" "}
-                        <span class="required-star">*</span>
-                      </span>
-                    </label>
-                    <input type="text" id="name" name="user_name" required />
-                  </li>
-                  <li>
-                    <label for="mail">
-                      <span>
-                        {t("callBack.mail")}{" "}
-                        <span class="required-star">*</span>
-                      </span>
-                    </label>
-                    <input type="email" id="mail" name="user_email" required />
-                  </li>
-                  <li>
-                    <label for="phone-number">
-                      <span>
-                        {t("callBack.phone")}{" "}
-                        <span class="required-star">*</span>
-                      </span>
-                    </label>
-                    <input
-                      type="text"
-                      id="phone-number"
-                      required
-                      name="user_phone_number"
-                    />
-                  </li>
-
-                  <li>
-                    <input type="submit" value={t("callBack.submit")} />
-                  </li>
-                </ul>
-              </form>
-            </Box>
-          </Modal> */}
           <Modal
             title={
               i18n.language === "uz"

@@ -8,7 +8,7 @@ export default function Document() {
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
-        <link rel="icon" href="/miniT.png" />
+        <link rel="icon" href="/img/mini_logo.png" />
         <meta name="author" content="ALL4U-TOURISM" />
         <meta
           name="keywords"

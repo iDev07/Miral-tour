@@ -99,9 +99,9 @@ function Banners() {
               <div className="banner">
                 <div className="banner_wrap">
                   <div className="banner_image">
-                    <a href="">
-                      <img src="img/small_b_1.webp" alt="Turbotour" />
-                    </a>
+                    <Link href="/tourpackage/53">
+                      <img src="/img/tour53.jpg" alt="Turbotour" />
+                    </Link>
                   </div>
                 </div>
               </div>
