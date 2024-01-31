@@ -193,7 +193,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Guided sightseeing tour</span>
+                <span>Econom transportation</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -271,7 +271,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Flights</span>
+                <span>Accomadition 3 *</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -286,7 +286,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Guided sightseeing tour</span>
+                <span>Econom transportation</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -301,7 +301,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Transport throughout the excursion</span>
+                <span>Standard Meals</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -364,7 +364,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Flights</span>
+                <span>Accomadition 3 *</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -379,7 +379,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Guided sightseeing tour</span>
+                <span>Econom transportation</span>
               </p>
               <p className="item_wrapper">
                 <svg
