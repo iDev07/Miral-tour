@@ -5,7 +5,7 @@ function Loader() {
   return (
     <>
       <Head>
-        <title>Turbotour</title>
+        <title>Miral Tour</title>
       </Head>
       <div align="center" className="loeader_main">
         <LineWave

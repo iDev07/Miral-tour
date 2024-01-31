@@ -13,7 +13,7 @@ function Footer() {
             <div className="logo">
               <a href="">
                 {" "}
-                <img src="/img/turbo.png" alt="ALL4U Tourism" />
+                <img src="/img/new_logo.png" width={250} alt="Miral Tour" />
               </a>
             </div>
             <div className="motto">
@@ -56,16 +56,16 @@ function Footer() {
               </div>
               <div className="payment_wrap">
                 <div className="col">
-                  <img src="/img/payme.png" alt="ALL4U Tourism Payments" />
+                  <img src="/img/payme.png" alt="Miral Tour Payments" />
                 </div>
                 <div className="col">
-                  <img src="/img/click.png" alt="ALL4U Tourism Payments" />
+                  <img src="/img/click.png" alt="Miral Tour Payments" />
                 </div>
                 <div className="col">
-                  <img src="/img/visa.png" alt="ALL4U Tourism Payments" />
+                  <img src="/img/visa.png" alt="Miral Tour Payments" />
                 </div>
                 <div className="col">
-                  <img src="/img/mastercard.png" alt="ALL4U Tourism Payments" />
+                  <img src="/img/mastercard.png" alt="Miral Tour Payments" />
                 </div>
               </div>
             </div>
@@ -164,7 +164,7 @@ function Footer() {
             <h5>
               {" "}
               {t("footer.copyrights")}
-              {/* <a href="https:all4u-tour.uz">ALL4U Tourism</a> Company */}
+              {/* <a href="https:all4u-tour.uz">Miral Tour</a> Company */}
             </h5>
           </div>
         </Container>
