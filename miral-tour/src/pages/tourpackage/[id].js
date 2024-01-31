@@ -6,7 +6,16 @@ import axios from "axios";
 import { Container, Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
-import { Tabs, Collapse, Select, DatePicker, Input, Modal, Button } from "antd";
+import {
+  Tabs,
+  Collapse,
+  Select,
+  DatePicker,
+  Input,
+  Modal,
+  Button,
+  Table,
+} from "antd";
 
 function Tourpackage() {
   useEffect(() => {
@@ -485,7 +494,67 @@ function Tourpackage() {
   if (!tourpackage) {
     return <Loader />;
   }
+  // const renderTableOrMessage = () => {
+  //   if (tourpackage.prices && tourpackage.prices.length > 0) {
 
+  //     return <Table columns={columns} dataSource={prices} />;
+  //   } else {
+  //     return <p>Not found</p>;
+  //   }
+  // };
+  const columns = [
+    {
+      title: "Persons",
+      dataIndex: "persons",
+      key: "persons",
+    },
+    {
+      title: "Standart",
+      dataIndex: "standart",
+      key: "standart",
+    },
+    {
+      title: "Comfort",
+      dataIndex: "comfort",
+      key: "comfort",
+    },
+    {
+      title: "Business",
+      dataIndex: "business",
+      key: "business",
+    },
+  ];
+  const prices = [
+    {
+      key: "1",
+      persons: "1",
+      standart: `${tourpackage.prices[0].p_individual_econom} $`,
+      comfort: `${tourpackage.prices[0].p_individual_standart} $`,
+      business: `${tourpackage.prices[0].p_individual_comfort} $`,
+    },
+    {
+      key: "2",
+      persons: "2-3",
+      standart: `${tourpackage.prices[0].p_small_econom} $`,
+      comfort: `${tourpackage.prices[0].p_small_standart} $`,
+      business: `${tourpackage.prices[0].p_small_comfort} $`,
+    },
+    {
+      key: "3",
+      persons: "4-7",
+      standart: `${tourpackage.prices[0].p_middle_econom} $`,
+      comfort: `${tourpackage.prices[0].p_middle_standart} $`,
+      business: `${tourpackage.prices[0].p_middle_comfort} $`,
+    },
+    {
+      key: "4",
+      persons: "8-15",
+      standart: `${tourpackage.prices[0].p_large_econom} $`,
+      comfort: `${tourpackage.prices[0].p_large_standart} $`,
+      business: `${tourpackage.prices[0].p_large_comfort} $`,
+    },
+  ];
+  console.log(tourpackage);
   return (
     <>
       {loading ? (
@@ -895,6 +964,8 @@ function Tourpackage() {
                           }))}
                         />
                       </div>
+                      <h2>Prices</h2>
+                      <Table columns={columns} dataSource={prices} />
                     </div>
                     <div className="price">
                       <div className="price_iclude">

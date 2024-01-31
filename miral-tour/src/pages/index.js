@@ -58,7 +58,7 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>Turbotour - We give emotions!</title>
+        <title>Miral Tour - We give emotions!</title>
         <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
@@ -67,9 +67,9 @@ function HomePage() {
         <meta name="author" content="World Miral" />
         <meta
           name="keywords"
-          content="turbo-tour, turbotour, ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour,tourism, travel tour, turbotour,tourism Uzbekistan"
+          content="turbo-tour, Miral Tour, ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour,tourism, travel tour, Miral Tour,tourism Uzbekistan"
         />
-        <meta property="og:title" content="Turbotour" />
+        <meta property="og:title" content="Miral Tour" />
         <meta
           property="og:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
@@ -80,11 +80,11 @@ function HomePage() {
         />
         <meta property="og:image:width" content="780" />
         <meta property="og:image:height" content="400" />
-        <meta property="og:site_name" content="Turbotour" />
+        <meta property="og:site_name" content="Miral Tour" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Logo" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Turbotour" />
+        <meta property="twitter:title" content="Miral Tour" />
         <meta
           property="twitter:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"

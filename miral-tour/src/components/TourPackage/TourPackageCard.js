@@ -63,9 +63,9 @@ export const TourPackageCard = ({ tourpackage }) => {
         </div>
         <div className="tour_details">
           <p>
-            {t("priceC")}
-            {/* {`${tourpackage.price}`}
-            {t("tourPackage.onPerson")} */}
+            {/* {t("priceC")} */}
+            {`${tourpackage.price}`}
+            {t("tourPackage.onPerson")}
           </p>
           <p>
             {tourpackage.days} {""}
