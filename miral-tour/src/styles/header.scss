@@ -2,10 +2,11 @@
   @media (max-width: 992px) {
     display: none;
   }
-  // position: absolute;
+  position: absolute;
   padding: 20px;
   z-index: 1000;
   width: 100%;
+  top: 0;
   transition: 0.4s ease;
   // background-color: #fff;
   .header_wrapper {
@@ -336,7 +337,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: fixed;
   top: 0;
-  padding: 16px 15px;
+  padding: 10px 15px;
   z-index: 1000;
   width: 100%;
 }

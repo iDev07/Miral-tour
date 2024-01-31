@@ -8,7 +8,11 @@ import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useAppSelector } from "../../../store/store";
-import { AndroidOutlined, AppleOutlined } from "@ant-design/icons";
+import {
+  AndroidOutlined,
+  AppleOutlined,
+  DownOutlined,
+} from "@ant-design/icons";
 import { Button, Tabs } from "antd";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import ApartmentIcon from "@mui/icons-material/Apartment";
@@ -61,7 +65,7 @@ function Header() {
   }, [router.pathname]); // Listen for changes in the route
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 200) {
+      if (window.scrollY < 600) {
         setScroll("");
       } else {
         setScroll("scrolled");
@@ -223,17 +227,24 @@ function Header() {
                     </ul>
                   </li>
                   <li className="parent_link about_uz">
-                    <Link href={"/cities/tashkent"}>
+                    <Link href={"/about-uzbekistan"}>
                       About Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
-                          <Link href={`/cities/`}>Uzbekistan cities</Link>
-                        </li>
-                        <li className="parent_link_place">
                           <Link href={`/cities/`}>Uzbekistan visa</Link>
                         </li>
+                        <p>
+                          Uzbekistan cities <DownOutlined />
+                        </p>
+                        {cities.map((city) => (
+                          <li className="parent_link_place">
+                            <Link href={`/cities/${city.seo_url}`}>
+                              {city.name_en}
+                            </Link>
+                          </li>
+                        ))}
                       </div>
                     </ul>
                   </li>

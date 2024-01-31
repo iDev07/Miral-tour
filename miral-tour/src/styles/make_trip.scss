@@ -2,14 +2,14 @@
   position: absolute;
   background-color: #fff;
   border-radius: 6px;
-  top: 100px;
+  top: 80px;
   z-index: 100;
   width: 88%;
   left: 6%;
-  height: 85vh;
+  height: 90vh;
   transition: max-height 0.5s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  max-height: 85vh; /* Set a value based on your content */
+  max-height: 90vh; /* Set a value based on your content */
   overflow: hidden;
   .tab-list {
   }

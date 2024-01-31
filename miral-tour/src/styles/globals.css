@@ -17,9 +17,9 @@ a:hover {
   margin-top: 50px;
 }
 
-/* .pt_100 {
-  padding-top: 100px;
-} */
+.pt_100 {
+  padding-top: 80px;
+}
 
 .add_cart {
   transition: 0.5s ease;

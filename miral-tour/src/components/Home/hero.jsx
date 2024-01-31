@@ -347,7 +347,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
 
   return (
     <>
-      <div className="hero">
+      <div className="hero pt_100">
         <Container maxWidth="lg">
           <div className="hero_wrapper">
             <div className="this_wrap">

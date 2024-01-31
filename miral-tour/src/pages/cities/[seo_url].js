@@ -109,7 +109,7 @@ function City({}) {
               content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
             />
           </Head>
-          <div className="city_about">
+          <div className="city_about pt_100">
             <div className="city_wrapper">
               <div
                 className="city_background"
