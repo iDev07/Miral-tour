@@ -193,7 +193,7 @@ function Header() {
           <div className="this_wrap">
             <div className="logo">
               <Link href={"/"}>
-                <img src="/img/turbo.png" width={150} alt="ALL4U Tourism" />
+                <img src="/img/new_logo.png" width={200} alt="ALL4U Tourism" />
               </Link>
             </div>
             <div className="links">

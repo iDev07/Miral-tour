@@ -10,8 +10,11 @@ export default function Document() {
         />
         <link rel="icon" href="/miniT.png" />
         <meta name="author" content="ALL4U-TOURISM" />
-        <meta name="keywords" content="tourism, tour, all4u" />
-        <meta property="og:title" content="Turbo Tour" />
+        <meta
+          name="keywords"
+          content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
+        <meta property="og:title" content="Miral Tour" />
         <meta
           property="og:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
@@ -22,11 +25,11 @@ export default function Document() {
         />
         <meta property="og:image:width" content="780" />
         <meta property="og:image:height" content="400" />
-        <meta property="og:site_name" content="Turbo Tour" />
+        <meta property="og:site_name" content="Miral Tour" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Logo" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Turbo Tour" />
+        <meta property="twitter:title" content="Miral Tour" />
         <meta
           property="twitter:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
