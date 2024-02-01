@@ -23,6 +23,11 @@ import CarRentalIcon from "@mui/icons-material/CarRental";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Guides from "../Services/Guides";
+import Hotels from "../Services/Hotels";
+import Homestays from "../Services/Homestays";
+import Cabs from "../Services/Cabs";
+import RentCar from "../Services/RentCar";
+import Activity from "../Services/Activity";
 
 function Header() {
   const { t } = useTranslation();
@@ -116,7 +121,6 @@ function Header() {
     hideModal();
     setMenuOpen(!menuOpen);
   };
-
   const hideModal = () => {
     setIsModalVisible(false);
   };
@@ -138,11 +142,7 @@ function Header() {
           <ApartmentIcon /> Hotels
         </span>
       ),
-      children: (
-        <div className="">
-          <p>Hotels</p>
-        </div>
-      ),
+      children: <Hotels />,
     },
     {
       key: "3",
@@ -151,7 +151,7 @@ function Header() {
           <VillaIcon /> Homestays & Villas
         </span>
       ),
-      children: <div className="guides"></div>,
+      children: <Homestays />,
     },
     {
       key: "4",
@@ -160,7 +160,7 @@ function Header() {
           <DirectionsCarFilledIcon /> Cabs
         </span>
       ),
-      children: <div className="guides"></div>,
+      children: <Cabs />,
     },
     {
       key: "5",
@@ -178,7 +178,7 @@ function Header() {
           <CarRentalIcon /> Rent Car
         </span>
       ),
-      children: <div className="guides"></div>,
+      children: <RentCar />,
     },
     {
       key: "7",
@@ -187,7 +187,7 @@ function Header() {
           <LocalActivityIcon /> Activity
         </span>
       ),
-      children: <div className="guides"></div>,
+      children: <Activity />,
     },
   ];
   return (
