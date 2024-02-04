@@ -61,13 +61,15 @@ function HomePage() {
         <title>Miral Tour - We give emotions!</title>
         <meta
           name="description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
         <link rel="icon" href="miniT.png" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="author" content="Miral Tour" />
         <meta
           name="keywords"
-          content="turbo-tour, Miral Tour, ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour,tourism, travel tour, Miral Tour,tourism Uzbekistan"
+          content="miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan"
         />
         <meta property="og:title" content="Miral Tour" />
         <meta
