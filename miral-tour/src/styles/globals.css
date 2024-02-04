@@ -28,6 +28,11 @@ a:hover {
     padding-top: 0;
   }
 }
+@media only screen and (max-width: 768px) {
+  .pt_70 {
+    padding-top: 0;
+  }
+}
 
 .add_cart {
   transition: 0.5s ease;
