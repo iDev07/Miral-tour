@@ -191,7 +191,7 @@ function Header() {
     },
   ];
   return (
-    <div className={`header  ${scroll}`}>
+    <header className={`header  ${scroll}`}>
       <div className="header_wrapper">
         <Container maxWidth="lg">
           <div className="this_wrap">
@@ -252,16 +252,19 @@ function Header() {
                         <li className="parent_link_place">
                           <Link href={`/visa`}>Uzbekistan visa</Link>
                         </li>
-                        <p className="cities_parent">
-                          Uzbekistan cities <DownOutlined />
-                        </p>
-                        {cities.map((city) => (
-                          <li className="parent_link_place">
+                        <li className="parent_link_place">
+                          <Link href={`/visa`}>Uzbekistan's cities</Link>
+                        </li>
+                        <li className="parent_link_place">
+                          <Link href={`/visa`}>Uzbekistan's destinations</Link>
+                        </li>
+                        {/* {cities.map((city) => (
+                          <li className="parent_link_place" key={city.id}>
                             <Link href={`/cities/${city.seo_url}`}>
                               {city.name_en}
                             </Link>
                           </li>
-                        ))}
+                        ))} */}
                       </div>
                     </ul>
                   </li>
@@ -361,7 +364,7 @@ function Header() {
       </div>
 
       {/* Your modal component */}
-    </div>
+    </header>
   );
 }
 

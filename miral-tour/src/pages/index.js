@@ -64,7 +64,7 @@ function HomePage() {
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
         <link rel="icon" href="miniT.png" />
-        <meta name="author" content="World Miral" />
+        <meta name="author" content="Miral Tour" />
         <meta
           name="keywords"
           content="turbo-tour, Miral Tour, ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour,tourism, travel tour, Miral Tour,tourism Uzbekistan"
@@ -74,10 +74,7 @@ function HomePage() {
           property="og:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
-        <meta
-          property="og:image"
-          content="https://all4u-tour.uz/assets/logo/seo_logo.png"
-        />
+        <meta property="og:image" content="/img/seo_logo.png" />
         <meta property="og:image:width" content="780" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content="Miral Tour" />
@@ -89,14 +86,8 @@ function HomePage() {
           property="twitter:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
-        <meta
-          property="twitter:image"
-          content="https://all4u-tour.uz/assets/logo/seo_logo.png"
-        />
-        <meta
-          name="msapplication-TileImage"
-          content="https://all4u-tour.uz/assets/logo/seo_logo.png"
-        />
+        <meta property="twitter:image" content="/img/seo_logo.png" />
+        <meta name="msapplication-TileImage" content="/img/seo_logo.png" />
       </Head>
       <Background />
       {/* <Process /> */}

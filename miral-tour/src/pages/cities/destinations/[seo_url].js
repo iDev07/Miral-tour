@@ -41,42 +41,22 @@ import axios from "axios";
 //   };
 // };
 
-function City({}) {
+function Destinations({}) {
   const [cities, setCities] = useState([]);
-  const [destinations, setDestinations] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
-      .all([
-        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`),
-        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/destinations`),
-      ])
-      .then(
-        axios.spread((citiesResponse, destinationsResponse) => {
-          setCities(citiesResponse.data);
-          setDestinations(destinationsResponse.data);
-          setLoading(false);
-        })
-      )
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/destinations`)
+      .then((response) => {
+        setCities(response.data);
+        console.log(response.data);
+        setLoading(false);
+      })
       .catch((error) => {
         console.error("An error occurred:", error);
         setLoading(false);
       });
   }, []);
-  // useEffect(() => {
-  //   axios
-  //     .get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`)
-  //     .then((response) => {
-  //       setCities(response.data);
-  //       setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("An error occurred:", error);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
-  console.log(destinations);
   const router = useRouter();
   const { seo_url } = router.query;
   const city = cities.find((city) => city.seo_url === seo_url);
@@ -85,7 +65,7 @@ function City({}) {
   if (!city) {
     return <Loader />;
   }
-  const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/city/${city.main_image}`;
+  const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${city.main_image}`;
 
   return (
     <>
@@ -130,15 +110,6 @@ function City({}) {
             />
           </Head>
           <div className="city_about pt_100">
-            <ul>
-              {destinations.map((destination) => (
-                <li>
-                  <Link href={`/cities/destinations/${destination.seo_url}`}>
-                    {destination.title_en}
-                  </Link>
-                </li>
-              ))}
-            </ul>
             <div className="city_wrapper">
               <div
                 className="city_background"
@@ -149,7 +120,7 @@ function City({}) {
                 <div className="backround_wrapper">
                   <div className="name_city">
                     <h1 className="animate__animated animate__fadeInLeft">
-                      {city.name_en}
+                      {city.title_en}
                     </h1>
                   </div>
                 </div>
@@ -173,4 +144,4 @@ function City({}) {
   );
 }
 
-export default City;
+export default Destinations;

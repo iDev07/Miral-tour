@@ -9,7 +9,7 @@ function BusinessTours() {
         <title>Business Tours</title>
         <meta name="description" content={"Business Tours to Uzbekistan"} />
       </Head>
-      <div className="business_tours pt_100">
+      <div className="business_tours pt_70">
         <div className="business_tours_wrapper">
           <div className="background_section">
             <div className="background_wrapper">

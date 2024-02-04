@@ -1,14 +1,27 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import React from "react";
 import { Container } from "@mui/material";
 import Link from "next/link";
+import axios from "axios";
 function ReliogiosTours() {
+  const [tourpackages, setTourpackages] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`)
+      .then((response) => {
+        setTourpackages(response.data);
+      })
+      .catch((error) => {
+        console.log("Error: ", error);
+      });
+  }, []);
+  console.log(tourpackages);
   return (
     <>
       <Head>
         <title>Religious tours</title>
       </Head>
-      <div className="ReliogiosTours pt_100">
+      <div className="ReliogiosTours pt_70">
         <div className="religious_tours">
           <div className="religious_wrapper">
             <div className="background_section">

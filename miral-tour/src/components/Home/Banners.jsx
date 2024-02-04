@@ -95,7 +95,7 @@ function Banners() {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="small_banners">
+            {/* <div className="small_banners">
               <div className="banner">
                 <div className="banner_wrap">
                   <div className="banner_image">
@@ -114,7 +114,7 @@ function Banners() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>

@@ -27,8 +27,10 @@
         height: 420px;
       }
       background-attachment: fixed;
-      background: rgba(0, 0, 0, 0.137);
-      backdrop-filter: blur(2px);
+      background: rgba(223, 220, 215, 0.205);
+      background: url("../../public/img/module_back-min.png");
+      background-attachment: fixed;
+      backdrop-filter: blur(10px);
       height: 23vh;
       border-radius: 15px;
       .search_module {

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Footer() {
   const { t } = useTranslation();
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer_wrapper">
         <Container maxWidth="lg">
           <div className="this_wrap">
@@ -181,7 +181,7 @@ function Footer() {
           </div>
         </Container>
       </div>
-    </div>
+    </footer>
   );
 }
 

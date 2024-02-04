@@ -346,7 +346,6 @@ function AboutUzbekistan() {
                           spaceBetween={20}
                           slidesPerView={3}
                           slidesPerGroup={1}
-                          loop={true}
                           autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,

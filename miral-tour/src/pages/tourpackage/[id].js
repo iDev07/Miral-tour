@@ -670,7 +670,7 @@ function Tourpackage() {
       return (
         <div className="prices">
           <h2>Prices</h2>
-          <Table columns={columns} dataSource={prices} />
+          <Table columns={columns} dataSource={prices} pagination={false} />
         </div>
       );
     } else {
