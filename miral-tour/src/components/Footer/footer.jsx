@@ -54,7 +54,7 @@ function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <a href="mailto:info@all4u-tour.uz ">
+                    <a href="mailto:miraltouruz@gmail.com">
                       miraltouruz@gmail.com
                     </a>
                   </li>

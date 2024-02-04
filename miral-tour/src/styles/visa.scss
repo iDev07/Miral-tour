@@ -1,7 +1,7 @@
 .Visa {
   .visa_wrapper {
     .background_section {
-      background: url("/img/business_back.png");
+      background: url("/img/module_back-min.png");
       height: 85vh;
       background-size: cover;
       background-repeat: no-repeat;
@@ -28,6 +28,10 @@
         height: 84vh;
         .intro {
           p {
+            @media (max-width: 768px) {
+              max-width: 100%;
+              font-size: 18px;
+            }
             color: #fff;
             font-weight: 400;
             line-height: 1.5em;
@@ -47,6 +51,20 @@
             color: #fff;
             border-radius: 6px;
           }
+        }
+      }
+    }
+    .types_wrapper {
+      .visa_countries {
+        h2 {
+          margin: 30px 0;
+        }
+        p {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+        ul {
+          margin-left: 20px;
         }
       }
     }
