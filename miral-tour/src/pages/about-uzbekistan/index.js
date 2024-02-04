@@ -243,7 +243,7 @@ function AboutUzbekistan() {
       <Head>
         <title>Uzbekistan</title>
       </Head>
-      <div className="uzbekistan pt_100">
+      <div className="uzbekistan pt_70">
         <div className="uzbekistan_wrapper">
           <div className="background_section">
             <div className="this_wrapper">

@@ -130,7 +130,7 @@ function City({}) {
             />
           </Head>
           <div className="city_about pt_100">
-            <ul>
+            {/* <ul>
               {destinations.map((destination) => (
                 <li>
                   <Link href={`/cities/destinations/${destination.seo_url}`}>
@@ -138,7 +138,7 @@ function City({}) {
                   </Link>
                 </li>
               ))}
-            </ul>
+            </ul> */}
             <div className="city_wrapper">
               <div
                 className="city_background"

@@ -144,8 +144,8 @@ function MobileHeader() {
               <button id="openMenuBtn" onClick={toggleHiddenNav}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="52"
-                  height="52"
+                  width="45"
+                  height="45"
                   viewBox="0 0 52 52"
                   fill="none"
                 >

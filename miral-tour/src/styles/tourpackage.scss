@@ -22,6 +22,9 @@
               box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
               text-align: center;
               img {
+                @media (max-width: 768px) {
+                  height: 300px;
+                }
                 width: 100%;
                 border-radius: 5px;
                 background: lightgray -6.856px -495.936px / 100.449% 211.101%
@@ -53,7 +56,7 @@
               }
               .ant-tabs-content-holder {
                 @media (max-width: 768px) {
-                  height: 400px;
+                  height: 300px;
                 }
                 height: 490px;
               }

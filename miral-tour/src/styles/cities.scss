@@ -10,6 +10,10 @@
         height: 90vh;
         background-color: #00000042;
         .name_city {
+          @media (max-width: 768px) {
+            left: 10px;
+            font-size: 20px;
+          }
           position: absolute;
           bottom: 100px;
           left: 85px;
@@ -19,6 +23,9 @@
       }
     }
     .content_boxes {
+      @media (max-width: 768px) {
+        display: block;
+      }
       display: grid;
       grid-template-columns: 80% 20%;
       .left_content_box {
@@ -78,7 +85,11 @@
         }
       }
       iframe {
-        width: 100%;
+        @media (max-width: 768px) {
+          min-height: 350px;
+          height: 350px;
+        }
+        width: 100% !important;
         border-radius: 10px;
         height: 500px;
       }

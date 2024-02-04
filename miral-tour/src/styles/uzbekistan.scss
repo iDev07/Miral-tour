@@ -15,15 +15,22 @@
           align-items: center;
           position: relative;
           .wrap {
-            // position: absolute;
             bottom: 100px;
             color: #fff;
             h1 {
+              @media (max-width: 768px) {
+                max-width: 100%;
+                font-size: 25px;
+              }
               max-width: 60%;
               margin-bottom: 50px;
               font-weight: 800;
             }
             p {
+              @media (max-width: 768px) {
+                max-width: 100%;
+                font-size: 18px;
+              }
               font-size: 20px;
               max-width: 50%;
               font-weight: 500;
@@ -33,6 +40,9 @@
       }
     }
     .all_content {
+      @media (max-width: 768px) {
+        display: block;
+      }
       display: grid;
       grid-template-columns: 74% 26%;
       .wrapper {
@@ -85,6 +95,9 @@
           }
         }
         iframe {
+          @media (max-width: 768px) {
+            height: 300px;
+          }
           margin-top: 20px;
           border-radius: 10px;
         }
