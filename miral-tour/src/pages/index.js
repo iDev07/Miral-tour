@@ -76,7 +76,10 @@ function HomePage() {
           property="og:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
-        <meta property="og:image" content="/img/seo_logo.png" />
+        <meta
+          property="og:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
         <meta property="og:image:width" content="780" />
         <meta property="og:image:height" content="400" />
         <meta property="og:site_name" content="Miral Tour" />
@@ -88,8 +91,14 @@ function HomePage() {
           property="twitter:description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
         />
-        <meta property="twitter:image" content="/img/seo_logo.png" />
-        <meta name="msapplication-TileImage" content="/img/seo_logo.png" />
+        <meta
+          property="twitter:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
+        <meta
+          name="msapplication-TileImage"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
       </Head>
       <Background />
       {/* <Process /> */}
