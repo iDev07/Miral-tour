@@ -63,7 +63,7 @@ function HomePage() {
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
-        <link rel="icon" href="miniT.png" />
+        <link rel="icon" href="/img/mini_logo.png" />
         <meta name="robots" content="index, follow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="author" content="Miral Tour" />
