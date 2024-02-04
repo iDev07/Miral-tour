@@ -23,6 +23,14 @@ function TopHeader() {
           >
             <Link href={"/"}>Become a partner</Link>
           </p>
+          <p
+            style={{
+              textAlign: "right",
+              color: "#0073DB",
+            }}
+          >
+            <Link href={"/contacts"}>Contacts</Link>
+          </p>
         </div>
       </Container>
     </div>

@@ -160,7 +160,7 @@ function MobileHeader() {
             </div>
             <div className="logo">
               <Link href={"/"}>
-                <img src="/img/turbo.png" alt="TURBO TOUR LOGO" />
+                <img src="/img/main_logo.png" alt="MIRAL TOUR LOGO" />
               </Link>
             </div>
             <div className="cart">
@@ -172,8 +172,8 @@ function MobileHeader() {
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="en">EN</option>
-                <option value="ru">Ру</option>
-                <option value="uz">UZ</option>
+                {/* <option value="ru">Ру</option>
+                <option value="uz">UZ</option> */}
               </select>
             </div>
           </div>
@@ -238,7 +238,7 @@ function MobileHeader() {
                 <div className="categories">
                   <DropdownContainer>
                     <DropdownButton onClick={toggleDropdown}>
-                      {t("countries.localCountry")}
+                      Categories
                       <KeyboardArrowDown />
                     </DropdownButton>
                     <DropdownList open={isOpen}>
@@ -260,13 +260,25 @@ function MobileHeader() {
                   </DropdownContainer>
                 </div>
                 <div className="other_links">
-                  <Link href={"/"} onClick={hideHiddenNav}>
-                    {t("menu.bron")}
+                  <Link href={"/religious-tours"} onClick={hideHiddenNav}>
+                    Religious tours
                   </Link>
                 </div>
                 <div className="other_links">
-                  <Link href={"/team"} onClick={hideHiddenNav}>
-                    {t("menu.team")}
+                  <Link href={"/business-tours"} onClick={hideHiddenNav}>
+                    Business Tours
+                  </Link>
+                </div>
+                <div className="other_links">
+                  <Link href={"/"} onClick={hideHiddenNav}>
+                    Make your trip
+                  </Link>
+                </div>
+
+                <div className="other_links">
+                  <Link href={"/about-uzbekistan"} onClick={hideHiddenNav}>
+                    {" "}
+                    About Uzbekistan
                   </Link>
                 </div>
                 <div className="other_links">

@@ -27,11 +27,11 @@ function BackToTop() {
           style={{
             position: "fixed",
             cursor: "pointer",
-            bottom: "20px",
-            width: "50px",
-            height: "50px",
-            left: "20px",
-            transition: "0.5s",
+            bottom: "90px",
+            width: "60px",
+            height: "60px",
+            right: "25px",
+            transition: "1s",
             color: "#fff",
             fontSize: "25px",
             borderRadius: "50%",
@@ -45,7 +45,11 @@ function BackToTop() {
           onClick={scrollUp}
           className="backToTopButton"
         >
-          <KeyboardArrowUpIcon />
+          <KeyboardArrowUpIcon
+            style={{
+              fontSize: "35px",
+            }}
+          />
         </button>
       )}
     </div>

@@ -12,7 +12,7 @@
   .mobheader_wrapper {
     .mobheader_wrap {
       display: grid;
-      grid-template-columns: 20% 60% 10% 10%;
+      grid-template-columns: 15% 65% 10% 10%;
       align-items: center;
       .menu {
         button {
@@ -24,7 +24,7 @@
         display: flex;
         justify-content: center;
         img {
-          width: 150px;
+          width: 180px;
         }
       }
       .cart {

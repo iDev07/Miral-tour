@@ -15,7 +15,7 @@ function Layout({ children }) {
         <Header />
         <MobileHeader />
         {children}
-        <Socials />
+        {/* <Socials /> */}
         <BackToTop />
         <Footer />
       </Providers>

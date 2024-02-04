@@ -1,4 +1,9 @@
 .TopHeader {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  position: relative;
+  z-index: 10000;
   .right_links {
     display: flex;
     align-items: center;

@@ -124,8 +124,8 @@ function HomePage() {
       <Countries_category />
       <Autorent />
       <Video />
-      <Socials />
-      <TawkToScript />
+      {/* <Socials /> */}
+      {/* <TawkToScript /> */}
     </>
   );
 }

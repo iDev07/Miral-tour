@@ -20,6 +20,9 @@
           .swiper_banner_wrap {
             .sw_banner_image {
               img {
+                @media (max-width: 768px) {
+                  object-fit: cover;
+                }
                 z-index: -1;
                 width: 100%;
                 border-radius: 10px;
@@ -35,6 +38,9 @@
               border-radius: 10px;
               position: relative;
               .if_bottom {
+                @media (max-width: 768px) {
+                  padding: 10px 20px;
+                }
                 padding: 10px 50px;
                 position: absolute;
                 bottom: 20px;
@@ -59,6 +65,10 @@
         }
       }
       .small_banners {
+        @media (max-width: 768px) {
+          margin: 20px 0;
+          margin-left: 0;
+        }
         display: block;
         margin-left: 10px;
         .banner {

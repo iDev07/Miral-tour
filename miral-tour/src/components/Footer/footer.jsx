@@ -24,12 +24,22 @@ function Footer() {
                 <h3>{t("footer.usefulLinks")}</h3>
               </div>
               <ul>
+                {/* <li>
+                  <Link href={"/business-tours"}>About Uzbekistan</Link>
+                </li> */}
                 <li>
+                  <Link href={"/business-tours"}>Business Tours</Link>
+                </li>
+                <li>
+                  <Link href={"/religious-tours"}>Religious Tours</Link>
+                </li>
+                {/* <li>
                   <Link href={"/team"}>{t("footer.link1")}</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href={"/cart"}>{t("menu.cart")}</Link>
-                </li>
+                </li> */}
+
                 <li>{/* <Link href={"/"}>Autorent</Link> */}</li>
               </ul>
             </div>

@@ -1,136 +1,48 @@
-.countries_category {
-  .countries_wrapper {
-    .intro {
-      h1 {
-        margin-bottom: 20px;
-        font-weight: 500;
-      }
+.sending_company_banner {
+  .this_wrapper {
+    h1 {
+      margin-top: 80px;
+      margin-bottom: 20px;
     }
-    .this_wrap {
-      .countries_wrap {
-        @media (max-width: 768px) {
-          display: block;
-        }
-        display: grid;
-        grid-template-columns: 37% 63%;
-        .left_section {
-          .second_country {
-            img {
-              height: 545px;
-              object-fit: cover;
-              border-radius: 10px;
-            }
-          }
-          div {
-            position: relative;
+    .background_section {
+      display: block;
+      height: 50vh;
+      background: url("https://png.pngtree.com/background/20230519/original/pngtree-beach-and-the-ocean-are-shown-in-this-image-picture-image_2665806.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-attachment: fixed;
+      border-radius: 16px;
+      .background_wrapper {
+        height: 50vh;
+        background-color: #00000054;
+        padding: 20px;
+        border-radius: 16px;
+        .content {
+          display: flex;
+          align-items: center;
+          height: 50vh;
+          position: relative;
+          p {
+            max-width: 60%;
+            // position: absolute;
+            top: 30%;
+            font-size: 30px;
+            font-weight: 500;
+            color: #fff;
             margin: 20px 0;
-            overflow: hidden;
-            border-radius: 5px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          }
+          a {
+            background-color: #4ee16e;
+            color: #fff;
+            border-radius: 6px;
+            padding: 10px 20px;
+            border: 1px solid #4ee16e;
+            cursor: pointer;
+            font-size: 16px;
             &:hover {
-              h2 {
-                color: #004074;
-              }
-              img {
-                transform: scale(1.05);
-              }
-            }
-          }
-          img {
-            transition: 0.3s ease;
-            width: 100%;
-          }
-          h2 {
-            position: absolute;
-            z-index: 100;
-            transition: 0.3s ease;
-            bottom: 0;
-            background-color: #fff;
-            padding: 5px 10px;
-            border-top-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-          }
-        }
-        .right_section {
-          @media (max-width: 768px) {
-            margin-left: 0;
-          }
-          margin-left: 20px;
-          img {
-            transition: 0.3s ease;
-            width: 100%;
-          }
-          div {
-            overflow: hidden;
-            position: relative;
-            margin: 20px 0;
-            border-radius: 5px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          }
-          h2 {
-            position: absolute;
-            z-index: 100;
-            transition: 0.3s ease;
-            bottom: 0;
-            background-color: #fff;
-            padding: 5px 10px;
-            border-top-right-radius: 5px;
-            border-bottom-left-radius: 5px;
-          }
-          .third_country:hover {
-            img {
-              transform: scale(1.05);
-            }
-            h2 {
-              color: #004074;
-            }
-          }
-          .four_five_countries {
-            @media (max-width: 768px) {
-              display: block;
-            }
-            display: grid;
-            grid-template-columns: 40% 60%;
-            img {
-              width: 100%;
-            }
-            div {
-              position: relative;
-              overflow: hidden;
-              border-radius: 5px;
-              margin: 0;
-              margin-top: 0px;
-              &:hover {
-                img {
-                  transform: scale(1.05);
-                }
-              }
-            }
-            img {
-              transition: 0.3s ease;
-              width: 100%;
-            }
-            h2 {
-              position: absolute;
-              z-index: 100;
-              transition: 0.3s ease;
-              bottom: 0px;
               background-color: #fff;
-              padding: 5px 10px;
-              border-top-right-radius: 5px;
-            }
-            .left_country {
-              @media (max-width: 768px) {
-                margin-right: 0;
-                margin-bottom: 20px;
-              }
-              margin-right: 10px;
-            }
-            .right_country {
-              @media (max-width: 768px) {
-                margin-left: 0;
-              }
-              margin-left: 10px;
+              color: #4ee16e;
             }
           }
         }

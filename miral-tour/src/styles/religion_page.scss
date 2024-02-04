@@ -1,0 +1,144 @@
+.ReliogiosTours {
+  .religious_tours {
+    .religious_wrapper {
+      .background_section {
+        background: url("/img/registan.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 86vh;
+        .this_wrapper {
+          background-color: #00000075;
+          height: 86vh;
+          .content {
+            height: 86vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            .wrap {
+              width: 100%;
+              color: #fff;
+              position: relative;
+              height: 100%;
+              h1 {
+                position: absolute;
+                max-width: 100%;
+                width: 100%;
+                margin-bottom: 50px;
+                font-weight: 800;
+                bottom: 50px;
+              }
+              p {
+                font-size: 20px;
+                max-width: 50%;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .second {
+        background: url("/img/budda_back.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .third {
+        background: url("/img/christian_back.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .tours_wrap {
+        .about {
+          margin: 50px 0;
+          p {
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          .subsection {
+            margin: 20px 0;
+            h2 {
+              margin-bottom: 20px;
+            }
+            .these_wrap {
+              display: grid;
+              grid-template-columns: 49% 50%;
+              color: #fff;
+              .section_wrap {
+                border-radius: 10px;
+                height: 400px;
+                position: relative;
+                overflow: hidden;
+                img {
+                  transition: 0.3s ease;
+                  height: 400px;
+                  object-fit: cover;
+                  position: relative;
+                  z-index: -1;
+                  border-radius: 10px;
+                  width: 100%;
+                }
+                .wrap_content {
+                  .content {
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 20px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    background-color: #0000006b;
+                    height: 400px;
+                    .hidden_texts {
+                      position: absolute;
+                      transition: 0.5s ease;
+                      bottom: -60px;
+                      h3 {
+                        font-weight: 800;
+                      }
+                      p {
+                        overflow: hidden;
+                        transition: 0.5s ease;
+                        visibility: hidden;
+                        opacity: 0;
+                        padding-right: 10px;
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  .content {
+                    backdrop-filter: blur(5px);
+                    .hidden_texts {
+                      overflow: auto;
+                      visibility: visible;
+                      opacity: 1;
+                      bottom: 100px;
+                      p {
+                        overflow: auto;
+                        visibility: visible;
+                        opacity: 1;
+                      }
+                    }
+                  }
+                }
+              }
+              .section_wrap:nth-child(2) {
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+        .content_box {
+          .wrapper_section {
+            display: grid;
+            grid-template-columns: 74% 26%;
+          }
+        }
+      }
+    }
+  }
+}

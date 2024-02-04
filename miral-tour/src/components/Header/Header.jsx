@@ -70,7 +70,7 @@ function Header() {
   }, [router.pathname]); // Listen for changes in the route
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
-      if (window.scrollY < 600) {
+      if (window.scrollY < 300) {
         setScroll("");
       } else {
         setScroll("scrolled");
@@ -226,27 +226,11 @@ function Header() {
                       ))}
                     </ul>
                   </li>
-                  <li className="parent_link about_uz">
-                    <Link href={"/about-uzbekistan"}>
-                      About Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
-                    </Link>
-                    <ul className="hidden_ul_about">
-                      <div className="wrapper">
-                        <li className="parent_link_place">
-                          <Link href={`/visa`}>Uzbekistan visa</Link>
-                        </li>
-                        <p>
-                          Uzbekistan cities <DownOutlined />
-                        </p>
-                        {cities.map((city) => (
-                          <li className="parent_link_place">
-                            <Link href={`/cities/${city.seo_url}`}>
-                              {city.name_en}
-                            </Link>
-                          </li>
-                        ))}
-                      </div>
-                    </ul>
+                  <li className="parent_link">
+                    <Link href={"/religious-tours"}>Religious tours</Link>
+                  </li>
+                  <li className="parent_link">
+                    <Link href={"/business-tours"}>Business tours</Link>
                   </li>
                   <li
                     className={`ownTripBtn ${menuOpen ? "open" : ""}`}
@@ -259,13 +243,32 @@ function Header() {
                       <span className="hamburgerIcon"></span>
                     </div>
                   </li>
+                  <li className="parent_link about_uz">
+                    <Link href={"/about-uzbekistan"}>
+                      About Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
+                    </Link>
+                    <ul className="hidden_ul_about">
+                      <div className="wrapper">
+                        <li className="parent_link_place">
+                          <Link href={`/visa`}>Uzbekistan visa</Link>
+                        </li>
+                        <p className="cities_parent">
+                          Uzbekistan cities <DownOutlined />
+                        </p>
+                        {cities.map((city) => (
+                          <li className="parent_link_place">
+                            <Link href={`/cities/${city.seo_url}`}>
+                              {city.name_en}
+                            </Link>
+                          </li>
+                        ))}
+                      </div>
+                    </ul>
+                  </li>
 
-                  <li className="parent_link">
-                    <Link href={"/business-tours"}>Business tours</Link>
-                  </li>
-                  <li className="parent_link">
+                  {/* <li className="parent_link">
                     <Link href={"/contacts"}>{t("menu.contacts")}</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
