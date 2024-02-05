@@ -6,6 +6,10 @@ import axios from "axios";
 import { Container, Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import {
   Tabs,
   Collapse,
@@ -635,36 +639,64 @@ function Tourpackage() {
           key: "business",
         },
       ];
-      const prices = [
-        {
+      const prices = [];
+      if (tourpackage.prices && tourpackage.prices.length > 0) {
+        prices.push({
           key: "1",
           persons: "1",
-          standart: `${tourpackage.prices[0].p_individual_econom} $`,
-          comfort: `${tourpackage.prices[0].p_individual_standart} $`,
-          business: `${tourpackage.prices[0].p_individual_comfort} $`,
-        },
-        {
+          standart: tourpackage.prices[0].p_individual_econom
+            ? `${tourpackage.prices[0].p_individual_econom} $`
+            : "",
+          comfort: tourpackage.prices[0].p_individual_standart
+            ? `${tourpackage.prices[0].p_individual_standart} $`
+            : "",
+          business: tourpackage.prices[0].p_individual_comfort
+            ? `${tourpackage.prices[0].p_individual_comfort} $`
+            : "",
+        });
+
+        prices.push({
           key: "2",
           persons: "2-3",
-          standart: `${tourpackage.prices[0].p_small_econom} $`,
-          comfort: `${tourpackage.prices[0].p_small_standart} $`,
-          business: `${tourpackage.prices[0].p_small_comfort} $`,
-        },
-        {
+          standart: tourpackage.prices[0].p_small_econom
+            ? `${tourpackage.prices[0].p_small_econom} $`
+            : "",
+          comfort: tourpackage.prices[0].p_small_standart
+            ? `${tourpackage.prices[0].p_small_standart} $`
+            : "",
+          business: tourpackage.prices[0].p_small_comfort
+            ? `${tourpackage.prices[0].p_small_comfort} $`
+            : "",
+        });
+
+        prices.push({
           key: "3",
           persons: "4-7",
-          standart: `${tourpackage.prices[0].p_middle_econom} $`,
-          comfort: `${tourpackage.prices[0].p_middle_standart} $`,
-          business: `${tourpackage.prices[0].p_middle_comfort} $`,
-        },
-        {
+          standart: tourpackage.prices[0].p_middle_econom
+            ? `${tourpackage.prices[0].p_middle_econom} $`
+            : "",
+          comfort: tourpackage.prices[0].p_middle_standart
+            ? `${tourpackage.prices[0].p_middle_standart} $`
+            : "",
+          business: tourpackage.prices[0].p_middle_comfort
+            ? `${tourpackage.prices[0].p_middle_comfort} $`
+            : "",
+        });
+
+        prices.push({
           key: "4",
           persons: "8-15",
-          standart: `${tourpackage.prices[0].p_large_econom} $`,
-          comfort: `${tourpackage.prices[0].p_large_standart} $`,
-          business: `${tourpackage.prices[0].p_large_comfort} $`,
-        },
-      ];
+          standart: tourpackage.prices[0].p_large_econom
+            ? `${tourpackage.prices[0].p_large_econom} $`
+            : "",
+          comfort: tourpackage.prices[0].p_large_standart
+            ? `${tourpackage.prices[0].p_large_standart} $`
+            : "",
+          business: tourpackage.prices[0].p_large_comfort
+            ? `${tourpackage.prices[0].p_large_comfort} $`
+            : "",
+        });
+      }
       return (
         <div className="prices">
           <h2>Prices</h2>
@@ -681,8 +713,7 @@ function Tourpackage() {
     }
   };
   console.log(tourpackage);
-  console.log(tourpackage.prices.p_individual_comfort);
-  console.log(renderTableOrMessage());
+
   return (
     <>
       {loading ? (
@@ -1069,10 +1100,44 @@ function Tourpackage() {
                     <div className="top_class">
                       <div className="tour_images">
                         <div className="inner">
-                          <img
+                          <div className="tour_slider">
+                            {tourpackage.images.length > 0 ? (
+                              <Swiper
+                                navigation={true}
+                                modules={[Navigation]}
+                                className="mySwiper"
+                              >
+                                <SwiperSlide>
+                                  <div className="tour_image">
+                                    <div
+                                      dangerouslySetInnerHTML={{
+                                        __html: tourpackage.video,
+                                      }}
+                                    ></div>
+                                  </div>
+                                </SwiperSlide>
+                                {tourpackage.images.map((image, index) => (
+                                  <SwiperSlide key={index}>
+                                    <div className="tour_image">
+                                      <img
+                                        src={`https://admin.all4u-tour.uz/images/tour/${image.image_url}`}
+                                        alt={`${tourpackage.title_en}`}
+                                      />
+                                    </div>
+                                  </SwiperSlide>
+                                ))}
+                              </Swiper>
+                            ) : (
+                              <img
+                                src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+                                alt={tourpackage.title_uz}
+                              />
+                            )}
+                          </div>
+                          {/* <img
                             src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
                             alt={tourpackage.title_uz}
-                          />
+                          /> */}
                         </div>
                       </div>
                     </div>

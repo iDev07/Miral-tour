@@ -312,7 +312,7 @@ function BusinessTours() {
               </div>
               <div className="contact_form">
                 <form>
-                  <div className="contact_wrapper">
+                  <div className="contact_wrapper" id="contactus">
                     <div className="left_box">
                       <div className="this_wrapper">
                         <div className="input">
