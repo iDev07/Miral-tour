@@ -76,13 +76,13 @@ function Destinations({}) {
             <title>{city.name_en}</title>
             <meta name="description" content={city.seo_description_en} />
             <link rel="icon" href="/miniT.png" />
-            <meta name="author" content="ALL4U-TOURISM" />
+            <meta name="author" content="Miral Tour" />
             <meta name="keywords" content="tourism, tour, all4u" />
             <meta property="og:title" content={city.title_en} />
             <meta property="og:description" content={city.seo_description_en} />
             <meta
               property="og:image"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta property="og:image:width" content="780" />
             <meta property="og:image:height" content="400" />
@@ -97,11 +97,11 @@ function Destinations({}) {
             />
             <meta
               property="twitter:image"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta
               name="msapplication-TileImage"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta
               name="google-site-verification"
