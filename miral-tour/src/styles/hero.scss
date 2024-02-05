@@ -300,6 +300,21 @@
     @media (max-width: 768px) {
       height: 500px;
       width: 100%;
+      scrollbar-color: #0073db #0073db; /* For Firefox */
+
+      /* For WebKit browsers (Chrome, Safari) */
+      &::-webkit-scrollbar {
+        width: 5px; /* Set the width of the scrollbar */
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #0073db; /* Color of the thumb */
+        border-radius: 5px; /* Roundness of the thumb */
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: lightgrey; /* Color of the track */
+      }
     }
     background-color: #fff;
     border-radius: 10px;
