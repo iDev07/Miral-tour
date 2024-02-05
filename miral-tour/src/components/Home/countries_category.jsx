@@ -8,7 +8,7 @@ function Countries_category() {
     <div className="sending_company_banner">
       <div className="this_wrapper">
         <Container>
-          <h1 className="title">Explore Beyond Borders with Turbo Tour</h1>
+          <h1 className="title">Explore Beyond Borders with Miral Tour</h1>
           <div className="background_section">
             <div className="background_wrapper">
               <div className="content">
