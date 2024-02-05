@@ -232,7 +232,7 @@ function Header() {
                   <li className="parent_link">
                     <Link href={"/business-tours"}>Business tours</Link>
                   </li>
-                  <li
+                  {/* <li
                     className={`ownTripBtn ${menuOpen ? "open" : ""}`}
                     onClick={handleToggle}
                   >
@@ -242,7 +242,7 @@ function Header() {
                       <span className="hamburgerIcon middle"></span>
                       <span className="hamburgerIcon"></span>
                     </div>
-                  </li>
+                  </li> */}
                   <li className="parent_link about_uz">
                     <Link href={"/about-uzbekistan"}>
                       About Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
@@ -250,13 +250,13 @@ function Header() {
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
-                          <Link href={`/visa`}>Uzbekistan visa</Link>
+                          <Link href={`/visa`}>Uzbekistan Visa</Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/visa`}>Uzbekistan's cities</Link>
+                          <Link href={`/cities`}>Uzbekistan Cities</Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/visa`}>Uzbekistan's destinations</Link>
+                          <Link href={`/destinations`}>Destinations</Link>
                         </li>
                         {/* {cities.map((city) => (
                           <li className="parent_link_place" key={city.id}>
@@ -268,10 +268,9 @@ function Header() {
                       </div>
                     </ul>
                   </li>
-
-                  {/* <li className="parent_link">
+                  <li className="parent_link">
                     <Link href={"/contacts"}>{t("menu.contacts")}</Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>

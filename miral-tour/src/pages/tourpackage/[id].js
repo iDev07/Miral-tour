@@ -671,6 +671,11 @@ function Tourpackage() {
         <div className="prices">
           <h2>Prices</h2>
           <Table columns={columns} dataSource={prices} pagination={false} />
+          <p>*Prices are only for tourists</p>
+          <p>
+            *Travel companies, please contact by mail: <br />{" "}
+            <a href="mailto:miraltouruz@gmail.com">miraltouruz@gmail.com</a>
+          </p>
         </div>
       );
     } else {

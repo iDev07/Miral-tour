@@ -42,13 +42,13 @@ import axios from "axios";
 // };
 
 function Destinations({}) {
-  const [cities, setCities] = useState([]);
+  const [destinations, setDestinations] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
       .get(`${process.env.NEXT_PUBLIC_BASE_URL}/destinations`)
       .then((response) => {
-        setCities(response.data);
+        setDestinations(response.data);
         console.log(response.data);
         setLoading(false);
       })
@@ -59,13 +59,16 @@ function Destinations({}) {
   }, []);
   const router = useRouter();
   const { seo_url } = router.query;
-  const city = cities.find((city) => city.seo_url === seo_url);
+  const destination = destinations.find(
+    (destination) => destination.seo_url === seo_url
+  );
   console.log(router.query);
-  console.log(city);
-  if (!city) {
+  console.log(destination);
+  if (!destination) {
     return <Loader />;
   }
-  const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${city.main_image}`;
+  const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`;
+
   return (
     <>
       {loading ? (
@@ -73,42 +76,51 @@ function Destinations({}) {
       ) : (
         <>
           <Head>
-            <title>{city.name_en}</title>
-            <meta name="description" content={city.seo_description_en} />
-            <link rel="icon" href="/miniT.png" />
-            <meta name="author" content="ALL4U-TOURISM" />
-            <meta name="keywords" content="tourism, tour, all4u" />
-            <meta property="og:title" content={city.title_en} />
-            <meta property="og:description" content={city.seo_description_en} />
+            <title>{destination.title_en}</title>
+            <meta
+              name="description"
+              content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+            />
+            <link rel="icon" href="/img/mini_logo.png" />
+            <meta name="author" content="Miral Tour" />
+            <meta
+              name="keywords"
+              content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+            />
+            <meta property="og:title" content="Miral Tour" />
+            <meta
+              property="og:description"
+              content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+            />
             <meta
               property="og:image"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta property="og:image:width" content="780" />
             <meta property="og:image:height" content="400" />
-            <meta property="og:site_name" content={city.title_en} />
+            <meta property="og:site_name" content="Miral Tour" />
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image:alt" content="Logo" />
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:title" content={city.title_en} />
+            <meta property="twitter:title" content="Miral Tour" />
             <meta
               property="twitter:description"
-              content={city.seo_description_en}
+              content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
             />
             <meta
               property="twitter:image"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta
               name="msapplication-TileImage"
-              content="https://all4u-tour.uz/assets/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
             />
             <meta
               name="google-site-verification"
               content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
             />
           </Head>
-          <div className="city_about pt_100">
+          <div className="city_about pt_70">
             <div className="city_wrapper">
               <div
                 className="city_background"
@@ -119,7 +131,7 @@ function Destinations({}) {
                 <div className="backround_wrapper">
                   <div className="name_city">
                     <h1 className="animate__animated animate__fadeInLeft">
-                      {city.title_en}
+                      {destination.title_en}
                     </h1>
                   </div>
                 </div>
@@ -129,7 +141,9 @@ function Destinations({}) {
                   <div className="left_content_box">
                     <div
                       className="rich_editor"
-                      dangerouslySetInnerHTML={{ __html: city.content_en }}
+                      dangerouslySetInnerHTML={{
+                        __html: destination.content_en,
+                      }}
                     ></div>
                   </div>
                   <div className="right_sidebar"></div>

@@ -22,7 +22,6 @@ function AboutUzbekistan() {
         console.error("An error occurred:", error);
       });
   }, []);
-  console.log(cities);
   const onChange = (key) => {
     console.log(key);
   };
@@ -208,36 +207,7 @@ function AboutUzbekistan() {
       ),
     },
   ];
-  const fourthSection = [
-    {
-      key: 1,
-      label: "Traditional Clothing",
-      children: (
-        <p>
-          Uzbekistan's rich cultural diversity is eloquently expressed through
-          its traditional clothing. Men often don the distinctive Uzbek chapans,
-          while women grace the streets in the vibrant and intricately
-          embroidered dresses known as Atlas and Adras. These garments are not
-          just attire; they are a living testament to the artistic craftsmanship
-          passed down through generations.
-        </p>
-      ),
-    },
-    {
-      key: 2,
-      label: "Music and Dance",
-      children: (
-        <p>
-          The soul-stirring melodies of traditional Uzbek music reverberate
-          through the air during celebrations and gatherings. Experience the
-          rhythmic movements of traditional dances like "Lazgi" and "Beshiktoi"
-          that showcase the grace and storytelling embedded in Uzbek culture.
-          These artistic expressions are more than performances; they are a
-          celebration of life and community.
-        </p>
-      ),
-    },
-  ];
+
   return (
     <>
       <Head>
