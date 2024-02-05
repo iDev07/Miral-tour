@@ -285,7 +285,8 @@ function Header() {
                     placeholder={t("menu.search")}
                   />
                   <div className="search_icon">
-                    <button type="submit">
+                    {/* <button type="submit">
+                      {""}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -301,7 +302,7 @@ function Header() {
                           stroke-linejoin="round"
                         />
                       </svg>
-                    </button>
+                    </button> */}
                   </div>
                 </form>
                 {searchQuery && (

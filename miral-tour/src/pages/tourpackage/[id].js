@@ -739,14 +739,6 @@ function Tourpackage() {
               name="google-site-verification"
               content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
             />
-            <script
-              type="text/javascript"
-              src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=05c7dd7c-4ae8-4cea-993b-4ee29134f739"
-              async
-            ></script>
-            <noscript>
-              Please enable javascript in your browser to book
-            </noscript>
           </Head>
           <Modal
             title={
