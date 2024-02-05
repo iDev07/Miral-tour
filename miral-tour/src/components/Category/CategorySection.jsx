@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { TourPackageCard } from "../TourPackage/TourPackageCard";
+import "animate.css";
 export const CategorySection = ({ category, id, tourpackages }) => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
@@ -11,8 +12,8 @@ export const CategorySection = ({ category, id, tourpackages }) => {
   );
   // console.log(category);
   return (
-    <div className="religious_category category">
-      <div className="religious_wrapper">
+    <div className="religious_category  category">
+      <div className="religious_wrapper ">
         <Container maxWidth="lg">
           <div className="this_wrap">
             <div className="intro">

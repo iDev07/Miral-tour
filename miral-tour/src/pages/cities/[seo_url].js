@@ -129,7 +129,7 @@ function City({}) {
               content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
             />
           </Head>
-          <div className="city_about pt_100">
+          <div className="city_about pt_70">
             {/* <ul>
               {destinations.map((destination) => (
                 <li>
@@ -148,14 +148,14 @@ function City({}) {
               >
                 <div className="backround_wrapper">
                   <div className="name_city">
-                    <h1 className="animate__animated animate__fadeInLeft">
+                    <h1 className="animate__animated animate__fadeInUp">
                       {city.name_en}
                     </h1>
                   </div>
                 </div>
               </div>
               <Container>
-                <div className="content_boxes">
+                <div className="content_boxes  ">
                   <div className="left_content_box">
                     <div
                       className="rich_editor"

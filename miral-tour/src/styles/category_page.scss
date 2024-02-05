@@ -61,22 +61,41 @@
               .tour_name {
                 text-align: center;
                 padding: 10px;
-                &:hover {
-                  color: #004074;
-                }
+                padding-bottom: 0;
                 h2 {
                   font-size: 18px;
                 }
+                &:hover {
+                  color: #004074;
+                }
+              }
+              .bottom {
+                display: flex;
               }
               .tour_details {
                 padding: 10px;
-                display: flex;
+                width: 100%;
+                padding-top: 0;
                 p {
-                  font-size: 16px;
+                  font-size: 18px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
                   &:nth-child(2) {
                     margin-left: auto;
                   }
+                  svg {
+                    margin-right: 5px;
+                  }
                 }
+                .from {
+                }
+              }
+              .tour_link {
+                display: block;
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
               }
             }
           }

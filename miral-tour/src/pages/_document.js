@@ -91,11 +91,6 @@ export default function Document() {
           gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
         `}
         </Script>
-        <script
-          type="text/javascript"
-          src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=05c7dd7c-4ae8-4cea-993b-4ee29134f739"
-          async
-        ></script>
       </Head>
       <body>
         <Main />

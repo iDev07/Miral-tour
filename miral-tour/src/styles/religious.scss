@@ -55,26 +55,27 @@
                   border-top-right-radius: 10px;
                   border-top-left-radius: 10px;
                   border-radius: 5px;
-                  height: 330px;
+                  height: 300px;
                   object-fit: cover;
                 }
-                .add_cart {
-                  position: absolute;
-                  bottom: 0;
-                  right: 10px;
-                  background-color: #fff;
-                  border: none;
-                  padding: 10px;
-                  border-top-right-radius: 5px;
-                  border-top-left-radius: 5px;
-                  &:hover {
-                    cursor: pointer;
-                  }
-                }
+                // .add_cart {
+                //   position: absolute;
+                //   bottom: 0;
+                //   right: 10px;
+                //   background-color: #fff;
+                //   border: none;
+                //   padding: 10px;
+                //   border-top-right-radius: 5px;
+                //   border-top-left-radius: 5px;
+                //   &:hover {
+                //     cursor: pointer;
+                //   }
+                // }
               }
               .tour_name {
                 text-align: center;
                 padding: 10px;
+                padding-bottom: 0;
                 h2 {
                   font-size: 18px;
                 }
@@ -82,15 +83,33 @@
                   color: #004074;
                 }
               }
+              .bottom {
+                display: flex;
+              }
               .tour_details {
                 padding: 10px;
-                display: flex;
+                width: 100%;
+                padding-top: 0;
                 p {
                   font-size: 18px;
+                  font-weight: 600;
+                  display: flex;
+                  align-items: center;
                   &:nth-child(2) {
                     margin-left: auto;
                   }
+                  svg {
+                    margin-right: 5px;
+                  }
                 }
+                .from {
+                }
+              }
+              .tour_link {
+                display: block;
+                margin-top: 10px;
+                width: 100%;
+                text-align: center;
               }
             }
           }

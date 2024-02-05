@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css";
+import "animate.css";
 function Banners() {
   const router = useRouter();
   const { id } = router.query;
@@ -36,7 +37,9 @@ function Banners() {
                       <div className="banner_content">
                         <div className="if_bottom">
                           <div className="title">
-                            <h2>Samarkand - Crossroads of cultures</h2>
+                            <h2 className="animate_animated animate__backInUp">
+                              Samarkand - Crossroads of cultures
+                            </h2>
                           </div>
                           <div className="read_more">
                             <Link href="/cities/samarkand">Read more</Link>
