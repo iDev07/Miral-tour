@@ -19,6 +19,48 @@ function Cart() {
     <>
       <Head>
         <title>{t("cartPage.title")}</title>
+        <meta
+          name="description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+        />
+        <link rel="icon" href="/img/mini_logo.png" />
+        <meta name="author" content="Miral Tour" />
+        <meta
+          name="keywords"
+          content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
+        <meta property="og:title" content="Miral Tour" />
+        <meta
+          property="og:description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+        />
+        <meta
+          property="og:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
+        <meta property="og:image:width" content="780" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:site_name" content="Miral Tour" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Logo" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Miral Tour" />
+        <meta
+          property="twitter:description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+        />
+        <meta
+          property="twitter:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
+        <meta
+          name="msapplication-TileImage"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+        />
+        <meta
+          name="google-site-verification"
+          content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
+        />
       </Head>
       <div className="cart pt_100">
         <div className="wrapper_cart">
