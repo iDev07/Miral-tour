@@ -23,30 +23,30 @@ function Banners() {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <div className="swiper_banner">
-                    <div className="swiper_banner_wrap">
-                      <Link href={""}>
+                  <Link href={"/tourpackage/1"}>
+                    <div className="swiper_banner">
+                      <div className="swiper_banner_wrap">
                         <div className="sw_banner_image">
                           <img
-                            src="/img/banner_main.png"
-                            alt="Turbotour - Banner Samarqand"
+                            src="/img/banner1.jpg"
+                            alt="Miral Tour - Banner "
                           />
                         </div>
-                      </Link>
-                      <div className="banner_content">
-                        <div className="if_bottom">
-                          <div className="title">
-                            <h2 className="animate_animated animate__backInUp">
-                              Samarkand - Crossroads of cultures
-                            </h2>
+                        {/* <div className="banner_content">
+                          <div className="if_bottom">
+                            <div className="title">
+                              <h2 className="animate_animated animate__backInUp">
+                                Samarkand - Crossroads of cultures
+                              </h2>
+                            </div>
+                            <div className="read_more">
+                              <Link href="/cities/samarkand">Read more</Link>
+                            </div>
                           </div>
-                          <div className="read_more">
-                            <Link href="/cities/samarkand">Read more</Link>
-                          </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="swiper_banner">
@@ -55,7 +55,7 @@ function Banners() {
                         <div className="sw_banner_image">
                           <img
                             src="https://admin.all4u-tour.uz/images/tour/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D1%82%D1%83%D1%80%20%D0%B2%20%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD.jpg"
-                            alt="Turbotour - Banner Samarqand"
+                            alt="Miral Tour - Banner "
                           />
                         </div>
                       </Link>
@@ -79,7 +79,7 @@ function Banners() {
                       <div className="sw_banner_image">
                         <img
                           src="https://admin.all4u-tour.uz/images/tour/%D0%A2%D1%83%D1%80%20%D0%B2%20%D0%A4%D0%B5%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D1%83%D1%8E%20%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D1%83.jpeg"
-                          alt="Turbotour - Banner Samarqand"
+                          alt="Miral Tour - Banner "
                         />
                       </div>
                       <div className="banner_content">
@@ -102,7 +102,7 @@ function Banners() {
                 <div className="banner_wrap">
                   <div className="banner_image">
                     <Link href="/tourpackage/53">
-                      <img src="/img/tour53.jpg" alt="Turbotour" />
+                      <img src="/img/tour53.jpg" alt="Miral Tour" />
                     </Link>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ function Banners() {
                 <div className="banner_wrap">
                   <div className="banner_image">
                     <a href="">
-                      <img src="img/samarqand.webp" alt="Turbotour" />
+                      <img src="img/.webp" alt="Miral Tour" />
                     </a>
                   </div>
                 </div>
