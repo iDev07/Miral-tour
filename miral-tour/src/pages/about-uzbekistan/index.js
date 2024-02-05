@@ -225,9 +225,9 @@ function AboutUzbekistan() {
                       Rich Historical Tapestry
                     </h1>
                     <p>
-                      Uzbekistan Unveiled – A Tapestry of Timeless Traditions
-                      and Enchanting History. Immerse Yourself in the Blend of
-                      Old-world Charm and Modern Marvels.
+                      Discover the heart of the Silk Road, enjoy Uzbek cuisine,
+                      embrace hospitable people and experience an unforgettable
+                      journey like you have never experienced before.
                     </p>
                   </div>
                 </div>

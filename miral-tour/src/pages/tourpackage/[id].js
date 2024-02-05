@@ -646,23 +646,23 @@ function Tourpackage() {
         {
           key: "2",
           persons: "2-3",
-          standart: `${tourpackage.prices.p_small_econom} $`,
-          comfort: `${tourpackage.prices.p_small_standart} $`,
-          business: `${tourpackage.prices.p_small_comfort} $`,
+          standart: `${tourpackage.prices[0].p_small_econom} $`,
+          comfort: `${tourpackage.prices[0].p_small_standart} $`,
+          business: `${tourpackage.prices[0].p_small_comfort} $`,
         },
         {
           key: "3",
           persons: "4-7",
-          standart: `${tourpackage.prices.p_middle_econom} $`,
-          comfort: `${tourpackage.prices.p_middle_standart} $`,
-          business: `${tourpackage.prices.p_middle_comfort} $`,
+          standart: `${tourpackage.prices[0].p_middle_econom} $`,
+          comfort: `${tourpackage.prices[0].p_middle_standart} $`,
+          business: `${tourpackage.prices[0].p_middle_comfort} $`,
         },
         {
           key: "4",
           persons: "8-15",
-          standart: `${tourpackage.prices.p_large_econom} $`,
-          comfort: `${tourpackage.prices.p_large_standart} $`,
-          business: `${tourpackage.prices.p_large_comfort} $`,
+          standart: `${tourpackage.prices[0].p_large_econom} $`,
+          comfort: `${tourpackage.prices[0].p_large_standart} $`,
+          business: `${tourpackage.prices[0].p_large_comfort} $`,
         },
       ];
       return (
