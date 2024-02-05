@@ -2,12 +2,16 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Button, Container, Modal, Box } from "@mui/material";
 import Link from "next/link";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Business_category() {
   const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  AOS.init({
+    duration: 1500,
+  });
   return (
     <div className="business_category category">
       <Modal
@@ -91,11 +95,15 @@ function Business_category() {
           </div>
           <div className="this_wrap">
             <div className="left_box">
-              <img src="/img/business.png" alt="Business tourism" />
+              <img
+                src="/img/business.png"
+                alt="Business tourism"
+                data-aos="fade-right"
+              />
             </div>
             <div className="right_box">
               <div>
-                <h2>{t("business.heading")}</h2>
+                <h2 data-aos="fade-left">{t("business.heading")}</h2>
                 <Link href={"/business-tours"}>{t("business.formBtn")}</Link>
               </div>
             </div>

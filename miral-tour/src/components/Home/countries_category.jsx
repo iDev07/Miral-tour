@@ -2,14 +2,19 @@ import { Container } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Countries_category() {
   const { t } = useTranslation();
+  AOS.init({
+    duration: 1500,
+  });
   return (
     <div className="sending_company_banner">
       <div className="this_wrapper">
         <Container>
           <h1 className="title">Explore Beyond Borders with Miral Tour</h1>
-          <div className="background_section">
+          <div className="background_section" data-aos="fade-up">
             <div className="background_wrapper">
               <div className="content">
                 <div className="wrap">

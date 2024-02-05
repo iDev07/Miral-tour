@@ -18,6 +18,7 @@
     "@vercel/speed-insights": "^1.0.8",
     "animate.css": "^4.1.1",
     "antd": "^5.13.2",
+    "aos": "^2.3.4",
     "axios": "^1.6.5",
     "dayjs": "^1.11.10",
     "eslint": "8.56.0",
