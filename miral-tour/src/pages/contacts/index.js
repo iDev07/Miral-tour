@@ -28,7 +28,7 @@ function Contacts() {
                     <div className="num_image">
                       <img
                         src="/img/contact_number.png"
-                        alt="ALL4U TOURISM Contacts"
+                        alt="Miral Tour Contacts"
                       />
                     </div>
                   </div>
@@ -36,15 +36,15 @@ function Contacts() {
                     <hr />
                     <div className="email">
                       <h3>E-mail</h3>
-                      <a href="mailto: info@all4u-tour.uz">
-                        info@turbo-tour.uz
+                      <a href="mailto: miraltouruz@gmail.com">
+                        miraltouruz@gmail.com
                       </a>
                     </div>
                     <div className="social_links">
                       <h3>{t("footer.socialNetworks")}</h3>
                       <div className="links_wrap">
                         <div className="col">
-                          <a href="htpps://instagram.com/turbotour.uz/">
+                          <a href="https://instagram.com/miraltour_uz/">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="52"
@@ -63,7 +63,7 @@ function Contacts() {
                         </div>
 
                         <div className="col">
-                          <a href="https://t.me/turbotouruz">
+                          <a href="https://t.me/miraltouruz">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="53"
@@ -93,7 +93,7 @@ function Contacts() {
                           </a>
                         </div>
                         <div className="col">
-                          <a href="https://www.facebook.com/All4U.Tourism">
+                          <a href="https://www.facebook.com/profile.php?id=61555978497658&mibextid=ZbWKwL">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="53"

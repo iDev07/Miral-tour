@@ -16,7 +16,7 @@ const DropdownContainer = styled.div`
 `;
 
 const DropdownButton = styled.button`
-  margin: 10px 0;
+  margin-top: 10px;
   background-color: #fff;
   border: none;
   cursor: pointer;

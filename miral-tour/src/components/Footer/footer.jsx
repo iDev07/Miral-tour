@@ -87,7 +87,7 @@ function Footer() {
               </div>
               <ul>
                 <li>
-                  <a href="https://t.me/turbotouruz">
+                  <a href="https://t.me/miraltouruz">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="45"
@@ -110,7 +110,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/turbotour.uz/">
+                  <a href="https://www.instagram.com/miraltour_uz">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="45"
@@ -147,7 +147,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/All4U.Tourism">
+                  <a href="https://www.facebook.com/profile.php?id=61555978497658&mibextid=ZbWKwL">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="45"
