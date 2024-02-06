@@ -98,7 +98,7 @@ function Business_category() {
               <img
                 src="/img/business.png"
                 alt="Business tourism"
-                data-aos="fade-right"
+                //
               />
             </div>
             <div className="right_box">
