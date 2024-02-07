@@ -18,7 +18,7 @@ function Countries_category() {
             <div className="background_wrapper">
               <div className="content">
                 <div className="wrap">
-                  <p data-aos="fade-up">
+                  <p>
                     Embark on global adventures with our international travel
                     services. Discover new horizons and create unforgettable
                     memories. Start your journey today!

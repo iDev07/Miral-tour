@@ -103,7 +103,7 @@ function Business_category() {
             </div>
             <div className="right_box">
               <div>
-                <h2 data-aos="fade-left">{t("business.heading")}</h2>
+                <h2>{t("business.heading")}</h2>
                 <Link href={"/business-tours"}>{t("business.formBtn")}</Link>
               </div>
             </div>
