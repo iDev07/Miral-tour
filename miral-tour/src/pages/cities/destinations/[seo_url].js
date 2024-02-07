@@ -82,7 +82,7 @@ function Destinations({}) {
             <meta property="og:description" content={city.seo_description_en} />
             <meta
               property="og:image"
-              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
             />
             <meta property="og:image:width" content="780" />
             <meta property="og:image:height" content="400" />
@@ -97,11 +97,11 @@ function Destinations({}) {
             />
             <meta
               property="twitter:image"
-              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
             />
             <meta
               name="msapplication-TileImage"
-              content="https://admin.all4u-tour.uz/images/logo/seo_logo.png"
+              content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
             />
             <meta
               name="google-site-verification"
