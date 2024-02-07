@@ -3,18 +3,28 @@ import Head from "next/head";
 import { Container } from "@mui/material";
 import Link from "next/link";
 import axios from "axios";
+import Loader from "@/components/Loader";
+import { TourPackageCard } from "@/components/TourPackage/TourPackageCard";
+
 function ReliogiosTours() {
   const [tourpackages, setTourpackages] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
       .get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`)
       .then((response) => {
         setTourpackages(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.log("Error: ", error);
+        setLoading(false);
       });
   }, []);
+  const religousTours = tourpackages.filter(
+    (religious) => religious.category_id === 6
+  );
+  console.log(religousTours);
   console.log(tourpackages);
   return (
     <>
@@ -351,7 +361,16 @@ function ReliogiosTours() {
                   </div>
                 </Container>
               </div>
-              <div className="tours_box"></div>
+              <div className="tours_box">
+                <div className="intro">
+                  <h2>Religious tour packages</h2>
+                </div>
+                {religousTours &&
+                  religousTours.length &&
+                  religousTours.map((tourpackage) => (
+                    <TourPackageCard tourpackage={tourpackage} />
+                  ))}
+              </div>
             </div>
           </div>
         </div>
