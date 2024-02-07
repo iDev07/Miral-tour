@@ -73,11 +73,12 @@ export default function Document() {
           data-cfasync="false"
           data-wpfc-render="false"
         />
-        <script
+        {/* <script
           async
           src="https://tp.media/content?currency=usd&trs=283545&shmarker=497204.%2Favia&show_hotels=true&powered_by=true&locale=en&searchUrl=turbo-tour.uz%2Fflights&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100"
           charset="utf-8"
-        ></script>
+        ></script> */}
+
         <Script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

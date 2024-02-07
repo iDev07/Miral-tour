@@ -186,20 +186,22 @@ function ReliogiosTours() {
                     </div>
                     <div className="tours"></div>
                   </div>
-                </Container>
-                <div className="background_section second">
-                  <div className="this_wrapper">
-                    <Container>
-                      <div className="content">
-                        <div className="wrap">
-                          <h1>
-                            Tranquil Beauty of Buddhist Monuments in Uzbekistan.
-                          </h1>
+                  <div className="background_section second">
+                    <div className="this_wrapper">
+                      <Container>
+                        <div className="content">
+                          <div className="wrap">
+                            <h1>
+                              Tranquil Beauty of Buddhist Monuments in
+                              Uzbekistan.
+                            </h1>
+                          </div>
                         </div>
-                      </div>
-                    </Container>
+                      </Container>
+                    </div>
                   </div>
-                </div>
+                </Container>
+
                 <Container>
                   {" "}
                   <div className="wrapper_section">
@@ -263,18 +265,18 @@ function ReliogiosTours() {
                     </div>
                   </div>
                 </Container>
-                <div className="background_section third">
-                  <div className="this_wrapper">
-                    <Container>
-                      <div className="content">
-                        <div className="wrap">
-                          <h1>Christian Chronicles of Uzbekistan</h1>
-                        </div>
-                      </div>
-                    </Container>
-                  </div>
-                </div>
                 <Container>
+                  <div className="background_section third">
+                    <div className="this_wrapper">
+                      <Container>
+                        <div className="content">
+                          <div className="wrap">
+                            <h1>Christian Chronicles of Uzbekistan</h1>
+                          </div>
+                        </div>
+                      </Container>
+                    </div>
+                  </div>
                   <div className="wrapper_section">
                     <div className="about">
                       <p>
