@@ -50,7 +50,7 @@ function Footer() {
               <div className="contacts_content">
                 <ul>
                   <li>
-                    <a href="tel: +998 71 230 38 83">+998 71 230 38 83</a>
+                    <a href="tel: +998 71 230 33 88">+998 71 230 33 88</a>
                   </li>
                   <li>
                     {" "}

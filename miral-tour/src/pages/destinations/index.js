@@ -17,7 +17,7 @@ function DestinationsMain() {
       <ul>
         {destinations.map((destination) => (
           <Link href={`/destinations/${destination.seo_url}`}>
-            {destination.title_en}
+            <li> {destination.title_en}</li>
           </Link>
         ))}
       </ul>

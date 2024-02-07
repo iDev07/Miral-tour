@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import axios from "axios";
+import Head from "next/head";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
@@ -16,19 +17,25 @@ function Cities() {
       });
   }, []);
   return (
-    <Container>
-      <div className="list_cities pt_100">
-        <ul>
-          {cities &&
-            cities.length &&
-            cities.map((city) => (
-              <li>
-                <Link href={`/cities/${city.seo_url}`}>{city.name_en}</Link>
-              </li>
-            ))}
-        </ul>
-      </div>
-    </Container>
+    <>
+      <Head>
+        <title>Uzbekistan cities and regions Miral Tour Uzbekistan</title>
+      </Head>
+      <Container>
+        <div className="all_places pt_100">
+          <div className="all_places_wrapper">
+            <div className="intro">
+              <h1>Uzbekistan cities and regions</h1>
+            </div>
+            <div className="places">
+              <div className="place">
+                <div className="place_wrap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </>
   );
 }
 
