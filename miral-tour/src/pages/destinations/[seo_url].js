@@ -68,7 +68,7 @@ function Destinations({}) {
     return <Loader />;
   }
   const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`;
-
+  console.log(destination);
   return (
     <>
       {loading ? (

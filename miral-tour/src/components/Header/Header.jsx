@@ -208,7 +208,7 @@ function Header() {
               <div className="links_wrap">
                 <ul className="parent_links">
                   <li className="parent_link">
-                    <Link href={"/"}>
+                    <Link href={"/tourpackages"}>
                       {t("menu.catalog")}
                       <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
