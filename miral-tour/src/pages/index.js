@@ -16,6 +16,7 @@ import TawkToScript from "@/components/TawkScript/TawkScript";
 import Socials from "@/components/Socials/Socials";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Process from "@/components/Proccess/Process";
+import AboutUsVideo from "@/components/Home/AboutUsVideo";
 function HomePage() {
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
@@ -124,6 +125,7 @@ function HomePage() {
       )}
       <Business_category />
       <Countries_category />
+      <AboutUsVideo />
       <Autorent />
       <Video />
       {/* <Socials /> */}
