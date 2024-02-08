@@ -19,10 +19,10 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Process from "@/components/Proccess/Process";
 import AboutUsVideo from "@/components/Home/AboutUsVideo";
 function HomePage() {
-  const router = useRouter();
-  useEffect(() => {
-    router.replace("/?v=1", undefined, { shallow: true });
-  }, []);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   router.replace("/?v=1", undefined, { shallow: true });
+  // }, []);
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [tourpackages, setTourPackages] = useState([]);
