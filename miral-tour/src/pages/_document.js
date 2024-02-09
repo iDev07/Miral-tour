@@ -44,7 +44,7 @@ export default function Document() {
         />
         <meta
           name="google-site-verification"
-          content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
+          content="U62xsTImQNPhHCBZzXFmwO3Zip8rZCGxjg2O-4xRNXI"
         />
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         {/* <Script src="code.jivo.ru/widget/VMwwxd82QV"></Script> */}
