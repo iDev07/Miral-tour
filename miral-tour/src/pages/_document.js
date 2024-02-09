@@ -46,25 +46,45 @@ export default function Document() {
           name="google-site-verification"
           content="U62xsTImQNPhHCBZzXFmwO3Zip8rZCGxjg2O-4xRNXI"
         />
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        {/* <Script src="code.jivo.ru/widget/VMwwxd82QV"></Script> */}
-        {/* <script src="//code.jivo.ru/widget/VMwwxd82QV" async></script> */}
+        {/* <!-- Google Tag Manager --> */}
+        {/* <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K2D9KZS6');</script> */}
+        {/* <!-- End Google Tag Manager --> */}
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `
-          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-          (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/65a9a7ce0ff6374032c20503/1hkfbf0g4';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-          })();
-        `,
+            (function(w,d,s,l,i){w[l]=w[l]||[];
+              w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);})
+              (window,document,'script','dataLayer','GTM-K2D9KZS6');`,
           }}
         />
+        {/* <!--Start of Tawk.to Script--> */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/65a9a7ce0ff6374032c20503/1hkfbf0g4';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+              })();
+              `,
+          }}
+        ></script>
+        {/* <!--End of Tawk.to Script--> */}
         <script
           type="text/javascript"
           src="https://tpembars.com/entrypoint.js?marker=497204&trs=283545"
