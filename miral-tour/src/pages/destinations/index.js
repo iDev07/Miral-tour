@@ -96,7 +96,7 @@ function Destinations() {
     // Default sorting (no filters applied)
     return "Not found";
   });
-  console.log(filteredDestinations);
+  // console.log(filteredDestinations);
   // console.log(cityCheck);
   // console.log(typeCheck);
   return (

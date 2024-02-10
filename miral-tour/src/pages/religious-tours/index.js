@@ -24,8 +24,6 @@ function ReliogiosTours() {
   const religousTours = tourpackages.filter(
     (religious) => religious.category_id === 6
   );
-  console.log(religousTours);
-  console.log(tourpackages);
   return (
     <>
       <Head>
