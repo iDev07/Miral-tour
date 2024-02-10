@@ -208,6 +208,37 @@
 }
 .all_places_destinations {
   .all_places_wrapper {
+    .intro {
+      @media (max-width: 768px) {
+        display: block;
+        h1 {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+      }
+      display: flex;
+      .sort {
+        @media (max-width: 768px) {
+          h3 {
+            font-size: 18px;
+          }
+          .ant-select {
+            margin-left: auto;
+            width: 120px !important;
+          }
+        }
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        h3 {
+          margin-right: 10px;
+        }
+        .ant-select {
+          width: 140px;
+          margin-right: 5px;
+        }
+      }
+    }
     .places {
       display: flex;
       flex-wrap: wrap;
@@ -272,7 +303,7 @@
             width: 100%;
             h2 {
               margin-bottom: 30px;
-              max-width: 95%;
+              max-width: 90%;
             }
             .read_more {
               width: 140px;
@@ -306,6 +337,11 @@
           }
         }
       }
+    }
+    .not_found {
+      height: 50vh;
+      display: flex;
+      align-items: center;
     }
   }
 }
