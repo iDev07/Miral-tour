@@ -53,8 +53,9 @@
         }
         .middle_selecteds {
           @media (max-width: 768px) {
+            display: block;
             .ant-picker {
-              width: 92% !important;
+              width: 100% !important;
             }
           }
           display: grid;
@@ -106,10 +107,16 @@
         }
         .bottom_selectds {
           .wrapper {
+            @media (max-width: 768px) {
+              display: block;
+            }
             display: grid;
             grid-template-columns: 50% 50%;
             .left_box {
               .ant-select {
+                @media (max-width: 768px) {
+                  width: 100% !important;
+                }
                 width: 91% !important;
               }
             }
@@ -131,11 +138,17 @@
       .wrapper {
         position: relative;
         .top_fields {
+          @media (max-width: 480px) {
+            display: block;
+          }
           padding: 10px 0;
           display: grid;
           grid-template-columns: 50% 50%;
         }
         .contacts {
+          @media (max-width: 480px) {
+            display: block;
+          }
           display: grid;
           grid-template-columns: 50% 50%;
         }
@@ -144,11 +157,19 @@
         }
         .name {
           .ant-input {
+            @media (max-width: 480px) {
+              width: 100%;
+              max-width: 100%;
+            }
             max-width: 91%;
           }
         }
         .mail {
           .ant-input {
+            @media (max-width: 480px) {
+              width: 100%;
+              max-width: 100%;
+            }
             max-width: 91%;
           }
         }
@@ -198,5 +219,11 @@
       border: 1px solid transparent !important;
       color: #fff !important;
     }
+  }
+}
+.ant-picker-dropdown {
+  @media (max-width: 768px) {
+    top: 300px !important;
+    max-width: 83%;
   }
 }
