@@ -42,6 +42,7 @@ export default function Document() {
           name="msapplication-TileImage"
           content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
         />
+        <meta property="og:url" content="miraltour.com"></meta>
         <meta
           name="google-site-verification"
           content="U62xsTImQNPhHCBZzXFmwO3Zip8rZCGxjg2O-4xRNXI"
