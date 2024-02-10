@@ -269,12 +269,18 @@
     display: grid;
     grid-template-columns: 20% 80%;
     .filter_tours {
+      @media (max-width: 768px) {
+        display: none;
+      }
       width: 100%;
       margin: 15px 0;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border-radius: 10px;
       padding: 10px;
       .cities_in_filter {
+        @media (max-width: 768px) {
+          display: none;
+        }
         .cities_wrap {
           padding: 10px;
           h2 {
@@ -298,7 +304,7 @@
   }
   .result_tourpackages {
     @media (max-width: 768px) {
-      height: 500px;
+      height: 460px;
       width: 100%;
       scrollbar-color: #0073db #0073db; /* For Firefox */
 

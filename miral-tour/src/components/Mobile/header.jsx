@@ -163,12 +163,12 @@ function MobileHeader() {
                 <img src="/img/main_logo.png" alt="MIRAL TOUR LOGO" />
               </Link>
             </div>
-            <div className="cart">
+            {/* <div className="cart">
               <Link href={"/cart"}>
                 <ShoppingCartIcon />
                 <span id="qty">{cartQuantity}</span>
               </Link>
-            </div>
+            </div> */}
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="en">EN</option>
@@ -269,11 +269,11 @@ function MobileHeader() {
                     Business Tours
                   </Link>
                 </div>
-                <div className="other_links">
+                {/* <div className="other_links">
                   <Link href={"/"} onClick={hideHiddenNav}>
                     Make your trip
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="other_links">
                   <Link href={"/about-uzbekistan"} onClick={hideHiddenNav}>

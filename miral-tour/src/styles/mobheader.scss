@@ -5,7 +5,7 @@
   transition: 0.3s ease;
   display: none;
   // position: absolute;
-  padding: 20px 0;
+  padding: 10px 0;
   padding-bottom: 0;
   z-index: 1000;
   width: 100%;
@@ -13,7 +13,7 @@
   .mobheader_wrapper {
     .mobheader_wrap {
       display: grid;
-      grid-template-columns: 15% 65% 10% 10%;
+      grid-template-columns: 15% 65% 20%;
       align-items: center;
       .menu {
         button {
