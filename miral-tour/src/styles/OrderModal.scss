@@ -36,16 +36,27 @@
       }
       .right_box {
         .top_selecteds {
+          @media (max-width: 768px) {
+            display: block;
+          }
           display: grid;
           grid-template-columns: 50% 50%;
           .ant-select {
             width: 100%;
           }
           .left_box {
+            @media (max-width: 768px) {
+              margin-right: 0;
+            }
             margin-right: 20px;
           }
         }
         .middle_selecteds {
+          @media (max-width: 768px) {
+            .ant-picker {
+              width: 92% !important;
+            }
+          }
           display: grid;
           grid-template-columns: 50% 50%;
           .ant-picker {
