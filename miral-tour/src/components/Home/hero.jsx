@@ -16,17 +16,9 @@ import {
 import { useTranslation } from "react-i18next";
 import OrderModal from "../OrderModal/OrderModal";
 import { DownOutlined } from "@ant-design/icons";
-import dayjs from "dayjs";
-import customParseFormat from "dayjs/plugin/customParseFormat";
 
 function Hero({ tourpackages, categories, cities, countriesBack }) {
-  const dateFormat = "YYYY/MM/DD";
-  const weekFormat = "MM/DD";
-  const monthFormat = "YYYY/MM";
-  dayjs.extend(customParseFormat);
-  const dateFormatList = ["DD/MM/YYYY", "DD/MM/YY", "DD-MM-YYYY", "DD-MM-YY"];
-  const customFormat = (value) => `custom format: ${value.format(dateFormat)}`;
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState();
   const options = useMemo(() => countryList().getData(), []);
   const { t, i18n } = useTranslation();
   const [sortedTours, setSortedTours] = useState([]);
@@ -56,7 +48,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   const changeHandler = (value) => {
     setValue(value);
   };
-
   const handleButtonClick = () => {
     setShowResults(!showResults);
   };

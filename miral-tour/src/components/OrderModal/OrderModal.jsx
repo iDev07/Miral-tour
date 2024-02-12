@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Button, Modal, Input, Select, DatePicker } from "antd";
 import Link from "next/link";
-
+import countryList from "react-select-country-list";
 const OrderModal = ({
   tourpackage,
   countries,
@@ -69,7 +69,7 @@ const OrderModal = ({
       const formData = new FormData();
       formData.append("tour_id", tourpackage.id);
       formData.append("arrival_time", selectedDates);
-      formData.append("country_id", country);
+      formData.append("country_id", value);
       formData.append("number_person", persons);
       formData.append("number_child", childs);
       formData.append("type_of_group", type_group);
@@ -130,7 +130,11 @@ const OrderModal = ({
     setSelectedClass(value);
     onClassChange(value);
   };
-
+  const options = useMemo(() => countryList().getData(), []);
+  const [value, setValue] = useState();
+  const changeHandler = (value) => {
+    setValue(value);
+  };
   return (
     <>
       <Modal
@@ -169,9 +173,9 @@ const OrderModal = ({
                     <div className="country">
                       <p>{t("orderModal.from")}</p>
                       <Select
-                        defaultValue={defaultCountry}
-                        onChange={handleCountryChange}
-                        options={countries}
+                        options={options}
+                        value={value}
+                        onChange={changeHandler}
                       />
                     </div>
                   </div>
