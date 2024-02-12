@@ -57,10 +57,6 @@ function Cart() {
           name="msapplication-TileImage"
           content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
         />
-        <meta
-          name="google-site-verification"
-          content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
-        />
       </Head>
       <div className="cart pt_100">
         <div className="wrapper_cart">

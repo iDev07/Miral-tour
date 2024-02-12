@@ -103,10 +103,6 @@ function Destinations({}) {
               name="msapplication-TileImage"
               content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
             />
-            <meta
-              name="google-site-verification"
-              content="ENubd6T2CL6tApHlrZSjdjbBRFqwr-zdfEQaJmb-gBw"
-            />
           </Head>
           <div className="city_about pt_100">
             <div className="city_wrapper">

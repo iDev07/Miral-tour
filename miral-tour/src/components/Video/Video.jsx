@@ -63,7 +63,12 @@ function Video() {
     <div className={`video_modal${showVideo ? "" : " hidden_welcome_modal"}`}>
       <div className="wrapper">
         <div className="content">
-          {/* Your YouTube video embed code goes here */}
+          <iframe
+            src="https://www.youtube.com/embed/vQVwkyn3-F8?si=wvnjM2cQN00TkgNO"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
           <div ref={youtubePlayerRef}></div>
           <button onClick={handleSkip}>{t("skipBtn")}</button>
         </div>
