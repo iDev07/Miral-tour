@@ -89,7 +89,6 @@ function HomePage() {
       <Countries_category />
       <AboutUsVideo />
       <Autorent />
-      <Video />
       {/* <Socials /> */}
       {/* <TawkToScript /> */}
     </>
