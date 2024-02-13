@@ -15,7 +15,6 @@ import {
 } from "antd";
 import { useTranslation } from "react-i18next";
 import OrderModal from "../OrderModal/OrderModal";
-import { DownOutlined } from "@ant-design/icons";
 
 function Hero({ tourpackages, categories, cities, countriesBack }) {
   const [value, setValue] = useState();
@@ -33,7 +32,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
     label: "Select",
   });
   const [country, setCountry] = useState("");
-  const [open, setOpen] = useState("");
   const [personCount, setPersonCount] = useState(2);
   const [childCount, setChildCount] = useState(0);
   const [typeGroup, setTypeGroup] = useState({
@@ -51,18 +49,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   const handleButtonClick = () => {
     setShowResults(!showResults);
   };
-  const [valute, setValute] = useState(0);
   const [selectedCountry, setSelectedCountry] = useState();
-  const countries = [
-    { value: 0, label: defaultCountry.label },
-    { value: 1, label: "Indonesia" },
-    { value: 2, label: "Malaysia" },
-    { value: 3, label: "Singapour" },
-    { value: 4, label: "UAE" },
-    { value: 5, label: "China" },
-    { value: 6, label: "Turkiye" },
-    { value: 7, label: "Other" },
-  ];
 
   const handleDateChange = (dates) => {
     if (dates && dates.length === 2) {
@@ -90,12 +77,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
     setCheckedList(e.target.checked ? allCityValues : []);
     setSelectAll(e.target.checked); // Add this line to update selectAll state
   };
-  const handleCityChange = (event) => {
-    const selected = event.target.value.filter(
-      (city) => city !== "Select city"
-    );
-    setCheckedList(selected.length === 0 ? ["Select city"] : selected);
-  };
+
   const handlePersonChange = (event) => {
     setPersonCount(parseInt(event.target.value, 10));
   };
@@ -125,63 +107,60 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
     setTypeClass(value);
   };
 
-  const handleValuteChange = (value) => {
-    setValute(value);
-  };
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        },
-        (error) => {
-          console.error("Geolocation error:", error.message);
-        }
-      );
-    } else {
-      console.error("Geolocation is not available in this browser.");
-    }
-  }, []);
-  function findCountry() {
-    // Check if country has already been retrieved
-    if (!country) {
-      let timeoutId;
-      // Create a promise for geolocation with a timeout
-      const geolocationPromise = new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-        timeoutId = setTimeout(() => {
-          reject(new Error("Geolocation request timed out"));
-        }, 60000); // 60 seconds timeout
-      });
+  // useEffect(() => {
+  //   if ("geolocation" in navigator) {
+  //     navigator.geolocation.getCurrentPosition(
+  //       (position) => {
+  //         const { latitude, longitude } = position.coords;
+  //         // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+  //       },
+  //       (error) => {
+  //         console.error("Geolocation error:", error.message);
+  //       }
+  //     );
+  //   } else {
+  //     console.error("Geolocation is not available in this browser.");
+  //   }
+  // }, []);
+  // function findCountry() {
+  //   // Check if country has already been retrieved
+  //   if (!country) {
+  //     let timeoutId;
+  //     // Create a promise for geolocation with a timeout
+  //     const geolocationPromise = new Promise((resolve, reject) => {
+  //       navigator.geolocation.getCurrentPosition(resolve, reject);
+  //       timeoutId = setTimeout(() => {
+  //         reject(new Error("Geolocation request timed out"));
+  //       }, 60000); // 60 seconds timeout
+  //     });
 
-      geolocationPromise
-        .then((position) => {
-          clearTimeout(timeoutId); // Clear the timeout
-          const { latitude, longitude } = position.coords;
-          const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-          fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-              setCountry(data.address.country);
-              setDefaultCountry({ value: 0, label: data.address.country });
-              setLoading(false);
-            })
-            .catch(() => {
-              console.log("Error Fetching API");
-            });
-        })
-        .catch((error) => {
-          console.error(error.message); // Handle timeout or other errors
-          setLoading(false);
-        });
-    }
-  }
+  //     geolocationPromise
+  //       .then((position) => {
+  //         clearTimeout(timeoutId); // Clear the timeout
+  //         const { latitude, longitude } = position.coords;
+  //         const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+  //         fetch(url)
+  //           .then((res) => res.json())
+  //           .then((data) => {
+  //             setCountry(data.address.country);
+  //             setDefaultCountry({ value: 0, label: data.address.country });
+  //             setLoading(false);
+  //           })
+  //           .catch(() => {
+  //             console.log("Error Fetching API");
+  //           });
+  //       })
+  //       .catch((error) => {
+  //         console.error(error.message); // Handle timeout or other errors
+  //         setLoading(false);
+  //       });
+  //   }
+  // }
   // console.log(country);
   // Call findCountry only if country is not already set
-  if (!country) {
-    findCountry();
-  }
+  // if (!country) {
+  //   findCountry();
+  // }
   const { RangePicker } = DatePicker;
   const content1 = (
     <div className="person_count_plus">
@@ -216,26 +195,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
         </button>
       </div>
     </div>
-  );
-  const content2 = (
-    <>
-      <Checkbox onChange={onCheckAllChange} checked={selectAll}>
-        {t("constructorForm.allCities")}
-      </Checkbox>
-      <CheckboxGroup
-        options={cities.map((city) => ({
-          label:
-            i18n.language === "uz"
-              ? city.name_uz
-              : i18n.language === "ru"
-              ? city.name_ru
-              : city.name_en,
-          value: city.id,
-        }))}
-        value={checkedList}
-        onChange={onChange}
-      />
-    </>
   );
 
   // ----------------------------------------------------------Filter ------------------------------------------------------------------
@@ -308,33 +267,10 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
 
     setSortedTours(filteredPackages);
   };
-  const defaultGroup = {
-    value: 0,
-    label: t("constructorForm.typeOfGroup"),
-  };
-
-  const { Option } = Select;
-  const handleChange = (checkedValues) => {
-    console.log("Checked values:", checkedValues);
-  };
-
-  const languages = [
-    { label: "English", value: "en" },
-    { label: "Italian", value: "it" },
-    { label: "German", value: "gr" },
-    { label: "Spanish", value: "sp" },
-    { label: "French", value: "sp" },
-    { label: "Estonian", value: "sp" },
-    { label: "Portuguese", value: "sp" },
-    { label: "Irish", value: "sp" },
-    { label: "Polish", value: "pl" },
-    { label: "Czech", value: "gr" },
-    { label: "Danish", value: "gr" },
-    { label: "Russian", value: "ru" },
-    { label: "Turkish", value: "tr" },
-    { label: "Japanese", value: "jp" },
-    { label: "Korean", value: "kr" },
-  ];
+  // const defaultGroup = {
+  //   value: 0,
+  //   label: t("constructorForm.typeOfGroup"),
+  // };
 
   return (
     <>
@@ -352,20 +288,16 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                             <p className="filter_name">
                               {t("constructorForm.heading1")}
                             </p>
-                            {loading ? (
-                              <p>Loading...</p>
-                            ) : (
-                              <Select
-                                options={options}
-                                value={value}
-                                onChange={changeHandler}
-                              />
-                              // <Select
-                              //   defaultValue={defaultCountry}
-                              //   onChange={handleCountryChange}
-                              //   options={countries}
-                              // />
-                            )}
+                            <Select
+                              options={options}
+                              value={value}
+                              onChange={changeHandler}
+                            />
+                            {/* <Select
+                                defaultValue={defaultCountry}
+                                onChange={handleCountryChange}
+                                options={countries}
+                              /> */}
                           </div>
                         </div>
                       </div>
@@ -642,7 +574,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                     sortedTours.map((tourpackage) => (
                       <OrderModal
                         key={tourpackage.id}
-                        countries={countries}
                         country={country}
                         tourpackage={tourpackage}
                         defaultCountry={defaultCountry}

@@ -6,8 +6,6 @@ import Link from "next/link";
 import countryList from "react-select-country-list";
 const OrderModal = ({
   tourpackage,
-  countries,
-  country,
   defaultCountry,
   onCountryChange,
   onPersonChange,
