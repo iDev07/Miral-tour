@@ -49,7 +49,6 @@ function Destinations({}) {
       .get(`${process.env.NEXT_PUBLIC_BASE_URL}/destinations`)
       .then((response) => {
         setDestinations(response.data);
-        console.log(response.data);
         setLoading(false);
       })
       .catch((error) => {
@@ -62,13 +61,11 @@ function Destinations({}) {
   const destination = destinations.find(
     (destination) => destination.seo_url === seo_url
   );
-  console.log(router.query);
-  console.log(destination);
   if (!destination) {
     return <Loader />;
   }
   const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`;
-  // console.log(destination);
+  console.log(destination);
   return (
     <>
       {loading ? (

@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
         <link rel="icon" href="/img/mini_logo.png" />
         <meta name="author" content="Miral Tour" />
@@ -17,7 +17,7 @@ export default function Document() {
         <meta property="og:title" content="Miral Tour" />
         <meta
           property="og:description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
         <meta
           property="og:image"
@@ -32,7 +32,7 @@ export default function Document() {
         <meta property="twitter:title" content="Miral Tour" />
         <meta
           property="twitter:description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
         <meta
           property="twitter:image"

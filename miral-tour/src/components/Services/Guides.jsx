@@ -9,7 +9,7 @@ function Guides() {
   const [languages, setLanguages] = useState([]);
   const [guides, setGuides] = useState([]);
   const handleChange = (value) => {
-    console.log(`selected ${value}`);
+    // console.log(`selected ${value}`);
   };
   useEffect(() => {
     // Fetch both tour packages and categories data

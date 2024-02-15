@@ -76,7 +76,6 @@ function City({}) {
   //     });
   // }, []);
 
-  console.log(destinations);
   const router = useRouter();
   const { seo_url } = router.query;
   const city = cities.find((city) => city.seo_url === seo_url);

@@ -128,7 +128,7 @@
                 position: absolute;
                 width: 130%;
                 z-index: 1000;
-                top: 28px;
+                top: 30px;
                 opacity: 0;
                 visibility: hidden;
                 overflow: hidden;
@@ -193,7 +193,7 @@
               border-radius: 10px;
               box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.15);
               padding: 10px;
-              top: 28px;
+              top: 30px;
               transition: 0.1s ease-in;
               z-index: 1000;
               li {
@@ -217,7 +217,6 @@
         .search_wrap {
           position: relative;
           z-index: 10000;
-
           input {
             width: 100%;
             background-color: #fff;

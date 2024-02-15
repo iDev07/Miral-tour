@@ -56,7 +56,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
       setDateRange(dates); // Add this line to update the dateRange state
     }
   };
-  // console.log(dateRange);
   const allCities = cities.map((city) => ({
     value: city.id,
     label:

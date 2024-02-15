@@ -17,7 +17,6 @@ function Religious_category() {
       .get("https://api.all4u-tour.uz/tourpackages")
       .then((response) => {
         setTourPackages(response.data);
-        // console.log(response.data);
         setLoading(false);
       })
       .catch((error) => {

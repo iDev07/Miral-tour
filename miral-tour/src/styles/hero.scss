@@ -306,8 +306,6 @@
     @media (max-width: 768px) {
       height: 460px;
       width: 100%;
-      scrollbar-color: #0073db #0073db; /* For Firefox */
-
       /* For WebKit browsers (Chrome, Safari) */
       &::-webkit-scrollbar {
         width: 5px; /* Set the width of the scrollbar */

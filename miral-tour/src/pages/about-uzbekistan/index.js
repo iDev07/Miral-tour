@@ -23,7 +23,7 @@ function AboutUzbekistan() {
       });
   }, []);
   const onChange = (key) => {
-    console.log(key);
+    // console.log(key);
   };
   const firstSection = [
     {
@@ -346,7 +346,7 @@ function AboutUzbekistan() {
                           <div className="my_slider">
                             {cities.map((city) => (
                               <SwiperSlide>
-                                <div className="city">
+                                <div className="city" key={city.id}>
                                   <div className="city_wrap">
                                     <Link href={`/cities/${city.seo_url}`}>
                                       <div className="city_image">
