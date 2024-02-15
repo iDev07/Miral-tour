@@ -11,7 +11,7 @@ function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Discover Uzbekistan with - Miral Tour</title>
+        {/* <title>Discover Uzbekistan with - Miral Tour</title>
         <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
@@ -51,7 +51,7 @@ function Layout({ children }) {
         <meta
           name="msapplication-TileImage"
           content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
-        />
+        /> */}
       </Head>
       <div className="layout">
         <Providers>

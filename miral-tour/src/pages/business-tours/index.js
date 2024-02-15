@@ -7,7 +7,52 @@ function BusinessTours() {
     <>
       <Head>
         <title>Business Tours</title>
-        <meta name="description" content={"Business Tours to Uzbekistan"} />
+        <meta
+          name="description"
+          content="Welcome to Miral Tour, we are pleased to offer you business
+                    tours, where we provide comprehensive information about
+                    exciting business tours and tourist destinations."
+        />
+        <link rel="icon" href="/img/mini_logo.png" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Miral Tour" />
+        <meta
+          name="keywords"
+          content="miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan, uzbekistan tourism, tour company"
+        />
+        <meta property="og:title" content="Miral Tour" />
+        <meta
+          property="og:description"
+          content="Welcome to Miral Tour, we are pleased to offer you business
+                    tours, where we provide comprehensive information about
+                    exciting business tours and tourist destinations."
+        />
+        <meta
+          property="og:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
+        <meta property="og:image:width" content="780" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:site_name" content="Miral Tour" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Logo" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Miral Tour" />
+        <meta
+          property="twitter:description"
+          content="Welcome to Miral Tour, we are pleased to offer you business
+                    tours, where we provide comprehensive information about
+                    exciting business tours and tourist destinations."
+        />
+        <meta
+          property="twitter:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
+        <meta
+          name="msapplication-TileImage"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
       </Head>
       <div className="business_tours pt_70">
         <div className="business_tours_wrapper">

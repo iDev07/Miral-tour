@@ -9,8 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "animate.css";
-import { Button } from "antd";
-import Link from "next/link";
+
 import axios from "axios";
 // export const getStaticPaths = async () => {
 //   const response = await axios.get(
@@ -65,7 +64,6 @@ function Destinations({}) {
     return <Loader />;
   }
   const background_image = `${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`;
-  console.log(destination);
   return (
     <>
       {loading ? (
