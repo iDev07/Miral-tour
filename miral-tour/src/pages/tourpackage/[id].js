@@ -1185,7 +1185,6 @@ function Tourpackage() {
                           }))}
                         />
                       </div>
-
                       {renderTableOrMessage()}
                     </div>
                     <div className="price">

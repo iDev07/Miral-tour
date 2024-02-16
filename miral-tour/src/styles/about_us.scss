@@ -1,0 +1,88 @@
+.about_us {
+  .main_intro {
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    h1 {
+      max-width: 60%;
+    }
+    .right_box {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .first_image {
+    img {
+      width: 100%;
+      border-radius: 16px;
+    }
+  }
+  .section {
+    margin: 50px 0;
+    .section_wrapper {
+      display: grid;
+      grid-template-columns: 35% 65%;
+      .image_box {
+        img {
+          width: 100%;
+          border-radius: 16px;
+        }
+      }
+      .content_box {
+        margin-left: 20px;
+        background-color: #f3f3f3;
+        border-radius: 16px;
+        .content_box_wrapper {
+          padding: 30px;
+          .subtitle {
+            margin-bottom: 20px;
+            &::after {
+              content: "";
+              display: block;
+              width: 100%;
+              margin-top: 10px;
+              height: 1px;
+              background-color: #cfcfcf;
+            }
+          }
+          p {
+            color: #515151;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .reverse {
+      display: grid;
+      grid-template-columns: 65% 35%;
+      .content_box {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+  .our_team_members {
+    .title {
+      margin-bottom: 20px;
+    }
+    .team_members {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      .member {
+        width: 90%;
+        text-align: center;
+        margin: 0 10px;
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+        }
+        h3 {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
