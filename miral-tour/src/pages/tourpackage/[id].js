@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import countryList from "react-select-country-list";
+import React, { useState, useEffect, useMemo } from "react";
 import Head from "next/head";
 import Loader from "@/components/Loader";
 import axios from "axios";
-import { Container, Box, Typography } from "@mui/material";
+import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useRouter } from "next/router";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,6 +43,14 @@ function Tourpackage() {
   const tourpackage = tourpackages.find(
     (tourpackage) => tourpackage.id === parseInt(id, 10)
   );
+  const options = useMemo(() => {
+    const fetchData = () => countryList().getData();
+    return fetchData();
+  }, []);
+  const [value, setValue] = useState();
+  const changeHandler = (value) => {
+    setValue(value);
+  };
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -120,9 +129,7 @@ function Tourpackage() {
   const handleClassChange = (value, label) => {
     setTypeClass(value);
   };
-  const handleValuteChange = (value) => {
-    setValute(value);
-  };
+
   useEffect(() => {
     if ("geolocation" in navigator) {
       navigator.geolocation.getCurrentPosition(
@@ -584,23 +591,26 @@ function Tourpackage() {
   const handleFormSubmit = async () => {
     try {
       const formData = new FormData();
+
       formData.append("tour_id", tourpackage.id);
-      formData.append("arrival_time", dateRange);
-      formData.append("country_id", defaultCountry.label);
-      formData.append("number_person", personCount);
-      formData.append("number_child", childCount);
-      formData.append("type_of_group", typeGroup);
-      formData.append("class_tour", typeClass);
-      formData.append("client_firstname", nameUser);
-      formData.append("client_lastname", surnameUser);
-      formData.append("email", mailUser);
-      formData.append("phone_number", numberUser);
+      formData.append("arrival_time", dateRange || "Didn't fill");
+      formData.append("country_id", value || "Didn't fill");
+      formData.append("number_person", personCount || 0);
+      formData.append("number_child", childCount || 0);
+      formData.append("type_of_group", typeGroup || 0);
+      formData.append("class_tour", typeClass || 0);
+      formData.append("client_firstname", nameUser || "Didn't fill");
+      formData.append("client_lastname", surnameUser || "Didn't fill");
+      formData.append("email", mailUser || "Didn't fill");
+      formData.append("phone_number", numberUser || "Didn't fill");
       formData.append("comment", "");
+
       // Make the POST request using Axios
       const response = await axios.post(
         "https://api.all4u-tour.uz/requests",
         formData
       );
+
       // Check if the response status is 201
       if (response.status === 201) {
         setFormSubmitted(true);
@@ -612,6 +622,7 @@ function Tourpackage() {
       console.error("Error during form submission:", error);
     }
   };
+
   if (!tourpackage) {
     return <Loader />;
   }
@@ -751,6 +762,7 @@ function Tourpackage() {
       return;
     }
   };
+
   return (
     <>
       {loading ? (
@@ -841,9 +853,9 @@ function Tourpackage() {
                           <div className="country">
                             <p>{t("orderModal.from")}</p>
                             <Select
-                              defaultValue={defaultCountry}
-                              onChange={handleCountryChange}
-                              options={countries}
+                              options={options}
+                              value={value}
+                              onChange={changeHandler}
                             />
                           </div>
                         </div>

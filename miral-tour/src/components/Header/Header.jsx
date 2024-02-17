@@ -243,18 +243,21 @@ function Header() {
                   </li> */}
                   <li className="parent_link about_uz">
                     <Link href={"/about-uzbekistan"}>
-                      About Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
+                      Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
-                          <Link href={`/visa`}>Uzbekistan Visa</Link>
+                          <Link href={`/cities`}>About Uzbekistan</Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/cities`}>Uzbekistan Cities</Link>
+                          <Link href={`/cities`}>Cities</Link>
                         </li>
                         <li className="parent_link_place">
                           <Link href={`/destinations`}>Destinations</Link>
+                        </li>
+                        <li className="parent_link_place">
+                          <Link href={`/visa`}>Visa</Link>
                         </li>
                         {/* {cities.map((city) => (
                           <li className="parent_link_place" key={city.id}>
