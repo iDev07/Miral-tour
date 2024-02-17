@@ -209,17 +209,19 @@ function Header() {
                       <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
                     <ul className="hidden_ul">
-                      {categories.map((category) => (
-                        <li key={category.id}>
-                          <Link href={`/category/${category.id}`}>
-                            {i18n.language === "uz"
-                              ? category.name_uz
-                              : i18n.language === "ru"
-                              ? category.name_ru
-                              : category.name_en}
-                          </Link>
-                        </li>
-                      ))}
+                      {categories
+                        .filter((category) => category.id !== 6) // Filter out category with ID 6
+                        .map((category) => (
+                          <li key={category.id}>
+                            <Link href={`/category/${category.id}`}>
+                              {i18n.language === "uz"
+                                ? category.name_uz
+                                : i18n.language === "ru"
+                                ? category.name_ru
+                                : category.name_en}
+                            </Link>
+                          </li>
+                        ))}
                     </ul>
                   </li>
                   <li className="parent_link">
