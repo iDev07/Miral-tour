@@ -13,6 +13,14 @@ function TopHeader() {
               color: "#0073DB",
             }}
           >
+            <Link href={"/about-us"}>Abou Us</Link>
+          </p>
+          <p
+            style={{
+              textAlign: "right",
+              color: "#0073DB",
+            }}
+          >
             <Link href={"/"}>Become a partner</Link>
           </p>
         </div>
