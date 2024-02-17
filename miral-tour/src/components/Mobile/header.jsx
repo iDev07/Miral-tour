@@ -242,20 +242,22 @@ function MobileHeader() {
                       <KeyboardArrowDown />
                     </DropdownButton>
                     <DropdownList open={isOpen}>
-                      {categories.map((category) => (
-                        <DropdownItem key={category.id}>
-                          <Link
-                            href={`/category/${category.id}`}
-                            onClick={hideHiddenNav}
-                          >
-                            {i18n.language === "uz"
-                              ? category.name_uz
-                              : i18n.language === "ru"
-                              ? category.name_ru
-                              : category.name_en}
-                          </Link>
-                        </DropdownItem>
-                      ))}
+                      {categories
+                        .filter((category) => category.id !== 6)
+                        .map((category) => (
+                          <DropdownItem key={category.id}>
+                            <Link
+                              href={`/category/${category.id}`}
+                              onClick={hideHiddenNav}
+                            >
+                              {i18n.language === "uz"
+                                ? category.name_uz
+                                : i18n.language === "ru"
+                                ? category.name_ru
+                                : category.name_en}
+                            </Link>
+                          </DropdownItem>
+                        ))}
                     </DropdownList>
                   </DropdownContainer>
                 </div>
