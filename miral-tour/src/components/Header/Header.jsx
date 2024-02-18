@@ -248,7 +248,9 @@ function Header() {
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
-                          <Link href={`/cities`}>About Uzbekistan</Link>
+                          <Link href={`/about-uzbekistan`}>
+                            About Uzbekistan
+                          </Link>
                         </li>
                         <li className="parent_link_place">
                           <Link href={`/cities`}>Cities</Link>

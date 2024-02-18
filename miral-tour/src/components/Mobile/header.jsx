@@ -160,7 +160,7 @@ function MobileHeader() {
             </div>
             <div className="logo">
               <Link href={"/"}>
-                <img src="/img/main_logo.png" alt="MIRAL TOUR LOGO" />
+                <img src="/img/main_logo.png" alt="MIRAL TOUR " />
               </Link>
             </div>
             {/* <div className="cart">
