@@ -253,10 +253,13 @@ function Header() {
                           </Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/cities`}>Cities</Link>
+                          <Link href={`/famous-people`}>Ancient Scholars</Link>
                         </li>
                         <li className="parent_link_place">
                           <Link href={`/destinations`}>Destinations</Link>
+                        </li>
+                        <li className="parent_link_place">
+                          <Link href={`/cities`}>Cities</Link>
                         </li>
                         <li className="parent_link_place">
                           <Link href={`/visa`}>Visa</Link>

@@ -13,12 +13,34 @@ import { Collapse } from "antd";
 import axios from "axios";
 import Link from "next/link";
 function AboutUzbekistan() {
+  const [persons, setPersons] = useState([]);
   const [cities, setCities] = useState([]);
+  const [destinations, setDestinations] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/famous-peoples`)
+      .then((response) => {
+        setPersons(response.data);
+      })
+      .catch((error) => {
+        console.error("An error occurred:", error);
+      });
+  }, []);
   useEffect(() => {
     axios
       .get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`)
       .then((response) => {
         setCities(response.data);
+      })
+      .catch((error) => {
+        console.error("An error occurred:", error);
+      });
+  }, []);
+  useEffect(() => {
+    axios
+      .get(`${process.env.NEXT_PUBLIC_BASE_URL}/destinations`)
+      .then((response) => {
+        setDestinations(response.data);
       })
       .catch((error) => {
         console.error("An error occurred:", error);
@@ -109,61 +131,62 @@ function AboutUzbekistan() {
                     </div>
                     <p>
                       Ancient archaeological remains impressive Islamic
-                      monyments and stark Soviet buildings sit together with one
-                      another in Uzbekistanaconstant remiender of the nation’s
-                      vibrant and indeed lengthy history
+                      monyments sit together with one another in
+                      Uzbekistanaconstant remiender of the nation’s vibrant and
+                      indeed lengthy history.
                     </p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Architecture</h3>
+                      <h3>Culture</h3>
                     </div>
                     <p>
-                      Ancient archaeological remains impressive Islamic
-                      monyments and stark Soviet buildings sit together with one
-                      another in Uzbekistanaconstant remiender of the nation’s
-                      vibrant and indeed lengthy history
+                      Hospitable people, inimitable traditions of this country
+                      will surely leave you with plentiful impressions.
+                      Uzbekistan is a secular state with majority of population
+                      Muslim will give you the feel of Central Asia's
+                      unparalleled culture.
                     </p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Architecture</h3>
+                      <h3>History</h3>
                     </div>
                     <p>
-                      Ancient archaeological remains impressive Islamic
-                      monyments and stark Soviet buildings sit together with one
-                      another in Uzbekistanaconstant remiender of the nation’s
-                      vibrant and indeed lengthy history
+                      Uzbekistan's history is dominated by famous conquerors,
+                      including Alexander the Great, Genghis Khan and the
+                      unstoppable Tamerlane. Islamtookroot, slowly,
+                      oppressively.
                     </p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Architecture</h3>
+                      <h3>Bazaars</h3>
                     </div>
                     <p>
-                      Ancient archaeological remains impressive Islamic
-                      monyments and stark Soviet buildings sit together with one
-                      another in Uzbekistanaconstant remiender of the nation’s
-                      vibrant and indeed lengthy history
+                      The bazaars and markets of Uzbekistan are vibrant like
+                      Chorsu bazaar, raucous and thrilling, with the national
+                      pastime of haggling employed with great energy. Start low
+                      and enjoy the banter!
                     </p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Architecture</h3>
+                      <h3>Silk Road Cities</h3>
                     </div>
                     <p>
-                      Ancient archaeological remains impressive Islamic
-                      monyments and stark Soviet buildings sit together with one
-                      another in Uzbekistanaconstant remiender of the nation’s
-                      vibrant and indeed lengthy history
+                      The names of Samarkand, Bukhara and Khiva inspire today
+                      the same excitement and allure as they have done to Silk
+                      Road travellers for hundreds of years. These are very
+                      ancient cities
                     </p>
                   </div>
                 </div>
@@ -189,7 +212,7 @@ function AboutUzbekistan() {
                 Empire and later by the Sasanian Empire, until the Muslim
                 conquest of Persia in the seventh century. The early Muslim
                 conquests and the subsequent Samanid Empire converted most of
-                the people into adherents of Islam. During this period, cities
+                the people into adherents of Islam. During this period, persons
                 began to grow rich from the Silk Road, and became a center of
                 the Islamic Golden Age. The local Khwarazmian dynasty was
                 destroyed by the Mongol invasion in the 13th century, leading to
@@ -210,68 +233,266 @@ function AboutUzbekistan() {
             </Container>
           </div>
           <div className="great_persons">
-            <div className="this_wrapper">
-              <div className="persons_slider">
-                <Swiper
-                  spaceBetween={20}
-                  slidesPerView={4}
-                  slidesPerGroup={1}
-                  autoplay={{
-                    delay: 2000,
-                    disableOnInteraction: false,
-                  }}
-                  loopFillGroupWithBlank={true}
-                  breakpoints={{
-                    "@0.00": {
-                      slidesPerView: 1,
-                      spaceBetween: 10,
-                    },
-                    "@0.75": {
-                      slidesPerView: 2,
-                      spaceBetween: 20,
-                    },
-                    "@1.00": {
-                      slidesPerView: 3,
-                      spaceBetween: 40,
-                    },
-                    "@1.50": {
-                      slidesPerView: 4,
-                      spaceBetween: 50,
-                    },
-                  }}
-                  navigation={true}
-                  modules={[Autoplay, Navigation, Pagination]}
-                  className="mySwiper_cities"
-                >
-                  <div className="my_slider">
-                    {cities.map((city) => (
-                      <SwiperSlide>
-                        <div className="place">
-                          <Link href={`/cities/${city.seo_url}`}>
-                            <img
-                              src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/city/${city.main_image}`}
-                              alt={`${city.title_en}`}
-                            />
-                            <div className="place_wrap">
-                              <div className="content">
-                                <h2>{city.name_en}</h2>
-                                <p>{city.title_en}</p>
-                                <p className="read_more">
-                                  Read more{" "}
-                                  <span>
-                                    <ChevronRight />
-                                  </span>
-                                </p>
-                              </div>
-                            </div>
-                          </Link>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </div>
-                </Swiper>
+            <Container>
+              <div className="intro">
+                <h1>Great personalities of Uzbekistan</h1>
+                <p className="green_btn">
+                  <Link href={"/famous-people"}>View all</Link>
+                </p>
               </div>
-            </div>
+              <div className="this_wrapper">
+                <div className="persons_slider">
+                  <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    slidesPerGroup={1}
+                    autoplay={{
+                      delay: 2000,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                    }}
+                    disableOnInteraction={false}
+                    loopFillGroupWithBlank={true}
+                    breakpoints={{
+                      "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+                      "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                      },
+                      "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                      },
+                      "@1.50": {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                      },
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Navigation, Pagination]}
+                    className="mySwiper_persons"
+                  >
+                    <div className="my_slider">
+                      {persons.map((person) => (
+                        <SwiperSlide>
+                          <div className="place">
+                            <Link href={`/famous-people/${person.seo_url}`}>
+                              <img
+                                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/famous-people/${person.main_image}`}
+                                alt={`${person.title_en}`}
+                              />
+                              <div className="place_wrap">
+                                <div className="content">
+                                  <h2>{person.name_en}</h2>
+                                  <p>{person.title_en}</p>
+                                  <p className="read_more">
+                                    Read more{" "}
+                                    <span>
+                                      <ChevronRight />
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </div>
+                  </Swiper>
+                </div>
+              </div>
+            </Container>
+          </div>
+          <div className="patterns">
+            <Container>
+              <div className="this_wrap">
+                <div className="intro">
+                  <h1>Examples of craftsmanship</h1>
+                </div>
+                <div className="description">
+                  <p>
+                    From the vibrant hues of Suzani embroidery to the delicate
+                    patterns of ikat weaving, Uzbek artisans weave stories into
+                    every piece they create. Woodcarving, pottery, and metalwork
+                    showcase the meticulous hands that have honed their craft
+                    over generations, resulting in pieces that seamlessly blend
+                    tradition with modernity. The Silk Road's influence echoes
+                    in the intricate designs of ceramics and the geometric
+                    precision of woodwork, creating a tapestry of history and
+                    innovation. Traditional techniques are preserved, yet
+                    artisans infuse contemporary elements, ensuring that Uzbek
+                    craftsmanship remains timeless. In the bustling bazaars of
+                    persons like Samarkand and Bukhara, one can witness the
+                    bustling energy as artisans passionately create and showcase
+                    their works. Each piece, whether it's a handwoven carpet or
+                    a meticulously carved wooden artifact, tells a story of
+                    Uzbek identity and the dedication to preserving artistic
+                    heritage.
+                  </p>
+                </div>
+                <div className="this_video">
+                  <iframe
+                    height="600"
+                    src="https://www.youtube.com/embed/4e7J6Crmp0U?si=AbVY9PJ6Y2JqCjwW"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </Container>
+          </div>
+          <div className="cities">
+            <Container>
+              <div className="intro">
+                <h1>Ancient cities of Uzbekistan</h1>
+                <p className="green_btn">
+                  <Link href={"/cities"}>View all</Link>
+                </p>
+              </div>
+              <div className="this_wrapper">
+                <div className="persons_slider">
+                  <Swiper
+                    spaceBetween={20}
+                    slidesPerView={4}
+                    slidesPerGroup={1}
+                    autoplay={{
+                      delay: 2000,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                    }}
+                    disableOnInteraction={false}
+                    loopFillGroupWithBlank={true}
+                    breakpoints={{
+                      "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+                      "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                      },
+                      "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                      },
+                      "@1.50": {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                      },
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Navigation, Pagination]}
+                    className="mySwiper_persons"
+                  >
+                    <div className="my_slider">
+                      {cities.map((city) => (
+                        <SwiperSlide>
+                          <div className="place">
+                            <Link href={`/cities/${city.seo_url}`}>
+                              <img
+                                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/city/${city.main_image}`}
+                                alt={`${city.title_en}`}
+                              />
+                              <div className="place_wrap">
+                                <div className="content">
+                                  <h2>{city.name_en}</h2>
+                                  <p>{city.title_en}</p>
+                                  <p className="read_more">
+                                    Read more{" "}
+                                    <span>
+                                      <ChevronRight />
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </div>
+                  </Swiper>
+                </div>
+              </div>
+            </Container>
+          </div>{" "}
+          <div className="destinations">
+            <Container>
+              <div className="intro">
+                <h1>Great destinations of Uzbekistan</h1>
+                <p className="green_btn">
+                  <Link href={"/destinations"}>View all</Link>
+                </p>
+              </div>
+              <div className="this_wrapper">
+                <div className="persons_slider">
+                  <Swiper
+                    spaceBetween={20}
+                    slidesPerView={4}
+                    slidesPerGroup={1}
+                    autoplay={{
+                      delay: 3000,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                    }}
+                    disableOnInteraction={false}
+                    loopFillGroupWithBlank={true}
+                    breakpoints={{
+                      "@0.00": {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                      },
+                      "@0.75": {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                      },
+                      "@1.00": {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                      },
+                      "@1.50": {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                      },
+                    }}
+                    navigation={true}
+                    modules={[Autoplay, Navigation, Pagination]}
+                    className="mySwiper_persons"
+                  >
+                    <div className="my_slider">
+                      {destinations.map((destination) => (
+                        <SwiperSlide>
+                          <div className="place">
+                            <Link href={`/destinations/${destination.seo_url}`}>
+                              <img
+                                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`}
+                                alt={`${destination.title_en}`}
+                              />
+                              <div className="place_wrap">
+                                <div className="content">
+                                  <h2>{destination.title_en}</h2>
+                                  <p>{destination.name_en}</p>
+                                  <p className="read_more">
+                                    Read more{" "}
+                                    <span>
+                                      <ChevronRight />
+                                    </span>
+                                  </p>
+                                </div>
+                              </div>
+                            </Link>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </div>
+                  </Swiper>
+                </div>
+              </div>
+            </Container>
           </div>
         </div>
       </div>
