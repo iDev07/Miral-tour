@@ -3,7 +3,7 @@ import React from "react";
 function Background() {
   return (
     <div>
-      <ul class="background_home_page">
+      <ul className="background_home_page">
         {/* <li>
           <img src="img/pattern.png" />
         </li> */}

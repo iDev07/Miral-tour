@@ -62,8 +62,8 @@ function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <a href="http://Wa.me/+998770560070">
-                      +998 77 056 00 70 <br /> (Whatsapp){" "}
+                    <a href="http://Wa.me/+998 77 093 00 70">
+                      +998 77 093 00 70 <br /> (Whatsapp){" "}
                     </a>
                   </li>
                   <li>

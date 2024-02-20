@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import { useAppSelector } from "../../../store/store";
 import { Container } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { KeyboardArrowDown, ShoppingCart } from "@mui/icons-material";
 const DropdownContainer = styled.div`
   width: 100%;
@@ -281,6 +280,12 @@ function MobileHeader() {
                   <Link href={"/about-uzbekistan"} onClick={hideHiddenNav}>
                     {" "}
                     About Uzbekistan
+                  </Link>
+                </div>
+                <div className="other_links">
+                  <Link href={"/about-us"} onClick={hideHiddenNav}>
+                    {" "}
+                    About Us
                   </Link>
                 </div>
                 <div className="other_links">
