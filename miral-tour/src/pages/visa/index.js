@@ -223,13 +223,13 @@ function Visa() {
                   <b> Cost of an electronic entry visa:</b>
                   <ul>
                     <b>
-                      <li>Single entry visa - 20 US dollars per person</li>
+                      <li>Single entry visa - 50 US dollars per person</li>
                     </b>
                     <b>
-                      <li>Double entry visa - 35 US dollars per person</li>
+                      <li>Double entry visa - 75 US dollars per person</li>
                     </b>
                     <b>
-                      <li>Multiple entry visa - 50 US dollars per person</li>
+                      <li>Multiple entry visa - 90 US dollars per person</li>
                     </b>
                   </ul>
                   <p>Payment is made by credit cards online.</p>
