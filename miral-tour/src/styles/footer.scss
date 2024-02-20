@@ -85,6 +85,9 @@
         }
       }
       .payments {
+        @media (max-width: 768px) {
+          width: 100%;
+        }
         text-align: left;
         cursor: pointer;
         .payment_wrap {
