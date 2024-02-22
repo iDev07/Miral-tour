@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { LineWave } from "react-loader-spinner";
+import { Bars } from "react-loader-spinner";
 function Loader() {
   return (
     <>
@@ -8,11 +8,11 @@ function Loader() {
         <title>Discover Uzbekistan with - Miral Tour</title>
       </Head>
       <div align="center" className="loeader_main">
-        <LineWave
-          height={100}
-          width={100}
+        <Bars
+          height={80}
+          width={80}
           color="#4fa94d"
-          ariaLabel="line-wave"
+          ariaLabel="rings-loading"
           wrapperStyle={{}}
           wrapperClass=""
           visible={true}

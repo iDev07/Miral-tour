@@ -6,6 +6,49 @@ function AboutUs() {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
+        />
+        <link rel="icon" href="/img/mini_logo.png" />
+        <meta name="author" content="Miral Tour" />
+        <meta
+          name="keywords"
+          content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
+        <meta property="og:title" content="Miral Tour" />
+        <meta
+          property="og:description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
+        />
+        <meta
+          property="og:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
+        <meta property="og:image:width" content="780" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:site_name" content="Miral Tour" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Logo" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Miral Tour" />
+        <meta
+          property="twitter:description"
+          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
+        />
+        <meta
+          property="twitter:image"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
+        <meta
+          name="msapplication-TileImage"
+          content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
+        />
+        <meta property="og:url" content="miraltour.com"></meta>
+        <meta
+          name="google-site-verification"
+          content="U62xsTImQNPhHCBZzXFmwO3Zip8rZCGxjg2O-4xRNXI"
+        />
         <title>About us!</title>
       </Head>
       <div className="about_us pt_100">
@@ -127,29 +170,29 @@ function AboutUs() {
               </div>
               <div className="member">
                 <div className="image_box">
-                  <img src="/img/iroda.jpg" alt="Team Member - Miral Tour" />
+                  <img src="/img/member4.jpg" alt="Team Member - Miral Tour" />
                 </div>
                 <div className="detail">
-                  <h3>Iroda Baxriddinovna</h3>
-                  <span>Head Manager of Marketing department</span>
+                  <h3>Mels Hakimov</h3>
+                  <span>Head Manager of Guides</span>
                 </div>
               </div>
               <div className="member">
                 <div className="image_box">
-                  <img src="/img/iroda.jpg" alt="Team Member - Miral Tour" />
+                  <img src="/img/member3_.jpg" alt="Team Member - Miral Tour" />
                 </div>
                 <div className="detail">
-                  <h3>Iroda Baxriddinovna</h3>
-                  <span>Head Manager of Sales department</span>
+                  <h3>Hasanbek Elmurodov</h3>
+                  <span>Head Manager of Visa Support</span>
                 </div>
               </div>
               <div className="member">
                 <div className="image_box">
-                  <img src="/img/iroda.jpg" alt="Team Member - Miral Tour" />
+                  <img src="/img/member2.jpg" alt="Team Member - Miral Tour" />
                 </div>
                 <div className="detail">
-                  <h3>Iroda Baxriddinovna</h3>
-                  <span>Head Manager of International partnerships</span>
+                  <h3>Urinboeva Mohidil</h3>
+                  <span>Head Manager of Operators</span>
                 </div>
               </div>
             </div>
