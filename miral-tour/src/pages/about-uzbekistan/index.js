@@ -131,9 +131,9 @@ function AboutUzbekistan() {
                     </div>
                     <p>
                       Ancient archaeological remains impressive Islamic
-                      monyments sit together with one another in
-                      Uzbekistanaconstant remiender of the nation’s vibrant and
-                      indeed lengthy history.
+                      monyments sit together with one another in Uzbekistan a
+                      constant remiender of the nation’s vibrant and indeed
+                      lengthy history.
                     </p>
                   </div>
                 </div>
@@ -157,10 +157,11 @@ function AboutUzbekistan() {
                       <h3>History</h3>
                     </div>
                     <p>
-                      Uzbekistan's history is dominated by famous conquerors,
-                      including Alexander the Great, Genghis Khan and the
-                      unstoppable Tamerlane. Islamtookroot, slowly,
-                      oppressively.
+                      The Early Muslim conquests and the subsequent Samanid
+                      Empire converted most of the peopl into adherents of
+                      Islam. This period saw leading figures of the Islamic
+                      Golden Age, including Muhammad al-Bukhari, Al-Tirmidhi, al
+                      Khwarizmi.
                     </p>
                   </div>
                 </div>

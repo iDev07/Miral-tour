@@ -135,7 +135,7 @@ function AboutUs() {
               </div>
               <div className="content_box">
                 <div className="content_box_wrapper">
-                  <h2 className="subtitle">Our Mission</h2>
+                  <h2 className="subtitle">Our Objective</h2>
                   <p>
                     Offer educational tours thatinspire people to explore and
                     connect with each other across cultures and borders. Our

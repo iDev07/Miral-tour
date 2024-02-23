@@ -102,7 +102,7 @@ function Destinations() {
   return (
     <>
       <Head>
-        <title>Uzbekistan destinations and regions Miral Tour Uzbekistan</title>
+        <title>Uzbekistan destinations - Miral Tour Uzbekistan</title>
       </Head>
       {loading ? (
         <Loader />
@@ -112,7 +112,7 @@ function Destinations() {
             <div className="all_places_wrapper">
               <div className="intro">
                 <div className="title">
-                  <h1>Uzbekistan destinations and regions</h1>
+                  <h1>Uzbekistan destinations</h1>
                 </div>
                 <div className="sort">
                   <h3>Sort by: </h3>{" "}
