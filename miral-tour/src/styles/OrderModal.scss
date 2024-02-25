@@ -221,9 +221,21 @@
     }
   }
 }
-.ant-picker-dropdown {
-  @media (max-width: 768px) {
-    top: 390px !important;
-    max-width: 83%;
+// .ant-picker-dropdown {
+//   @media (max-width: 768px) {
+//     top: 320px !important;
+//     max-width: 84%;
+//   }
+// }
+@media (max-width: 480px) {
+  .ant-picker-dropdown {
+    width: 320px !important;
+  }
+  .ant-picker-panels {
+    display: block !important;
+    flex-direction: column !important;
+  }
+  .ant-picker-range-part {
+    width: 100% !important;
   }
 }

@@ -95,21 +95,23 @@ function Visa() {
   return (
     <>
       <Head>
-        <title>Visa to Uzbekistan</title>
+        <title>
+          Uzbekistan visa; transit visa; e-visa, visa-free entry to Uzbekistan
+        </title>
         <meta
           name="description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="To enter the Republic of Uzbekistan for tourism purposes, a valid passport and visa are required unless you are from a country with a visa-free travel agreement with Uzbekistan. You can pay for the visa to Uzbekistan in US dollars, euros, or any other currency. "
         />
         <link rel="icon" href="/img/mini_logo.png" />
         <meta name="author" content="Miral Tour" />
         <meta
           name="keywords"
-          content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+          content="visa uzbekista, visa of uzbekistan, e-visa, tranzit visa, miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan"
         />
         <meta property="og:title" content="Miral Tour" />
         <meta
           property="og:description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="To enter the Republic of Uzbekistan for tourism purposes, a valid passport and visa are required unless you are from a country with a visa-free travel agreement with Uzbekistan. You can pay for the visa to Uzbekistan in US dollars, euros, or any other currency. "
         />
         <meta
           property="og:image"
@@ -124,7 +126,7 @@ function Visa() {
         <meta property="twitter:title" content="Miral Tour" />
         <meta
           property="twitter:description"
-          content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
+          content="To enter the Republic of Uzbekistan for tourism purposes, a valid passport and visa are required unless you are from a country with a visa-free travel agreement with Uzbekistan. You can pay for the visa to Uzbekistan in US dollars, euros, or any other currency. "
         />
         <meta
           property="twitter:image"

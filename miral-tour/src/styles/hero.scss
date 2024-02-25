@@ -106,9 +106,9 @@
                 }
                 .night {
                   @media (max-width: 768px) {
-                    // .ant-select {
-                    // width: 95% !important;
-                    // }
+                    .ant-select {
+                      width: 100% !important;
+                    }
                   }
                   p {
                     text-align: left;
@@ -229,16 +229,16 @@
     display: flex;
   }
 }
-@media (max-width: 768px) {
-  .ant-picker-panel-container .ant-picker-panels {
-    display: block !important;
-  }
-}
-@media (max-width: 768px) {
-  .ant-picker-dropdown {
-    z-index: 10;
-  }
-}
+// @media (max-width: 768px) {
+//   .ant-picker-panel-container .ant-picker-panels {
+//     display: block !important;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .ant-picker-dropdown {
+//     z-index: 10;
+//   }
+// }
 
 .checkbox_cities_btn {
   display: flex;

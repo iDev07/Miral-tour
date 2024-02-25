@@ -5,6 +5,10 @@ export default function Document() {
     <Html>
       <Head>
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />
@@ -12,7 +16,7 @@ export default function Document() {
         <meta name="author" content="Miral Tour" />
         <meta
           name="keywords"
-          content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+          content="miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan"
         />
         <meta property="og:title" content="Miral Tour" />
         <meta

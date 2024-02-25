@@ -318,6 +318,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                             format="DD-MM-YYYY"
                             placeholder=""
                             defaultValue={""}
+                            inputReadOnly
                             onChange={handleDateChange}
                           />
                         </div>

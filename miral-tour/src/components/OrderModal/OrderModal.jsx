@@ -166,27 +166,6 @@ const OrderModal = ({
                 </div>
               </div>
               <div className="right_box">
-                <div className="top_selecteds">
-                  <div className="left_box">
-                    <div className="country">
-                      <p>{t("orderModal.from")}</p>
-                      <Select
-                        options={options}
-                        value={value}
-                        onChange={changeHandler}
-                      />
-                    </div>
-                  </div>
-                  <div className="right_box">
-                    <p>{t("orderModal.to")}</p>
-                    <div className="where">
-                      <Select
-                        value={t("constructorForm.constCountry")}
-                        // options={countries}
-                      />
-                    </div>
-                  </div>
-                </div>
                 <div className="middle_selecteds">
                   <div className="dates">
                     <p>{t("orderModal.departureDate")}</p>
@@ -196,6 +175,7 @@ const OrderModal = ({
                         placeholder=""
                         defaultValue={selectedDates}
                         onChange={handleDateChange}
+                        inputReadOnly
                       />
                     </div>
                   </div>
@@ -262,6 +242,28 @@ const OrderModal = ({
                     </div>
                   </div>
                 </div>
+                <div className="top_selecteds">
+                  <div className="left_box">
+                    <div className="country">
+                      <p>{t("orderModal.from")}</p>
+                      <Select
+                        options={options}
+                        value={value}
+                        onChange={changeHandler}
+                      />
+                    </div>
+                  </div>
+                  <div className="right_box">
+                    <p>{t("orderModal.to")}</p>
+                    <div className="where">
+                      <Select
+                        value={t("constructorForm.constCountry")}
+                        // options={countries}
+                      />
+                    </div>
+                  </div>
+                </div>
+
                 <div className="bottom_selectds">
                   <div className="wrapper">
                     <div className="left_box">
