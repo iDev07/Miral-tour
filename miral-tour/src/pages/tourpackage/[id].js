@@ -145,43 +145,43 @@ function Tourpackage() {
       console.error("Geolocation is not available in this browser.");
     }
   }, []);
-  function findCountry() {
-    // Check if country has already been retrieved
-    if (!country) {
-      let timeoutId;
-      // Create a promise for geolocation with a timeout
-      const geolocationPromise = new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-        timeoutId = setTimeout(() => {
-          reject(new Error("Geolocation request timed out"));
-        }, 60000); // 60 seconds timeout
-      });
+  // function findCountry() {
+  //   // Check if country has already been retrieved
+  //   if (!country) {
+  //     let timeoutId;
+  //     // Create a promise for geolocation with a timeout
+  //     const geolocationPromise = new Promise((resolve, reject) => {
+  //       navigator.geolocation.getCurrentPosition(resolve, reject);
+  //       timeoutId = setTimeout(() => {
+  //         reject(new Error("Geolocation request timed out"));
+  //       }, 60000); // 60 seconds timeout
+  //     });
 
-      geolocationPromise
-        .then((position) => {
-          clearTimeout(timeoutId); // Clear the timeout
-          const { latitude, longitude } = position.coords;
-          const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-          fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-              setCountry(data.address.country);
-              setDefaultCountry({ value: 0, label: data.address.country });
-              setLoading(false);
-            })
-            .catch(() => {
-              console.log("Error Fetching API");
-            });
-        })
-        .catch((error) => {
-          console.error(error.message); // Handle timeout or other errors
-          setLoading(false);
-        });
-    }
-  }
-  if (!country) {
-    findCountry();
-  }
+  //     geolocationPromise
+  //       .then((position) => {
+  //         clearTimeout(timeoutId); // Clear the timeout
+  //         const { latitude, longitude } = position.coords;
+  //         const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+  //         fetch(url)
+  //           .then((res) => res.json())
+  //           .then((data) => {
+  //             setCountry(data.address.country);
+  //             setDefaultCountry({ value: 0, label: data.address.country });
+  //             setLoading(false);
+  //           })
+  //           .catch(() => {
+  //             console.log("Error Fetching API");
+  //           });
+  //       })
+  //       .catch((error) => {
+  //         console.error(error.message); // Handle timeout or other errors
+  //         setLoading(false);
+  //       });
+  //   }
+  // }
+  // if (!country) {
+  //   findCountry();
+  // }
   const items = [
     {
       key: "1",
@@ -876,7 +876,7 @@ function Tourpackage() {
                             <RangePicker
                               format="DD-MM-YYYY"
                               placeholder=""
-                              // defaultValue={dateRange}
+                              inputReadOnly
                               onChange={handleDateChange}
                             />
                           </div>

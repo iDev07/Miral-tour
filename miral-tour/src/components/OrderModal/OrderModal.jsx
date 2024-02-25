@@ -171,7 +171,7 @@ const OrderModal = ({
                     <p>{t("orderModal.departureDate")}</p>
                     <div className="dates_wrapper">
                       <RangePicker
-                        format="YYYY-MM-DD"
+                        format="DD-MM-YYYY"
                         placeholder=""
                         defaultValue={selectedDates}
                         onChange={handleDateChange}

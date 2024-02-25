@@ -230,12 +230,16 @@
 @media (max-width: 480px) {
   .ant-picker-dropdown {
     width: 320px !important;
+    position: fixed;
+    inset: 46.328px auto auto 32px !important;
   }
   .ant-picker-panels {
     display: block !important;
-    flex-direction: column !important;
   }
   .ant-picker-range-part {
     width: 100% !important;
+  }
+  .ant-modal {
+    top: 0px !important;
   }
 }
