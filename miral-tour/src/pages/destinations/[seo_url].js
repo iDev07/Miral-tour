@@ -80,7 +80,7 @@ function Destinations({}) {
             <meta name="author" content="Miral Tour" />
             <meta
               name="keywords"
-              content="miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+              content="destinations uzbekistan, places uzbekistan, ancient buildings, registan, bibi khanim, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
             />
             <meta property="og:title" content="Miral Tour" />
             <meta

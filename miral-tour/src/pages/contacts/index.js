@@ -9,6 +9,10 @@ function Contacts() {
     <>
       <Head>
         <title>{t("menu.contacts")}</title>
+        <meta
+          name="keywords"
+          content="contacts miral tour, whatsapp miral tour, telegram, instagram,  places uzbekistan, ancient buildings, registan, bibi khanim, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
       </Head>
 
       <div className="contacts pt_100">

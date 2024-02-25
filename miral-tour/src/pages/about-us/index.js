@@ -183,7 +183,7 @@ function AboutUs() {
                 </div>
                 <div className="detail">
                   <h3>Hasanbek Elmurodov</h3>
-                  <span>Head Manager of Visa Support</span>
+                  <span>Head Manager of IT Department</span>
                 </div>
               </div>
               <div className="member">

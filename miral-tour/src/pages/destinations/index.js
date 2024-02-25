@@ -102,7 +102,11 @@ function Destinations() {
   return (
     <>
       <Head>
-        <title>Uzbekistan destinations - Miral Tour Uzbekistan</title>
+        <title>Uzbekistan destinations - Miral Tour</title>
+        <meta
+          name="keywords"
+          content="destinations uzbekistan, places uzbekistan, ancient buildings, registan, bibi khanim, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
       </Head>
       {loading ? (
         <Loader />
@@ -121,8 +125,6 @@ function Destinations() {
                       value: 1,
                       label: "City",
                     }}
-                    // style={{ width: 120, borderRadius: 0 }}
-                    // suffixIcon={siuffix}
                     onChange={handleCityChange}
                     options={cities.map((city) => ({
                       value: city.id,
@@ -134,8 +136,6 @@ function Destinations() {
                       value: 1,
                       label: "Type",
                     }}
-                    // style={{ width: 120, borderRadius: 0 }}
-                    // suffixIcon={siuffix}
                     onChange={handleTypeChange}
                     options={types}
                   />

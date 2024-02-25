@@ -25,6 +25,10 @@ function FamousPeople() {
     <>
       <Head>
         <title>Ancient Scholars of Uzbekistan - Miral Tour </title>
+        <meta
+          name="keywords"
+          content="miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan"
+        />
       </Head>
       {loading ? (
         <Loader />

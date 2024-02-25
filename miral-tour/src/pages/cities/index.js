@@ -25,6 +25,10 @@ function Cities() {
     <>
       <Head>
         <title>Uzbekistan cities and regions Miral Tour Uzbekistan</title>
+        <meta
+          name="keywords"
+          content="cities uzbekistan, places uzbekistan, ancient buildings, registan, bibi khanim, regions Uzbekistan,  miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
       </Head>
       {loading ? (
         <Loader />
