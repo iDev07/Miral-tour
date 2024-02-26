@@ -97,6 +97,20 @@ function ReliogiosTours() {
               </div>
             </div>
             <Container>
+              <div className="tours_box">
+                <div className="intro">
+                  <h2>Religious tour packages</h2>
+                </div>
+                <div className="this_tours">
+                  {religousTours &&
+                    religousTours.length &&
+                    religousTours.map((tourpackage) => (
+                      <TourPackageCard tourpackage={tourpackage} />
+                    ))}
+                </div>
+              </div>
+            </Container>
+            <Container>
               <div className="tours_wrap">
                 <div className="content_box">
                   <div className="wrapper_section">
@@ -353,16 +367,6 @@ function ReliogiosTours() {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="tours_box">
-                  <div className="intro">
-                    <h2>Religious tour packages</h2>
-                  </div>
-                  {religousTours &&
-                    religousTours.length &&
-                    religousTours.map((tourpackage) => (
-                      <TourPackageCard tourpackage={tourpackage} />
-                    ))}
                 </div>
               </div>
             </Container>

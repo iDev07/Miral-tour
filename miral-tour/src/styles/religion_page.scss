@@ -43,6 +43,110 @@
           }
         }
       }
+      .tours_box {
+        .intro {
+          margin-top: 40px;
+          margin-bottom: 20px;
+        }
+        .this_tours {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .col {
+          @media (max-width: 768px) {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 40px;
+            &:nth-child(1) {
+              margin-left: inherit;
+            }
+          }
+          background-color: #fff;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          margin: 0 15px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          width: 23.5%;
+          border-radius: 5px;
+          overflow: hidden;
+          margin-bottom: 20px;
+
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+          }
+          .col_wrap {
+            .tour_img {
+              border-radius: 5px;
+              overflow: hidden;
+              position: relative;
+              img {
+                transition: 0.3s ease;
+                width: 100%;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-radius: 5px;
+                height: 300px;
+                object-fit: cover;
+              }
+              // .add_cart {
+              //   position: absolute;
+              //   bottom: 0;
+              //   right: 10px;
+              //   background-color: #fff;
+              //   border: none;
+              //   padding: 10px;
+              //   border-top-right-radius: 5px;
+              //   border-top-left-radius: 5px;
+              //   &:hover {
+              //     cursor: pointer;
+              //   }
+              // }
+            }
+            .tour_name {
+              text-align: center;
+              padding: 10px;
+              padding-bottom: 0;
+              h2 {
+                font-size: 18px;
+              }
+              &:hover {
+                color: #004074;
+              }
+            }
+            .bottom {
+              display: flex;
+            }
+            .tour_details {
+              padding: 10px;
+              width: 100%;
+              padding-top: 0;
+              p {
+                font-size: 18px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                &:nth-child(2) {
+                  margin-left: auto;
+                }
+                svg {
+                  margin-right: 5px;
+                }
+              }
+              .from {
+              }
+            }
+            .tour_link {
+              display: block;
+              margin-top: 10px;
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
       .second {
         background: url("/img/budda_back.jpg");
         background-repeat: no-repeat;
@@ -62,7 +166,7 @@
           flex-direction: column-reverse;
         }
         display: grid;
-        grid-template-columns: 74% 24%;
+        // grid-template-columns: 74% 24%;
         .about {
           margin: 50px 0;
           p {
@@ -122,7 +226,7 @@
                     .hidden_texts {
                       position: absolute;
                       transition: 0.5s ease;
-                      bottom: -60px;
+                      bottom: -20px;
                       h3 {
                         font-weight: 800;
                       }
