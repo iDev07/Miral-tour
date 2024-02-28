@@ -62,7 +62,7 @@ function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <a href="http://Wa.me/+998 77 093 00 70">
+                    <a href="http://Wa.me/+998770930070">
                       +998 77 093 00 70 <br /> (Whatsapp){" "}
                     </a>
                   </li>
@@ -175,7 +175,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="http://Wa.me/+998770560070">
+                  <a href="http://Wa.me/+998770930070">
                     <svg
                       width="45"
                       height="45"

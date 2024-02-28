@@ -13,7 +13,7 @@ function TopHeader() {
               color: "#0073DB",
             }}
           >
-            <Link href={"/about-us"}>Abou Us</Link>
+            <Link href={"/about-us"}>About Us</Link>
           </p>
           <p
             style={{

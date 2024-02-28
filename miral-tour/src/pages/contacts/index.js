@@ -146,7 +146,7 @@ function Contacts() {
                           </a>
                         </div>
                         <div className="col">
-                          <a href="http://Wa.me/+998770560070">
+                          <a href="http://Wa.me/+998770930070">
                             <svg
                               width="45"
                               height="45"

@@ -101,13 +101,17 @@ function ReliogiosTours() {
                 <div className="intro">
                   <h2>Religious tour packages</h2>
                 </div>
-                <div className="this_tours">
-                  {religousTours &&
-                    religousTours.length &&
-                    religousTours.map((tourpackage) => (
-                      <TourPackageCard tourpackage={tourpackage} />
-                    ))}
-                </div>
+                {loading ? (
+                  <Loader />
+                ) : (
+                  <div className="this_tours">
+                    {religousTours &&
+                      religousTours.length &&
+                      religousTours.map((tourpackage) => (
+                        <TourPackageCard tourpackage={tourpackage} />
+                      ))}
+                  </div>
+                )}
               </div>
             </Container>
             <Container>
