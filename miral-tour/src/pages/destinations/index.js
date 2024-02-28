@@ -102,78 +102,87 @@ function Destinations() {
   return (
     <>
       <Head>
-        <title>Uzbekistan destinations - Miral Tour</title>
+        <title>Uzbekistan destinations</title>
         <meta
           name="keywords"
           content="destinations uzbekistan, places uzbekistan, ancient buildings, registan, bibi khanim, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
         />
+        <link rel="icon" href="/img/mini_logo.png" />
+        <meta name="author" content="Miral Tour" />
+        <meta
+          name="keywords"
+          content="religious, religious tours, tour, tours, tourpackage, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
+        />
+        <meta property="og:title" content="Miral Tour" />
       </Head>
-      {loading ? (
-        <Loader />
-      ) : (
-        <Container>
-          <div className="all_places_destinations pt_100">
-            <div className="all_places_wrapper">
-              <div className="intro">
-                <div className="title">
-                  <h1>Uzbekistan destinations</h1>
-                </div>
-                <div className="sort">
-                  <h3>Sort by: </h3>{" "}
-                  <Select
-                    defaultValue={{
-                      value: 1,
-                      label: "City",
-                    }}
-                    onChange={handleCityChange}
-                    options={cities.map((city) => ({
-                      value: city.id,
-                      label: city.name_en,
-                    }))}
-                  />
-                  <Select
-                    defaultValue={{
-                      value: 1,
-                      label: "Type",
-                    }}
-                    onChange={handleTypeChange}
-                    options={types}
-                  />
-                </div>
-              </div>
-              <div className="places">
-                {sortedDestinations && sortedDestinations.length ? (
-                  sortedDestinations.map((destination) => (
-                    <div className="place">
-                      <Link href={`/destinations/${destination.seo_url}`}>
-                        <img
-                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`}
-                          alt={`${destination.title_en}`}
-                        />
-                        <div className="place_wrap">
-                          <div className="content">
-                            <h2>{destination.title_en}</h2>
-                            <p className="read_more">
-                              Read more{" "}
-                              <span>
-                                <ChevronRight />
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </Link>
-                    </div>
-                  ))
-                ) : (
-                  <div className="not_found">
-                    <p>Not found</p>
+      <div className="parent">
+        {loading ? (
+          <Loader />
+        ) : (
+          <Container>
+            <div className="all_places_destinations pt_100">
+              <div className="all_places_wrapper">
+                <div className="intro">
+                  <div className="title">
+                    <h1>Uzbekistan destinations</h1>
                   </div>
-                )}
+                  <div className="sort">
+                    <h3>Sort by: </h3>{" "}
+                    <Select
+                      defaultValue={{
+                        value: 1,
+                        label: "City",
+                      }}
+                      onChange={handleCityChange}
+                      options={cities.map((city) => ({
+                        value: city.id,
+                        label: city.name_en,
+                      }))}
+                    />
+                    <Select
+                      defaultValue={{
+                        value: 1,
+                        label: "Type",
+                      }}
+                      onChange={handleTypeChange}
+                      options={types}
+                    />
+                  </div>
+                </div>
+                <div className="places">
+                  {sortedDestinations && sortedDestinations.length ? (
+                    sortedDestinations.map((destination) => (
+                      <div className="place">
+                        <Link href={`/destinations/${destination.seo_url}`}>
+                          <img
+                            src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/destination/${destination.main_image}`}
+                            alt={`${destination.title_en}`}
+                          />
+                          <div className="place_wrap">
+                            <div className="content">
+                              <h2>{destination.title_en}</h2>
+                              <p className="read_more">
+                                Read more{" "}
+                                <span>
+                                  <ChevronRight />
+                                </span>
+                              </p>
+                            </div>
+                          </div>
+                        </Link>
+                      </div>
+                    ))
+                  ) : (
+                    <div className="not_found">
+                      <p>Not found</p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
-        </Container>
-      )}
+          </Container>
+        )}
+      </div>
     </>
   );
 }

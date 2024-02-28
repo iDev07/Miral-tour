@@ -1240,6 +1240,17 @@ function Tourpackage() {
                           />
                         </div>
                         {renderTableOrMessage()}
+                        {tourpackage.map && (
+                          <div className="tour_route_map">
+                            <h2>Tour Route in Map</h2>
+                            <div
+                              className="tour_map"
+                              dangerouslySetInnerHTML={{
+                                __html: tourpackage.map,
+                              }}
+                            ></div>
+                          </div>
+                        )}
                       </div>
                       <div className="price">
                         <div className="price_iclude">
