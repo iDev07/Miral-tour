@@ -104,3 +104,17 @@
     }
   }
 }
+.category {
+  .this_wrapper {
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    .col {
+      @media (max-width: 768px) {
+        width: 100% !important;
+      }
+      margin: 15px 5px !important;
+
+      width: 24% !important;
+    }
+  }
+}

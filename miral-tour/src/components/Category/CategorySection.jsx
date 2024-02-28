@@ -42,6 +42,22 @@ export const CategorySection = ({ category, id, tourpackages }) => {
                   key={filteredTourPackages[3].id}
                   tourpackage={filteredTourPackages[3]}
                 />
+                <TourPackageCard
+                  key={filteredTourPackages[4].id}
+                  tourpackage={filteredTourPackages[4]}
+                />
+                <TourPackageCard
+                  key={filteredTourPackages[5].id}
+                  tourpackage={filteredTourPackages[5]}
+                />
+                <TourPackageCard
+                  key={filteredTourPackages[6].id}
+                  tourpackage={filteredTourPackages[6]}
+                />
+                <TourPackageCard
+                  key={filteredTourPackages[7].id}
+                  tourpackage={filteredTourPackages[7]}
+                />
               </div>
             </div>
             <div className="more">
