@@ -13,7 +13,7 @@ import {
   AppleOutlined,
   DownOutlined,
 } from "@ant-design/icons";
-import { Button, Tabs } from "antd";
+import { Button, Tabs, Modal } from "antd";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import VillaIcon from "@mui/icons-material/Villa";
@@ -21,6 +21,7 @@ import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
 import FlightIcon from "@mui/icons-material/Flight";
 import CarRentalIcon from "@mui/icons-material/CarRental";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
+import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Guides from "../Services/Guides";
 import Hotels from "../Services/Hotels";
@@ -190,6 +191,7 @@ function Header() {
       children: <Activity />,
     },
   ];
+  const [ticket, setTicket] = useState(false);
   return (
     <header className={`header  ${scroll}`}>
       <div className="header_wrapper">
@@ -280,6 +282,20 @@ function Header() {
                 </ul>
               </div>
             </div>
+            {/* <div className="aviasales_widget">
+              <p onClick={() => setTicket(true)}>
+                <AirplaneTicketIcon />
+                <span>Check Fly Tickets</span>
+              </p>
+              <Modal
+                title="Modal 1000px width"
+                centered
+                open={ticket}
+                onCancel={() => setTicket(false)}
+                width={1000}
+                footer={null}
+              ></Modal>
+            </div> */}
             <div className="search">
               <div className="search_wrap">
                 <form action="">
@@ -328,7 +344,18 @@ function Header() {
             </div> */}
             <div className="cart">
               <Link href={"/cart"}>
-                <ShoppingCartIcon />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z"
+                    fill="#0073DB"
+                  />
+                </svg>
                 <span id="qty">{cartQuantity}</span>
               </Link>
             </div>
