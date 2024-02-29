@@ -15,6 +15,7 @@ function Cart() {
   };
   const { t } = useTranslation();
   const { i18n } = useTranslation();
+  console.log(cart);
   return (
     <>
       <Head>
@@ -65,15 +66,14 @@ function Cart() {
                         <div className="tour_details">
                           <ul>
                             <li>
-                              {item.days} {""}
-                              {t("tourPackage.day")}{" "}
+                              {item.days} {t("tourPackage.day")} {""}
                             </li>
                             <li></li>
                             <li>
-                              {/* {`${item.price}`} */}
-                              {t("priceC")}
-                              {/* {t("tourPackage.onPerson")} */}
+                              From {`${item.price}`}
+                              {t("tourPackage.onPerson")}
                             </li>
+                            <li></li>
                           </ul>
                           <div className="remove">
                             <button onClick={() => removeInCart(item)}>
