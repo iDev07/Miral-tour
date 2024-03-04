@@ -67,7 +67,7 @@
           margin: 0 15px;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
-          width: 23.5%;
+          width: 30%;
           border-radius: 5px;
           overflow: hidden;
           margin-bottom: 20px;
@@ -91,19 +91,19 @@
                 height: 300px;
                 object-fit: cover;
               }
-              // .add_cart {
-              //   position: absolute;
-              //   bottom: 0;
-              //   right: 10px;
-              //   background-color: #fff;
-              //   border: none;
-              //   padding: 10px;
-              //   border-top-right-radius: 5px;
-              //   border-top-left-radius: 5px;
-              //   &:hover {
-              //     cursor: pointer;
-              //   }
-              // }
+              .add_cart {
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+                background-color: #fff;
+                border: none;
+                padding: 10px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                &:hover {
+                  cursor: pointer;
+                }
+              }
             }
             .tour_name {
               text-align: center;
