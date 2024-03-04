@@ -6,7 +6,7 @@
     }
     .background_section {
       display: block;
-      height: 50vh;
+      height: 40vh;
       background: url("https://png.pngtree.com/background/20230519/original/pngtree-beach-and-the-ocean-are-shown-in-this-image-picture-image_2665806.jpg");
       background-size: cover;
       background-repeat: no-repeat;
@@ -14,14 +14,14 @@
       background-attachment: fixed;
       border-radius: 16px;
       .background_wrapper {
-        height: 50vh;
+        height: 40vh;
         background-color: #00000054;
         padding: 20px;
         border-radius: 16px;
         .content {
           display: flex;
           align-items: center;
-          height: 50vh;
+          height: 40vh;
           position: relative;
           p {
             @media (max-width: 768px) {
@@ -31,7 +31,7 @@
             max-width: 60%;
             // position: absolute;
             top: 30%;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 500;
             color: #fff;
             margin: 20px 0;
