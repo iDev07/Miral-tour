@@ -4,6 +4,7 @@ import Layout from "@/components/layout";
 import Loader from "@/components/Loader";
 import NextNProgress from "nextjs-progressbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "@/styles/main.scss";
 import "@/styles/globals.css";
 function MyApp({ Component, pageProps }) {
@@ -21,6 +22,7 @@ function MyApp({ Component, pageProps }) {
         <Layout>
           <NextNProgress color="#0073db" /> <Component {...pageProps} />
           <SpeedInsights />
+          <Analytics />
         </Layout>
       )}
     </>
