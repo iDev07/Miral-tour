@@ -7,7 +7,7 @@ function Loader() {
       <Head>
         <title>Discover Uzbekistan with - Miral Tour</title>
       </Head>
-      <div align="center" className="loeader_main">
+      <div className="loeader_main">
         <Bars
           height={80}
           width={80}

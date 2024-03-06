@@ -60,8 +60,8 @@ function Destinations({}) {
   const router = useRouter();
   const { seo_url } = router.query;
   const city = cities.find((city) => city.seo_url === seo_url);
-  console.log(router.query);
-  console.log(city);
+  // console.log(router.query);
+  // console.log(city);
   if (!city) {
     return <Loader />;
   }

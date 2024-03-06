@@ -1,8 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
+import axios from "axios";
 import { Container } from "@mui/material";
 
 function BusinessTours() {
+  const [formData, setFormData] = useState({
+    company_name: "",
+    client_firstname: "",
+    client_lastname: "",
+    phone_number: "",
+    email: "",
+  });
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const apiUrl = "https://api.all4u-tour.uz/business-requests";
+
+      const formdata = new FormData();
+      formdata.append("company_name", formData.company_name);
+      formdata.append("client_firstname", formData.client_firstname);
+      formdata.append("client_lastname", formData.client_lastname);
+      formdata.append("phone_number", formData.phone_number);
+      formdata.append("email", formData.email);
+
+      // Using axios for the POST request
+      await axios.post(apiUrl, formdata);
+
+      setFormSubmitted(true);
+      setTimeout(() => {
+        setFormSubmitted(false);
+      }, 3000);
+    } catch (error) {
+      console.error("Error sending request:", error.message);
+      console.error("Error details:", error.response); // Log the response details if available
+      // Handle errors
+    }
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  console.log(formData);
+  console.log(formSubmitted);
   return (
     <>
       <Head>
@@ -356,7 +401,7 @@ function BusinessTours() {
                 </div>
               </div>
               <div className="contact_form">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="contact_wrapper" id="contactus">
                     <div className="left_box">
                       <div className="this_wrapper">
@@ -364,24 +409,49 @@ function BusinessTours() {
                           <input
                             type="text"
                             placeholder="Company name *"
+                            name="company_name"
+                            value={formData.company_name}
+                            onChange={handleChange}
                             required
                           />
                         </div>
                         <div className="input">
-                          <input type="text" placeholder="Name *" required />
+                          <input
+                            type="text"
+                            placeholder="Name *"
+                            name="client_firstname"
+                            value={formData.client_firstname}
+                            onChange={handleChange}
+                            required
+                          />
                         </div>
                         <div className="input">
-                          <input type="text" placeholder="Surname " required />
+                          <input
+                            type="text"
+                            placeholder="Surname "
+                            name="client_lastname"
+                            value={formData.client_lastname}
+                            onChange={handleChange}
+                          />
                         </div>
                         <div className="input">
                           <input
                             type="number"
-                            placeholder="Phone number *"
-                            required
+                            placeholder="Phone number"
+                            name="phone_number"
+                            value={formData.phone_number}
+                            onChange={handleChange}
                           />
                         </div>
                         <div className="input">
-                          <input type="mail" placeholder="E-mail" required />
+                          <input
+                            type="email"
+                            placeholder="E-mail *"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                          />
                         </div>
                       </div>
                     </div>
@@ -401,6 +471,17 @@ function BusinessTours() {
               </div>
             </Container>
           </div>
+          {formSubmitted && (
+            <div>
+              <p
+                className={`success-notification ${
+                  formSubmitted ? "visible" : ""
+                }`}
+              >
+                Form submitted successfully!
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </>

@@ -15,7 +15,7 @@ function Cart() {
   };
   const { t } = useTranslation();
   const { i18n } = useTranslation();
-  console.log(cart);
+  // console.log(cart);
   return (
     <>
       <Head>

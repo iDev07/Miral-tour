@@ -65,3 +65,23 @@ body {
     display: none;
   }
 }
+
+/* Notification */
+
+.success-notification {
+  position: fixed;
+  top: 100px;
+  right: 5%;
+  // transform: translateX(-50%);
+  background-color: #4caf50; // Green color for success
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  display: none; // Initially hidden
+  transition: opacity 0.5s ease-in-out; // Add a smooth transition
+
+  &.visible {
+    display: block; // Display when the "visible" class is applied
+    opacity: 1; // Make it fully visible
+  }
+}
