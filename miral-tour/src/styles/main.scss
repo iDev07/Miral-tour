@@ -78,7 +78,7 @@ body {
   padding: 5px;
   border-radius: 5px;
   display: none; // Initially hidden
-  transition: opacity 0.5s ease-in-out; // Add a smooth transition
+  transition: opacity 5s ease-in-out; // Add a smooth transition
 
   &.visible {
     display: block; // Display when the "visible" class is applied
