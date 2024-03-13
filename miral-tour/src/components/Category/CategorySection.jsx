@@ -26,11 +26,21 @@ export const CategorySection = ({ category, id, tourpackages }) => {
             </div>
             <div className="tour_packages">
               <div className="this_wrapper">
-                <TourPackageCard
+                {filteredTourPackages &&
+                  filteredTourPackages.length &&
+                  filteredTourPackages
+                    .slice(0, 8)
+                    .map((tourpackage) => (
+                      <TourPackageCard
+                        key={tourpackage.id}
+                        tourpackage={tourpackage}
+                      />
+                    ))}
+                {/* <TourPackageCard
                   key={filteredTourPackages[0].id}
                   tourpackage={filteredTourPackages[0]}
-                />
-                <TourPackageCard
+                /> */}
+                {/* <TourPackageCard
                   key={filteredTourPackages[1].id}
                   tourpackage={filteredTourPackages[1]}
                 />
@@ -53,11 +63,7 @@ export const CategorySection = ({ category, id, tourpackages }) => {
                 <TourPackageCard
                   key={filteredTourPackages[6].id}
                   tourpackage={filteredTourPackages[6]}
-                />
-                <TourPackageCard
-                  key={filteredTourPackages[7].id}
-                  tourpackage={filteredTourPackages[7]}
-                />
+                /> */}
               </div>
             </div>
             <div className="more">
