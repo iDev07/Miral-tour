@@ -46,8 +46,8 @@ function BusinessTours() {
     setFormData({ ...formData, [name]: value });
   };
 
-  console.log(formData);
-  console.log(formSubmitted);
+  // console.log(formData);
+  // console.log(formSubmitted);
   return (
     <>
       <Head>

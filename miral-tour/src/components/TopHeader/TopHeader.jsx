@@ -21,7 +21,7 @@ function TopHeader() {
               color: "#0073DB",
             }}
           >
-            <Link href={"/"}>Become a partner</Link>
+            <Link href={"/become-partner"}>Become a partner</Link>
           </p>
         </div>
       </Container>

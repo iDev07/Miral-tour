@@ -1,0 +1,123 @@
+.BecomePartner {
+  .this_wrapper {
+    @media (max-width: 768px) {
+      display: block;
+    }
+    display: grid;
+    grid-template-columns: 65% 35%;
+    .p {
+      color: #9c9c9c;
+    }
+    .left_box {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      width: 95%;
+      .main_content {
+        .page_name {
+          p {
+            @media (max-width: 768px) {
+              max-width: 100%;
+            }
+            max-width: 70%;
+          }
+        }
+        .advantages {
+          @media (max-width: 768px) {
+            margin-top: 20px;
+          }
+          margin-top: 50px;
+          .this_wrap {
+            @media (max-width: 768px) {
+              display: block;
+            }
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .col {
+              @media (max-width: 768px) {
+                width: 100%;
+              }
+              width: 47%;
+              margin: 15px 0;
+              margin-right: 15px;
+              padding: 10px;
+              box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+              .top {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                h3 {
+                  margin-left: 8px;
+                }
+                .icon_back {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 50%;
+                  width: 40px;
+                  height: 40px;
+                  background-color: #4ee16e;
+                }
+              }
+              p {
+                color: #9c9c9c;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right_box {
+      .form_partner {
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+        .contact_wrapper {
+          .left_box {
+            .this_wrapper {
+              display: block;
+              .input {
+                margin: 15px 0;
+                input {
+                  border-radius: 10px;
+                  padding: 10px;
+                  background-color: #f3f3f3;
+                  border: 1px solid transparent;
+                  width: 100%;
+                  transition: 0.3s ease;
+                  &::placeholder {
+                    color: #595959;
+                  }
+                  &:focus {
+                    outline: none;
+                    border: 1px solid #c0b7b7;
+                  }
+                  &::-webkit-outer-spin-button,
+                  &::-webkit-inner-spin-button {
+                    display: none;
+                    -webkit-appearance: none;
+                    margin: 0;
+                  }
+                }
+              }
+              .textarea {
+                input {
+                  background-color: #fff !important;
+                  height: 75px;
+                  border: 1px solid #f3f3f3;
+                }
+              }
+              input[type="submit"] {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
