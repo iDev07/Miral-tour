@@ -62,8 +62,13 @@ body {
   text-align: center;
 }
 .backToTop {
+  button {
+    bottom: 90px;
+  }
   @media (max-width: 768px) {
-    display: none;
+    button {
+      bottom: 20px !important;
+    }
   }
 }
 

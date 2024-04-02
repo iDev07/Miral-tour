@@ -27,7 +27,7 @@ function BackToTop() {
           style={{
             position: "fixed",
             cursor: "pointer",
-            bottom: "90px",
+            // bottom: "90px",
             width: "60px",
             height: "60px",
             right: "25px",
