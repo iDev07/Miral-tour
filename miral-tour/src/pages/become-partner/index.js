@@ -84,14 +84,16 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Safe travels</h3>
+                          <h3>Safety and Comfort</h3>
                         </div>
                         <div className="content">
                           <p>
                             {" "}
-                            If you want to cooperate with us, please fill out
-                            the following questions and we will contact you
-                            soon. Please answer the questions accuratelyn
+                            Rest assured, we prioritize the safety and comfort
+                            of our guests with reliable transportation,
+                            knowledgeable guides, and meticulously planned
+                            itineraries, ensuring peace of mind throughout the
+                            journey.
                           </p>
                         </div>
                       </div>
@@ -115,14 +117,16 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Safe travels</h3>
+                          <h3>Growth Opportunities</h3>
                         </div>
                         <div className="content">
                           <p>
                             {" "}
-                            If you want to cooperate with us, please fill out
-                            the following questions and we will contact you
-                            soon. Please answer the questions accuratelyn
+                            With Uzbekistan emerging as a sought-after travel
+                            destination, we are poised to capitalize on this
+                            growing demand and expand our offerings to provide
+                            even more memorable experiences for our valued
+                            guests.
                           </p>
                         </div>
                       </div>
@@ -146,14 +150,15 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Safe travels</h3>
+                          <h3>Strong Partnerships</h3>
                         </div>
                         <div className="content">
                           <p>
                             {" "}
-                            If you want to cooperate with us, please fill out
-                            the following questions and we will contact you
-                            soon. Please answer the questions accuratelyn
+                            By collaborating with local businesses, artisans,
+                            and guides, we create authentic and enriching
+                            experiences that showcase the best of Uzbekistan
+                            while supporting its economy.
                           </p>
                         </div>
                       </div>
@@ -177,14 +182,15 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Safe travels</h3>
+                          <h3>Local Expertise</h3>
                         </div>
                         <div className="content">
                           <p>
                             {" "}
-                            If you want to cooperate with us, please fill out
-                            the following questions and we will contact you
-                            soon. Please answer the questions accuratelyn
+                            As a locally based company, we possess unparalleled
+                            knowledge of Uzbekistan's landscapes, traditions,
+                            and hidden gems, ensuring that every itinerary is
+                            crafted with insider insight.
                           </p>
                         </div>
                       </div>
@@ -252,7 +258,6 @@ function BecomePartner() {
                             onChange={handleChange}
                           />
                         </div>
-
                         <input
                           type="submit"
                           className="submit_req green_btn"

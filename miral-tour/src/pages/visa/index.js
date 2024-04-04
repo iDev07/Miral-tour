@@ -416,7 +416,7 @@ function Visa() {
                       </div>
                       <div className="check_function">
                         <button>
-                          <p>Check visa type</p>
+                          <p>Check visa type </p>
                           <svg
                             width="30"
                             height="30"
