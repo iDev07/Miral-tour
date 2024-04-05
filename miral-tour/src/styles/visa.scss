@@ -141,3 +141,13 @@
     }
   }
 }
+.country_with_flag {
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 5px;
+    width: 35px;
+    box-shadow: 0 0 12px 0 rgba(183, 183, 183, 0.32);
+    margin-right: 10px;
+  }
+}

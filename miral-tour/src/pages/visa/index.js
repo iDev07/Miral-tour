@@ -184,92 +184,11 @@ function Visa() {
                             {
                               value: 1,
                               label: (
-                                <p>
-                                  <svg
-                                    width="54"
-                                    height="44"
-                                    viewBox="0 0 54 44"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <g filter="url(#filter0_d_3913_5761)">
-                                      <g clip-path="url(#clip0_3913_5761)">
-                                        <rect
-                                          x="12"
-                                          y="12"
-                                          width="30"
-                                          height="20"
-                                          rx="4"
-                                          fill="white"
-                                        />
-                                        <path
-                                          d="M42 12H12V22H42V12Z"
-                                          fill="white"
-                                        />
-                                        <path
-                                          d="M42 22H12V32H42V22Z"
-                                          fill="#D52B1E"
-                                        />
-                                        <path
-                                          d="M42 18.667H12V25.3337H42V18.667Z"
-                                          fill="#0039A6"
-                                        />
-                                      </g>
-                                    </g>
-                                    <defs>
-                                      <filter
-                                        id="filter0_d_3913_5761"
-                                        x="0"
-                                        y="0"
-                                        width="54"
-                                        height="44"
-                                        filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB"
-                                      >
-                                        <feFlood
-                                          flood-opacity="0"
-                                          result="BackgroundImageFix"
-                                        />
-                                        <feColorMatrix
-                                          in="SourceAlpha"
-                                          type="matrix"
-                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                          result="hardAlpha"
-                                        />
-                                        <feOffset />
-                                        <feGaussianBlur stdDeviation="6" />
-                                        <feComposite
-                                          in2="hardAlpha"
-                                          operator="out"
-                                        />
-                                        <feColorMatrix
-                                          type="matrix"
-                                          values="0 0 0 0 0.716667 0 0 0 0 0.716667 0 0 0 0 0.716667 0 0 0 0.32 0"
-                                        />
-                                        <feBlend
-                                          mode="normal"
-                                          in2="BackgroundImageFix"
-                                          result="effect1_dropShadow_3913_5761"
-                                        />
-                                        <feBlend
-                                          mode="normal"
-                                          in="SourceGraphic"
-                                          in2="effect1_dropShadow_3913_5761"
-                                          result="shape"
-                                        />
-                                      </filter>
-                                      <clipPath id="clip0_3913_5761">
-                                        <rect
-                                          x="12"
-                                          y="12"
-                                          width="30"
-                                          height="20"
-                                          rx="4"
-                                          fill="white"
-                                        />
-                                      </clipPath>
-                                    </defs>
-                                  </svg>{" "}
+                                <p className="country_with_flag">
+                                  <img
+                                    src="/img/argentina_flag.png"
+                                    alt="Country Flag"
+                                  />
                                   Russia
                                 </p>
                               ),
@@ -321,92 +240,11 @@ function Visa() {
                             {
                               value: 1,
                               label: (
-                                <p>
-                                  <svg
-                                    width="54"
-                                    height="44"
-                                    viewBox="0 0 54 44"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <g filter="url(#filter0_d_3913_5761)">
-                                      <g clip-path="url(#clip0_3913_5761)">
-                                        <rect
-                                          x="12"
-                                          y="12"
-                                          width="30"
-                                          height="20"
-                                          rx="4"
-                                          fill="white"
-                                        />
-                                        <path
-                                          d="M42 12H12V22H42V12Z"
-                                          fill="white"
-                                        />
-                                        <path
-                                          d="M42 22H12V32H42V22Z"
-                                          fill="#D52B1E"
-                                        />
-                                        <path
-                                          d="M42 18.667H12V25.3337H42V18.667Z"
-                                          fill="#0039A6"
-                                        />
-                                      </g>
-                                    </g>
-                                    <defs>
-                                      <filter
-                                        id="filter0_d_3913_5761"
-                                        x="0"
-                                        y="0"
-                                        width="54"
-                                        height="44"
-                                        filterUnits="userSpaceOnUse"
-                                        color-interpolation-filters="sRGB"
-                                      >
-                                        <feFlood
-                                          flood-opacity="0"
-                                          result="BackgroundImageFix"
-                                        />
-                                        <feColorMatrix
-                                          in="SourceAlpha"
-                                          type="matrix"
-                                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                          result="hardAlpha"
-                                        />
-                                        <feOffset />
-                                        <feGaussianBlur stdDeviation="6" />
-                                        <feComposite
-                                          in2="hardAlpha"
-                                          operator="out"
-                                        />
-                                        <feColorMatrix
-                                          type="matrix"
-                                          values="0 0 0 0 0.716667 0 0 0 0 0.716667 0 0 0 0 0.716667 0 0 0 0.32 0"
-                                        />
-                                        <feBlend
-                                          mode="normal"
-                                          in2="BackgroundImageFix"
-                                          result="effect1_dropShadow_3913_5761"
-                                        />
-                                        <feBlend
-                                          mode="normal"
-                                          in="SourceGraphic"
-                                          in2="effect1_dropShadow_3913_5761"
-                                          result="shape"
-                                        />
-                                      </filter>
-                                      <clipPath id="clip0_3913_5761">
-                                        <rect
-                                          x="12"
-                                          y="12"
-                                          width="30"
-                                          height="20"
-                                          rx="4"
-                                          fill="white"
-                                        />
-                                      </clipPath>
-                                    </defs>
-                                  </svg>{" "}
+                                <p className="country_with_flag">
+                                  <img
+                                    src="/img/argentina_flag.png"
+                                    alt="Country Flag"
+                                  />
                                   Russia
                                 </p>
                               ),
