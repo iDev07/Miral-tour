@@ -12,9 +12,12 @@
     // padding: 10px;
     p {
       margin-left: 10px;
-      transition: 0.1s ease;
+      transition: 0.3s ease;
+      font-weight: 500;
       &:hover {
-        font-weight: 500;
+        a {
+          color: #134be4;
+        }
       }
     }
   }
