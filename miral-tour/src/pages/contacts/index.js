@@ -64,7 +64,7 @@ function Contacts() {
                           </a>
                         </div>
                         <div className="col">
-                          <a href="https://www.instagram.com/miraltour_uz">
+                          <a href="https://www.instagram.com/miraltour_com">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="45"
@@ -101,7 +101,7 @@ function Contacts() {
                           </a>
                         </div>
                         <div className="col">
-                          <a href="https://www.facebook.com/profile.php?id=61555978497658&mibextid=ZbWKwL">
+                          <a href="https://www.facebook.com/miraltourcom/">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="45"

@@ -130,21 +130,21 @@ function Tourpackage() {
     setTypeClass(value);
   };
 
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        },
-        (error) => {
-          console.error("Geolocation error:", error.message);
-        }
-      );
-    } else {
-      console.error("Geolocation is not available in this browser.");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if ("geolocation" in navigator) {
+  //     navigator.geolocation.getCurrentPosition(
+  //       (position) => {
+  //         const { latitude, longitude } = position.coords;
+  //         // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+  //       },
+  //       (error) => {
+  //         console.error("Geolocation error:", error.message);
+  //       }
+  //     );
+  //   } else {
+  //     console.error("Geolocation is not available in this browser.");
+  //   }
+  // }, []);
   // function findCountry() {
   //   // Check if country has already been retrieved
   //   if (!country) {
