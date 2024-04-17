@@ -207,7 +207,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accomadition 3*</span>
+                <span>Accommodation 3*</span>
               </p>
 
               <p className="item_wrapper">
@@ -378,7 +378,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maxmimum tourists number : 15</span>
+                <span>Maximum number of tourists: 15</span>
               </p>
             </div>
           </div>
@@ -409,7 +409,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accomadition 4*</span>
+                <span>Accommodation 4*</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -594,7 +594,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maxmimum tourists number : 7</span>
+                <span>Maximum number of tourists: 7</span>
               </p>
             </div>
           </div>
@@ -625,7 +625,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accomadition 5*</span>
+                <span>Accommodation 5*</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -810,7 +810,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maxmimum tourists number : 3</span>
+                <span>Maximum number of tourists: 3</span>
               </p>
             </div>
           </div>
