@@ -25,10 +25,12 @@ export const TourPackageCard = ({ tourpackage }) => {
     <div className="col">
       <div className="col_wrap">
         <div className="tour_img">
-          <img
-            src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
-            alt={tourpackage.title_en}
-          />
+          <Link href={`/tourpackage/${tourpackage.id}`}>
+            <img
+              src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+              alt={tourpackage.title_en}
+            />
+          </Link>
           {/* <FlyingButton
             targetTop={"5%"}
             targetLeft={"90%"}
