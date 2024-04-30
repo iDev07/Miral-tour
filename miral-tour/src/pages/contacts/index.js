@@ -39,7 +39,7 @@ function Contacts() {
                   <div className="socials">
                     <hr />
                     <div className="email">
-                      <h3>E-mail</h3>
+                      <h3>{t("contactsPage.mail")}</h3>
                       <a href="mailto: miraltouruz@gmail.com">
                         miraltouruz@gmail.com
                       </a>

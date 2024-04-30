@@ -1,6 +1,7 @@
 import Loader from "@/components/Loader";
 import { ChevronRight } from "@mui/icons-material";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Select } from "antd";
 import axios from "axios";
 import Head from "next/head";
@@ -8,29 +9,30 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 function Destinations() {
+  const { t, i18n } = useTranslation();
   const [cities, setCities] = useState([]);
   const [destinations, setDestinations] = useState([]);
   const [cityCheck, setCityCheck] = useState(0);
   const [typeCheck, setTypeCheck] = useState(0);
   const types = [
     {
-      label: "Museum",
+      label: t("destinationsPage.type1"),
       value: 1,
     },
     {
-      label: "Hotels",
+      label: t("destinationsPage.type2"),
       value: 2,
     },
     {
-      label: "Attractions",
+      label: t("destinationsPage.type3"),
       value: 3,
     },
     {
-      label: "Vicinity",
+      label: t("destinationsPage.type4"),
       value: 4,
     },
     {
-      label: "Leisure",
+      label: t("destinationsPage.type5"),
       value: 5,
     },
   ];
@@ -102,7 +104,7 @@ function Destinations() {
   return (
     <>
       <Head>
-        <title>Uzbekistan destinations</title>
+        <title>{t("destinationsPage.title")}</title>
         <meta
           name="keywords"
           content="destinations uzbekistan, places uzbekistan, ancient buildings, registan, bibi khanim, miral tour,miral-tour, miral tour uz, uzbekistan, miraltour, miral, worldmiral, turbotour, all4u-tour, tourism, tour, all4u"
@@ -124,25 +126,34 @@ function Destinations() {
               <div className="all_places_wrapper">
                 <div className="intro">
                   <div className="title">
-                    <h1>Uzbekistan destinations</h1>
+                    <h1>{t("destinationsPage.title")}</h1>
                   </div>
                   <div className="sort">
-                    <h3>Sort by: </h3>{" "}
+                    <h3>{t("destinationsPage.sort")} </h3>{" "}
                     <Select
                       defaultValue={{
                         value: 1,
-                        label: "City",
+                        label: t("destinationsPage.city"),
                       }}
                       onChange={handleCityChange}
                       options={cities.map((city) => ({
                         value: city.id,
-                        label: city.name_en,
+                        label:
+                          i18n.language === "uz"
+                            ? city.name_uz
+                            : i18n.language === "ru"
+                            ? city.name_ru
+                            : i18n.language === "it" &&
+                              city.name_it !== null &&
+                              city.name_it !== ""
+                            ? city.name_it
+                            : city.name_en,
                       }))}
                     />
                     <Select
                       defaultValue={{
                         value: 1,
-                        label: "Type",
+                        label: t("destinationsPage.type"),
                       }}
                       onChange={handleTypeChange}
                       options={types}
@@ -160,9 +171,19 @@ function Destinations() {
                           />
                           <div className="place_wrap">
                             <div className="content">
-                              <h2>{destination.title_en}</h2>
+                              <h2>
+                                {i18n.language === "uz"
+                                  ? city.name_uz
+                                  : i18n.language === "ru"
+                                  ? city.name_ru
+                                  : i18n.language === "it" &&
+                                    city.name_it !== null &&
+                                    city.name_it !== ""
+                                  ? city.name_it
+                                  : city.name_en}
+                              </h2>
                               <p className="read_more">
-                                Read more{" "}
+                                {t("business.formBtn")}
                                 <span>
                                   <ChevronRight />
                                 </span>
@@ -174,7 +195,7 @@ function Destinations() {
                     ))
                   ) : (
                     <div className="not_found">
-                      <p>Not found</p>
+                      <p>{"destinationsPage.notFound"}</p>
                     </div>
                   )}
                 </div>

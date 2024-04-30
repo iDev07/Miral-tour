@@ -108,7 +108,7 @@ function HomePage() {
         />
       )}
       <Banners />
-      {loading ? (
+      {categories.length === 0 ? (
         <Loader />
       ) : (
         <CategorySection

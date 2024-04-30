@@ -56,11 +56,11 @@ function Header() {
   const handleSearchChange = (event) => {
     const searchText = event.target.value;
     setSearchQuery(searchText);
-
     const filtered = tourpackages.filter(
       (tourpackage) =>
         tourpackage.title_uz.toLowerCase().includes(searchText.toLowerCase()) ||
         tourpackage.title_ru.toLowerCase().includes(searchText.toLowerCase()) ||
+        // tourpackage.title_it.toLowerCase().includes(searchText.toLowerCase()) ||
         tourpackage.title_en.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredPackages(filtered);
@@ -220,17 +220,22 @@ function Header() {
                                 ? category.name_uz
                                 : i18n.language === "ru"
                                 ? category.name_ru
-                                : category.name_en}
+                                : i18n.language === "it" &&
+                                  category.name_it !== null &&
+                                  category.name_it !== "" // Check if name_it is not null or empty
+                                ? category.name_it
+                                : category.name_en}{" "}
+                              {/* If name_it is null or empty, display name_en */}
                             </Link>
                           </li>
                         ))}
                     </ul>
                   </li>
                   <li className="parent_link">
-                    <Link href={"/religious-tours"}>Religious tours</Link>
+                    <Link href={"/religious-tours"}>{t("menu.religious")}</Link>
                   </li>
                   <li className="parent_link">
-                    <Link href={"/business-tours"}>Business tours</Link>
+                    <Link href={"/business-tours"}>{t("menu.business")}</Link>
                   </li>
                   {/* <li
                     className={`ownTripBtn ${menuOpen ? "open" : ""}`}
@@ -245,26 +250,32 @@ function Header() {
                   </li> */}
                   <li className="parent_link about_uz">
                     <Link href={"/about-uzbekistan"}>
-                      Uzbekistan <KeyboardArrowDownOutlinedIcon />{" "}
+                      {t("menu.uzb")} <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
                     <ul className="hidden_ul_about">
                       <div className="wrapper">
                         <li className="parent_link_place">
                           <Link href={`/about-uzbekistan`}>
-                            About Uzbekistan
+                            {t("menu.sub_uzb1")}
                           </Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/famous-people`}>Ancient Scholars</Link>
+                          <Link href={`/famous-people`}>
+                            {" "}
+                            {t("menu.sub_uzb2")}
+                          </Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/destinations`}>Destinations</Link>
+                          <Link href={`/destinations`}>
+                            {" "}
+                            {t("menu.sub_uzb3")}
+                          </Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/cities`}>Cities</Link>
+                          <Link href={`/cities`}> {t("menu.sub_uzb4")}</Link>
                         </li>
                         <li className="parent_link_place">
-                          <Link href={`/visa`}>Visa</Link>
+                          <Link href={`/visa`}> {t("menu.sub_uzb5")}</Link>
                         </li>
                         {/* {cities.map((city) => (
                           <li className="parent_link_place" key={city.id}>
@@ -317,6 +328,10 @@ function Header() {
                             ? tourpackage.title_uz
                             : i18n.language === "ru"
                             ? tourpackage.title_ru
+                            : i18n.language === "it" &&
+                              tourpackage.title_it !== null &&
+                              tourpackage.title_it !== ""
+                            ? tourpackage.title_it
                             : tourpackage.title_en}
                         </Link>
                       </li>
@@ -361,7 +376,7 @@ function Header() {
             </div>
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
-                {/* <option value="ru">Ру</option> */}
+                <option value="it">IT</option>
                 <option value="en">EN</option>
                 {/* <option value="uz">UZ</option> */}
               </select>

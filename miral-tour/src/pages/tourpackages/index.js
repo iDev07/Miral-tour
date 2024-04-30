@@ -1,9 +1,12 @@
 import { TourPackageCard } from "@/components/TourPackage/TourPackageCard";
 import { Container } from "@mui/material";
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Head from "next/head";
+import Loader from "@/components/Loader";
 function TourpackagesAll() {
+  const { t } = useTranslation();
   const [tourpackages, setTourPackages] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -21,7 +24,7 @@ function TourpackagesAll() {
   return (
     <>
       <Head>
-        <title>All Tour packages - Miral Tour</title>
+        <title>{t("allTours.title")}</title>
         <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey.  "
@@ -65,17 +68,21 @@ function TourpackagesAll() {
         <div className="this_wrapper">
           <Container>
             <div className="intro">
-              <h1>Tour packages</h1>
+              <h1>{t("menu.catalog")}</h1>
             </div>
             <div className="tours">
-              {tourpackages &&
+              {tourpackages.length === 0 ? (
+                <Loader />
+              ) : (
+                tourpackages &&
                 tourpackages.length &&
                 tourpackages.map((tourpackage) => (
                   <TourPackageCard
                     key={tourpackage.id}
                     tourpackage={tourpackage}
                   />
-                ))}
+                ))
+              )}
             </div>
           </Container>
         </div>

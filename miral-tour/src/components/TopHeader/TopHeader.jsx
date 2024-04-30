@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { Container } from "@mui/material";
 
 function TopHeader() {
+  const { t } = useTranslation();
   return (
     <div className="TopHeader">
       <Container>
@@ -13,7 +15,7 @@ function TopHeader() {
               color: "#0073DB",
             }}
           >
-            <Link href={"/about-us"}>About Us</Link>
+            <Link href={"/about-us"}>{t("menu.about_us")}</Link>
           </p>
           <p
             style={{
@@ -21,7 +23,7 @@ function TopHeader() {
               color: "#0073DB",
             }}
           >
-            <Link href={"/become-partner"}>Become a partner</Link>
+            <Link href={"/become-partner"}>{t("menu.partnership")}</Link>
           </p>
         </div>
       </Container>

@@ -57,6 +57,10 @@ function Category() {
                 ? category.name_uz
                 : i18n.language === "ru"
                 ? category.name_ru
+                : i18n.language === "it" &&
+                  category.name_it !== null &&
+                  category.name_it !== ""
+                ? category.name_it
                 : category.name_en}
             </title>
           </Head>
@@ -70,6 +74,10 @@ function Category() {
                         ? category.name_uz
                         : i18n.language === "ru"
                         ? category.name_ru
+                        : i18n.language === "it" &&
+                          category.name_it !== null &&
+                          category.name_it !== ""
+                        ? category.name_it
                         : category.name_en}
                     </h1>
                   </div>

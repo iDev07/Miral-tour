@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Loader from "@/components/Loader";
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -41,6 +42,7 @@ import axios from "axios";
 // };
 
 function Destinations({}) {
+  const { t, i18n } = useTranslation();
   const [persons, setPersons] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -69,7 +71,18 @@ function Destinations({}) {
       ) : (
         <>
           <Head>
-            <title>{person.title_en}</title>
+            <title>
+              {" "}
+              {i18n.language === "uz"
+                ? person.title_uz
+                : i18n.language === "ru"
+                ? person.title_ru
+                : i18n.language === "it" &&
+                  person.title_it !== null &&
+                  person.title_it !== ""
+                ? person.title_it
+                : person.title_en}
+            </title>
             <meta
               name="description"
               content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. Book now and create lasting memories!"
@@ -120,7 +133,15 @@ function Destinations({}) {
                 <div className="backround_wrapper">
                   <div className="name_city">
                     <h1 className="animate__animated animate__fadeInLeft">
-                      {person.title_en}
+                      {i18n.language === "uz"
+                        ? person.title_uz
+                        : i18n.language === "ru"
+                        ? person.title_ru
+                        : i18n.language === "it" &&
+                          person.title_it !== null &&
+                          person.title_it !== ""
+                        ? person.title_it
+                        : person.title_en}
                     </h1>
                   </div>
                 </div>
@@ -131,7 +152,16 @@ function Destinations({}) {
                     <div
                       className="rich_editor"
                       dangerouslySetInnerHTML={{
-                        __html: person.content_en,
+                        __html:
+                          i18n.language === "uz"
+                            ? person.content_uz
+                            : i18n.language === "ru"
+                            ? person.content_ru
+                            : i18n.language === "it" &&
+                              person.content_it !== null &&
+                              person.content_it !== ""
+                            ? person.content_it
+                            : person.content_en,
                       }}
                     ></div>
                   </div>

@@ -207,7 +207,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accommodation 3*</span>
+                <span>{t("tourPackage.standart1")}</span>
               </p>
 
               <p className="item_wrapper">
@@ -228,7 +228,7 @@ function Tourpackage() {
                     fill="#DADE24"
                   />
                 </svg>
-                <span>Econom transportation</span>
+                <span>{t("tourPackage.standart2")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -247,7 +247,7 @@ function Tourpackage() {
                     fill="#56D25B"
                   />
                 </svg>
-                <span>Standard Meals</span>
+                <span>{t("tourPackage.standart3")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -274,7 +274,7 @@ function Tourpackage() {
                     fill="#E19762"
                   />
                 </svg>
-                <span>Local guides</span>
+                <span>{t("tourPackage.standart4")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -294,7 +294,7 @@ function Tourpackage() {
                     fill="#1AC199"
                   />
                 </svg>
-                <span>Entrance fees</span>
+                <span>{t("tourPackage.standart5")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -325,7 +325,7 @@ function Tourpackage() {
                     fill="#F54A4A"
                   />
                 </svg>
-                <span>Gifts from Miral Tour</span>
+                <span>{t("tourPackage.standart6")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -378,7 +378,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maximum number of tourists: 15</span>
+                <span>{t("tourPackage.standart7")}</span>
               </p>
             </div>
           </div>
@@ -409,7 +409,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accommodation 4*</span>
+                <span>{t("tourPackage.comfort1")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -429,7 +429,7 @@ function Tourpackage() {
                     fill="#DADE24"
                   />
                 </svg>
-                <span>Comfort transportation</span>
+                <span>{t("tourPackage.comfort2")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -448,7 +448,7 @@ function Tourpackage() {
                     fill="#56D25B"
                   />
                 </svg>
-                <span>Meals</span>
+                <span>{t("tourPackage.comfort3")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -475,7 +475,7 @@ function Tourpackage() {
                     fill="#E19762"
                   />
                 </svg>
-                <span>Guide service during trip</span>
+                <span>{t("tourPackage.comfort4")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -506,7 +506,7 @@ function Tourpackage() {
                     fill="#F54A4A"
                   />
                 </svg>
-                <span>Surprises</span>
+                <span>{t("tourPackage.comfort5")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -526,7 +526,7 @@ function Tourpackage() {
                     fill="#1AC199"
                   />
                 </svg>
-                <span>Entrance fees</span>
+                <span>{t("tourPackage.comfort6")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -541,7 +541,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Gifts from Miral Tour</span>
+                <span>{t("tourPackage.comfort7")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -594,7 +594,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maximum number of tourists: 7</span>
+                <span>{t("tourPackage.comfort8")}</span>
               </p>
             </div>
           </div>
@@ -625,7 +625,7 @@ function Tourpackage() {
                     fill="#8F8CFF"
                   />
                 </svg>
-                <span>Accommodation 5*</span>
+                <span>{t("tourPackage.business1")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -645,7 +645,7 @@ function Tourpackage() {
                     fill="#DADE24"
                   />
                 </svg>
-                <span>Lux transportation</span>
+                <span>{t("tourPackage.business2")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -663,8 +663,8 @@ function Tourpackage() {
                     d="M9.60635 3.45318C9.63969 3.31985 9.65969 3.19318 9.66635 3.05318C9.68635 2.27985 9.21302 1.59985 8.46635 1.39985C7.34635 1.09318 6.33302 1.93318 6.33302 2.99985C6.33302 3.15985 6.35302 3.30651 6.39302 3.45318C3.98635 3.96651 2.17969 6.10651 2.17969 8.66651V9.66652C2.17969 10.0332 2.47969 10.3332 2.84635 10.3332H13.1464C13.513 10.3332 13.813 10.0332 13.813 9.66652V8.66651C13.813 6.10651 12.013 3.97318 9.60635 3.45318ZM9.99969 7.83318H5.99969C5.72635 7.83318 5.49969 7.60651 5.49969 7.33318C5.49969 7.05985 5.72635 6.83318 5.99969 6.83318H9.99969C10.273 6.83318 10.4997 7.05985 10.4997 7.33318C10.4997 7.60651 10.273 7.83318 9.99969 7.83318Z"
                     fill="#56D25B"
                   />
-                </svg>
-                <span>Meals</span>
+                </svg>{" "}
+                <span>{t("tourPackage.business3")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -690,8 +690,8 @@ function Tourpackage() {
                     d="M14.6605 11.0599C14.6071 11.7066 14.1938 12.2666 13.5005 12.6466C12.8338 13.0133 11.9938 13.1866 11.1605 13.1666C11.6405 12.7333 11.9205 12.1933 11.9738 11.6199C12.0405 10.7933 11.6471 9.99994 10.8605 9.36661C10.4138 9.01327 9.89382 8.73327 9.32715 8.52661C10.8005 8.09994 12.6538 8.38661 13.7938 9.30661C14.4071 9.79994 14.7205 10.4199 14.6605 11.0599Z"
                     fill="#E19762"
                   />
-                </svg>
-                <span>Guide service during trip</span>
+                </svg>{" "}
+                <span>{t("tourPackage.business4")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -722,7 +722,7 @@ function Tourpackage() {
                     fill="#F54A4A"
                   />
                 </svg>
-                <span>Surprises</span>
+                <span>{t("tourPackage.business5")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -742,7 +742,7 @@ function Tourpackage() {
                     fill="#1AC199"
                   />
                 </svg>
-                <span>Entrance fees</span>
+                <span>{t("tourPackage.business6")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -757,7 +757,7 @@ function Tourpackage() {
                     fill="#72D300"
                   />
                 </svg>
-                <span>Gifts from Miral Tour</span>
+                <span>{t("tourPackage.business7")}</span>
               </p>
               <p className="item_wrapper">
                 <svg
@@ -810,7 +810,7 @@ function Tourpackage() {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span>Maximum number of tourists: 3</span>
+                <span>{t("tourPackage.business8")}</span>
               </p>
             </div>
           </div>
@@ -882,22 +882,22 @@ function Tourpackage() {
     if (tourpackage.prices && tourpackage.prices.length > 0) {
       const columns = [
         {
-          title: "Persons",
+          title: t("tourPackage.persons"),
           dataIndex: "persons",
           key: "persons",
         },
         {
-          title: "Standart",
+          title: t("constructorForm.typeOfClass1"),
           dataIndex: "standart",
           key: "standart",
         },
         {
-          title: "Comfort",
+          title: t("constructorForm.typeOfClass2"),
           dataIndex: "comfort",
           key: "comfort",
         },
         {
-          title: "Business",
+          title: t("constructorForm.typeOfClass3"),
           dataIndex: "business",
           key: "business",
         },
@@ -974,7 +974,7 @@ function Tourpackage() {
         });
         prices.push({
           key: "6",
-          persons: "Single supplement",
+          persons: t("tourPackage.singleSupp"),
           standart: tourpackage.prices[0].p_econom_single
             ? ` + ${tourpackage.prices[0].p_econom_single} $`
             : "",
@@ -987,7 +987,7 @@ function Tourpackage() {
         });
         prices.push({
           key: "7",
-          persons: "Meal",
+          persons: t("tourPackage.meal"),
           standart: tourpackage.prices[0].p_econom_meal
             ? ` + ${tourpackage.prices[0].p_econom_meal} $`
             : "",
@@ -1001,11 +1001,11 @@ function Tourpackage() {
       }
       return (
         <div className="prices">
-          <h2>Prices</h2>
+          <h2>{t("tourPackage.prices")}</h2>
           <Table columns={columns} dataSource={prices} pagination={false} />
-          <p>* Prices are only for tourists</p>
+          <p>{t("tourPackage.onlyTourists")}</p>
           <p>
-            * Travel companies, please contact by mail: <br />{" "}
+            {t("tourPackage.toCompanies")} <br />{" "}
             <a href="mailto:miraltouruz@gmail.com">miraltouruz@gmail.com</a>
           </p>
         </div>
@@ -1027,6 +1027,10 @@ function Tourpackage() {
                 ? tourpackage.title_uz
                 : i18n.language === "ru"
                 ? tourpackage.title_ru
+                : i18n.language === "it" &&
+                  tourpackage.title_it !== null &&
+                  tourpackage.title_it !== ""
+                ? tourpackage.title_it
                 : tourpackage.title_en}
             </title>
             <meta
@@ -1075,6 +1079,10 @@ function Tourpackage() {
                   ? tourpackage.title_uz
                   : i18n.language === "ru"
                   ? tourpackage.title_ru
+                  : i18n.language === "it" &&
+                    tourpackage.title_it !== null &&
+                    tourpackage.title_it !== ""
+                  ? tourpackage.title_it
                   : tourpackage.title_en
               }
               open={isModalOpen}
@@ -1392,6 +1400,10 @@ function Tourpackage() {
                         ? tourpackage.title_uz
                         : i18n.language === "ru"
                         ? tourpackage.title_ru
+                        : i18n.language === "it" &&
+                          tourpackage.title_it !== null &&
+                          tourpackage.title_it !== ""
+                        ? tourpackage.title_it
                         : tourpackage.title_en}
                     </h1>
                   </div>
@@ -1473,6 +1485,10 @@ function Tourpackage() {
                                     ? steps.name_uz
                                     : i18n.language === "ru"
                                     ? steps.name_ru
+                                    : i18n.language === "it" &&
+                                      steps.name_it !== null &&
+                                      steps.name_it !== ""
+                                    ? steps.name_it
                                     : steps.name_en}
                                 </p>
                               ),
@@ -1483,6 +1499,10 @@ function Tourpackage() {
                                       i18n.language === "uz"
                                         ? steps.description_uz
                                         : i18n.language === "ru"
+                                        ? steps.description_ru
+                                        : i18n.language === "it" &&
+                                          steps.description_it !== null &&
+                                          steps.description_it !== ""
                                         ? steps.description_ru
                                         : steps.description_en,
                                   }}
@@ -1514,6 +1534,10 @@ function Tourpackage() {
                                   ? tourpackage.include_uz
                                   : i18n.language === "ru"
                                   ? tourpackage.include_ru
+                                  : i18n.language === "it" &&
+                                    tourpackage.include_it !== null &&
+                                    tourpackage.include_it !== ""
+                                  ? tourpackage.include_it
                                   : tourpackage.include_en,
                             }}
                           ></div>
@@ -1528,6 +1552,10 @@ function Tourpackage() {
                                   ? tourpackage.not_include_uz
                                   : i18n.language === "ru"
                                   ? tourpackage.not_include_ru
+                                  : i18n.language === "it" &&
+                                    tourpackage.not_include_it !== null &&
+                                    tourpackage.not_include_it !== ""
+                                  ? tourpackage.not_include_it
                                   : tourpackage.not_include_en,
                             }}
                           />

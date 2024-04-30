@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import { ChevronRight } from "@mui/icons-material";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
 
 function FamousPeople() {
+  const { t, i18n } = useTranslation();
   const [persons, setPersons] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -24,7 +26,7 @@ function FamousPeople() {
   return (
     <>
       <Head>
-        <title>Ancient Scholars of Uzbekistan - Miral Tour </title>
+        <title>{t("famousPeoplePage.title")}</title>
         <meta
           name="keywords"
           content="miral tour, miral tour uz, miral-tour, miral, world-miral, miral-tourism  ALL4U-TOURISM, ALL4U-TOUR, all4u-tourism, all4u-tour, tourism, travel tour, Miral Tour,tourism Uzbekistan"
@@ -37,10 +39,13 @@ function FamousPeople() {
           <div className="all_places pt_100">
             <div className="all_places_wrapper">
               <div className="intro">
-                <h1>Ancient Scholars of Uzbekistan</h1>
+                <h1>{t("famousPeoplePage.title")}</h1>
               </div>
               <div className="places">
-                {persons &&
+                {persons.length === 0 ? (
+                  <Loader />
+                ) : (
+                  persons &&
                   persons.length &&
                   persons.map((person) => (
                     <div className="place">
@@ -51,10 +56,32 @@ function FamousPeople() {
                         />
                         <div className="place_wrap">
                           <div className="content">
-                            <h2>{person.title_en}</h2>
-                            <p> {person.name_en}</p>
+                            <h2>
+                              {" "}
+                              {i18n.language === "uz"
+                                ? person.title_uz
+                                : i18n.language === "ru"
+                                ? person.title_ru
+                                : i18n.language === "it" &&
+                                  person.title_it !== null &&
+                                  person.title_it !== ""
+                                ? person.title_it
+                                : person.title_en}
+                            </h2>
+                            <p>
+                              {" "}
+                              {i18n.language === "uz"
+                                ? person.name_uz
+                                : i18n.language === "ru"
+                                ? person.name_ru
+                                : i18n.language === "it" &&
+                                  person.name_it !== null &&
+                                  person.name_it !== ""
+                                ? person.name_it
+                                : person.name_en}
+                            </p>
                             <p className="read_more">
-                              Read more{" "}
+                              {t("business.formBtn")}
                               <span>
                                 <ChevronRight />
                               </span>
@@ -63,7 +90,8 @@ function FamousPeople() {
                         </div>
                       </Link>
                     </div>
-                  ))}
+                  ))
+                )}
               </div>
             </div>
           </div>

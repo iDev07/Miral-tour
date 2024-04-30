@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import axios from "axios";
 import Loader from "@/components/Loader";
 import { TourPackageCard } from "@/components/TourPackage/TourPackageCard";
 
 function ReliogiosTours() {
+  const { t } = useTranslation();
   const [tourpackages, setTourpackages] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -99,7 +101,7 @@ function ReliogiosTours() {
             <Container>
               <div className="tours_box">
                 <div className="intro">
-                  <h2>Religious tour packages</h2>
+                  <h2>{t("")}</h2>
                 </div>
                 {loading ? (
                   <Loader />

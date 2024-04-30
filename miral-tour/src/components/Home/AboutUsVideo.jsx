@@ -1,13 +1,14 @@
 import { Container } from "@mui/material";
 import React from "react";
-
+import { useTranslation } from "react-i18next";
 function AboutUsVideo() {
+  const { t } = useTranslation();
   return (
     <div>
       <div className="video_about_wrapper category">
         <Container>
           <div className="intro">
-            <h1>About Our Company</h1>
+            <h1>{t("about_company.title")}</h1>
           </div>
           <div className="video_container">
             <iframe

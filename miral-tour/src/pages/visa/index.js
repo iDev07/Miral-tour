@@ -1,8 +1,10 @@
 import React from "react";
 import { Container } from "@mui/material";
 import { Button, Select, Table } from "antd";
+import { useTranslation } from "react-i18next";
 import Head from "next/head";
 function Visa() {
+  const { t, i18n } = useTranslation();
   const dataSource1 = [
     {
       key: "1",
@@ -71,22 +73,22 @@ function Visa() {
 
   const columns1 = [
     {
-      title: "List of countries",
+      title: t("visaPage.list"),
       dataIndex: "name",
       key: "name",
     },
     {
-      title: "List of countries",
+      title: t("visaPage.list"),
       dataIndex: "name2",
       key: "name2",
     },
     {
-      title: "List of countries",
+      title: t("visaPage.list"),
       dataIndex: "name3",
       key: "name3",
     },
     {
-      title: "List of countries",
+      title: t("visaPage.list"),
       dataIndex: "name4",
       key: "name4",
     },
@@ -95,9 +97,7 @@ function Visa() {
   return (
     <>
       <Head>
-        <title>
-          Uzbekistan visa; transit visa; e-visa, visa-free entry to Uzbekistan
-        </title>
+        <title>{t("visaPage.title")}</title>
         <meta
           name="description"
           content="To enter the Republic of Uzbekistan for tourism purposes, a valid passport and visa are required unless you are from a country with a visa-free travel agreement with Uzbekistan. You can pay for the visa to Uzbekistan in US dollars, euros, or any other currency. "
@@ -144,16 +144,16 @@ function Visa() {
               <Container>
                 <div className="content_grid">
                   <div className="intro">
-                    <h1>
-                      We will clarify the type of visa required for your trip!!!
-                    </h1>
-                    <p>choose your travel itinerary and leave the rest to us</p>
+                    <h1>{t("visaPage.introTitle")}</h1>
+                    <p>{t("visaPage.introDesc")}</p>
                   </div>
                 </div>
                 <div className="check_visa">
                   <div className="this_wrap">
                     <div className="top_section">
-                      <button className="green_btn">Country</button>
+                      <button className="green_btn">
+                        {t("visaPage.checkCountry")}
+                      </button>
                     </div>
                     <div className="module_visa">
                       <div className="client_country">
@@ -177,7 +177,7 @@ function Visa() {
                               </clipPath>
                             </defs>
                           </svg>
-                          <p> Select your country of residence</p>
+                          <p>{t("visaPage.yourCountry")}</p>
                         </div>
                         <Select
                           options={[
@@ -233,7 +233,7 @@ function Visa() {
                               </clipPath>
                             </defs>
                           </svg>
-                          <p> Select your country of residence</p>
+                          <p>{t("visaPage.arrivingCountry")}</p>
                         </div>
                         <Select
                           options={[
@@ -254,7 +254,7 @@ function Visa() {
                       </div>
                       <div className="check_function">
                         <button>
-                          <p>Check visa type </p>
+                          <p>{t("visaPage.checkType")}</p>
                           <svg
                             width="30"
                             height="30"
@@ -288,22 +288,9 @@ function Visa() {
           <Container>
             <div className="types_wrapper">
               <div className="visa_countries">
-                <h2>Transit visa to Uzbekistan</h2>
-                <p>
-                  To enter the Uzbekistan for tourism purposes, a valid passport
-                  and visa are required unless you are from a country with a
-                  visa-free travel agreement with Uzbekistan. You can pay for
-                  the visa to Uzbekistan in US dollars, euros, or any other
-                  currency. The validity of a tourist visa lasts for 30 days.
-                  There are three different ways to obtain a permit to
-                  Uzbekistan in addition to visa-free entry, which is detailed
-                  below.
-                </p>
-                <p>
-                  If there is an air ticket to a third country, citizens of 36
-                  countries can stay in Uzbekistan without a visa for no more
-                  than five days.
-                </p>
+                <h2>{t("visaPage.transitTitle")}</h2>
+                <p>{t("visaPage.transitDesc")}</p>
+                <p>{t("visaPage.transitDesc2")}</p>
                 <p>
                   <div className="first">
                     <Table
@@ -313,61 +300,30 @@ function Visa() {
                     />
                   </div>
                 </p>
-                <h2>Electronic visa to Uzbekistan</h2>
+                <h2>{t("visaPage.eVisaTitle")}</h2>
                 <div className="e_visa">
-                  <p>
-                    {" "}
-                    From July 15, 2018, a system for processing and issuing
-                    electronic entry visas for staying in Uzbekistan for tourist
-                    purposes was introduced.
-                  </p>
-                  <p>
-                    The system of issuing electronic visas to Uzbekistan allows
-                    you to obtain an entry tourist visa to Uzbekistan online
-                    without visiting the embassy or consulate of the Republic of
-                    Uzbekistan.
-                  </p>
-                  <p>Electronic visa is issued for a period of 30 days.</p>
-                  <p>
-                    Electronic visa is valid for 90 days from the date of issue.
-                  </p>
-                  <p>
-                    Electronic visa to Uzbekistan is considered and issued
-                    within two business days, excluding the day of application
-                    for a visa.
-                  </p>
-                  <p>
-                    The issued electronic visa will be sent to the e-mail
-                    address indicated when submitting the application on the web
-                    portal “<a href="e-visa.gov.uz">e-visa.gov.uz</a>”.
-                  </p>
-                  <p>
-                    An application for an electronic visa must be submitted at
-                    least three business days before the planned date of travel
-                    to Uzbekistan.
-                  </p>
-                  <b> Cost of an electronic entry visa:</b>
+                  <p>{t("visaPage.eVisaDesc1")}</p>
+                  <p>{t("visaPage.eVisaDesc2")}</p>
+                  <p>{t("visaPage.eVisaDesc3")}</p>
+                  <p>{t("visaPage.eVisaDesc4")}</p>
+                  <p>{t("visaPage.eVisaDesc5")}</p>
+                  <p>{t("visaPage.eVisaDesc6")}</p>
+                  <p>{t("visaPage.eVisaDesc7")}</p>
+                  <b> {t("visaPage.costsTitle")}</b>
                   <ul>
                     <b>
-                      <li>Single entry visa - 50 US dollars per person</li>
+                      <li>{t("visaPage.cost1")}</li>
                     </b>
                     <b>
-                      <li>Double entry visa - 75 US dollars per person</li>
+                      <li>{t("visaPage.cost2")}</li>
                     </b>
                     <b>
-                      <li>Multiple entry visa - 90 US dollars per person</li>
+                      <li>{t("visaPage.cost3")}</li>
                     </b>
                   </ul>
-                  <p>Payment is made by credit cards online.</p>
-                  <p>
-                    If an electronic visa is refused, the amount paid will not
-                    be refunded.
-                  </p>
-                  <p>
-                    An electronic visa is not stuck in the travel document
-                    (passport). The issued electronic visa in paper or
-                    electronic form will be the basis for crossing the border.
-                  </p>
+                  <p>{t("visaPage.costDesc1")}</p>
+                  <p>{t("visaPage.costDesc2")}</p>
+                  <p>{t("visaPage.costDesc3")}</p>
                 </div>
               </div>
             </div>

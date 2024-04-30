@@ -1,12 +1,14 @@
 import Loader from "@/components/Loader";
 import { ChevronRight } from "@mui/icons-material";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 function Cities() {
+  const { t, i18n } = useTranslation();
   const [cities, setCities] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -37,11 +39,12 @@ function Cities() {
           <div className="all_places pt_100">
             <div className="all_places_wrapper">
               <div className="intro">
-                <h1>Uzbekistan cities and regions</h1>
+                <h1>{t("citiesPage.title")}</h1>
               </div>
               <div className="places">
-                {cities &&
-                  cities.length &&
+                {cities.length === 0 ? (
+                  <Loader />
+                ) : (
                   cities.map((city) => (
                     <div className="place">
                       <Link href={`/cities/${city.seo_url}`}>
@@ -51,10 +54,21 @@ function Cities() {
                         />
                         <div className="place_wrap">
                           <div className="content">
-                            <h2>{city.name_en}</h2>
+                            <h2>
+                              {" "}
+                              {i18n.language === "uz"
+                                ? city.name_uz
+                                : i18n.language === "ru"
+                                ? city.name_ru
+                                : i18n.language === "it" &&
+                                  city.name_it !== null &&
+                                  city.name_it !== ""
+                                ? city.name_it
+                                : city.name_en}
+                            </h2>
                             <p>{city.title_en}</p>
                             <p className="read_more">
-                              Read more{" "}
+                              {t("business.formBtn")}
                               <span>
                                 <ChevronRight />
                               </span>
@@ -63,7 +77,8 @@ function Cities() {
                         </div>
                       </Link>
                     </div>
-                  ))}
+                  ))
+                )}
               </div>
             </div>
           </div>

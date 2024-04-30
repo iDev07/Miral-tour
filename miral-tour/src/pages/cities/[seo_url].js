@@ -3,6 +3,7 @@ import Head from "next/head";
 import Loader from "@/components/Loader";
 import { useRouter } from "next/router";
 import { Container } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -42,6 +43,7 @@ import axios from "axios";
 // };
 
 function City({}) {
+  const { t, i18n } = useTranslation();
   const [cities, setCities] = useState([]);
   const [destinations, setDestinations] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -93,7 +95,18 @@ function City({}) {
       ) : (
         <>
           <Head>
-            <title>{city.name_en}</title>
+            <title>
+              {" "}
+              {i18n.language === "uz"
+                ? city.name_uz
+                : i18n.language === "ru"
+                ? city.name_ru
+                : i18n.language === "it" &&
+                  city.name_it !== null &&
+                  city.name_it !== ""
+                ? city.name_it
+                : city.name_en}
+            </title>
             <meta name="description" content={city.seo_description_en} />
             <link rel="icon" href="/miniT.png" />
             <meta name="author" content="Miral Tour" />
@@ -144,7 +157,15 @@ function City({}) {
                 <div className="backround_wrapper">
                   <div className="name_city">
                     <h1 className="animate__animated animate__fadeInUp">
-                      {city.name_en}
+                      {i18n.language === "uz"
+                        ? city.name_uz
+                        : i18n.language === "ru"
+                        ? city.name_ru
+                        : i18n.language === "it" &&
+                          city.name_it !== null &&
+                          city.name_it !== ""
+                        ? city.name_it
+                        : city.name_en}
                     </h1>
                   </div>
                 </div>
@@ -154,7 +175,18 @@ function City({}) {
                   <div className="left_content_box">
                     <div
                       className="rich_editor"
-                      dangerouslySetInnerHTML={{ __html: city.content_en }}
+                      dangerouslySetInnerHTML={{
+                        __html:
+                          i18n.language === "uz"
+                            ? city.content_uz
+                            : i18n.language === "ru"
+                            ? city.content_ru
+                            : i18n.language === "it" &&
+                              city.content_it !== null &&
+                              city.content_it !== ""
+                            ? city.content_it
+                            : city.content_en,
+                      }}
                     ></div>
                   </div>
                   <div className="right_sidebar"></div>

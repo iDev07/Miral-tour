@@ -60,6 +60,10 @@ function Cart() {
                               ? item.title_uz
                               : i18n.language === "ru"
                               ? item.title_ru
+                              : i18n.language === "it" &&
+                                item.title_it !== null &&
+                                item.title_it !== ""
+                              ? item.title_it
                               : item.title_en}
                           </h2>
                         </div>

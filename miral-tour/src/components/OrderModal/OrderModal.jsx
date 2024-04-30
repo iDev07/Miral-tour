@@ -133,6 +133,10 @@ const OrderModal = ({
   const changeHandler = (value) => {
     setValue(value);
   };
+  if (tourpackage.status !== 10) {
+    // Don't render the tour package card if status is not 10
+    return null;
+  }
   return (
     <>
       <Modal
@@ -141,6 +145,10 @@ const OrderModal = ({
             ? tourpackage.title_uz
             : i18n.language === "ru"
             ? tourpackage.title_ru
+            : i18n.language === "it" &&
+              tourpackage.title_it !== null &&
+              tourpackage.title_it !== ""
+            ? tourpackage.title_it
             : tourpackage.title_en
         }
         open={isModalOpen}
@@ -456,6 +464,10 @@ const OrderModal = ({
               ? tourpackage.title_uz
               : i18n.language === "ru"
               ? tourpackage.title_ru
+              : i18n.language === "it" &&
+                tourpackage.title_it !== null &&
+                tourpackage.title_it !== ""
+              ? tourpackage.title_it
               : tourpackage.title_en}
           </h3>
           <p
@@ -465,6 +477,10 @@ const OrderModal = ({
                   ? tourpackage.content_uz
                   : i18n.language === "ru"
                   ? tourpackage.content_ru
+                  : i18n.language === "it" &&
+                    tourpackage.content_it !== null &&
+                    tourpackage.content_it !== ""
+                  ? tourpackage.content_it
                   : tourpackage.content_en,
             }}
           ></p>

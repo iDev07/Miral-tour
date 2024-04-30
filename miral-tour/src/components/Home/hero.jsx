@@ -250,6 +250,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
 
         return {
           id: filteredPackage.id,
+          status: filteredPackage.status,
           city: citiesMatch ? cityIdsInTourPackage : null,
           days: filteredPackage.days,
           category_id: filteredPackage.category_id,
@@ -260,6 +261,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
           content_uz: filteredPackage.content_uz,
           content_en: filteredPackage.content_en,
           content_ru: filteredPackage.content_ru,
+          content_it: filteredPackage.content_it,
           // Add more properties as needed
         };
       });
@@ -270,7 +272,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   //   value: 0,
   //   label: t("constructorForm.typeOfGroup"),
   // };
-
   return (
     <>
       <div className="hero pt_100">
@@ -384,76 +385,61 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                           style={{ width: 200, borderRadius: 0 }}
                           // suffixIcon={null}
                           onChange={handleCategoriesFilter}
-                          options={[
-                            {
-                              value: categories[0].id,
+                          options={categories.map((category) => {
+                            return {
+                              value: category.id,
                               label:
                                 i18n.language === "uz"
-                                  ? categories[0].name_uz
+                                  ? category.name_uz
                                   : i18n.language === "ru"
-                                  ? categories[0].name_ru
-                                  : categories[0].name_en,
-                            },
-                            {
-                              value: categories[1].id,
-                              label:
-                                i18n.language === "uz"
-                                  ? categories[1].name_uz
-                                  : i18n.language === "ru"
-                                  ? categories[1].name_ru
-                                  : categories[1].name_en,
-                            },
-                            {
-                              value: categories[2].id,
-                              label:
-                                i18n.language === "uz"
-                                  ? categories[2].name_uz
-                                  : i18n.language === "ru"
-                                  ? categories[2].name_ru
-                                  : categories[2].name_en,
-                            },
-                            {
-                              value: categories[3].id,
-                              label:
-                                i18n.language === "uz"
-                                  ? categories[3].name_uz
-                                  : i18n.language === "ru"
-                                  ? categories[3].name_ru
-                                  : categories[3].name_en,
-                            },
-                            // {
-                            //   value: "Historic",
-                            //   label: t("constructorForm.typeTravel1"),
-                            // },
-                            // {
-                            //   value: "religious",
-                            //   label: t("constructorForm.typeTravel3"),
-                            // },
-                            // {
-                            //   value: "classic",
-                            //   label: t("constructorForm.typeTravel3"),
-                            // },
-                            // {
-                            //   value: "Modern",
-                            //   label: t("constructorForm.typeTravel4"),
-                            // },
-                            // {
-                            //   value: "Sportstourism",
-                            //   label: t("constructorForm.typeTravel5"),
-                            // },
-                            // {
-                            //   value: "Childrentourism",
-                            //   label: t("constructorForm.typeTravel6"),
-                            // },
-                            // {
-                            //   value: "Healthtourism",
-                            //   label: t("constructorForm.typeTravel7"),
-                            // },
-                            // {
-                            //   value: "Businesstourism",
-                            //   label: t("constructorForm.typeTravel8"),
-                            // },
-                          ]}
+                                  ? category.name_ru
+                                  : i18n.language === "it" &&
+                                    category.name_it !== null &&
+                                    category.name_it !== ""
+                                  ? category.name_it
+                                  : category.name_en,
+                            };
+                          })}
+                          //   [
+
+                          //   {
+                          //     value: categories[0].id,
+                          //     label:
+                          //       i18n.language === "uz"
+                          //         ? categories[0].name_uz
+                          //         : i18n.language === "ru"
+                          //         ? categories[0].name_ru
+                          //         : categories[0].name_en,
+                          //   },
+                          //   {
+                          //     value: categories[1].id,
+                          //     label:
+                          //       i18n.language === "uz"
+                          //         ? categories[1].name_uz
+                          //         : i18n.language === "ru"
+                          //         ? categories[1].name_ru
+                          //         : categories[1].name_en,
+                          //   },
+                          //   {
+                          //     value: categories[2].id,
+                          //     label:
+                          //       i18n.language === "uz"
+                          //         ? categories[2].name_uz
+                          //         : i18n.language === "ru"
+                          //         ? categories[2].name_ru
+                          //         : categories[2].name_en,
+                          //   },
+                          //   {
+                          //     value: categories[3].id,
+                          //     label:
+                          //       i18n.language === "uz"
+                          //         ? categories[3].name_uz
+                          //         : i18n.language === "ru"
+                          //         ? categories[3].name_ru
+                          //         : categories[3].name_en,
+                          //   },
+
+                          // ]}
                         />
                       </div>
                       <div className="group_type">
@@ -559,6 +545,10 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                             ? city.name_uz
                             : i18n.language === "ru"
                             ? city.name_ru
+                            : i18n.language === "it" &&
+                              city.name_it !== null &&
+                              city.name_it !== ""
+                            ? city.name_it
                             : city.name_en,
                         value: city.id,
                       }))}

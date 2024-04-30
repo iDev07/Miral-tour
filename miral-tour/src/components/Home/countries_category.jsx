@@ -13,22 +13,18 @@ function Countries_category() {
     <div className="sending_company_banner">
       <div className="this_wrapper">
         <Container>
-          <h1 className="title">Explore Beyond Borders with Miral Tour</h1>
+          <h1 className="title">{t("turboTour.title")}</h1>
           <div className="background_section">
             <div className="background_wrapper">
               <div className="content">
                 <div className="wrap">
-                  <p>
-                    Embark on global adventures with our international travel
-                    services. Discover new horizons and create unforgettable
-                    memories. Start your journey today!
-                  </p>
+                  <p>{t("turboTour.description")}</p>
                   <a
                     className="green_btn"
                     href="https://turbotour.uz"
                     target="_blank"
                   >
-                    Go to the Turbo Tour
+                    {t("turboTour.link")}
                   </a>
                 </div>
               </div>

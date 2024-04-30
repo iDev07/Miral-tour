@@ -5,7 +5,17 @@
     "contacts": "Contacts",
     "team": "Our team",
     "search": "Search...",
-    "cart": "Your cart"
+    "cart": "Your cart",
+    "religious": "Religious tours",
+    "business": "Business tours",
+    "uzb": "Uzbekistan",
+    "sub_uzb1": "About Uzbekistan",
+    "sub_uzb2": "Ancient Scholars",
+    "sub_uzb3": "Destinations",
+    "sub_uzb4": "Cities",
+    "sub_uzb5": "Visa",
+    "about_us": "About Us",
+    "partnership": "Become a partner"
   },
   "countries": {
     "countriesTitle": "Countries",
@@ -92,10 +102,39 @@
     "include": "Price includes",
     "notInlcuded": "Price not included",
     "book": "Book now",
-    "order": "Order now"
+    "order": "Order now",
+    "standart1": "Accommodation 3*",
+    "standart2": "Econom transportation",
+    "standart3": "Standard Meals",
+    "standart4": "Local guides",
+    "standart5": "Entrance fees",
+    "standart6": "Gifts from Miral Tour",
+    "standart7": "Maximum number of tourists: 15",
+    "comfort1": "Accommodation 4*",
+    "comfort2": "Comfort transportation",
+    "comfort3": "Meals",
+    "comfort4": "Guide service during trip",
+    "comfort5": "Surprises",
+    "comfort6": "Entrance fees",
+    "comfort7": "Gifts from Miral Tour",
+    "comfort8": "Maximum number of tourists: 7",
+    "business1": "Accommodation 5*",
+    "business2": "Lux transportation",
+    "business3": "Meals",
+    "business4": "Guide service during trip",
+    "business5": "Surprises",
+    "business6": "Entrance fees",
+    "business7": "Gifts from Miral Tour",
+    "business8": "Maximum number of tourists: 3",
+    "persons": "Persons",
+    "prices": "Prices",
+    "singleSupp": "Single supplement",
+    "meal": "Meal",
+    "onlyTourists": "*Prices are only for tourists",
+    "toCompanies": "* Travel companies, please contact by mail: - Agenzie di viaggio, si prega di contattare via mail:"
   },
   "category": {
-    "more": "More"
+    "more": "See more"
   },
   "business": {
     "title": "Business tours",
@@ -117,13 +156,21 @@
     "heading12": "Email",
     "submitForm": "Submit Form"
   },
+  "turboTour": {
+    "title": "Explore Beyond Borders with Turbo Tour",
+    "description": "Embark on global adventures with our international travel services. Discover new horizons and create unforgettable memories. Start your journey today!",
+    "link": "Go to the Turbo Tour"
+  },
+  "about_company": {
+    "title": "About Our Company"
+  },
   "autorent": {
     "title": "Car rental",
     "heading": "Make your travel dreams come true with reliable and affordable car rentals",
     "formBtn": "Select auto"
   },
   "footer": {
-    "motto": "We have interesting tours and the best prices",
+    "motto": "Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey.",
     "usefulLinks": "Useful Links",
     "link1": "Our team",
     "link2": "Bron hotels",
@@ -133,10 +180,103 @@
     "socialNetworks": "Social Networks",
     "copyrights": "All rights reserved. Miral Tour© "
   },
+  "allTours": {
+    "title": "All Tour packages - Miral Tour"
+  },
+  "religiousPage": {
+    "title": "Religious tour packages",
+    "introTitle": "Sacred Journey through Uzbekistan",
+    "introDesc": "Uzbekistan's history is etched with the elegance and significance of Islam. As a cultural cornerstone, Islam has played a pivotal role in shaping the nation's identity. Join us in exploring the profound impact of Islam, where each mosque, each brushstroke of Islamic art, and the wisdom of renowned scholars form a tapestry of spiritual heritage.",
+    "mosques": "Historical Mosques",
+    "scholars": "Famous Scholars",
+    "buddismTitle": "Tranquil Beauty of Buddhist Monuments in Uzbekistan.",
+    "buddismDesc": "Uncover the serene whispers of Buddhism that have echoed through the ages in the heart of Uzbekistan. As we embark on this spiritual journey, let's delve into the traces of Buddhism, exploring ancient sites and precious artifacts that tell tales of a profound and tranquil past.",
+    "buddismCities": "Ancient Buddhist Sites",
+    "christainTitle": "Christian Chronicles of Uzbekistan",
+    "christianDesc": "Journey through the pages of Christian history in the heart of Uzbekistan, where echoes of faith resonate across time. Uzbekistan's Christian heritage, though less prominent, bears witness to a rich tapestry of cultural exchange and spiritual devotion. Let's uncover the stories woven into the stones of churches and the strokes of Christian art that grace this land.",
+    "christianHistory": "Christian History",
+    "historyDesc": "Uzbekistan's Christian history traces back centuries, influenced by trade routes and cultural interactions. The Silk Road, connecting East and West, brought Christianity to the region. While the Christian presence is not as dominant today, remnants of historic churches stand as silent witnesses to a bygone era."
+  },
+  "businessPage": {},
+  "aboutUzb": {
+    "title": "Uzbekistan - Miral Tour",
+    "introTitle": "Welcome to Uzbekistan",
+    "introDesc": "A country located in the central part of Central Asia. The capital is the city of Tashkent. The state language is Uzbek. Its area is 448,978 km². Currently, the total population of the country is more than 36 million. Currency - soum. The territory of the Republic of Uzbekistan consists of 12 regions, the city of Tashkent and the Republic of Karakalpakstan. It is also an independent, democratic, secular and constitutional state.",
+    "reasons": "Our five reasons to visit Uzbekistan",
+    "reason1": "Craftsmanship",
+    "reason2": "Ancient historical monuments",
+    "reason3": "National delicious foods",
+    "reason4": "Great personalities of Uzbekistan",
+    "reason5": "Nature of Uzbekistan",
+    "reasonsT1": "Architecture",
+    "reasonsT2": "Culture",
+    "reasonsT3": "History",
+    "reasonsT4": "Bazaars",
+    "reasonsT5": "Silk Road Cities",
+    "reasonDesc1": "Ancient archaeological remains impressive Islamic monyments sit together with one another in Uzbekistan a constant remiender of the nation’s vibrant and indeed lengthy history.",
+    "reasonDesc2": "Hospitable people, inimitable traditions of this country will surely leave you with plentiful impressions. Uzbekistan is a secular state with majority of population Muslim will give you the feel of Central Asia's unparalleled culture.",
+    "reasonDesc3": "The Early Muslim conquests and the subsequent Samanid Empire converted most of the peopl into adherents of Islam. This period saw leading figures of the Islamic Golden Age, including Muhammad al-Bukhari, Al-Tirmidhi, al Khwarizmi.",
+    "reasonDesc4": "The bazaars and markets of Uzbekistan are vibrant like Chorsu bazaar, raucous and thrilling, with the national pastime of haggling employed with great energy. Start low and enjoy the banter!",
+    "reasonDesc5": "The names of Samarkand, Bukhara and Khiva inspire today the same excitement and allure as they have done to Silk Road travellers for hundreds of years. These are very ancient cities",
+    "bigDesc": "Republic of Uzbekistan, is a country located in Central Asia. It is surrounded by five countries: Kazakhstan to the north, Kyrgyzstan to the northeast, Tajikistan to the southeast, Afghanistan to the south, and Turkmenistan to the southwest, making it one of only two doubly landlocked countries on Earth, along with Liechtenstein. Uzbekistan is part of the Turkic world, as well as a member of the Organization of Turkic States. Uzbek is the majority language, while Russian is widely spoken and understood. Islam is the predominant religion, and most Uzbeks are Sunni Muslims. The first recorded settlers in the land of what is modern Uzbekistan were Eastern Iranian nomads, known as Scythians, who founded kingdoms in Khwarazm, Bactria, and Sogdia in the 8th–6th centuries BC, as well as Fergana and Margiana in the 3rd century BC – 6th century AD. The area was incorporated into the Achaemenid Empire and, after a period of Greco-Bactrian rule, was ruled by the Parthian Empire and later by the Sasanian Empire, until the Muslim conquest of Persia in the seventh century. The early Muslim conquests and the subsequent Samanid Empire converted most of the people into adherents of Islam. During this period, persons began to grow rich from the Silk Road, and became a center of the Islamic Golden Age. The local Khwarazmian dynasty was destroyed by the Mongol invasion in the 13th century, leading to a dominance by Turkic peoples. Timur (Tamerlane) in the 14th century established the Timurid Empire. Its capital was Samarkand, which became a centre of science under the rule of Ulugh Beg, giving birth to the Timurid Renaissance. The territories of the Timurid dynasty were conquered by Uzbek Shaybanids in the 16th century. Conquests by Emperor Babur towards the east led to the foundation of the Mughal Empire in India. All of Central Asia was gradually incorporated into the Russian Empire during the 19th century, with Tashkent becoming the political center of Russian Turkestan. In 1924, national delimitation created the Uzbek Soviet Socialist Republic as a republic of the Soviet Union. It declared independence as the Republic of Uzbekistan in 1991.",
+    "greatPeople": "Great personalities of Uzbekistan",
+    "viewAll": "View all",
+    "craftsmanship": "Examples of craftsmanship",
+    "craftmanshipDesc": "From the vibrant hues of Suzani embroidery to the delicate patterns of ikat weaving, Uzbek artisans weave stories into every piece they create. Woodcarving, pottery, and metalwork showcase the meticulous hands that have honed their craft over generations, resulting in pieces that seamlessly blend tradition with modernity. The Silk Road's influence echoes in the intricate designs of ceramics and the geometric precision of woodwork, creating a tapestry of history and innovation. Traditional techniques are preserved, yet artisans infuse contemporary elements, ensuring that Uzbek craftsmanship remains timeless. In the bustling bazaars of persons like Samarkand and Bukhara, one can witness the bustling energy as artisans passionately create and showcase their works. Each piece, whether it's a handwoven carpet or a meticulously carved wooden artifact, tells a story of Uzbek identity and the dedication to preserving artistic heritage.",
+    "ancientCities": "Ancient cities of Uzbekistan",
+    "greatDest": "Great destinations of Uzbekistan"
+  },
+  "famousPeoplePage": {
+    "title": "Ancient Scholars of Uzbekistan"
+  },
+  "destinationsPage": {
+    "title": "Uzbekistan destinations",
+    "sort": "Sort by:",
+    "city": "City",
+    "type": "Type",
+    "type1": "Museum",
+    "type2": "Hotels",
+    "type3": "Attractions",
+    "type4": "Vicinity",
+    "type5": "Leisure",
+    "notFound": "Not found"
+  },
+  "citiesPage": {
+    "title": "Uzbekistan cities and regions"
+  },
+  "visaPage": {
+    "title": "Uzbekistan visa, transit visa, e-visa",
+    "introTitle": "We will clarify the type of visa required for your trip!",
+    "introDesc": "choose your travel itinerary and leave the rest to us",
+    "checkCountry": "Country",
+    "yourCountry": "Select your country of residence",
+    "arrivingCountry": "Select your country of residence",
+    "checkType": "Check visa type",
+    "transitTitle": "Transit visa to Uzbekistan",
+    "transitDesc": "To enter the Uzbekistan for tourism purposes, a valid passport and visa are required unless you are from a country with a visa-free travel agreement with Uzbekistan. You can pay for the visa to Uzbekistan in US dollars, euros, or any other currency. The validity of a tourist visa lasts for 30 days. There are three different ways to obtain a permit to Uzbekistan in addition to visa-free entry, which is detailed below.",
+    "transitDesc2": "If there is an air ticket to a third country, citizens of 36 countries can stay in Uzbekistan without a visa for no more than five days.",
+    "list": "List of countries",
+    "eVisaTitle": "Electronic visa to Uzbekistan",
+    "eVisaDesc1": "From July 15, 2018, a system for processing and issuing electronic entry visas for staying in Uzbekistan for tourist purposes was introduced.From July 15, 2018, a system for processing and issuing electronic entry visas for staying in Uzbekistan for tourist purposes was introduced.",
+    "eVisaDesc2": "The system of issuing electronic visas to Uzbekistan allows you to obtain an entry tourist visa to Uzbekistan online without visiting the embassy or consulate of the Republic of Uzbekistan.",
+    "eVisaDesc3": "Electronic visa is issued for a period of 30 days.",
+    "eVisaDesc4": "Electronic visa is valid for 90 days from the date of issue.",
+    "eVisaDesc5": "Electronic visa to Uzbekistan is considered and issued within two business days, excluding the day of application for a visa.",
+    "eVisaDesc6": "The issued electronic visa will be sent to the e-mail address indicated when submitting the application on the web portal “e-visa.gov.uz”.",
+    "eVisaDesc7": "An application for an electronic visa must be submitted at least three business days before the planned date of travel to Uzbekistan.",
+    "costsTitle": "Cost of an electronic entry visa:",
+    "cost1": "Single entry visa - 50 US dollars per person",
+    "cost2": "Double entry visa - 75 US dollars per person",
+    "cost3": "Multiple entry visa - 90 US dollars per person",
+    "costDesc1": "Payment is made by credit cards online.",
+    "costDesc2": "If an electronic visa is refused, the amount paid will not be refunded.",
+    "costDesc3": "An electronic visa is not stuck in the travel document (passport). The issued electronic visa in paper or electronic form will be the basis for crossing the border."
+  },
   "contactsPage": {
     "callUs": "Call us if you have any questions",
     "workingHours": "Working hours 24/7",
-    "address": "100059, Tashkent city, Yakkasaroy district, Khumo street, 57"
+    "address": "100059, Tashkent city, Yakkasaroy district, Khumo street, 57",
+    "mail": "E-mail:"
   },
   "cartPage": {
     "title": "Your cart",

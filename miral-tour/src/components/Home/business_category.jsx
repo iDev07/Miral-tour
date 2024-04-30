@@ -95,11 +95,7 @@ function Business_category() {
           </div>
           <div className="this_wrap">
             <div className="left_box">
-              <img
-                src="/img/business.png"
-                alt="Business tourism"
-                //
-              />
+              <img src="/img/business.png" alt="Business tourism" />
             </div>
             <div className="right_box">
               <div>

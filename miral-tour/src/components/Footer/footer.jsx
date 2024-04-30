@@ -17,12 +17,7 @@ function Footer() {
               </a>
             </div>
             <div className="motto">
-              <p>
-                {/* {t("footer.motto")} */}
-                Unleash unforgettable adventures with our premier tour agency!
-                Explore thrilling destinations, guided by experts, for a
-                stress-free journey.
-              </p>
+              <p>{t("footer.motto")}</p>
             </div>
             <div className="links">
               <div className="intro">

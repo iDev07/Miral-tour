@@ -182,8 +182,8 @@ function MobileHeader() {
             <div className="language">
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="en">EN</option>
-                {/* <option value="ru">Ру</option>
-                <option value="uz">UZ</option> */}
+                <option value="it">IT</option>
+                {/* <option value="uz">UZ</option> */}
               </select>
             </div>
           </div>
@@ -238,6 +238,10 @@ function MobileHeader() {
                               ? tourpackage.title_uz
                               : i18n.language === "ru"
                               ? tourpackage.title_ru
+                              : i18n.language === "it" &&
+                                tourpackage.title_it !== null &&
+                                tourpackage.title_it !== ""
+                              ? tourpackage.title_it
                               : tourpackage.title_en}
                           </Link>
                         </li>
@@ -248,7 +252,7 @@ function MobileHeader() {
                 <div className="categories">
                   <DropdownContainer>
                     <DropdownButton onClick={toggleDropdown}>
-                      Categories
+                      {t("menu.catalog")}
                       <KeyboardArrowDown />
                     </DropdownButton>
                     <DropdownList open={isOpen}>
@@ -264,6 +268,10 @@ function MobileHeader() {
                                 ? category.name_uz
                                 : i18n.language === "ru"
                                 ? category.name_ru
+                                : i18n.language === "it" &&
+                                  category.name_it !== null &&
+                                  category.name_it !== ""
+                                ? category.name_it
                                 : category.name_en}
                             </Link>
                           </DropdownItem>
@@ -273,12 +281,12 @@ function MobileHeader() {
                 </div>
                 <div className="other_links">
                   <Link href={"/religious-tours"} onClick={hideHiddenNav}>
-                    Religious tours
+                    {t("menu.religious")}
                   </Link>
                 </div>
                 <div className="other_links">
                   <Link href={"/business-tours"} onClick={hideHiddenNav}>
-                    Business Tours
+                    {t("menu.business")}
                   </Link>
                 </div>
                 {/* <div className="other_links">
@@ -290,13 +298,13 @@ function MobileHeader() {
                 <div className="other_links">
                   <Link href={"/about-uzbekistan"} onClick={hideHiddenNav}>
                     {" "}
-                    About Uzbekistan
+                    {t("menu.uzb")}
                   </Link>
                 </div>
                 <div className="other_links">
                   <Link href={"/about-us"} onClick={hideHiddenNav}>
                     {" "}
-                    About Us
+                    {t("menu.about_us")}
                   </Link>
                 </div>
                 <div className="other_links">

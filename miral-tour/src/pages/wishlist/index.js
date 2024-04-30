@@ -94,10 +94,14 @@ function Cart() {
                           <h2>
                             {" "}
                             {i18n.language === "uz"
-                              ? item.title_uz
+                              ? tourpackage.title_uz
                               : i18n.language === "ru"
-                              ? item.title_ru
-                              : item.title_en}
+                              ? tourpackage.title_ru
+                              : i18n.language === "it" &&
+                                tourpackage.title_it !== null &&
+                                tourpackage.title_it !== ""
+                              ? tourpackage.title_it
+                              : tourpackage.title_en}
                           </h2>
                         </div>
                         <div className="tour_details">

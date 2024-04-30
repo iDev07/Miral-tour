@@ -20,7 +20,10 @@ export const TourPackageCard = ({ tourpackage }) => {
     dispatch(addItem(item));
     // setButtonVisibility(false);
   };
-
+  if (tourpackage.status !== 10) {
+    // Don't render the tour package card if status is not 10
+    return null;
+  }
   return (
     <div className="col">
       <div className="col_wrap">
@@ -65,12 +68,16 @@ export const TourPackageCard = ({ tourpackage }) => {
                 ? tourpackage.title_uz
                 : i18n.language === "ru"
                 ? tourpackage.title_ru
+                : i18n.language === "it" &&
+                  tourpackage.title_it !== null &&
+                  tourpackage.title_it !== ""
+                ? tourpackage.title_it
                 : tourpackage.title_en}
             </h2>
           </Link>
         </div>
         <div className="tour_details">
-          <span className="from">From</span>
+          <span className="from">{t("orderModal.from")}</span>
           <div className="bottom">
             <p>
               {`${tourpackage.price} $`}
@@ -107,7 +114,7 @@ export const TourPackageCard = ({ tourpackage }) => {
             className="tour_link green_btn"
             href={`/tourpackage/${tourpackage.id}`}
           >
-            More details
+            {t("cartPage.viewMore")}
           </Link>
         </div>
       </div>
