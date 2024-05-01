@@ -25,16 +25,16 @@ function Footer() {
               </div>
               <ul>
                 <li>
-                  <Link href={"/about-uzbekistan"}>About Uzbekistan</Link>
+                  <Link href={"/about-uzbekistan"}>{t("footer.link4")}</Link>
                 </li>
                 <li>
-                  <Link href={"/business-tours"}>Business Tours</Link>
+                  <Link href={"/business-tours"}>{t("footer.link5")}</Link>
                 </li>
                 <li>
-                  <Link href={"/religious-tours"}>Religious Tours</Link>
+                  <Link href={"/religious-tours"}>{t("footer.link6")}</Link>
                 </li>
                 <li>
-                  <Link href={"/visa"}>Uzbekistan Visa</Link>
+                  <Link href={"/visa"}>{t("footer.link7")}</Link>
                 </li>
                 {/* <li>
                   <Link href={"/team"}>{t("footer.link1")}</Link>

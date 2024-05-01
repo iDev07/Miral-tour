@@ -1503,7 +1503,7 @@ function Tourpackage() {
                                         : i18n.language === "it" &&
                                           steps.description_it !== null &&
                                           steps.description_it !== ""
-                                        ? steps.description_ru
+                                        ? steps.description_it
                                         : steps.description_en,
                                   }}
                                 ></div>

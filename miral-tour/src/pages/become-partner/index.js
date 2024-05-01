@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Container } from "@mui/material";
 import Head from "next/head";
+import { useTranslation } from "react-i18next";
 function BecomePartner() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     client_firstname: "",
     client_lastname: "",
@@ -50,7 +52,7 @@ function BecomePartner() {
   return (
     <>
       <Head>
-        <title>Become a partner</title>
+        <title>{t("partnershipPage.title")}</title>
       </Head>
       <div className="BecomePartner pt_100">
         <Container>
@@ -58,12 +60,8 @@ function BecomePartner() {
             <div className="left_box">
               <div className="main_content">
                 <div className="page_name">
-                  <h1>Become Partner</h1>
-                  <p className="p">
-                    If you want to cooperate with us, please fill out the
-                    following questions and we will contact you soon. Please
-                    answer the questions accuratelyn
-                  </p>
+                  <h1>{t("partnershipPage.introTitle")}</h1>
+                  <p className="p">{t("partnershipPage.introDesc")}</p>
                 </div>
                 <div className="advantages">
                   <div className="this_wrap">
@@ -84,17 +82,10 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Safety and Comfort</h3>
+                          <h3>{t("partnershipPage.advTitle1")}</h3>
                         </div>
                         <div className="content">
-                          <p>
-                            {" "}
-                            Rest assured, we prioritize the safety and comfort
-                            of our guests with reliable transportation,
-                            knowledgeable guides, and meticulously planned
-                            itineraries, ensuring peace of mind throughout the
-                            journey.
-                          </p>
+                          <p>{t("partnershipPage.advDesc1")}</p>
                         </div>
                       </div>
                     </div>
@@ -115,17 +106,10 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Growth Opportunities</h3>
+                          <h3>{t("partnershipPage.advTitle1")}</h3>
                         </div>
                         <div className="content">
-                          <p>
-                            {" "}
-                            With Uzbekistan emerging as a sought-after travel
-                            destination, we are poised to capitalize on this
-                            growing demand and expand our offerings to provide
-                            even more memorable experiences for our valued
-                            guests.
-                          </p>
+                          <p>{t("partnershipPage.advDesc2")}</p>
                         </div>
                       </div>
                     </div>
@@ -138,16 +122,10 @@ function BecomePartner() {
                               alt="Icon Miral Tour"
                             />
                           </div>
-                          <h3>Strong Partnerships</h3>
+                          <h3>{t("partnershipPage.advTitle3")}</h3>
                         </div>
                         <div className="content">
-                          <p>
-                            {" "}
-                            By collaborating with local businesses, artisans,
-                            and guides, we create authentic and enriching
-                            experiences that showcase the best of Uzbekistan
-                            while supporting its economy.
-                          </p>
+                          <p>{t("partnershipPage.advDesc3")}</p>
                         </div>
                       </div>
                     </div>
@@ -172,16 +150,10 @@ function BecomePartner() {
                               />
                             </svg>
                           </div>
-                          <h3>Local Expertise</h3>
+                          <h3>{t("partnershipPage.advTitle4")}</h3>
                         </div>
                         <div className="content">
-                          <p>
-                            {" "}
-                            As a locally based company, we possess unparalleled
-                            knowledge of Uzbekistan's landscapes, traditions,
-                            and hidden gems, ensuring that every itinerary is
-                            crafted with insider insight.
-                          </p>
+                          <p>{t("partnershipPage.advDesc4")}</p>
                         </div>
                       </div>
                     </div>
@@ -192,10 +164,8 @@ function BecomePartner() {
             <div className="right_box">
               <div className="form_partner">
                 <div className="intro_form">
-                  <h2>To be a partner</h2>
-                  <p className="p">
-                    Fill out the form below to become a partner with us
-                  </p>
+                  <h2>{t("partnershipPage.formTitle")}</h2>
+                  <p className="p">{t("partnershipPage.formDesc")}</p>
                 </div>
                 <form onSubmit={handleSubmit}>
                   <div className="contact_wrapper" id="contactus">
@@ -204,7 +174,7 @@ function BecomePartner() {
                         <div className="input">
                           <input
                             type="text"
-                            placeholder="Your name *"
+                            placeholder={t("partnershipPage.nameLabel")}
                             name="client_firstname"
                             value={formData.client_firstname}
                             onChange={handleChange}
@@ -214,7 +184,7 @@ function BecomePartner() {
                         <div className="input">
                           <input
                             type="number"
-                            placeholder="Phone number"
+                            placeholder={t("partnershipPage.phoneLabel")}
                             name="phone_number"
                             value={formData.phone_number}
                             onChange={handleChange}
@@ -223,7 +193,7 @@ function BecomePartner() {
                         <div className="input">
                           <input
                             type="email"
-                            placeholder="E-mail *"
+                            placeholder={t("partnershipPage.mailLabel")}
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
@@ -233,7 +203,7 @@ function BecomePartner() {
                         <div className="input">
                           <input
                             type="text"
-                            placeholder="What direction do you work in? "
+                            placeholder={t("partnershipPage.direcLabel")}
                             name="client_lastname"
                             value={formData.client_lastname}
                             onChange={handleChange}
@@ -242,7 +212,7 @@ function BecomePartner() {
                         <div className="input textarea">
                           <input
                             type="text"
-                            placeholder="Comment"
+                            placeholder={t("partnershipPage.comment")}
                             name="comment"
                             value={formData.comment}
                             onChange={handleChange}
@@ -251,7 +221,7 @@ function BecomePartner() {
                         <input
                           type="submit"
                           className="submit_req green_btn"
-                          value={"Send"}
+                          value={t("partnershipPage.submit")}
                         />
                       </div>
                     </div>
