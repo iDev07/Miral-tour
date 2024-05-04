@@ -5,10 +5,6 @@ export default function Document() {
     <Html>
       <Head>
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "
         />

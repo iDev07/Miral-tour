@@ -74,7 +74,7 @@ function Cart() {
                             </li>
                             <li></li>
                             <li>
-                              From {`${item.price}`}
+                              {t("orderModal.from")} {`${item.price}`}
                               {t("tourPackage.onPerson")}
                             </li>
                             <li></li>

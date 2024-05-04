@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import Link from "next/link";
+import Loader from "@/components/Loader";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import Loader from "@/components/Loader";
 import { ChevronRight } from "@mui/icons-material";
+import { Collapse } from "antd";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "animate.css";
-import { Collapse } from "antd";
-import axios from "axios";
-import Link from "next/link";
 function AboutUzbekistan() {
+  const { t, i18n } = useTranslation();
   const [persons, setPersons] = useState([]);
   const [cities, setCities] = useState([]);
   const [destinations, setDestinations] = useState([]);
@@ -53,7 +55,7 @@ function AboutUzbekistan() {
   return (
     <>
       <Head>
-        <title>Uzbekistan - Miral Tour</title>
+        <title>{t("aboutUzb.title")}</title>
       </Head>
       <div className="uzbekistan pt_70">
         <div className="uzbekistan_wrapper">
@@ -62,17 +64,8 @@ function AboutUzbekistan() {
               <Container>
                 <div className="content_box">
                   <div className="intro_top">
-                    <h1>Welcome to Uzbekistan</h1>
-                    <p>
-                      A country located in the central part of Central Asia. The
-                      capital is the city of Tashkent. The state language is
-                      Uzbek. Its area is 448,978 km². Currently, the total
-                      population of the country is more than 36 million.
-                      Currency - soum. The territory of the Republic of
-                      Uzbekistan consists of 12 regions, the city of Tashkent
-                      and the Republic of Karakalpakstan. It is also an
-                      independent, democratic, secular and constitutional state.
-                    </p>
+                    <h1>{t("aboutUzb.introTitle")}</h1>
+                    <p>{t("aboutUzb.introDesc")}</p>
                   </div>
                   <div className="intro_bottom">
                     <div className="cols_wrapper">
@@ -80,37 +73,37 @@ function AboutUzbekistan() {
                         <div className="icon_box">
                           <img src="/img/feature1.png" alt="Miral Tour " />
                         </div>
-                        <p>Our five reasons to visit Uzbekistan</p>
+                        <p>{t("aboutUzb.reasons")}</p>
                       </div>
                       <div className="feature">
                         <div className="icon_box">
                           <img src="/img/feature2.png" alt="Miral Tour " />
                         </div>
-                        <p>Craftsmanship</p>
+                        <p>{t("aboutUzb.reason1")}</p>
                       </div>
                       <div className="feature">
                         <div className="icon_box">
                           <img src="/img/feature3.png" alt="Miral Tour " />
                         </div>
-                        <p>Ancient historical monuments</p>
+                        <p>{t("aboutUzb.reason2")}</p>
                       </div>
                       <div className="feature">
                         <div className="icon_box">
                           <img src="/img/feature4.png" alt="Miral Tour " />
                         </div>
-                        <p>National delicious foods</p>
+                        <p>{t("aboutUzb.reason3")}</p>
                       </div>
                       <div className="feature">
                         <div className="icon_box">
                           <img src="/img/feature5.png" alt="Miral Tour " />
                         </div>
-                        <p>Great personalities of Uzbekistan</p>
+                        <p>{t("aboutUzb.reason4")}</p>
                       </div>
                       <div className="feature">
                         <div className="icon_box">
                           <img src="/img/feature6.png" alt="Miral Tour " />
                         </div>
-                        <p>Nature of Uzbekistan</p>
+                        <p>{t("aboutUzb.reason5")}</p>
                       </div>
                     </div>
                   </div>
@@ -121,122 +114,57 @@ function AboutUzbekistan() {
           <div className="reasons">
             <Container>
               <div className="intro">
-                <h1>Our five reasons to visit Uzbekistan</h1>
+                <h1>{t("aboutUzb.reasons")}</h1>
               </div>
               <div className="reasons_wrapper">
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Architecture</h3>
+                      <h3>{t("aboutUzb.reasonsT1")}</h3>
                     </div>
-                    <p>
-                      Ancient archaeological remains impressive Islamic
-                      monyments sit together with one another in Uzbekistan a
-                      constant remiender of the nation’s vibrant and indeed
-                      lengthy history.
-                    </p>
+                    <p>{t("aboutUzb.reasonDesc1")}</p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Culture</h3>
+                      <h3>{t("aboutUzb.reasonsT2")}</h3>
                     </div>
-                    <p>
-                      Hospitable people, inimitable traditions of this country
-                      will surely leave you with plentiful impressions.
-                      Uzbekistan is a secular state with majority of population
-                      Muslim will give you the feel of Central Asia's
-                      unparalleled culture.
-                    </p>
+                    <p>{t("aboutUzb.reasonDesc2")}</p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>History</h3>
+                      <h3>{t("aboutUzb.reasonsT3")}</h3>
                     </div>
-                    <p>
-                      The Early Muslim conquests and the subsequent Samanid
-                      Empire converted most of the peopl into adherents of
-                      Islam. This period saw leading figures of the Islamic
-                      Golden Age, including Muhammad al-Bukhari, Al-Tirmidhi, al
-                      Khwarizmi.
-                    </p>
+                    <p>{t("aboutUzb.reasonDesc3")}</p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Bazaars</h3>
+                      <h3>{t("aboutUzb.reasonsT4")}</h3>
                     </div>
-                    <p>
-                      The bazaars and markets of Uzbekistan are vibrant like
-                      Chorsu bazaar, raucous and thrilling, with the national
-                      pastime of haggling employed with great energy. Start low
-                      and enjoy the banter!
-                    </p>
+                    <p>{t("aboutUzb.reasonDesc4")}</p>
                   </div>
                 </div>
                 <div className="reason">
                   <div className="this_wrap">
                     <div className="top">
-                      <h3>Silk Road Cities</h3>
+                      <h3>{t("aboutUzb.reasonsT5")}</h3>
                     </div>
-                    <p>
-                      The names of Samarkand, Bukhara and Khiva inspire today
-                      the same excitement and allure as they have done to Silk
-                      Road travellers for hundreds of years. These are very
-                      ancient cities
-                    </p>
+                    <p>{t("aboutUzb.reasonDesc5")}</p>
                   </div>
                 </div>
               </div>
-              <p className="description">
-                Republic of Uzbekistan, is a country located in Central Asia. It
-                is surrounded by five countries: Kazakhstan to
-                the north, Kyrgyzstan to the northeast, Tajikistan to
-                the southeast, Afghanistan to the south, and Turkmenistan to
-                the southwest, making it one of only two doubly
-                landlocked countries on Earth, along with Liechtenstein.
-                Uzbekistan is part of the Turkic world, as well as a member of
-                the Organization of Turkic States. Uzbek is the majority
-                language, while Russian is widely spoken and
-                understood. Islam is the predominant religion, and most Uzbeks
-                are Sunni Muslims. The first recorded settlers in the land of
-                what is modern Uzbekistan were Eastern Iranian nomads, known
-                as Scythians, who founded kingdoms in Khwarazm, Bactria,
-                and Sogdia in the 8th–6th centuries BC, as well
-                as Fergana and Margiana in the 3rd century BC – 6th century
-                AD. The area was incorporated into the Achaemenid Empire and,
-                after a period of Greco-Bactrian rule, was ruled by the Parthian
-                Empire and later by the Sasanian Empire, until the Muslim
-                conquest of Persia in the seventh century. The early Muslim
-                conquests and the subsequent Samanid Empire converted most of
-                the people into adherents of Islam. During this period, persons
-                began to grow rich from the Silk Road, and became a center of
-                the Islamic Golden Age. The local Khwarazmian dynasty was
-                destroyed by the Mongol invasion in the 13th century, leading to
-                a dominance by Turkic peoples. Timur (Tamerlane) in the 14th
-                century established the Timurid Empire. Its capital was
-                Samarkand, which became a centre of science under the rule
-                of Ulugh Beg, giving birth to the Timurid Renaissance. The
-                territories of the Timurid dynasty were conquered by Uzbek
-                Shaybanids in the 16th century. Conquests by
-                Emperor Babur towards the east led to the foundation of
-                the Mughal Empire in India. All of Central Asia was gradually
-                incorporated into the Russian Empire during the 19th century,
-                with Tashkent becoming the political center of Russian
-                Turkestan. In 1924, national delimitation created the Uzbek
-                Soviet Socialist Republic as a republic of the Soviet Union. It
-                declared independence as the Republic of Uzbekistan in 1991.
-              </p>
+              <p className="description">{t("aboutUzb.bigDesc")}</p>
             </Container>
           </div>
           <div className="great_persons">
             <Container>
               <div className="intro">
-                <h1>Great personalities of Uzbekistan</h1>
+                <h1>{t("aboutUzb.greatPeople")}</h1>
                 <p className="green_btn">
                   <Link href={"/famous-people"}>View all</Link>
                 </p>
@@ -287,10 +215,30 @@ function AboutUzbekistan() {
                               />
                               <div className="place_wrap">
                                 <div className="content">
-                                  <h2>{person.name_en}</h2>
-                                  <p>{person.title_en}</p>
+                                  <h2>
+                                    {i18n.language === "uz"
+                                      ? person.name_uz
+                                      : i18n.language === "ru"
+                                      ? person.name_ru
+                                      : i18n.language === "it" &&
+                                        person.name_it !== null &&
+                                        person.name_it !== ""
+                                      ? person.name_it
+                                      : person.name_en}
+                                  </h2>
+                                  <p>
+                                    {i18n.language === "uz"
+                                      ? person.title_uz
+                                      : i18n.language === "ru"
+                                      ? person.title_ru
+                                      : i18n.language === "it" &&
+                                        person.title_it !== null &&
+                                        person.title_it !== ""
+                                      ? person.title_it
+                                      : person.title_en}
+                                  </p>
                                   <p className="read_more">
-                                    Read more{" "}
+                                    {t("business.formBtn")}
                                     <span>
                                       <ChevronRight />
                                     </span>
@@ -311,28 +259,10 @@ function AboutUzbekistan() {
             <Container>
               <div className="this_wrap">
                 <div className="intro">
-                  <h1>Examples of craftsmanship</h1>
+                  <h1>{t("aboutUzb.craftsmanship")}</h1>
                 </div>
                 <div className="description">
-                  <p>
-                    From the vibrant hues of Suzani embroidery to the delicate
-                    patterns of ikat weaving, Uzbek artisans weave stories into
-                    every piece they create. Woodcarving, pottery, and metalwork
-                    showcase the meticulous hands that have honed their craft
-                    over generations, resulting in pieces that seamlessly blend
-                    tradition with modernity. The Silk Road's influence echoes
-                    in the intricate designs of ceramics and the geometric
-                    precision of woodwork, creating a tapestry of history and
-                    innovation. Traditional techniques are preserved, yet
-                    artisans infuse contemporary elements, ensuring that Uzbek
-                    craftsmanship remains timeless. In the bustling bazaars of
-                    persons like Samarkand and Bukhara, one can witness the
-                    bustling energy as artisans passionately create and showcase
-                    their works. Each piece, whether it's a handwoven carpet or
-                    a meticulously carved wooden artifact, tells a story of
-                    Uzbek identity and the dedication to preserving artistic
-                    heritage.
-                  </p>
+                  <p>{t("aboutUzb.craftmanshipDesc")}</p>
                 </div>
                 <div className="this_video">
                   <iframe
@@ -350,9 +280,9 @@ function AboutUzbekistan() {
           <div className="cities">
             <Container>
               <div className="intro">
-                <h1>Ancient cities of Uzbekistan</h1>
+                <h1>{t("aboutUzb.ancientCities")}</h1>
                 <p className="green_btn">
-                  <Link href={"/cities"}>View all</Link>
+                  <Link href={"/cities"}>{t("aboutUzb.viewAll")}</Link>
                 </p>
               </div>
               <div className="this_wrapper">
@@ -401,10 +331,31 @@ function AboutUzbekistan() {
                               />
                               <div className="place_wrap">
                                 <div className="content">
-                                  <h2>{city.name_en}</h2>
-                                  <p>{city.title_en}</p>
+                                  <h2>
+                                    {" "}
+                                    {i18n.language === "uz"
+                                      ? city.name_uz
+                                      : i18n.language === "ru"
+                                      ? city.name_ru
+                                      : i18n.language === "it" &&
+                                        city.name_it !== null &&
+                                        city.name_it !== ""
+                                      ? city.name_it
+                                      : city.name_en}
+                                  </h2>
+                                  <p>
+                                    {i18n.language === "uz"
+                                      ? city.title_uz
+                                      : i18n.language === "ru"
+                                      ? city.title_ru
+                                      : i18n.language === "it" &&
+                                        city.title_it !== null &&
+                                        city.title_it !== ""
+                                      ? city.title_it
+                                      : city.title_en}
+                                  </p>
                                   <p className="read_more">
-                                    Read more{" "}
+                                    {t("business.formBtn")}
                                     <span>
                                       <ChevronRight />
                                     </span>
@@ -424,9 +375,9 @@ function AboutUzbekistan() {
           <div className="destinations">
             <Container>
               <div className="intro">
-                <h1>Great destinations of Uzbekistan</h1>
+                <h1>{t("aboutUzb.greatDest")}</h1>
                 <p className="green_btn">
-                  <Link href={"/destinations"}>View all</Link>
+                  <Link href={"/destinations"}>{t("aboutUzb.viewAll")}</Link>
                 </p>
               </div>
               <div className="this_wrapper">
@@ -475,10 +426,31 @@ function AboutUzbekistan() {
                               />
                               <div className="place_wrap">
                                 <div className="content">
-                                  <h2>{destination.title_en}</h2>
-                                  <p>{destination.name_en}</p>
+                                  <h2>
+                                    {" "}
+                                    {i18n.language === "uz"
+                                      ? destination.title_uz
+                                      : i18n.language === "ru"
+                                      ? destination.title_ru
+                                      : i18n.language === "it" &&
+                                        destination.title_it !== null &&
+                                        destination.title_it !== ""
+                                      ? destination.title_it
+                                      : destination.title_en}
+                                  </h2>
+                                  <p>
+                                    {i18n.language === "uz"
+                                      ? destination.name_uz
+                                      : i18n.language === "ru"
+                                      ? destination.name_ru
+                                      : i18n.language === "it" &&
+                                        destination.name_it !== null &&
+                                        destination.name_it !== ""
+                                      ? destination.name_it
+                                      : destination.name_en}
+                                  </p>
                                   <p className="read_more">
-                                    Read more{" "}
+                                    {t("business.formBtn")}
                                     <span>
                                       <ChevronRight />
                                     </span>

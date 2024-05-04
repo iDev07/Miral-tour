@@ -173,14 +173,14 @@ function Destinations() {
                             <div className="content">
                               <h2>
                                 {i18n.language === "uz"
-                                  ? city.name_uz
+                                  ? destination.title_uz
                                   : i18n.language === "ru"
-                                  ? city.name_ru
+                                  ? destination.title_ru
                                   : i18n.language === "it" &&
-                                    city.name_it !== null &&
-                                    city.name_it !== ""
-                                  ? city.name_it
-                                  : city.name_en}
+                                    destination.title_it !== null &&
+                                    destination.title_it !== ""
+                                  ? destination.title_it
+                                  : destination.title_en}
                               </h2>
                               <p className="read_more">
                                 {t("business.formBtn")}

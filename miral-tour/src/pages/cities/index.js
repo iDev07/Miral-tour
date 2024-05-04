@@ -66,7 +66,18 @@ function Cities() {
                                 ? city.name_it
                                 : city.name_en}
                             </h2>
-                            <p>{city.title_en}</p>
+                            <p>
+                              {" "}
+                              {i18n.language === "uz"
+                                ? city.title_uz
+                                : i18n.language === "ru"
+                                ? city.title_ru
+                                : i18n.language === "it" &&
+                                  city.title_it !== null &&
+                                  city.title_it !== ""
+                                ? city.title_it
+                                : city.title_en}
+                            </p>
                             <p className="read_more">
                               {t("business.formBtn")}
                               <span>

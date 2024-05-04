@@ -29,7 +29,7 @@ function ReliogiosTours() {
   return (
     <>
       <Head>
-        <title>Religious tours</title>
+        <title>{t("religiousPage.title")}</title>
         <meta
           name="description"
           content="Uzbekistan's history is etched with the elegance and significance of Islam. As a cultural cornerstone, Islam has played a pivotal role in shaping the nation's identity. Join us in exploring the profound impact of Islam"
@@ -82,16 +82,8 @@ function ReliogiosTours() {
                   <div className="content">
                     <div className="wrap">
                       <div>
-                        <h1>Sacred Journey through Uzbekistan</h1>
-                        <p>
-                          Uzbekistan's history is etched with the elegance and
-                          significance of Islam. As a cultural cornerstone,
-                          Islam has played a pivotal role in shaping the
-                          nation's identity. Join us in exploring the profound
-                          impact of Islam, where each mosque, each brushstroke
-                          of Islamic art, and the wisdom of renowned scholars
-                          form a tapestry of spiritual heritage.
-                        </p>
+                        <h1>{t("religiousPage.introTitle")}</h1>
+                        <p>{t("religiousPage.introDesc")}</p>
                       </div>
                     </div>
                   </div>
@@ -101,7 +93,7 @@ function ReliogiosTours() {
             <Container>
               <div className="tours_box">
                 <div className="intro">
-                  <h2>{t("")}</h2>
+                  <h2>{t("religiousPage.title")} </h2>
                 </div>
                 {loading ? (
                   <Loader />
@@ -123,7 +115,7 @@ function ReliogiosTours() {
                     <div className="about">
                       <div className="subsections">
                         <div className="subsection">
-                          <h2>Historical Mosques</h2>
+                          <h2>{t("religiousPage.mosques")}</h2>
                           <div className="these_wrap">
                             <div className="section_wrap">
                               <div className="wrap_content">
@@ -169,7 +161,7 @@ function ReliogiosTours() {
                         </div>
                       </div>
                       <div className="subsection">
-                        <h2>Famous Scholars</h2>
+                        <h2>{t("religiousPage.scholars")}</h2>
                         <div className="these_wrap">
                           <div className="section_wrap">
                             <div className="wrap_content">
@@ -221,10 +213,7 @@ function ReliogiosTours() {
                       <Container>
                         <div className="content">
                           <div className="wrap">
-                            <h1>
-                              Tranquil Beauty of Buddhist Monuments in
-                              Uzbekistan.
-                            </h1>
+                            <h1>{t("religiousPage.buddismTitle")}</h1>
                           </div>
                         </div>
                       </Container>
@@ -232,17 +221,10 @@ function ReliogiosTours() {
                   </div>{" "}
                   <div className="wrapper_section">
                     <div className="about">
-                      <p>
-                        Uncover the serene whispers of Buddhism that have echoed
-                        through the ages in the heart of Uzbekistan. As we
-                        embark on this spiritual journey, let's delve into the
-                        traces of Buddhism, exploring ancient sites and precious
-                        artifacts that tell tales of a profound and tranquil
-                        past.
-                      </p>
+                      <p>{t("religiousPage.buddismDesc")}</p>
                       <div className="subsections">
                         <div className="subsection">
-                          <h2>Ancient Buddhist Sites</h2>
+                          <h2>{t("religiousPage.buddismCities")}</h2>
                           <div className="these_wrap">
                             <div className="section_wrap">
                               <div className="wrap_content">
@@ -295,7 +277,7 @@ function ReliogiosTours() {
                       <Container>
                         <div className="content">
                           <div className="wrap">
-                            <h1>Christian Chronicles of Uzbekistan</h1>
+                            <h1>{t("religiousPage.christainTitle")}</h1>
                           </div>
                         </div>
                       </Container>
@@ -303,27 +285,11 @@ function ReliogiosTours() {
                   </div>
                   <div className="wrapper_section">
                     <div className="about">
-                      <p>
-                        Journey through the pages of Christian history in the
-                        heart of Uzbekistan, where echoes of faith resonate
-                        across time. Uzbekistan's Christian heritage, though
-                        less prominent, bears witness to a rich tapestry of
-                        cultural exchange and spiritual devotion. Let's uncover
-                        the stories woven into the stones of churches and the
-                        strokes of Christian art that grace this land.
-                      </p>
+                      <p>{t("religiousPage.christianDesc")}</p>
                       <div className="subsections">
                         <div className="subsection">
-                          <h2>Christian History</h2>
-                          <p>
-                            Uzbekistan's Christian history traces back
-                            centuries, influenced by trade routes and cultural
-                            interactions. The Silk Road, connecting East and
-                            West, brought Christianity to the region. While the
-                            Christian presence is not as dominant today,
-                            remnants of historic churches stand as silent
-                            witnesses to a bygone era.
-                          </p>
+                          <h2>{t("religiousPage.christianHistory")}</h2>
+                          <p>{t("religiousPage.historyDesc")}</p>
                           <div className="these_wrap">
                             <div className="section_wrap">
                               <div className="wrap_content">
