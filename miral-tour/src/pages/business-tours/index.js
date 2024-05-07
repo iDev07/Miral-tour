@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { Container } from "@mui/material";
-
+import { useTranslation } from "react-i18next";
 function BusinessTours() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     company_name: "",
     client_firstname: "",
@@ -51,7 +52,7 @@ function BusinessTours() {
   return (
     <>
       <Head>
-        <title>Business Tours</title>
+        <title>{t("businessPage.title")}</title>
         <meta
           name="description"
           content="Welcome to Miral Tour, we are pleased to offer you business
