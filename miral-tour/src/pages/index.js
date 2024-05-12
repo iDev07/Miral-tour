@@ -53,7 +53,7 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>Discover Uzbekistan with - Miral Tour</title>
+        <title>Miral Tour</title>
         <meta
           name="description"
           content="Unleash unforgettable adventures with our premier tour agency! Explore thrilling destinations, guided by experts, for a stress-free journey. "

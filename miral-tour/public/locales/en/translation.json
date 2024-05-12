@@ -232,12 +232,13 @@
     "servicesDesc9": "We ensure you have the necessary technological resources and support for seamless presentations, conferences, and virtual meetings during your business tour.",
     "servicesDesc10": "We efficiently coordinate and manage events or conferences planned as part of your business tour, ensuring a professionally executed and memorable experience.",
     "companyName": "Company name*",
-    "name": "Your Name*",
+    "name": "Your name*",
     "surname": "Your surname",
     "phone": "Phone number",
     "email": "E-mail address*",
     "contactDesc": "Drop us a message! Share your event's purpose and timing, and let's work together to create and execute the ideal plan – 100% satisfaction guaranteed!",
-    "send": "Send form"
+    "send": "Send form",
+    "successForm": "Form submitted successfully!"
   },
   "aboutUzb": {
     "title": "Uzbekistan - Miral Tour",

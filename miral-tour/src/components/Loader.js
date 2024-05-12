@@ -5,7 +5,7 @@ function Loader() {
   return (
     <>
       <Head>
-        <title>Discover Uzbekistan with - Miral Tour</title>
+        <title>Miral Tour</title>
       </Head>
       <div className="loeader_main">
         <Bars
