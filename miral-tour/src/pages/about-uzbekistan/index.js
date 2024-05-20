@@ -166,7 +166,7 @@ function AboutUzbekistan() {
               <div className="intro">
                 <h1>{t("aboutUzb.greatPeople")}</h1>
                 <p className="green_btn">
-                  <Link href={"/famous-people"}>View all</Link>
+                  <Link href={"/famous-people"}>{t("aboutUzb.viewAll")}</Link>
                 </p>
               </div>
               <div className="this_wrapper">
