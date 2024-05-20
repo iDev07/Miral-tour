@@ -97,7 +97,8 @@
   "tourPackage": {
     "price": "Prezzo",
     "onPerson": "$ per persona",
-    "day": "giorno",
+    "day": "giorni",
+    "day0": "giorno",
     "itinerary": "Percorso del tour",
     "include": "Il prezzo include",
     "notInlcuded": "Prezzo non incluso",

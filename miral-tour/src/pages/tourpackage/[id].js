@@ -1479,7 +1479,10 @@ function Tourpackage() {
                               label: (
                                 <p className="step_day">
                                   <span>
-                                    {index + 1} - {t("tourPackage.day")}
+                                    {index + 1} -{" "}
+                                    {index === 0
+                                      ? t("tourPackage.day0")
+                                      : t("tourPackage.day")}
                                   </span>
                                   {i18n.language === "uz"
                                     ? steps.name_uz

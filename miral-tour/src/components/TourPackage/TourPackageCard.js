@@ -107,7 +107,10 @@ export const TourPackageCard = ({ tourpackage }) => {
                 />
               </svg>
               {tourpackage.days} {""}
-              {t("tourPackage.day")}
+              {tourpackage.days === 1
+                ? t("tourPackage.day0")
+                : t("tourPackage.day")}
+              {/* {tourpackage.days} {t("tourPackage.day")} */}
             </p>
           </div>
           <Link
