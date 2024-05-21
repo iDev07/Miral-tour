@@ -1,4 +1,3 @@
-// pages/_app.js
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/layout";
 import Loader from "@/components/Loader";
@@ -6,20 +5,31 @@ import NextNProgress from "nextjs-progressbar";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "@/styles/main.scss";
 import "@/styles/globals.css";
+
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
-    setTimeout(() => {
+    setIsMounted(true);
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
-  });
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isMounted) {
+    return null; // Render nothing on the server
+  }
+
   return (
     <>
-      {loading === true ? (
-        <Loader />
-      ) : (
+      {loading && <Loader />}
+      {!loading && (
         <Layout>
-          <NextNProgress color="#0073db" /> <Component {...pageProps} />
+          <NextNProgress color="#0073db" />
+          <Component {...pageProps} />
           <SpeedInsights />
         </Layout>
       )}

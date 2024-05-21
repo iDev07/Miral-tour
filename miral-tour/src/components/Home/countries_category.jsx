@@ -6,9 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 function Countries_category() {
   const { t } = useTranslation();
-  AOS.init({
-    duration: 1500,
-  });
+  // AOS.init({
+  //   duration: 1500,
+  // });
   return (
     <div className="sending_company_banner">
       <div className="this_wrapper">

@@ -322,8 +322,8 @@
     "mail": "E-mail:"
   },
   "cartPage": {
-    "title": "Your cart",
-    "empty": "Your cart is empty",
+    "title": "Your wishlist",
+    "empty": "Your wishlist is empty",
     "goHome": "Go to Home",
     "remove": "Remove",
     "viewMore": "More details"

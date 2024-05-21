@@ -191,7 +191,7 @@ function Header() {
       children: <Activity />,
     },
   ];
-  const [ticket, setTicket] = useState(false);
+
   return (
     <header className={`header  ${scroll}`}>
       <div className="header_wrapper">

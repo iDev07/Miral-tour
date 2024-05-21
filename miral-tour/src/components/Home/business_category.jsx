@@ -9,9 +9,9 @@ function Business_category() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  AOS.init({
-    duration: 1500,
-  });
+  // AOS.init({
+  //   duration: 1500,
+  // });
   return (
     <div className="business_category category">
       <Modal

@@ -38,7 +38,7 @@ body {
 
 // Tourpackage
 
-.loeader_main {
+.loader_main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +50,7 @@ body {
   //   rgba(229, 204, 175, 0.3) 100%
   // );
   background: transparent;
+  transition: 1s ease-in-out;
   svg {
     width: 60px;
     height: 60px;

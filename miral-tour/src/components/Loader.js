@@ -7,7 +7,7 @@ function Loader() {
       <Head>
         <title>Miral Tour</title>
       </Head>
-      <div className="loeader_main">
+      <div className="loader_main">
         <Bars
           height={80}
           width={80}

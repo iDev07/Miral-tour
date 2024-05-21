@@ -322,8 +322,8 @@
     "mail": "Email:"
   },
   "cartPage": {
-    "title": "Il Suo carrello",
-    "empty": "Il carrello è vuoto",
+    "title": "La Sua lista dei desideri",
+    "empty": "La Sua lista dei desideri è vuota",
     "goHome": "Vai a casa",
     "remove": "Rimuovere",
     "viewMore": "Dettagli"

@@ -58,7 +58,8 @@ function MobileHeader() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredPackages, setFilteredPackages] = useState([]);
   const cartQuantity = useAppSelector((state) => state.cart.quantity);
-  const defaultLang = localStorage.getItem("lang") || "uz";
+  const defaultLang =
+    typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
   const handleSearchChange = (event) => {
     const searchText = event.target.value;
     setSearchQuery(searchText);
