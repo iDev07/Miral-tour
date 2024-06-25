@@ -206,7 +206,7 @@ function Header() {
               <div className="links_wrap">
                 <ul className="parent_links">
                   <li className="parent_link">
-                    <Link href={"/tourpackages"}>
+                    <Link href={"#"}>
                       {t("menu.catalog")}
                       <KeyboardArrowDownOutlinedIcon />{" "}
                     </Link>
@@ -378,6 +378,7 @@ function Header() {
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="it">IT</option>
                 <option value="en">EN</option>
+                {/* <option value="ru">RU</option> */}
                 {/* <option value="uz">UZ</option> */}
               </select>
             </div>

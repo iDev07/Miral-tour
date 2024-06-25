@@ -296,7 +296,7 @@ function BusinessTours() {
                   <div className="mycol">
                     <div className="mycol_wrapper">
                       <div className="hidden_description">
-                        <p>{t("businessPage.servicesDesc1o")}</p>
+                        <p>{t("businessPage.servicesDesc10")}</p>
                       </div>
                       <div className="showed_content">
                         <div className="imagebox">

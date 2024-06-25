@@ -64,25 +64,33 @@ function TourpackagesAll() {
           content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
         />
       </Head>
-      <div className="all_tourpackages pt_100">
-        <div className="this_wrapper">
+      <div className="category_page  pt_100">
+        <div className="category_page_wrapper">
           <Container>
-            <div className="intro">
-              <h1>{t("menu.catalog")}</h1>
-            </div>
-            <div className="tours">
-              {tourpackages.length === 0 ? (
-                <Loader />
-              ) : (
-                tourpackages &&
-                tourpackages.length &&
-                tourpackages.map((tourpackage) => (
-                  <TourPackageCard
-                    key={tourpackage.id}
-                    tourpackage={tourpackage}
-                  />
-                ))
-              )}
+            <div className="this_wrapper">
+              <div className="intro">
+                <h1>{t("menu.catalog")}</h1>
+              </div>
+              <div className="category_page">
+                <div className="category_page_wrap">
+                  <div className="tour_packages">
+                    <div className="this_wrapper">
+                      {tourpackages.length === 0 ? (
+                        <Loader />
+                      ) : (
+                        tourpackages &&
+                        tourpackages.length &&
+                        tourpackages.map((tourpackage) => (
+                          <TourPackageCard
+                            key={tourpackage.id}
+                            tourpackage={tourpackage}
+                          />
+                        ))
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </Container>
         </div>

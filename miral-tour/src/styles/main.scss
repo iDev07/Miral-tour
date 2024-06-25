@@ -35,6 +35,7 @@ body {
 @import "../styles/home_video.scss";
 @import "../styles/about_us.scss";
 @import "../styles/become_partner.scss";
+@import "../styles/tour_card.scss";
 
 // Tourpackage
 
@@ -43,8 +44,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: transparent;
+  background: #ffffff60;
   opacity: 1;
+  backdrop-filter: blur(10px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 
   &.hidden {

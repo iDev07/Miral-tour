@@ -13,9 +13,44 @@ import {
   Input,
 } from "antd";
 import { useTranslation } from "react-i18next";
-import OrderModal from "../OrderModal/OrderModal";
+import OrderModal from "@/components/OrderModal/OrderModal";
 
-function Hero({ tourpackages, categories, cities, countriesBack }) {
+function SearchResults() {
+  const [tourpackages, setTourPackages] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [countriesBack, setCountriesBack] = useState([]);
+  const [cities, setCities] = useState([]);
+
+  useEffect(() => {
+    // Fetch both tour packages and categories data
+    axios
+      .all([
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/categories`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`),
+        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/countries`),
+      ])
+      .then(
+        axios.spread(
+          (
+            tourPackagesResponse,
+            categoriesResponse,
+            citiesResponse,
+            countriesResponse
+          ) => {
+            setTourPackages(tourPackagesResponse.data);
+            setCategories(categoriesResponse.data);
+            setCities(citiesResponse.data);
+            setCountriesBack(countriesResponse.data);
+            setLoading(false);
+          }
+        )
+      )
+      .catch((error) => {
+        console.error("An error occurred:", error);
+        setLoading(false);
+      });
+  }, []);
   const [value, setValue] = useState();
   const options = useMemo(() => countryList().getData(), []);
   const { t, i18n } = useTranslation();
@@ -646,4 +681,4 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   );
 }
 
-export default Hero;
+export default SearchResults;

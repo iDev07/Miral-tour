@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { TourPackageCard } from "../TourPackage/TourPackageCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "animate.css";
 export const CategorySection = ({ category, id, tourpackages }) => {
   const { t } = useTranslation();
@@ -30,16 +32,53 @@ export const CategorySection = ({ category, id, tourpackages }) => {
             </div>
             <div className="tour_packages">
               <div className="this_wrapper">
-                {filteredTourPackages &&
-                  filteredTourPackages.length &&
-                  filteredTourPackages
-                    .slice(0, 8)
-                    .map((tourpackage) => (
-                      <TourPackageCard
-                        key={tourpackage.id}
-                        tourpackage={tourpackage}
-                      />
-                    ))}
+                <Swiper
+                  spaceBetween={20}
+                  slidesPerView={4}
+                  slidesPerGroup={1}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }}
+                  disableOnInteraction={false}
+                  loopFillGroupWithBlank={true}
+                  breakpoints={{
+                    "@0.00": {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                    },
+                    "@0.75": {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    "@1.00": {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                    },
+                    "@1.50": {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                    },
+                  }}
+                  navigation={true}
+                  modules={[Navigation, Pagination]}
+                  className="mySwiper_persons"
+                >
+                  <div className="my_slider">
+                    {filteredTourPackages &&
+                      filteredTourPackages.length &&
+                      filteredTourPackages.slice(0, 8).map((tourpackage) => (
+                        <SwiperSlide>
+                          <TourPackageCard
+                            key={tourpackage.id}
+                            tourpackage={tourpackage}
+                          />
+                        </SwiperSlide>
+                      ))}
+                  </div>
+                </Swiper>
+
                 {/* <TourPackageCard
                   key={filteredTourPackages[0].id}
                   tourpackage={filteredTourPackages[0]}

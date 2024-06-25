@@ -132,7 +132,7 @@
     "singleSupp": "Single supplement",
     "meal": "Meal",
     "onlyTourists": "*Prices are only for tourists",
-    "toCompanies": "* Travel companies, please contact by mail: - Agenzie di viaggio, si prega di contattare via mail:"
+    "toCompanies": "* Travel companies, please contact by mail:"
   },
   "category": {
     "more": "See more"
@@ -282,7 +282,7 @@
     "type3": "Attractions",
     "type4": "Vicinity",
     "type5": "Leisure",
-    "notFound": "Not found"
+    "notFound0": "Not found"
   },
   "citiesPage": {
     "title": "Uzbekistan cities and regions"

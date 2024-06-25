@@ -195,7 +195,7 @@ function Destinations() {
                     ))
                   ) : (
                     <div className="not_found">
-                      <p>{"destinationsPage.notFound"}</p>
+                      <p>{t("destinationsPage.notFound0")}</p>
                     </div>
                   )}
                 </div>
