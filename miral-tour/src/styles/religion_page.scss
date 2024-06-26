@@ -53,7 +53,7 @@
           justify-content: space-around;
           flex-wrap: wrap;
         }
-        .col {
+        .new_col {
           @media (max-width: 768px) {
             width: 100%;
             margin: 0;
@@ -62,13 +62,13 @@
               margin-left: inherit;
             }
           }
-          background-color: #fff;
+          // background-color: #fff;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           margin: 0 15px;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
           width: 30%;
-          border-radius: 5px;
+          border-radius: 25px;
           overflow: hidden;
           margin-bottom: 20px;
 
