@@ -142,7 +142,7 @@
             .search_btn {
               // margin-left: auto;
               display: flex;
-              justify-content: end;
+              justify-content: flex-end;
               button {
                 &:hover {
                   background-color: #fff;
@@ -348,7 +348,7 @@
         display: block;
       }
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       flex-wrap: wrap;
       grid-template-columns: 33.3% 33.3% 33.3%;
       overflow-x: hidden;
