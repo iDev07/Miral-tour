@@ -378,7 +378,7 @@ function Header() {
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="it">IT</option>
                 <option value="en">EN</option>
-                {/* <option value="ru">RU</option> */}
+                <option value="ru">Ру</option>
                 {/* <option value="uz">UZ</option> */}
               </select>
             </div>

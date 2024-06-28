@@ -136,12 +136,14 @@ export const TourPackageCard = ({ tourpackage }) => {
     <div className="new_col">
       <div className="new_col_wrap">
         <div className="content_wrap">
-          <div className="back_tour_image">
-            <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
-              alt={tourpackage.name}
-            />
-          </div>
+          <Link href={`/tourpackage/${tourpackage.id}`}>
+            <div className="back_tour_image">
+              <img
+                src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
+                alt={tourpackage.name}
+              />
+            </div>
+          </Link>
           <div className="tour_content">
             <div className="tour_details">
               <div className="tour_name">

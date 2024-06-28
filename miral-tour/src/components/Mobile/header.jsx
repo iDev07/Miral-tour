@@ -184,7 +184,7 @@ function MobileHeader() {
               <select name="lang" value={lang} onChange={handleChange}>
                 <option value="en">EN</option>
                 <option value="it">IT</option>
-                {/* <option value="uz">UZ</option> */}
+                <option value="кг">Ру</option>
               </select>
             </div>
           </div>
