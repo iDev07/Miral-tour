@@ -30,7 +30,7 @@ function Banners() {
                       <div className="swiper_banner_wrap">
                         <div className="sw_banner_image">
                           <img
-                            src="/img/banner1.jpg"
+                            src="/img/banner_new.jpg"
                             alt="Miral Tour - Banner "
                           />
                         </div>
