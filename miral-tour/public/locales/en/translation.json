@@ -30,7 +30,9 @@
   "hero": {
     "title": "The best place to plan a tour",
     "subtitle1": "Tickets without leaving home",
-    "constructorBtn": "Tour Constructor"
+    "constructorBtn": "Tour Constructor",
+    "bannerTitle1": "Do you know about Tashkent?",
+    "bannerTitle2": "Do you know about Valley Fergana?"
   },
   "constructorForm": {
     "heading1": "Departure Country",

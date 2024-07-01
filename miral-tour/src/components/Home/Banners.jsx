@@ -4,10 +4,12 @@ import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "animate.css";
 function Banners() {
+  const { t } = useTranslation();
   const router = useRouter();
   const { id } = router.query;
 
@@ -62,10 +64,12 @@ function Banners() {
                       <div className="banner_content">
                         <div className="if_bottom">
                           <div className="title">
-                            <h2>Do you know about Tashkent?</h2>
+                            <h2>{t("hero.bannerTitle1")}</h2>
                           </div>
                           <div className="read_more">
-                            <Link href="/cities/tashkent">Read more</Link>
+                            <Link href="/cities/tashkent">
+                              {t("business.formBtn")}
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -85,10 +89,13 @@ function Banners() {
                       <div className="banner_content">
                         <div className="if_bottom">
                           <div className="title">
-                            <h2>Do you know about Valley Fergana?</h2>
+                            <h2>{t("hero.bannerTitle2")}</h2>
                           </div>
                           <div className="read_more">
-                            <Link href="">Read more</Link>
+                            <Link href="/cities/ferghana">
+                              {" "}
+                              {t("business.formBtn")}
+                            </Link>
                           </div>
                         </div>
                       </div>

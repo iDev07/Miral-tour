@@ -30,7 +30,9 @@
   "hero": {
     "title": "Il posto migliore per pianificare un tour",
     "subtitle1": "Biglietti senza uscire da casa",
-    "constructorBtn": "Costruttore del tour"
+    "constructorBtn": "Costruttore del tour",
+    "bannerTitle1": "Conosce Tashkent?",
+    "bannerTitle2": "Conosce la Valle di Fergana?"
   },
   "constructorForm": {
     "heading1": "Paese di partenza",

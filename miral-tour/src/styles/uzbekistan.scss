@@ -76,6 +76,7 @@
           @media (max-width: 768px) {
             margin: 10px 0;
           }
+
           padding: 10px;
           width: 100%;
           margin-right: 15px;
@@ -83,6 +84,21 @@
           border-radius: 10px;
           h3 {
             margin: 10px 0;
+          }
+          &:nth-child(1) {
+            background-image: url("/img/feature1.png");
+          }
+          &:nth-child(2) {
+            background-image: url("/img/feature2.png");
+          }
+          &:nth-child(3) {
+            background-image: url("/img/feature3.png");
+          }
+          &:nth-child(4) {
+            background-image: url("/img/feature4.png");
+          }
+          &:nth-child(5) {
+            background-image: url("/img/feature5.png");
           }
         }
       }

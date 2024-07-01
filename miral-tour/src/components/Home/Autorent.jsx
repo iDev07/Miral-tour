@@ -85,7 +85,7 @@ function Autorent() {
               <div className="these_wrapper">
                 <div className="left_box">
                   <h1>{t("autorent.heading")}</h1>
-                  <button onClick={handleOpen}>{t("autorent.formBtn")}</button>
+                  {/* <button onClick={handleOpen}>{t("autorent.formBtn")}</button> */}
                 </div>
                 <div className="right_box">
                   <img src="/img/autorent.png" alt="Autorent ALL4U Tourism" />
