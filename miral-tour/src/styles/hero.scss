@@ -385,7 +385,10 @@
         }
         .tour_name {
           margin-left: 10px;
+          height: 140px;
+          overflow: hidden;
         }
+
         .bron_button {
           position: absolute;
           bottom: 10px;

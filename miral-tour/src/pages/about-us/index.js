@@ -113,7 +113,10 @@ function AboutUs() {
             <div className="team_members">
               <div className="member">
                 <div className="image_box">
-                  <img src="/img/iroda.jpg" alt="Team Member - Miral Tour" />
+                  <img
+                    src="/img/abdulaziz.jpg"
+                    alt="Team Member - Miral Tour"
+                  />
                 </div>
                 <div className="detail">
                   <h3>{t("aboutUsPage.name1")}</h3>
@@ -140,7 +143,7 @@ function AboutUs() {
               </div>
               <div className="member">
                 <div className="image_box">
-                  <img src="/img/member2.jpg" alt="Team Member - Miral Tour" />
+                  <img src="/img/nilufar.jpg" alt="Team Member - Miral Tour" />
                 </div>
                 <div className="detail">
                   <h3>{t("aboutUsPage.name4")}</h3>

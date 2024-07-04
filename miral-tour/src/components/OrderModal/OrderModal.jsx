@@ -471,6 +471,7 @@ const OrderModal = ({
               : tourpackage.title_en}
           </h3>
           <p
+            className="short_desc"
             dangerouslySetInnerHTML={{
               __html:
                 i18n.language === "uz"
