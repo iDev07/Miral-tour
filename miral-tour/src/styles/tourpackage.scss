@@ -110,6 +110,26 @@
             }
             max-width: 95%;
           }
+          .price {
+            .price_iclude {
+              ul {
+                li {
+                  &::marker {
+                    width: 10px !important;
+                    height: 10px !important;
+                  }
+                  list-style-image: url("/img/donee.png");
+                }
+              }
+            }
+            .price_not_include {
+              ul {
+                li {
+                  list-style-image: url("/img/close-square.png");
+                }
+              }
+            }
+          }
           .step_day {
             font-weight: 600;
             span {
