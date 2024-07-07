@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Loader from "@/components/Loader";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronRight } from "@mui/icons-material";
-import { Collapse } from "antd";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "animate.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function AboutUzbekistan() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  });
   const { t, i18n } = useTranslation();
   const [persons, setPersons] = useState([]);
   const [cities, setCities] = useState([]);
@@ -69,37 +74,37 @@ function AboutUzbekistan() {
                   </div>
                   <div className="intro_bottom">
                     <div className="cols_wrapper">
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature1.png" alt="Miral Tour " />
                         </div>
                         <p>{t("aboutUzb.reasons")}</p>
                       </div>
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature2.png" alt="Miral Tour " />
                         </div>
                         <p>{t("aboutUzb.reason1")}</p>
                       </div>
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature3.png" alt="Miral Tour " />
                         </div>
                         <p>{t("aboutUzb.reason2")}</p>
                       </div>
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature4.png" alt="Miral Tour " />
                         </div>
                         <p>{t("aboutUzb.reason3")}</p>
                       </div>
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature5.png" alt="Miral Tour " />
                         </div>
                         <p>{t("aboutUzb.reason4")}</p>
                       </div>
-                      <div className="feature">
+                      <div className="feature" data-aos="zoom-in">
                         <div className="icon_box">
                           <img src="/img/feature6.png" alt="Miral Tour " />
                         </div>

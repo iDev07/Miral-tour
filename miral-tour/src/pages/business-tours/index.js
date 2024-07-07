@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function BusinessTours() {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  });
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     company_name: "",
@@ -106,7 +111,7 @@ function BusinessTours() {
             <div className="background_wrapper">
               <Container>
                 <div className="content_grid">
-                  <div className="intro">
+                  <div className="intro" data-aos="fade-right">
                     <h2>{t("businessPage.introTitle")}</h2>
                     <p>{t("businessPage.introDesc")}</p>
                     <a href="#contactus">{t("businessPage.contactus")}</a>

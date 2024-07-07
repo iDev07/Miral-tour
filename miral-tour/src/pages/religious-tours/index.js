@@ -6,8 +6,12 @@ import Link from "next/link";
 import axios from "axios";
 import Loader from "@/components/Loader";
 import { TourPackageCard } from "@/components/TourPackage/TourPackageCard";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function ReliogiosTours() {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  });
   const { t } = useTranslation();
   const [tourpackages, setTourpackages] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -79,7 +83,7 @@ function ReliogiosTours() {
             <div className="background_section">
               <div className="this_wrapper">
                 <Container>
-                  <div className="content">
+                  <div className="content " data-aos="fade-up">
                     <div className="wrap">
                       <div>
                         <h1>{t("religiousPage.introTitle")}</h1>

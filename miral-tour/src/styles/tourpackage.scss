@@ -114,10 +114,6 @@
             .price_iclude {
               ul {
                 li {
-                  &::marker {
-                    width: 10px !important;
-                    height: 10px !important;
-                  }
                   list-style-image: url("/img/donee.png");
                 }
               }
