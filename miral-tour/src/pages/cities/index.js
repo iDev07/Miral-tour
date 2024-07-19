@@ -64,6 +64,10 @@ function Cities() {
                                   city.name_it !== null &&
                                   city.name_it !== ""
                                 ? city.name_it
+                                : i18n.language === "tr" &&
+                                  city.name_tr !== null &&
+                                  city.name_tr !== ""
+                                ? city.name_tr
                                 : city.name_en}
                             </h2>
                             <p>
@@ -76,6 +80,10 @@ function Cities() {
                                   city.title_it !== null &&
                                   city.title_it !== ""
                                 ? city.title_it
+                                : i18n.language === "tr" &&
+                                  city.title_tr !== null &&
+                                  city.title_tr !== ""
+                                ? city.title_tr
                                 : city.title_en}
                             </p>
                             <p className="read_more">

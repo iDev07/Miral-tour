@@ -83,6 +83,10 @@ function Destinations({}) {
                   destination.title_it !== null &&
                   destination.title_it !== ""
                 ? destination.title_it
+                : i18n.language === "tr" &&
+                  destination.title_tr !== null &&
+                  destination.title_tr !== ""
+                ? destination.title_tr
                 : destination.title_en}
             </title>
             <meta
@@ -143,6 +147,10 @@ function Destinations({}) {
                           destination.title_it !== null &&
                           destination.title_it !== ""
                         ? destination.title_it
+                        : i18n.language === "tr" &&
+                          destination.title_tr !== null &&
+                          destination.title_tr !== ""
+                        ? destination.title_tr
                         : destination.title_en}
                     </h1>
                   </div>
@@ -163,6 +171,10 @@ function Destinations({}) {
                               destination.content_it !== null &&
                               destination.content_it !== ""
                             ? destination.content_it
+                            : i18n.language === "tr" &&
+                              destination.content_tr !== null &&
+                              destination.content_tr !== ""
+                            ? destination.content_tr
                             : destination.content_en,
                       }}
                     ></div>

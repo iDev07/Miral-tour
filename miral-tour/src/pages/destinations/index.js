@@ -147,6 +147,10 @@ function Destinations() {
                               city.name_it !== null &&
                               city.name_it !== ""
                             ? city.name_it
+                            : i18n.language === "tr" &&
+                              city.name_tr !== null &&
+                              city.name_tr !== ""
+                            ? city.name_tr
                             : city.name_en,
                       }))}
                     />
@@ -180,6 +184,10 @@ function Destinations() {
                                     destination.title_it !== null &&
                                     destination.title_it !== ""
                                   ? destination.title_it
+                                  : i18n.language === "tr" &&
+                                    destination.title_tr !== null &&
+                                    destination.title_tr !== ""
+                                  ? destination.title_tr
                                   : destination.title_en}
                               </h2>
                               <p className="read_more">

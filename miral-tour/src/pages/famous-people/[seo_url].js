@@ -141,6 +141,10 @@ function Destinations({}) {
                           person.title_it !== null &&
                           person.title_it !== ""
                         ? person.title_it
+                        : i18n.language === "tr" &&
+                          person.title_tr !== null &&
+                          person.title_tr !== ""
+                        ? person.title_tr
                         : person.title_en}
                     </h1>
                   </div>
@@ -161,6 +165,10 @@ function Destinations({}) {
                               person.content_it !== null &&
                               person.content_it !== ""
                             ? person.content_it
+                            : i18n.language === "tr" &&
+                              person.content_tr !== null &&
+                              person.content_tr !== ""
+                            ? person.content_tr
                             : person.content_en,
                       }}
                     ></div>

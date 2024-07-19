@@ -149,6 +149,10 @@ const OrderModal = ({
               tourpackage.title_it !== null &&
               tourpackage.title_it !== ""
             ? tourpackage.title_it
+            : i18n.language === "tr" &&
+              tourpackage.title_tr !== null &&
+              tourpackage.title_tr !== ""
+            ? tourpackage.title_tr
             : tourpackage.title_en
         }
         open={isModalOpen}
@@ -468,6 +472,10 @@ const OrderModal = ({
                 tourpackage.title_it !== null &&
                 tourpackage.title_it !== ""
               ? tourpackage.title_it
+              : i18n.language === "tr" &&
+                tourpackage.title_tr !== null &&
+                tourpackage.title_tr !== ""
+              ? tourpackage.title_tr
               : tourpackage.title_en}
           </h3>
           <p
@@ -482,6 +490,10 @@ const OrderModal = ({
                     tourpackage.content_it !== null &&
                     tourpackage.content_it !== ""
                   ? tourpackage.content_it
+                  : i18n.language === "tr" &&
+                    tourpackage.content_tr !== null &&
+                    tourpackage.content_tr !== ""
+                  ? tourpackage.content_tr
                   : tourpackage.content_en,
             }}
           ></p>

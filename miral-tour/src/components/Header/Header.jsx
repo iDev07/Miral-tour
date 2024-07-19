@@ -8,12 +8,7 @@ import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { useAppSelector } from "../../../store/store";
-import {
-  AndroidOutlined,
-  AppleOutlined,
-  DownOutlined,
-} from "@ant-design/icons";
-import { Button, Tabs, Modal } from "antd";
+import { Button, Tabs, Select } from "antd";
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import VillaIcon from "@mui/icons-material/Villa";
@@ -21,18 +16,51 @@ import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
 import FlightIcon from "@mui/icons-material/Flight";
 import CarRentalIcon from "@mui/icons-material/CarRental";
 import LocalActivityIcon from "@mui/icons-material/LocalActivity";
-import AirplaneTicketIcon from "@mui/icons-material/AirplaneTicket";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Guides from "../Services/Guides";
 import Hotels from "../Services/Hotels";
 import Homestays from "../Services/Homestays";
 import Cabs from "../Services/Cabs";
 import RentCar from "../Services/RentCar";
 import Activity from "../Services/Activity";
+const { Option } = Select;
+const LanguageSelector = () => {
+  const defaultLang =
+    typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
+  const [lang, setLang] = useState(defaultLang);
 
+  const handleChange = (value) => {
+    setLang(value);
+    localStorage.setItem("lang", value);
+    i18n.changeLanguage(value);
+    window.location.reload();
+  };
+
+  const languages = [
+    { code: "tr", name: "Tr", flag: "/img/flags/turkiye.png" },
+    { code: "en", name: "En", flag: "/img/flags/uk.png" },
+    { code: "ru", name: "Ру", flag: "/img/flags/russia.png" },
+    { code: "it", name: "It", flag: "/img/flags/italy.png" },
+    // { code: "uz", name: "UZ", flag: "🇺🇿" },
+  ];
+
+  return (
+    <Select value={lang} onChange={handleChange} style={{ width: 90 }}>
+      {languages.map((language) => (
+        <Option key={language.code} value={language.code}>
+          <img
+            src={language.flag}
+            alt={language.name}
+            style={{ width: "20px", marginRight: "8px", marginBottom: "-3px" }}
+          />
+          {language.name}
+        </Option>
+      ))}
+    </Select>
+  );
+};
 function Header() {
   const { t } = useTranslation();
-  const { i18n } = useTranslation();
+  // const { i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [tourpackages, setTourPackages] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -44,15 +72,17 @@ function Header() {
   const [filteredPackages, setFilteredPackages] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const cartQuantity = useAppSelector((state) => state.cart.quantity);
-  const defaultLang =
-    typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
-  const [lang, setLang] = useState(defaultLang);
-  const handleChange = (event) => {
-    setLang(event.target.value);
-    localStorage.setItem("lang", event.target.value);
-    i18n.changeLanguage(event.target.value);
-    window.location.reload();
-  };
+  // const defaultLang =
+  //   typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
+  // const [lang, setLang] = useState(defaultLang);
+  // const handleChange = (event) => {
+  //   setLang(event.target.value);
+  //   localStorage.setItem("lang", event.target.value);
+  //   i18n.changeLanguage(event.target.value);
+  //   window.location.reload();
+  // };
+  // console.log(defaultLang);
+
   const handleSearchChange = (event) => {
     const searchText = event.target.value;
     setSearchQuery(searchText);
@@ -375,12 +405,7 @@ function Header() {
               </Link>
             </div>
             <div className="language">
-              <select name="lang" value={lang} onChange={handleChange}>
-                <option value="it">IT</option>
-                <option value="en">EN</option>
-                <option value="ru">Ру</option>
-                {/* <option value="uz">UZ</option> */}
-              </select>
+              <LanguageSelector />
             </div>
           </div>
         </Container>

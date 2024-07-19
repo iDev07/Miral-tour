@@ -61,6 +61,10 @@ function Category() {
                   category.name_it !== null &&
                   category.name_it !== ""
                 ? category.name_it
+                : i18n.language === "tr" &&
+                  category.name_tr !== null &&
+                  category.name_tr !== ""
+                ? category.name_tr
                 : category.name_en}
             </title>
           </Head>
@@ -78,6 +82,10 @@ function Category() {
                           category.name_it !== null &&
                           category.name_it !== ""
                         ? category.name_it
+                        : i18n.language === "tr" &&
+                          category.name_tr !== null &&
+                          category.name_tr !== ""
+                        ? category.name_tr
                         : category.name_en}
                     </h1>
                   </div>

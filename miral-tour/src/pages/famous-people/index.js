@@ -66,6 +66,10 @@ function FamousPeople() {
                                   person.title_it !== null &&
                                   person.title_it !== ""
                                 ? person.title_it
+                                : i18n.language === "tr" &&
+                                  person.title_tr !== null &&
+                                  person.title_tr !== ""
+                                ? person.title_tr
                                 : person.title_en}
                             </h2>
                             <p>
@@ -78,6 +82,10 @@ function FamousPeople() {
                                   person.name_it !== null &&
                                   person.name_it !== ""
                                 ? person.name_it
+                                : i18n.language === "tr" &&
+                                  person.name_tr !== null &&
+                                  person.name_tr !== ""
+                                ? person.name_tr
                                 : person.name_en}
                             </p>
                             <p className="read_more">

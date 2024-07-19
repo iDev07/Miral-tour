@@ -15,8 +15,9 @@
   .header_wrapper {
     .this_wrap {
       display: grid;
-      grid-template-columns: 15% 60% 15% 5% 5%;
+      grid-template-columns: 15% 60% 14% 5% 6%;
       align-items: center;
+      flex-wrap: wrap;
       .logo {
         width: 150px;
       }
@@ -220,14 +221,18 @@
           input {
             width: 100%;
             background-color: #fff;
-            padding: 5px;
-            border-radius: 10px;
-            border: 2px solid #2590ee;
+            padding: 3px;
+            border-radius: 6px;
+            border: 1px solid #d9d9d9;
             font-size: 17px;
+            transition: 0.3s ease;
             &::placeholder {
+              width: 100%;
+              transition: 3s ease;
               padding-left: 5px;
             }
             &:focus {
+              border: 1px solid #2590ee;
               outline: none;
             }
           }
@@ -253,11 +258,11 @@
             }
           }
           .hidden_ul_search {
+            width: 360px;
             position: absolute;
             height: 250px;
             overflow-y: auto;
             background-color: #fff;
-            width: 100%;
             text-align: center;
             border-radius: 10px;
             // scrollbar-color: #0073db #0073db; /* For Firefox */

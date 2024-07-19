@@ -105,6 +105,10 @@ function City({}) {
                   city.name_it !== null &&
                   city.name_it !== ""
                 ? city.name_it
+                : i18n.language === "tr" &&
+                  city.name_tr !== null &&
+                  city.name_tr !== ""
+                ? city.name_tr
                 : city.name_en}
             </title>
             <meta name="description" content={city.seo_description_en} />
@@ -165,6 +169,10 @@ function City({}) {
                           city.name_it !== null &&
                           city.name_it !== ""
                         ? city.name_it
+                        : i18n.language === "tr" &&
+                          city.name_tr !== null &&
+                          city.name_tr !== ""
+                        ? city.name_tr
                         : city.name_en}
                     </h1>
                   </div>
@@ -185,6 +193,10 @@ function City({}) {
                               city.content_it !== null &&
                               city.content_it !== ""
                             ? city.content_it
+                            : i18n.language === "tr" &&
+                              city.content_tr !== null &&
+                              city.content_tr !== ""
+                            ? city.content_tr
                             : city.content_en,
                       }}
                     ></div>

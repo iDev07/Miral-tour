@@ -158,6 +158,10 @@ export const TourPackageCard = ({ tourpackage }) => {
                         tourpackage.title_it !== null &&
                         tourpackage.title_it !== ""
                       ? tourpackage.title_it
+                      : i18n.language === "tr" &&
+                        tourpackage.title_tr !== null &&
+                        tourpackage.title_tr !== ""
+                      ? tourpackage.title_tr
                       : tourpackage.title_en}
                   </h3>
                 </Link>

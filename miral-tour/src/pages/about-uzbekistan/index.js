@@ -18,7 +18,7 @@ function AboutUzbekistan() {
     AOS.init({
       duration: 1500,
     });
-  });
+  }, []);
   const { t, i18n } = useTranslation();
   const [persons, setPersons] = useState([]);
   const [cities, setCities] = useState([]);
@@ -229,6 +229,10 @@ function AboutUzbekistan() {
                                         person.name_it !== null &&
                                         person.name_it !== ""
                                       ? person.name_it
+                                      : i18n.language === "tr" &&
+                                        person.name_tr !== null &&
+                                        person.name_tr !== ""
+                                      ? person.name_tr
                                       : person.name_en}
                                   </h2>
                                   <p>
@@ -240,6 +244,10 @@ function AboutUzbekistan() {
                                         person.title_it !== null &&
                                         person.title_it !== ""
                                       ? person.title_it
+                                      : i18n.language === "tr" &&
+                                        person.title_tr !== null &&
+                                        person.title_tr !== ""
+                                      ? person.title_tr
                                       : person.title_en}
                                   </p>
                                   <p className="read_more">
@@ -346,6 +354,10 @@ function AboutUzbekistan() {
                                         city.name_it !== null &&
                                         city.name_it !== ""
                                       ? city.name_it
+                                      : i18n.language === "tr" &&
+                                        city.name_tr !== null &&
+                                        city.name_tr !== ""
+                                      ? city.name_tr
                                       : city.name_en}
                                   </h2>
                                   <p>
@@ -357,6 +369,10 @@ function AboutUzbekistan() {
                                         city.title_it !== null &&
                                         city.title_it !== ""
                                       ? city.title_it
+                                      : i18n.language === "tr" &&
+                                        city.title_tr !== null &&
+                                        city.title_tr !== ""
+                                      ? city.title_tr
                                       : city.title_en}
                                   </p>
                                   <p className="read_more">
@@ -441,6 +457,10 @@ function AboutUzbekistan() {
                                         destination.title_it !== null &&
                                         destination.title_it !== ""
                                       ? destination.title_it
+                                      : i18n.language === "tr" &&
+                                        destination.title_tr !== null &&
+                                        destination.title_tr !== ""
+                                      ? destination.title_tr
                                       : destination.title_en}
                                   </h2>
                                   <p>
@@ -452,6 +472,10 @@ function AboutUzbekistan() {
                                         destination.name_it !== null &&
                                         destination.name_it !== ""
                                       ? destination.name_it
+                                      : i18n.language === "tr" &&
+                                        destination.name_tr !== null &&
+                                        destination.name_tr !== ""
+                                      ? destination.name_tr
                                       : destination.name_en}
                                   </p>
                                   <p className="read_more">

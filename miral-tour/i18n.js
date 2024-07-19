@@ -1,3 +1,4 @@
+// i18n.js or your configuration file
 import i18n from "i18next";
 import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -10,8 +11,8 @@ i18n
   .init({
     lng:
       typeof window !== "undefined"
-        ? window.localStorage.getItem("lang")
-        : false,
+        ? window.localStorage.getItem("lang") || "en"
+        : "en",
     fallbackLng: "en",
     debug: false,
     react: {
@@ -35,6 +36,7 @@ i18n
   });
 
 export default i18n;
+
 // import i18n from "i18next";
 // import Backend from "i18next-http-backend";
 // import LanguageDetector from "i18next-browser-languagedetector";

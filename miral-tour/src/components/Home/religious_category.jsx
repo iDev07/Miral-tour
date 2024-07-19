@@ -39,6 +39,10 @@ function Religious_category() {
                       ? categories[0].name_uz
                       : i18n.language === "ru"
                       ? categories[0].name_ru
+                      : i18n.language === "it"
+                      ? categories[0].name_it
+                      : i18n.language === "tr"
+                      ? categories[0].name_tr
                       : categories[0].name_en}
                   </h1>
                 </div>

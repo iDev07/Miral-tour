@@ -1031,6 +1031,10 @@ function Tourpackage() {
                   tourpackage.title_it !== null &&
                   tourpackage.title_it !== ""
                 ? tourpackage.title_it
+                : i18n.language === "tr" &&
+                  tourpackage.title_tr !== null &&
+                  tourpackage.title_tr !== ""
+                ? tourpackage.title_tr
                 : tourpackage.title_en}
             </title>
             <meta
@@ -1083,6 +1087,10 @@ function Tourpackage() {
                     tourpackage.title_it !== null &&
                     tourpackage.title_it !== ""
                   ? tourpackage.title_it
+                  : i18n.language === "tr" &&
+                    tourpackage.title_tr !== null &&
+                    tourpackage.title_tr !== ""
+                  ? tourpackage.title_tr
                   : tourpackage.title_en
               }
               open={isModalOpen}
@@ -1404,6 +1412,10 @@ function Tourpackage() {
                           tourpackage.title_it !== null &&
                           tourpackage.title_it !== ""
                         ? tourpackage.title_it
+                        : i18n.language === "tr" &&
+                          tourpackage.title_tr !== null &&
+                          tourpackage.title_tr !== ""
+                        ? tourpackage.title_tr
                         : tourpackage.title_en}
                     </h1>
                   </div>
@@ -1492,6 +1504,10 @@ function Tourpackage() {
                                       steps.name_it !== null &&
                                       steps.name_it !== ""
                                     ? steps.name_it
+                                    : i18n.language === "tr" &&
+                                      steps.name_tr !== null &&
+                                      steps.name_tr !== ""
+                                    ? steps.name_tr
                                     : steps.name_en}
                                 </p>
                               ),
@@ -1507,6 +1523,10 @@ function Tourpackage() {
                                           steps.description_it !== null &&
                                           steps.description_it !== ""
                                         ? steps.description_it
+                                        : i18n.language === "tr" &&
+                                          steps.description_tr !== null &&
+                                          steps.description_tr !== ""
+                                        ? steps.description_tr
                                         : steps.description_en,
                                   }}
                                 ></div>
@@ -1541,6 +1561,10 @@ function Tourpackage() {
                                     tourpackage.include_it !== null &&
                                     tourpackage.include_it !== ""
                                   ? tourpackage.include_it
+                                  : i18n.language === "tr" &&
+                                    tourpackage.include_tr !== null &&
+                                    tourpackage.include_tr !== ""
+                                  ? tourpackage.include_tr
                                   : tourpackage.include_en,
                             }}
                           ></div>
@@ -1559,6 +1583,10 @@ function Tourpackage() {
                                     tourpackage.not_include_it !== null &&
                                     tourpackage.not_include_it !== ""
                                   ? tourpackage.not_include_it
+                                  : i18n.language === "tr" &&
+                                    tourpackage.not_include_tr !== null &&
+                                    tourpackage.not_include_tr !== ""
+                                  ? tourpackage.not_include_tr
                                   : tourpackage.not_include_en,
                             }}
                           />
