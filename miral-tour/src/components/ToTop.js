@@ -40,7 +40,7 @@ function BackToTop() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            zIndex: "1000",
+            zIndex: "999",
           }}
           onClick={scrollUp}
           className="backToTopButton"

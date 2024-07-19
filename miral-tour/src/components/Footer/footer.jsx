@@ -63,9 +63,7 @@ function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <a href="mailto:miraltouruz@gmail.com">
-                      miraltouruz@gmail.com
-                    </a>
+                    <a href="mailto:info@miraltour.com">info@miraltour.com</a>
                   </li>
                   {/* <li>Tashkent, Yakkasaray dis, Khumo 57</li> */}
                 </ul>

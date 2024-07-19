@@ -4,9 +4,10 @@ import styled from "styled-components";
 import axios from "axios";
 import ClearIcon from "@mui/icons-material/Clear";
 import { useRouter } from "next/router";
+import { Container } from "@mui/material";
+import { Select } from "antd";
 import { useTranslation } from "react-i18next";
 import { useAppSelector } from "../../../store/store";
-import { Container } from "@mui/material";
 import { KeyboardArrowDown, ShoppingCart } from "@mui/icons-material";
 const DropdownContainer = styled.div`
   width: 100%;
@@ -21,8 +22,8 @@ const DropdownButton = styled.button`
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   width: 100%;
   font-size: 18px;
   color: #004074;
@@ -50,7 +51,42 @@ const DropdownItem = styled.li`
     background-color: #f0f0f0;
   }
 `;
+const { Option } = Select;
+const LanguageSelector = () => {
+  const defaultLang =
+    typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
+  const [lang, setLang] = useState(defaultLang);
 
+  const handleChange = (value) => {
+    setLang(value);
+    localStorage.setItem("lang", value);
+    i18n.changeLanguage(value);
+    window.location.reload();
+  };
+
+  const languages = [
+    { code: "tr", name: "Tr", flag: "/img/flags/turkiye.png" },
+    { code: "en", name: "En", flag: "/img/flags/uk.png" },
+    { code: "ru", name: "Ру", flag: "/img/flags/russia.png" },
+    { code: "it", name: "It", flag: "/img/flags/italy.png" },
+    // { code: "uz", name: "UZ", flag: "🇺🇿" },
+  ];
+
+  return (
+    <Select value={lang} onChange={handleChange} style={{ width: 60 }}>
+      {languages.map((language) => (
+        <Option key={language.code} value={language.code}>
+          <img
+            src={language.flag}
+            alt={language.name}
+            style={{ width: "20px", marginRight: "8px", marginBottom: "-3px" }}
+          />
+          {/* {language.name} */}
+        </Option>
+      ))}
+    </Select>
+  );
+};
 function MobileHeader() {
   const router = useRouter();
   const [hiddenNavVisible, setHiddenNavVisible] = useState(false);
@@ -77,13 +113,13 @@ function MobileHeader() {
     setSearchQuery("");
   }, [router.pathname]); // Listen for changes in the route
 
-  const [lang, setLang] = useState(defaultLang);
-  const handleChange = (event) => {
-    setLang(event.target.value);
-    localStorage.setItem("lang", event.target.value);
-    i18n.changeLanguage(event.target.value);
-    window.location.reload();
-  };
+  // const [lang, setLang] = useState(defaultLang);
+  // const handleChange = (event) => {
+  //   setLang(event.target.value);
+  //   localStorage.setItem("lang", event.target.value);
+  //   i18n.changeLanguage(event.target.value);
+  //   window.location.reload();
+  // };
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
       if (window.scrollY < 200) {
@@ -181,12 +217,13 @@ function MobileHeader() {
               </Link>
             </div>
             <div className="language">
-              <select name="lang" value={lang} onChange={handleChange}>
+              {/* <select name="lang" value={lang} onChange={handleChange}>
                 <option value="en">EN</option>
                 <option value="it">IT</option>
                 <option value="ru">Ру</option>
                 <option value="tr">Tr</option>
-              </select>
+              </select> */}
+              <LanguageSelector />
             </div>
           </div>
           <div
@@ -304,9 +341,33 @@ function MobileHeader() {
                   </Link>
                 </div>
                 <div className="other_links">
+                  <Link href={"/destinations"} onClick={hideHiddenNav}>
+                    {" "}
+                    {t("menu.sub_uzb3")}
+                  </Link>
+                </div>
+                <div className="other_links">
+                  <Link href={"/cities"} onClick={hideHiddenNav}>
+                    {" "}
+                    {t("menu.sub_uzb4")}
+                  </Link>
+                </div>
+                <div className="other_links">
+                  <Link href={"/visa"} onClick={hideHiddenNav}>
+                    {" "}
+                    {t("menu.sub_uzb5")}
+                  </Link>
+                </div>
+                <div className="other_links">
                   <Link href={"/about-us"} onClick={hideHiddenNav}>
                     {" "}
                     {t("menu.about_us")}
+                  </Link>
+                </div>
+                <div className="other_links">
+                  <Link href={"/become-partner"} onClick={hideHiddenNav}>
+                    {" "}
+                    {t("menu.partnership")}
                   </Link>
                 </div>
                 <div className="other_links">

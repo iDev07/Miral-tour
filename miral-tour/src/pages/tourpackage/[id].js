@@ -1006,7 +1006,7 @@ function Tourpackage() {
           <p>{t("tourPackage.onlyTourists")}</p>
           <p>
             {t("tourPackage.toCompanies")} <br />{" "}
-            <a href="mailto:miraltouruz@gmail.com">miraltouruz@gmail.com</a>
+            <a href="mailto:info@miraltour.com">info@miraltour.com</a>
           </p>
         </div>
       );
@@ -1014,7 +1014,7 @@ function Tourpackage() {
       return;
     }
   };
-
+  console.log(typeof tourpackage.prices);
   return (
     <>
       {loading ? (

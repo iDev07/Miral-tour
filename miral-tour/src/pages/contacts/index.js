@@ -40,8 +40,8 @@ function Contacts() {
                     <hr />
                     <div className="email">
                       <h3>{t("contactsPage.mail")}</h3>
-                      <a href="mailto: miraltouruz@gmail.com">
-                        miraltouruz@gmail.com
+                      <a href="mailto: info@miraltour.com">
+                        info@miraltour.com
                       </a>
                     </div>
                     <div className="social_links">

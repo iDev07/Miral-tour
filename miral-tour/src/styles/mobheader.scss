@@ -2,6 +2,7 @@
   @media (max-width: 992px) {
     display: block;
   }
+  position: absolute;
   transition: 0.3s ease;
   display: none;
   // position: absolute;
@@ -13,7 +14,7 @@
   .mobheader_wrapper {
     .mobheader_wrap {
       display: grid;
-      grid-template-columns: 15% 65% 10% 10%;
+      grid-template-columns: 15% 60% 10% 15%;
       align-items: center;
       .menu {
         button {
@@ -31,7 +32,7 @@
       .cart {
         display: flex;
         justify-content: left;
-        margin-left: -20px;
+        margin-left: -15px;
         position: relative;
         span {
           display: flex;
@@ -74,21 +75,20 @@
     .this_wrap {
       .main_links_wrap {
         position: relative;
+        z-index: 1000;
         padding: 20px 20px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        margin-top: 50px;
-        border-radius: 20px;
         background: #fff;
         box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.12);
-        height: 80vh;
+        height: 100vh;
         .search_wrap {
           position: relative;
           input {
             width: 100%;
             background-color: #fff;
             padding: 5px;
-            border-radius: 15px;
+            border-radius: 8px;
             border: 2px solid #4ee16e;
             font-size: 17px;
             z-index: 1;
@@ -142,7 +142,7 @@
           }
         }
         .other_links {
-          text-align: center;
+          text-align: left;
           margin: 15px 0;
           a {
             color: #004074;
