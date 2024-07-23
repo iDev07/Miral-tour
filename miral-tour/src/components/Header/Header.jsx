@@ -254,6 +254,10 @@ function Header() {
                                   category.name_it !== null &&
                                   category.name_it !== "" // Check if name_it is not null or empty
                                 ? category.name_it
+                                : i18n.language === "tr" &&
+                                  category.name_tr !== null &&
+                                  category.name_tr !== ""
+                                ? category.name_tr
                                 : category.name_en}{" "}
                               {/* If name_it is null or empty, display name_en */}
                             </Link>
