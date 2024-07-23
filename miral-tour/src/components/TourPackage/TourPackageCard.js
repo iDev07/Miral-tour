@@ -186,7 +186,21 @@ export const TourPackageCard = ({ tourpackage }) => {
                       </div>
                       <div className="start_price">
                         <p className="price">
-                          {t("orderModal.from")} {`${tourpackage.price} $`}
+                          {i18n.language === "tr" ? (
+                            <span>
+                              {" "}
+                              {`${tourpackage.price} $’`}
+                              {t("orderModal.from")}
+                            </span>
+                          ) : (
+                            <span>
+                              {t("orderModal.from")} {""}
+                              {`${tourpackage.price} $`}
+                            </span>
+                          )}
+
+                          {/* {t("orderModal.from")}
+                          {`${tourpackage.price} $`} */}
                         </p>
                       </div>
                       <div>{""}/</div>
