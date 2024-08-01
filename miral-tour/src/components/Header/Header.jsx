@@ -36,8 +36,8 @@ const LanguageSelector = () => {
   };
 
   const languages = [
-    { code: "tr", name: "Tr", flag: "/img/flags/turkiye.png" },
     { code: "en", name: "En", flag: "/img/flags/uk.png" },
+    { code: "tr", name: "Tr", flag: "/img/flags/turkiye.png" },
     { code: "ru", name: "Ру", flag: "/img/flags/russia.png" },
     { code: "it", name: "It", flag: "/img/flags/italy.png" },
     // { code: "uz", name: "UZ", flag: "🇺🇿" },

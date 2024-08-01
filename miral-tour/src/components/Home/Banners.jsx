@@ -25,6 +25,49 @@ function Banners() {
                 className="mySwiper"
               >
                 <SwiperSlide>
+                  <Link href={"/business-tours"}>
+                    <div className="swiper_banner">
+                      <div className="swiper_banner_wrap">
+                        <div className="sw_banner_image">
+                          <img src="/img/test.png" alt="Miral Tour - Banner " />
+                        </div>
+                        <div className="banner_content">
+                          <div className="business_slide">
+                            <div className="wrapper">
+                              <div className="contentbox">
+                                <div className="top_img">
+                                  <img
+                                    src="/img/logo_white.png"
+                                    alt="Miral Tour - Banner "
+                                  />
+                                </div>
+                                <div className="texts">
+                                  <h1>{t("hero.titleBusiness")}</h1>
+                                  <p>{t("hero.subTitleBusiness")}</p>
+                                  <Link href={"/business-tours"}>
+                                    {t("business.formBtn")}
+                                  </Link>
+                                </div>
+                              </div>
+                              <div className="absolute_texts"></div>
+                            </div>
+                          </div>
+                          {/* <div className="if_bottom">
+                            <div className="title">
+                              <h2 className="animate_animated animate__backInUp">
+                                Samarkand - Crossroads of cultures
+                              </h2>
+                            </div>
+                            <div className="read_more">
+                              <Link href="/cities/samarkand">Read more</Link>
+                            </div>
+                          </div> */}
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+                <SwiperSlide>
                   <Link href={"/tourpackage/1"}>
                     <div className="swiper_banner">
                       <div className="swiper_banner_wrap">
@@ -34,18 +77,18 @@ function Banners() {
                             alt="Miral Tour - Banner "
                           />
                         </div>
-                        {/* <div className="banner_content">
+                        <div className="banner_content">
                           <div className="if_bottom">
                             <div className="title">
                               <h2 className="animate_animated animate__backInUp">
-                                Samarkand - Crossroads of cultures
+                                {/* Samarkand - Crossroads of cultures */}
                               </h2>
                             </div>
-                            <div className="read_more">
+                            {/* <div className="read_more">
                               <Link href="/cities/samarkand">Read more</Link>
-                            </div>
+                            </div> */}
                           </div>
-                        </div> */}
+                        </div>
                       </div>
                     </div>
                   </Link>
