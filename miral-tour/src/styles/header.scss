@@ -148,8 +148,8 @@
                     display: block;
                     color: #0073db;
                     margin-bottom: 5px;
-                    padding: 2px 15px;
-                    border-radius: 10px;
+                    padding: 2px 10px;
+                    border-radius: 6px;
                     transition: 0.3s ease;
                     font-size: 15px;
                     &:hover {
@@ -201,8 +201,8 @@
                 display: block;
                 color: #0073db;
                 margin-bottom: 5px;
-                padding: 2px 15px;
-                border-radius: 10px;
+                padding: 2px 10px;
+                border-radius: 6px;
                 transition: 0.3s ease;
                 font-size: 15px;
                 &:hover {
@@ -264,7 +264,7 @@
             overflow-y: auto;
             background-color: #fff;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 6px;
             // scrollbar-color: #0073db #0073db; /* For Firefox */
 
             /* For WebKit browsers (Chrome, Safari) */
@@ -285,7 +285,7 @@
               padding: 5px;
               transition: 0.3s ease;
               margin: 5px;
-              border-radius: 10px;
+              border-radius: 6px;
               &:hover {
                 background-color: #0073db;
                 color: #fff;

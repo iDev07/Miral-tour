@@ -294,6 +294,11 @@ function Header() {
                           </Link>
                         </li>
                         <li className="parent_link_place">
+                          <Link href={`/useful-informations`}>
+                            {t("menu.usefulInfo")}
+                          </Link>
+                        </li>
+                        <li className="parent_link_place">
                           <Link href={`/famous-people`}>
                             {" "}
                             {t("menu.sub_uzb2")}

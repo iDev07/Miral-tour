@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,7 +22,9 @@ function Banners() {
             <div className="swiper_slides">
               <Swiper
                 navigation={true}
-                modules={[Navigation]}
+                autoplay={true}
+                speed={1200}
+                modules={[Navigation, Autoplay]}
                 className="mySwiper"
               >
                 <SwiperSlide>
@@ -111,32 +114,6 @@ function Banners() {
                           </div>
                           <div className="read_more">
                             <Link href="/cities/tashkent">
-                              {t("business.formBtn")}
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <div className="swiper_banner">
-                    <div className="swiper_banner_wrap">
-                      <div className="sw_banner_image">
-                        <img
-                          src="https://admin.all4u-tour.uz/images/tour/%D0%A2%D1%83%D1%80%20%D0%B2%20%D0%A4%D0%B5%D1%80%D0%B3%D0%B0%D0%BD%D1%81%D0%BA%D1%83%D1%8E%20%D0%B4%D0%BE%D0%BB%D0%B8%D0%BD%D1%83.jpeg"
-                          alt="Miral Tour - Banner "
-                        />
-                      </div>
-                      <div className="banner_content">
-                        <div className="if_bottom">
-                          <div className="title">
-                            <h2>{t("hero.bannerTitle2")}</h2>
-                          </div>
-                          <div className="read_more">
-                            <Link href="/cities/ferghana">
-                              {" "}
                               {t("business.formBtn")}
                             </Link>
                           </div>
