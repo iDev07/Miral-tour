@@ -79,7 +79,7 @@ const LanguageSelector = () => {
           <img
             src={language.flag}
             alt={language.name}
-            style={{ width: "20px", marginRight: "8px", marginBottom: "-3px" }}
+            style={{ width: "20px", marginRight: "0px", marginBottom: "-3px" }}
           />
           {/* {language.name} */}
         </Option>

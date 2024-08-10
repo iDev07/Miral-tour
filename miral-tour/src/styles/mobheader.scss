@@ -153,7 +153,7 @@
           position: absolute;
           bottom: 20px;
           text-align: center;
-          left: 32%;
+          left: 35%;
           button {
             background-color: transparent;
             border: none;
@@ -177,4 +177,16 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+.MobileHeader .ant-select-arrow {
+  display: none !important;
+}
+.MobileHeader .ant-select-selection-item {
+  padding-inline-end: 0px !important;
+}
+.MobileHeader .rc-virtual-list-holder-inner .ant-select-item {
+  padding: 5px !important;
+}
+.MobileHeader .language .ant-select-selection-item img {
+  width: 30px !important;
 }

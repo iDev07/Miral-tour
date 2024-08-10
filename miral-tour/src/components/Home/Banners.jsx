@@ -9,11 +9,16 @@ import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/navigation";
 import "animate.css";
+import i18n from "../../../i18n";
 function Banners() {
   const { t } = useTranslation();
   const router = useRouter();
   const { id } = router.query;
-
+  const banner_uz = "/img/banner_uz.jpg";
+  const banner_ru = "/img/banner_ru.jpg";
+  const banner_it = "/img/banner_it.jpg";
+  const banner_tr = "/img/banner_tr.jpg";
+  const banner_en = "/img/banner_en.jpg";
   return (
     <div className="Banners">
       <div className="banners_wrap">
@@ -22,7 +27,7 @@ function Banners() {
             <div className="swiper_slides">
               <Swiper
                 navigation={true}
-                autoplay={true}
+                autoplay={false}
                 speed={1200}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
@@ -97,30 +102,34 @@ function Banners() {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="swiper_banner">
-                    <div className="swiper_banner_wrap">
-                      <Link href={""}>
-                        <div className="sw_banner_image">
-                          <img
-                            src="https://admin.all4u-tour.uz/images/tour/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D1%82%D1%83%D1%80%20%D0%B2%20%D0%A3%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD.jpg"
-                            alt="Miral Tour - Banner "
-                          />
-                        </div>
-                      </Link>
-                      <div className="banner_content">
-                        <div className="if_bottom">
-                          <div className="title">
-                            <h2>{t("hero.bannerTitle1")}</h2>
+                  <Link href={"/"}>
+                    <div className="swiper_banner">
+                      <div className="swiper_banner_wrap">
+                        <Link href={"/about-uzbekistan"}>
+                          <div className="sw_banner_image">
+                            {i18n.language === "uz" ? (
+                              <img src={banner_uz} alt="Miral Tour Banner" />
+                            ) : i18n.language === "ru" ? (
+                              <img src={banner_ru} alt="Miral Tour Banner" />
+                            ) : i18n.language === "it" ? (
+                              <img src={banner_it} alt="Miral Tour Banner" />
+                            ) : i18n.language === "tr" ? (
+                              <img src={banner_tr} alt="Miral Tour Banner" />
+                            ) : (
+                              <img src={banner_en} alt="Miral Tour Banner" />
+                            )}
                           </div>
-                          <div className="read_more">
-                            <Link href="/cities/tashkent">
-                              {t("business.formBtn")}
-                            </Link>
+                        </Link>
+                        {/* <div className="banner_content">
+                          <div className="if_bottom">
+                            <div className="title title_3">
+                              <h2>WELCOME TO UZBEKISTAN</h2>
+                            </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </SwiperSlide>
               </Swiper>
             </div>

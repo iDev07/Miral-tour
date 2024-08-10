@@ -259,12 +259,15 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
           category_id: filteredPackage.category_id,
           title_uz: filteredPackage.title_uz,
           title_ru: filteredPackage.title_ru,
+          title_it: filteredPackage.title_it,
+          title_tr: filteredPackage.title_tr,
           title_en: filteredPackage.title_en,
           image: filteredPackage.image,
           content_uz: filteredPackage.content_uz,
           content_en: filteredPackage.content_en,
           content_ru: filteredPackage.content_ru,
           content_it: filteredPackage.content_it,
+          content_tr: filteredPackage.content_tr,
           // Add more properties as needed
         };
       });
@@ -342,6 +345,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                               // suffixIcon={siuffix}
                               onChange={handleDaysChange}
                               options={[
+                                { value: "1", label: "1" },
                                 { value: "3", label: "3" },
                                 { value: "4", label: "4" },
                                 { value: "7", label: "7" },
