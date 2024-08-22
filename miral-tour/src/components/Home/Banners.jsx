@@ -102,34 +102,34 @@ function Banners() {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link href={"/"}>
-                    <div className="swiper_banner">
-                      <div className="swiper_banner_wrap">
-                        <Link href={"/about-uzbekistan"}>
-                          <div className="sw_banner_image">
-                            {i18n.language === "uz" ? (
-                              <img src={banner_uz} alt="Miral Tour Banner" />
-                            ) : i18n.language === "ru" ? (
-                              <img src={banner_ru} alt="Miral Tour Banner" />
-                            ) : i18n.language === "it" ? (
-                              <img src={banner_it} alt="Miral Tour Banner" />
-                            ) : i18n.language === "tr" ? (
-                              <img src={banner_tr} alt="Miral Tour Banner" />
-                            ) : (
-                              <img src={banner_en} alt="Miral Tour Banner" />
-                            )}
-                          </div>
-                        </Link>
-                        {/* <div className="banner_content">
+                  {/* <Link href={"/"}> */}
+                  <div className="swiper_banner">
+                    <div className="swiper_banner_wrap">
+                      <Link href={"/about-uzbekistan"}>
+                        <div className="sw_banner_image">
+                          {i18n.language === "uz" ? (
+                            <img src={banner_uz} alt="Miral Tour Banner" />
+                          ) : i18n.language === "ru" ? (
+                            <img src={banner_ru} alt="Miral Tour Banner" />
+                          ) : i18n.language === "it" ? (
+                            <img src={banner_it} alt="Miral Tour Banner" />
+                          ) : i18n.language === "tr" ? (
+                            <img src={banner_tr} alt="Miral Tour Banner" />
+                          ) : (
+                            <img src={banner_en} alt="Miral Tour Banner" />
+                          )}
+                        </div>
+                      </Link>
+                      {/* <div className="banner_content">
                           <div className="if_bottom">
                             <div className="title title_3">
                               <h2>WELCOME TO UZBEKISTAN</h2>
                             </div>
                           </div>
                         </div> */}
-                      </div>
                     </div>
-                  </Link>
+                  </div>
+                  {/* </Link> */}
                 </SwiperSlide>
               </Swiper>
             </div>

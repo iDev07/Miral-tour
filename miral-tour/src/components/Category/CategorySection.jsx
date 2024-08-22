@@ -42,11 +42,11 @@ export const CategorySection = ({ category, id, tourpackages }) => {
                   slidesPerGroup={1}
                   autoplay={{
                     delay: 3000,
-                    disableOnInteraction: false,
+                    disableoninteraction: false,
                     pauseOnMouseEnter: true,
                   }}
                   disableOnInteraction={false}
-                  loopFillGroupWithBlank={true}
+                  loopfillgroupwithblank={true}
                   breakpoints={{
                     "@0.00": {
                       slidesPerView: 1,
@@ -73,11 +73,8 @@ export const CategorySection = ({ category, id, tourpackages }) => {
                     {filteredTourPackages &&
                       filteredTourPackages.length &&
                       filteredTourPackages.slice(0, 8).map((tourpackage) => (
-                        <SwiperSlide>
-                          <TourPackageCard
-                            key={tourpackage.id}
-                            tourpackage={tourpackage}
-                          />
+                        <SwiperSlide key={tourpackage.id}>
+                          <TourPackageCard tourpackage={tourpackage} />
                         </SwiperSlide>
                       ))}
                   </div>

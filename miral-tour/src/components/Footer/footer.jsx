@@ -99,7 +99,7 @@ function Footer() {
                       viewBox="0 0 45 45"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_1157_2678)">
+                      <g clipPath="url(#clip0_1157_2678)">
                         <path
                           fill-rule="evenodd"
                           clip-rule="evenodd"
@@ -136,7 +136,7 @@ function Footer() {
                       viewBox="0 0 45 45"
                       fill="none"
                     >
-                      <g clip-path="url(#clip0_1157_2676)">
+                      <g clipPath="url(#clip0_1157_2676)">
                         <path
                           d="M45 22.5564C45 10.1053 34.92 0 22.5 0C10.08 0 0 10.1053 0 22.5564C0 33.4737 7.74 42.5639 18 44.6617V29.3233H13.5V22.5564H18V16.9173C18 12.5639 21.5325 9.02256 25.875 9.02256H31.5V15.7895H27C25.7625 15.7895 24.75 16.8045 24.75 18.0451V22.5564H31.5V29.3233H24.75V45C36.1125 43.8722 45 34.2632 45 22.5564Z"
                           fill="#004074"
