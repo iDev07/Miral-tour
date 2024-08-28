@@ -27,7 +27,7 @@ function Banners() {
             <div className="swiper_slides">
               <Swiper
                 navigation={true}
-                autoplay={false}
+                autoplay={true}
                 speed={1200}
                 modules={[Navigation, Autoplay]}
                 className="mySwiper"
