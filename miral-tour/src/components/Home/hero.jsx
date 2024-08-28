@@ -330,7 +330,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                           />
                         </div>
                       </div>
-                      <div className="nights">
+                      {/* <div className="nights">
                         <p className="filter_name">
                           {t("constructorForm.heading4")}
                         </p>
@@ -354,7 +354,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                             />
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                       <div className="tourists_count">
                         <div className="tourist_count_wrapper">
                           <div className="persons">
