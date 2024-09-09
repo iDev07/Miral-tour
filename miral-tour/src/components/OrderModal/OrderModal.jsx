@@ -93,6 +93,17 @@ const OrderModal = ({
       console.error("Error during form submission:", error);
     }
   };
+  console.log(tourpackage.id);
+  console.log(selectedDates);
+  // console.log(value);
+  console.log(persons);
+  console.log(childs);
+  console.log(type_group);
+  console.log(class_tour);
+  console.log(nameUser);
+  console.log(surnameUser);
+  console.log(mailUser);
+  console.log(numberUser);
   const increment = () => {
     // Call the callback function to update the persons count
     updatePersonsCount(persons + 1);

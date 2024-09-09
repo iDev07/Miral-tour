@@ -75,8 +75,8 @@ function Guides() {
 
                   <div className="guide_languages">
                     <p>
-                      {guide.languages.map((language) => (
-                        <span>
+                      {guide.languages.map((language, index) => (
+                        <span key={index}>
                           <DoneIcon />
                           {language.language_en}
                         </span>

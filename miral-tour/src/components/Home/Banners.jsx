@@ -52,9 +52,9 @@ function Banners() {
                                 <div className="texts">
                                   <h1>{t("hero.titleBusiness")}</h1>
                                   <p>{t("hero.subTitleBusiness")}</p>
-                                  <Link href={"/business-tours"}>
-                                    {t("business.formBtn")}
-                                  </Link>
+                                  {/* <Link href={"/business-tours"}> */}
+                                  {t("business.formBtn")}
+                                  {/* </Link> */}
                                 </div>
                               </div>
                               <div className="absolute_texts"></div>

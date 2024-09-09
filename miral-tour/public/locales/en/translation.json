@@ -333,6 +333,13 @@
     "remove": "Remove",
     "viewMore": "More details"
   },
+  "usefulsPage": {
+    "title": "Useful information for tourists",
+    "introTitleSpan1": "We are glad that you are",
+    "introTitleSpan2": "considering visiting ",
+    "introTitleSpan3": "beautiful Uzbekistan.",
+    "introDesc": "In this section we have collected important information that will help you plan your trip and make it as comfortable as possible."
+  },
   "aboutUsPage": {
     "title": "About us!",
     "introTitle": "About us and our team",

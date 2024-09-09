@@ -190,7 +190,7 @@ function Usefuls() {
   return (
     <>
       <Head>
-        <title>Useful informations</title>
+        <title>Useful information for tourists</title>
       </Head>
       <div className="Usefuls pt_70">
         <div className="usefuls_wrap">

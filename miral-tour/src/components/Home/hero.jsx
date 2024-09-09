@@ -163,6 +163,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   // if (!country) {
   //   findCountry();
   // }
+
   const { RangePicker } = DatePicker;
   const content1 = (
     <div className="person_count_plus">
@@ -274,10 +275,14 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
 
     setSortedTours(filteredPackages);
   };
-  // const defaultGroup = {
-  //   value: 0,
-  //   label: t("constructorForm.typeOfGroup"),
-  // };
+
+  console.log(defaultCountry);
+  console.log(dateRange);
+
+  console.log(personCount);
+  console.log(typeGroup);
+  console.log(typeClass);
+
   return (
     <>
       <div className="hero pt_100">

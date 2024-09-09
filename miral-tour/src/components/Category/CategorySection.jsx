@@ -45,8 +45,8 @@ export const CategorySection = ({ category, id, tourpackages }) => {
                     disableoninteraction: false,
                     pauseOnMouseEnter: true,
                   }}
-                  disableOnInteraction={false}
-                  loopfillgroupwithblank={true}
+                  disableoninteraction="false"
+                  loopfillgroupwithblank="true"
                   breakpoints={{
                     "@0.00": {
                       slidesPerView: 1,
