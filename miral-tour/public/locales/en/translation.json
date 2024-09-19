@@ -334,11 +334,41 @@
     "viewMore": "More details"
   },
   "usefulsPage": {
-    "title": "Useful information for tourists",
+    "title": "Useful informations for tourists",
     "introTitleSpan1": "We are glad that you are",
     "introTitleSpan2": "considering visiting ",
     "introTitleSpan3": "beautiful Uzbekistan.",
-    "introDesc": "In this section we have collected important information that will help you plan your trip and make it as comfortable as possible."
+    "introDesc": "In this section we have collected important information that will help you plan your trip and make it as comfortable as possible.",
+    "readMore": "Read more",
+    "tours": "Tours",
+    "tTitle1": "The best time to visit Uzbekistan is all",
+    "tTitle2": "3 months",
+    "tTitle3": "of the season.",
+    "tourName1": "",
+    "flights": "Air traffic with Uzbekistan",
+    "flightsDesc": "Uzbekistan has well-developed air links with many countries around the world. Below are the main destinations from where direct flights to Tashkent, the capital of Uzbekistan, are available",
+    "direct1": "Direct flights to ",
+    "direct2": "Tashkent",
+    "directDesc": "Uzbekistan has well-developed air links with many countries of the world.",
+    "continent": "Continent",
+    "country": "Country",
+    "city": "City",
+    "visa": "Visa requirements",
+    "vTitle1": "Uzbekistan provides ",
+    "vTitle2": "visa-free",
+    "vTitle3": "regime for citizens of many countries.",
+    "vTitleDesc": "Uzbekistan provides visa-free regime for citizens of many countries. Here is the list of countries whose citizens do not require a visa to enter Uzbekistan",
+    "tCis": "CIS-Countries",
+    "tEuro": "European Countries",
+    "tAsia": "Asian Countries",
+    "tMidEast": "Middle East Countries",
+    "tAmerica": "North America",
+    "boxTitle1": "Communication and Internet",
+    "boxTitle2": "Safety and medical advice",
+    "box1Desc1": "Uzbekistan has well-developed mobile communications and internet. You can buy a local SIM card at the airport or in any major city. Free Wi-Fi is available in many cafes, restaurants and hotels",
+    "box1desc2": "Free wifi hostel",
+    "box2Desc1": "Uzbekistan is a safe country for travelling. However, we recommend that you observe general precautions as in any other country. If you have any problems, contact the local police or your consulate.",
+    "box2Desc2": "Before travelling, make sure you have health insurance that covers treatment abroad. It is also recommended that you make"
   },
   "aboutUsPage": {
     "title": "About us!",
@@ -390,6 +420,183 @@
     "phone": "Phone number:",
     "submit": "Submit"
   },
+  "continents": {
+    "europe": "Europe",
+    "asia": "Asia",
+    "midEast": "Middle East",
+    "nAmerica": "North America"
+  },
+  "euro_countries": {
+    "russia": "Russia",
+    "germany": "Germany",
+    "france": "France",
+    "unitedKingdom": "United Kingdom",
+    "italy": "Italy",
+    "spain": "Spain",
+    "latvia": "Latvia",
+    "turkey": "Turkey"
+  },
+  "asia_countries": {
+    "china": "China",
+    "southKorea": "South Korea",
+    "japan": "Japan",
+    "india": "India",
+    "kazakhstan": "Kazakhstan",
+    "kyrgyzstan": "Kyrgyzstan",
+    "tajikistan": "Tajikistan",
+    "turkmenistan": "Turkmenistan",
+    "malaysia": "Malaysia",
+    "thailand": "Thailand",
+    "indonesia": "Indonesia"
+  },
+  "middle_east_countries": {
+    "uae": "UAE",
+    "turkey": "Turkey",
+    "israel": "Israel",
+    "saudiArabia": "Saudi Arabia",
+    "qatar": "Qatar",
+    "kuwait": "Kuwait",
+    "oman": "Oman",
+    "iran": "Iran"
+  },
+  "north_america_countries": {
+    "usa": "USA"
+  },
+  "russia_cities": {
+    "moscow": "Moscow",
+    "saintPetersburg": "Saint Petersburg",
+    "yekaterinburg": "Yekaterinburg",
+    "kazan": "Kazan",
+    "novosibirsk": "Novosibirsk",
+    "samara": "Samara"
+  },
+  "germany_cities": {
+    "frankfurt": "Frankfurt",
+    "munich": "Munich"
+  },
+  "france_cities": {
+    "paris": "Paris"
+  },
+  "uk_cities": {
+    "london": "London"
+  },
+  "italy_cities": {
+    "milan": "Milan"
+  },
+  "spain_cities": {
+    "barcelona": "Barcelona"
+  },
+  "latvia_cities": {
+    "riga": "Riga"
+  },
+  "turkey_cities": {
+    "istanbul": "Istanbul",
+    "ankara": "Ankara"
+  },
+  "china_cities": {
+    "beijing": "Beijing",
+    "urumqi": "Urumqi"
+  },
+  "south_korea_cities": {
+    "seoul": "Seoul"
+  },
+  "japan_cities": {
+    "tokyo": "Tokyo"
+  },
+  "india_cities": {
+    "delhi": "Delhi"
+  },
+  "kazakhstan_cities": {
+    "nurSultan": "Nur-Sultan",
+    "almaty": "Almaty"
+  },
+  "kyrgyzstan_cities": {
+    "bishkek": "Bishkek"
+  },
+  "tajikistan_cities": {
+    "dushanbe": "Dushanbe"
+  },
+  "turkmenistan_cities": {
+    "ashgabat": "Ashgabat"
+  },
+  "malaysia_cities": {
+    "kualaLumpur": "Kuala Lumpur"
+  },
+  "thailand_cities": {
+    "bangkok": "Bangkok"
+  },
+  "indonesia_cities": {
+    "jakarta": "Jakarta"
+  },
+  "uae_cities": {
+    "dubai": "Dubai",
+    "sharjah": "Sharjah"
+  },
+  "israel_cities": {
+    "telAviv": "Tel Aviv"
+  },
+  "saudi_arabia_cities": {
+    "jeddah": "Jeddah",
+    "riyadh": "Riyadh"
+  },
+  "qatar_cities": {
+    "doha": "Doha"
+  },
+  "kuwait_cities": {
+    "kuwaitCity": "Kuwait City"
+  },
+  "oman_cities": {
+    "muscat": "Muscat"
+  },
+  "iran_cities": {
+    "tehran": "Tehran"
+  },
+  "usa_cities": {
+    "newYork": "New York"
+  },
+  "asia_visa": {
+    "japan": "Japan",
+    "korea": "Korea",
+    "china": "China",
+    "malaysia": "Malaysia",
+    "india": "India",
+    "israel": "Israel",
+    "iran": "Iran",
+    "saudi_arabia": "Saudi Arabia",
+    "uae": "UAE"
+  },
+  "cis_visa": {
+    "russia": "Russia",
+    "kazakhstan": "Kazakhstan",
+    "kyrgyzstan": "Kyrgyzstan",
+    "tajikistan": "Tajikistan",
+    "armenia": "Armenia",
+    "belarus": "Belarus",
+    "moldova": "Moldova",
+    "ukraine": "Ukraine"
+  },
+  "european_visa": {
+    "germany": "Germany",
+    "france": "France",
+    "italy": "Italy",
+    "spain": "Spain",
+    "latvia": "Latvia",
+    "lithuania": "Lithuania",
+    "estonia": "Estonia",
+    "switzerland": "Switzerland",
+    "sweden": "Sweden",
+    "norway": "Norway",
+    "denmark": "Denmark",
+    "netherlands": "Netherlands",
+    "uk": "United Kingdom"
+  },
+  "middle_east_visa": {
+    "turkey": "Turkey",
+    "qatar": "Qatar",
+    "oman": "Oman",
+    "kuwait": "Kuwait"
+  },
+  "north_america_visa": { "usa": "USA", "canada": "Canada" },
   "priceC": "Price is negotiable",
   "skipBtn": "Skip"
 }

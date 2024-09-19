@@ -17,180 +17,197 @@ function Usefuls() {
   };
 
   const continents = [
-    { label: "Европа", value: 1 },
-    { label: "Азия", value: 2 },
-    { label: "Ближний Восток:", value: 3 },
-    { label: "Северная Америка", value: 4 },
+    { label: t("continents.europe"), value: 1 },
+    { label: t("continents.asia"), value: 2 },
+    { label: t("continents.midEast"), value: 3 },
+    { label: t("continents.nAmerica"), value: 4 },
   ];
   const euro_countries = [
-    { label: "Россия", value: 1 },
-    { label: "Германия", value: 2 },
-    { label: "Франция", value: 3 },
-    { label: "Великобритания", value: 4 },
-    { label: "Италия", value: 5 },
-    { label: "Испания", value: 6 },
-    { label: "Латвия", value: 7 },
-    { label: "Турция", value: 8 },
+    { label: t("euro_countries.russia"), value: 1 },
+    { label: t("euro_countries.germany"), value: 2 },
+    { label: t("euro_countries.france"), value: 3 },
+    { label: t("euro_countries.uk"), value: 4 },
+    { label: t("euro_countries.italy"), value: 5 },
+    { label: t("euro_countries.spain"), value: 6 },
+    { label: t("euro_countries.latvia"), value: 7 },
+    { label: t("euro_countries.turkey"), value: 8 },
   ];
+
   const asia_countries = [
-    { label: "Китай", value: 9 },
-    { label: "Южная Корея", value: 10 },
-    { label: "Япония", value: 11 },
-    { label: "Индия", value: 12 },
-    { label: "Казахстан", value: 13 },
-    { label: "Кыргызстан", value: 14 },
-    { label: "Таджикистан", value: 15 },
-    { label: "Туркменистан", value: 16 },
-    { label: "Малайзия", value: 17 },
-    { label: "Таиланд", value: 18 },
-    { label: "Индонезия", value: 19 },
+    { label: t("asia_countries.china"), value: 9 },
+    { label: t("asia_countries.southKorea"), value: 10 },
+    { label: t("asia_countries.japan"), value: 11 },
+    { label: t("asia_countries.india"), value: 12 },
+    { label: t("asia_countries.kazakhstan"), value: 13 },
+    { label: t("asia_countries.kyrgyzstan"), value: 14 },
+    { label: t("asia_countries.tajikistan"), value: 15 },
+    { label: t("asia_countries.turkmenistan"), value: 16 },
+    { label: t("asia_countries.malaysia"), value: 17 },
+    { label: t("asia_countries.thailand"), value: 18 },
+    { label: t("asia_countries.indonesia"), value: 19 },
   ];
+
   const middle_east_countries = [
-    { label: "ОАЭ", value: 20 },
-    { label: "Турция", value: 21 },
-    { label: "Израиль", value: 22 },
-    { label: "Саудовская Аравия", value: 23 },
-    { label: "Катар", value: 24 },
-    { label: "Кувейт", value: 25 },
-    { label: "Оман", value: 26 },
-    { label: "Иран", value: 27 },
+    { label: t("middle_east_countries.uae"), value: 20 },
+    { label: t("middle_east_countries.turkey"), value: 21 },
+    { label: t("middle_east_countries.israel"), value: 22 },
+    { label: t("middle_east_countries.saudiArabia"), value: 23 },
+    { label: t("middle_east_countries.qatar"), value: 24 },
+    { label: t("middle_east_countries.kuwait"), value: 25 },
+    { label: t("middle_east_countries.oman"), value: 26 },
+    { label: t("middle_east_countries.iran"), value: 27 },
   ];
-  const north_america_countries = [{ label: "США", value: 28 }];
+
+  const north_america_countries = [
+    { label: t("north_america_countries.usa"), value: 28 },
+  ];
 
   const russia_cities = [
-    { label: "Москва", value: 1 },
-    { label: "Санкт-Петербург", value: 2 },
-    { label: "Екатеринбург", value: 3 },
-    { label: "Казань", value: 4 },
-    { label: "Новосибирск", value: 5 },
-    { label: "Самара", value: 6 },
+    { label: t("russia_cities.moscow"), value: 1 },
+    { label: t("russia_cities.saintPetersburg"), value: 2 },
+    { label: t("russia_cities.yekaterinburg"), value: 3 },
+    { label: t("russia_cities.kazan"), value: 4 },
+    { label: t("russia_cities.novosibirsk"), value: 5 },
+    { label: t("russia_cities.samara"), value: 6 },
   ];
 
   const germany_cities = [
-    { label: "Франкфурт", value: 7 },
-    { label: "Мюнхен", value: 8 },
+    { label: t("germany_cities.frankfurt"), value: 7 },
+    { label: t("germany_cities.munich"), value: 8 },
   ];
 
-  const france_cities = [{ label: "Париж", value: 9 }];
+  const france_cities = [{ label: t("france_cities.paris"), value: 9 }];
 
-  const uk_cities = [{ label: "Лондон", value: 10 }];
+  const uk_cities = [{ label: t("uk_cities.london"), value: 10 }];
 
-  const italy_cities = [{ label: "Милан", value: 11 }];
+  const italy_cities = [{ label: t("italy_cities.milan"), value: 11 }];
 
-  const spain_cities = [{ label: "Барселона", value: 12 }];
+  const spain_cities = [{ label: t("spain_cities.barcelona"), value: 12 }];
 
-  const latvia_cities = [{ label: "Рига", value: 13 }];
+  const latvia_cities = [{ label: t("latvia_cities.riga"), value: 13 }];
 
   const turkey_cities = [
-    { label: "Стамбул", value: 14 },
-    { label: "Анкара", value: 15 },
+    { label: t("turkey_cities.istanbul"), value: 14 },
+    { label: t("turkey_cities.ankara"), value: 15 },
   ];
 
   const china_cities = [
-    { label: "Пекин", value: 16 },
-    { label: "Урумчи", value: 17 },
+    { label: t("china_cities.beijing"), value: 16 },
+    { label: t("china_cities.urumqi"), value: 17 },
   ];
 
-  const south_korea_cities = [{ label: "Сеул", value: 18 }];
+  const south_korea_cities = [
+    { label: t("south_korea_cities.seoul"), value: 18 },
+  ];
 
-  const japan_cities = [{ label: "Токио", value: 19 }];
+  const japan_cities = [{ label: t("japan_cities.tokyo"), value: 19 }];
 
-  const india_cities = [{ label: "Дели", value: 20 }];
+  const india_cities = [{ label: t("india_cities.delhi"), value: 20 }];
 
   const kazakhstan_cities = [
-    { label: "Нур-Султан", value: 21 },
-    { label: "Алматы", value: 22 },
+    { label: t("kazakhstan_cities.nurSultan"), value: 21 },
+    { label: t("kazakhstan_cities.almaty"), value: 22 },
   ];
 
-  const kyrgyzstan_cities = [{ label: "Бишкек", value: 23 }];
+  const kyrgyzstan_cities = [
+    { label: t("kyrgyzstan_cities.bishkek"), value: 23 },
+  ];
 
-  const tajikistan_cities = [{ label: "Душанбе", value: 24 }];
+  const tajikistan_cities = [
+    { label: t("tajikistan_cities.dushanbe"), value: 24 },
+  ];
 
-  const turkmenistan_cities = [{ label: "Ашхабад", value: 25 }];
+  const turkmenistan_cities = [
+    { label: t("turkmenistan_cities.ashgabat"), value: 25 },
+  ];
 
-  const malaysia_cities = [{ label: "Куала-Лумпур", value: 26 }];
+  const malaysia_cities = [
+    { label: t("malaysia_cities.kualaLumpur"), value: 26 },
+  ];
 
-  const thailand_cities = [{ label: "Бангкок", value: 27 }];
+  const thailand_cities = [{ label: t("thailand_cities.bangkok"), value: 27 }];
 
-  const indonesia_cities = [{ label: "Джакарта", value: 28 }];
+  const indonesia_cities = [
+    { label: t("indonesia_cities.jakarta"), value: 28 },
+  ];
 
   const uae_cities = [
-    { label: "Дубай", value: 29 },
-    { label: "Шарджа", value: 30 },
+    { label: t("uae_cities.dubai"), value: 29 },
+    { label: t("uae_cities.sharjah"), value: 30 },
   ];
 
-  const israel_cities = [{ label: "Тель-Авив", value: 31 }];
+  const israel_cities = [{ label: t("israel_cities.telAviv"), value: 31 }];
 
   const saudi_arabia_cities = [
-    { label: "Джидда", value: 32 },
-    { label: "Эр-Рияд", value: 33 },
+    { label: t("saudi_arabia_cities.jeddah"), value: 32 },
+    { label: t("saudi_arabia_cities.riyadh"), value: 33 },
   ];
 
-  const qatar_cities = [{ label: "Доха", value: 34 }];
+  const qatar_cities = [{ label: t("qatar_cities.doha"), value: 34 }];
 
-  const kuwait_cities = [{ label: "Эль-Кувейт", value: 35 }];
+  const kuwait_cities = [{ label: t("kuwait_cities.kuwaitCity"), value: 35 }];
 
-  const oman_cities = [{ label: "Маскат", value: 36 }];
+  const oman_cities = [{ label: t("oman_cities.muscat"), value: 36 }];
 
-  const iran_cities = [{ label: "Тегеран", value: 37 }];
+  const iran_cities = [{ label: t("iran_cities.tehran"), value: 37 }];
 
-  const usa_cities = [{ label: "Нью-Йорк", value: 38 }];
+  const usa_cities = [{ label: t("usa_cities.newYork"), value: 38 }];
 
   const asia_visa = [
-    { id: 1, name: "Япония" },
-    { id: 2, name: "Корея" },
-    { id: 3, name: "Китай" },
-    { id: 4, name: "Малайзия" },
-    { id: 5, name: "Индия" },
-    { id: 6, name: "Израиль" },
-    { id: 7, name: "Иран" },
-    { id: 8, name: "Саудовская Аравия" },
-    { id: 9, name: "ОАЭ" },
+    { id: 1, name: t("asia_visa.japan") },
+    { id: 2, name: t("asia_visa.korea") },
+    { id: 3, name: t("asia_visa.china") },
+    { id: 4, name: t("asia_visa.malaysia") },
+    { id: 5, name: t("asia_visa.india") },
+    { id: 6, name: t("asia_visa.israel") },
+    { id: 7, name: t("asia_visa.iran") },
+    { id: 8, name: t("asia_visa.saudiArabia") },
+    { id: 9, name: t("asia_visa.uae") },
   ];
 
   const cis_visa = [
-    { id: 1, name: "Россия" },
-    { id: 2, name: "Казахстан" },
-    { id: 3, name: "Кыргызстан" },
-    { id: 4, name: "Таджикистан" },
-    { id: 5, name: "Армения" },
-    { id: 6, name: "Беларусь" },
-    { id: 7, name: "Молдова" },
-    { id: 8, name: "Украина" },
+    { id: 1, name: t("cis_visa.russia") },
+    { id: 2, name: t("cis_visa.kazakhstan") },
+    { id: 3, name: t("cis_visa.kyrgyzstan") },
+    { id: 4, name: t("cis_visa.tajikistan") },
+    { id: 5, name: t("cis_visa.armenia") },
+    { id: 6, name: t("cis_visa.belarus") },
+    { id: 7, name: t("cis_visa.moldova") },
+    { id: 8, name: t("cis_visa.ukraine") },
   ];
 
   const european_visa = [
-    { id: 1, name: "Германия" },
-    { id: 2, name: "Франция" },
-    { id: 3, name: "Италия" },
-    { id: 4, name: "Испания" },
-    { id: 5, name: "Латвия" },
-    { id: 6, name: "Литва" },
-    { id: 7, name: "Эстония" },
-    { id: 8, name: "Швейцария" },
-    { id: 9, name: "Швеция" },
-    { id: 10, name: "Норвегия" },
-    { id: 11, name: "Дания" },
-    { id: 12, name: "Нидерланды" },
-    { id: 13, name: "Великобритания" },
+    { id: 1, name: t("european_visa.germany") },
+    { id: 2, name: t("european_visa.france") },
+    { id: 3, name: t("european_visa.italy") },
+    { id: 4, name: t("european_visa.spain") },
+    { id: 5, name: t("european_visa.latvia") },
+    { id: 6, name: t("european_visa.lithuania") },
+    { id: 7, name: t("european_visa.estonia") },
+    { id: 8, name: t("european_visa.switzerland") },
+    { id: 9, name: t("european_visa.sweden") },
+    { id: 10, name: t("european_visa.norway") },
+    { id: 11, name: t("european_visa.denmark") },
+    { id: 12, name: t("european_visa.netherlands") },
+    { id: 13, name: t("european_visa.unitedKingdom") },
   ];
 
   const middle_east_visa = [
-    { id: 1, name: "Турция" },
-    { id: 2, name: "Катар" },
-    { id: 3, name: "Оман" },
-    { id: 4, name: "Кувейт" },
+    { id: 1, name: t("middle_east_visa.turkey") },
+    { id: 2, name: t("middle_east_visa.qatar") },
+    { id: 3, name: t("middle_east_visa.oman") },
+    { id: 4, name: t("middle_east_visa.kuwait") },
   ];
 
   const north_america_visa = [
-    { id: 1, name: "США" },
-    { id: 2, name: "Канада" },
+    { id: 1, name: t("north_america_visa.usa") },
+    { id: 2, name: t("north_america_visa.canada") },
   ];
 
   return (
     <>
       <Head>
-        <title>Useful information for tourists</title>
+        <title>{t("usefulsPage.title")}</title>
       </Head>
       <div className="Usefuls pt_70">
         <div className="usefuls_wrap">
@@ -202,23 +219,19 @@ function Usefuls() {
                     <div className="title_wrap">
                       <h1 className="wrap_spans">
                         <span className="span1">
-                          {" "}
-                          Мы рады, вы рассматриваете
+                          {t("usefulsPage.introTitleSpan1")}
                         </span>{" "}
                         <span className="span2">
-                          {" "}
-                          возможность посетить
+                          {t("usefulsPage.introTitleSpan2")}
                         </span>{" "}
-                        <span className="span3"> прекрасный Узбекистан</span>
+                        <span className="span3">
+                          {t("usefulsPage.introTitleSpan3")}
+                        </span>
                       </h1>
                     </div>
-                    <p>
-                      В этом разделе мы собрали важную информацию, которая
-                      поможет вам спланировать ваше путешествие и сделать его
-                      максимально комфортным
-                    </p>
+                    <p>{t("usefulsPage.introDesc")}</p>
                     <Link href="#contactus">
-                      Подробный
+                      {t("usefulsPage.readMore")}
                       <ArrowOutwardIcon />{" "}
                     </Link>
                   </div>
@@ -230,12 +243,13 @@ function Usefuls() {
             <div className="tours_thematic section">
               <div className="title">
                 <div className="tag">
-                  <p>ТУРЫ</p>
+                  <p>{t("usefulsPage.tours")}</p>
                 </div>
                 <div className="text">
                   <h1>
-                    Лучшее время для посещения Узбекистана все{" "}
-                    <span>3 месяца</span> сезона.
+                    {t("usefulsPage.tTitle1")} {""}
+                    <span>{t("usefulsPage.tTitle2")}</span>{" "}
+                    {t("usefulsPage.tTitle3")}
                   </h1>
                 </div>
               </div>
@@ -1393,18 +1407,13 @@ function Usefuls() {
                 <div className="left_box">
                   <div className="content">
                     <div className="title">
-                      <h1>Авиасообщение с Узбекистаном</h1>
+                      <h1>{t("usefulsPage.flights")}</h1>
                     </div>
                     <div className="plane_image">
                       <img src="/img/plane_usefu.png" alt="Miral Tour" />
                     </div>
                     <div className="description">
-                      <p>
-                        Узбекистан имеет хорошо развитое авиасообщение с
-                        множеством стран мира. Ниже приведены основные
-                        направления, откуда доступны прямые рейсы в Ташкент,
-                        столицу Узбекистана
-                      </p>
+                      <p>{t("usefulsPage.flightsDesc")}</p>
                     </div>
                   </div>
                 </div>
@@ -1412,16 +1421,16 @@ function Usefuls() {
                   <div className="content">
                     <div className="title">
                       <h3>
-                        Прямые рейсы в <span>Ташкент</span>
+                        {t("usefulsPage.direct1")}{" "}
+                        <span>{t("usefulsPage.direct2")}</span>
                       </h3>
-                      <p>
-                        Узбекистан имеет хорошо развитое авиасообщение с
-                        множеством стран мира.
-                      </p>
+                      <p>{t("usefulsPage.directDesc")}</p>
                     </div>
                     <div className="countries_select">
                       <div className="continent">
-                        <span className="min_title">Континент</span>
+                        <span className="min_title">
+                          {t("usefulsPage.continent")}
+                        </span>
                         <Select
                           style={{ width: "100%" }}
                           onChange={continentChange}
@@ -1431,7 +1440,10 @@ function Usefuls() {
                         />
                       </div>
                       <div className="continent">
-                        <span className="min_title">Country</span>
+                        <span className="min_title">
+                          {" "}
+                          {t("usefulsPage.country")}
+                        </span>
                         <Select
                           style={{ width: "100%" }}
                           defaultValue={euro_countries[0]}
@@ -1448,7 +1460,9 @@ function Usefuls() {
                         />
                       </div>
                       <div className="continent">
-                        <span className="min_title">City</span>
+                        <span className="min_title">
+                          {t("usefulsPage.city")}
+                        </span>
                         <ul className="cities">
                           {country === 1
                             ? russia_cities.map((city) => (
@@ -1574,16 +1588,13 @@ function Usefuls() {
               <div className="visa_wrapper">
                 <div className="left_box">
                   <div className="title">
-                    <span className="min_title">Визовые требования</span>
+                    <span className="min_title">{t("usefulsPage.visa")}</span>
                     <h1>
-                      Узбекистан предостав-ляет <span>безвизовый</span> режим
-                      для граждан многих стран.
+                      {t("usefulsPage.vTitle1")}{" "}
+                      <span> {t("usefulsPage.vTitle2")}</span>{" "}
+                      {t("usefulsPage.vTitle3")}
                     </h1>
-                    <p>
-                      Узбекистан предоставляет безвизовый режим для граждан
-                      многих стран. Вот список стран, гражданам которых не
-                      требуется виза для въезда в Узбекистан:
-                    </p>
+                    <p>{t("usefulsPage.vTitleDesc")}</p>
                   </div>
                 </div>
                 <div className="right_box">
@@ -1593,7 +1604,7 @@ function Usefuls() {
                       items={[
                         {
                           key: 1,
-                          label: "Страны СНГ",
+                          label: t("usefulsPage.tCis"),
                           children: (
                             <div className="this_countries">
                               {cis_visa.map((country, index) => (
@@ -1608,7 +1619,7 @@ function Usefuls() {
                       items={[
                         {
                           key: 2,
-                          label: "Европейские страны",
+                          label: t("usefulsPage.tEuro"),
                           children: (
                             <div className="this_countries">
                               {european_visa.map((country, index) => (
@@ -1623,7 +1634,7 @@ function Usefuls() {
                       items={[
                         {
                           key: 3,
-                          label: "Азиатские страны",
+                          label: t("usefulsPage.tAsia"),
                           children: (
                             <div className="this_countries">
                               {asia_visa.map((country, index) => (
@@ -1638,7 +1649,7 @@ function Usefuls() {
                       items={[
                         {
                           key: 4,
-                          label: "Ближний Восток",
+                          label: t("usefulsPage.tMidEast"),
                           children: (
                             <div className="this_countries">
                               {middle_east_visa.map((country, index) => (
@@ -1653,7 +1664,7 @@ function Usefuls() {
                       items={[
                         {
                           key: 5,
-                          label: "Северная Америка",
+                          label: t("usefulsPage.tAmerica"),
                           children: (
                             <div className="this_countries">
                               {north_america_visa.map((country) => (
@@ -1688,14 +1699,9 @@ function Usefuls() {
                             />
                           </svg>
                         </p>
-                        <h2>Связь и интернет</h2>
+                        <h2>{t("usefulsPage.boxTitle1")}</h2>
                       </div>
-                      <p className="desc">
-                        В Узбекистане хорошо развита мобильная связь и интернет.
-                        Вы можете приобрести местную SIM-карту в аэропорту или в
-                        любом крупном городе. Бесплатный Wi-Fi доступен во
-                        многих кафе, ресторанах и гостиницах
-                      </p>
+                      <p className="desc">{t("usefulsPage.box1Desc1")}</p>
                       <p className="minfignya">
                         <svg
                           width="24"
@@ -1709,7 +1715,7 @@ function Usefuls() {
                             fill="black"
                           />
                         </svg>
-                        <span>Free wifi hostel</span>
+                        <span>{t("usefulsPage.box1Desc2")}</span>
                       </p>
                     </div>
                   </div>
@@ -1732,20 +1738,10 @@ function Usefuls() {
                             />
                           </svg>
                         </p>
-                        <h2>Безопасность и медицинские советы</h2>
+                        <h2>{t("usefulsPage.boxTitle2")}</h2>
                       </div>
-                      <p className="desc">
-                        Узбекистан является безопасной страной для путешествий.
-                        Тем не менее, мы рекомендуем соблюдать общие меры
-                        предосторожности, как и в любой другой стране. Если у
-                        вас возникнут какие-либо проблемы, свяжитесь с местной
-                        полицией или вашим консульством.
-                      </p>
-                      <p className="desc">
-                        Перед поездкой убедитесь, что у вас есть медицинская
-                        страховка, которая покрывает лечение за рубежом. Также
-                        рекомендуется сделать
-                      </p>
+                      <p className="desc">{t("usefulsPage.box2Desc1")}</p>
+                      <p className="desc">{t("usefulsPage.box2Desc2")}</p>
                     </div>
                   </div>
                 </div>

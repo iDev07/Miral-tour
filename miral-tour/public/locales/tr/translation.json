@@ -332,6 +332,43 @@
     "remove": " Kaldırmak ",
     "viewMore": " Daha fazla bilgi "
   },
+  "usefulsPage": {
+    "title": "Turistler için faydalı bilgiler",
+    "introTitleSpan1": "Ziyaret etmeyi düşündüğünüz için",
+    "introTitleSpan2": "mutluyuz",
+    "introTitleSpan3": "güzel Özbekistan.",
+    "introDesc": "Bu bölümde, seyahatinizi planlamanıza ve en rahat şekilde geçirmenize yardımcı olacak önemli bilgileri topladık.",
+    "readMore": "Daha fazla oku",
+    "tours": "Turlar",
+    "tTitle1": "Özbekistan'ı ziyaret etmek için en iyi zaman tüm",
+    "tTitle2": "3 ay",
+    "tTitle3": "mevsim boyunca.",
+    "tourName1": "",
+    "flights": "Özbekistan ile hava trafiği",
+    "flightsDesc": "Özbekistan, dünya genelindeki birçok ülkeyle iyi gelişmiş hava bağlantılarına sahiptir. Aşağıda Özbekistan'ın başkenti Taşkent'e direkt uçuşların mevcut olduğu başlıca destinasyonlar yer almaktadır.",
+    "direct1": "Doğrudan uçuşlar",
+    "direct2": "Taşkent",
+    "directDesc": "Özbekistan, dünya genelinde birçok ülke ile iyi gelişmiş hava bağlantılarına sahiptir.",
+    "continent": "Kıta",
+    "country": "Ülke",
+    "city": "Şehir",
+    "visa": "Vize gereksinimleri",
+    "vTitle1": "Özbekistan, birçok ülke vatandaşı için",
+    "vTitle2": "vizesiz",
+    "vTitle3": "rejim sunmaktadır.",
+    "vTitleDesc": "Özbekistan, birçok ülke vatandaşı için vizesiz rejim sunmaktadır. İşte Özbekistan'a giriş için vize gerekmeyen ülkelerin listesi.",
+    "tCis": "BDT Ülkeleri",
+    "tEuro": "Avrupa Ülkeleri",
+    "tAsia": "Asya Ülkeleri",
+    "tMidEast": "Orta Doğu Ülkeleri",
+    "tAmerica": "Kuzey Amerika",
+    "boxTitle1": "İletişim ve İnternet",
+    "boxTitle2": "Güvenlik ve tıbbi tavsiyeler",
+    "box1Desc1": "Özbekistan'da iyi gelişmiş mobil iletişim ve internet bulunmaktadır. Yerel bir SIM kartı havaalanında veya herhangi bir büyük şehirde satın alabilirsiniz. Birçok kafe, restoran ve otelde ücretsiz Wi-Fi mevcuttur.",
+    "box1desc2": "Ücretsiz Wi-Fi hostel",
+    "box2Desc1": "Özbekistan, seyahat için güvenli bir ülkedir. Ancak, herhangi bir başka ülkede olduğu gibi genel önlemleri almanızı öneririz. Bir sorun yaşarsanız, yerel polise veya konsolosluğunuza başvurun.",
+    "box2Desc2": "Seyahatten önce yurt dışındaki tedavileri kapsayan bir sağlık sigortası yaptırdığınızdan emin olun. Ayrıca"
+  },
   "aboutUsPage": {
     "title": " Bizim hakkımızda!",
     "introTitle": "Biz ve ekibimiz hakkında",
@@ -381,6 +418,186 @@
     "mail": " E-posta:",
     "phone": " Telefon numaranız:",
     "submit": " Gönderin "
+  },
+  "continents": {
+    "europe": "Avrupa",
+    "asia": "Asya",
+    "midEast": "Orta Doğu",
+    "nAmerica": "Kuzey Amerika"
+  },
+  "euro_countries": {
+    "russia": "Rusya",
+    "germany": "Almanya",
+    "france": "Fransa",
+    "unitedKingdom": "Birleşik Krallık",
+    "italy": "İtalya",
+    "spain": "İspanya",
+    "latvia": "Letonya",
+    "turkey": "Türkiye"
+  },
+  "asia_countries": {
+    "china": "Çin",
+    "southKorea": "Güney Kore",
+    "japan": "Japonya",
+    "india": "Hindistan",
+    "kazakhstan": "Kazakistan",
+    "kyrgyzstan": "Kırgızistan",
+    "tajikistan": "Tacikistan",
+    "turkmenistan": "Türkmenistan",
+    "malaysia": "Malezya",
+    "thailand": "Tayland",
+    "indonesia": "Endonezya"
+  },
+  "middle_east_countries": {
+    "uae": "BAE",
+    "turkey": "Türkiye",
+    "israel": "İsrail",
+    "saudiArabia": "Suudi Arabistan",
+    "qatar": "Katar",
+    "kuwait": "Kuveyt",
+    "oman": "Umman",
+    "iran": "İran"
+  },
+  "north_america_countries": {
+    "usa": "ABD"
+  },
+  "russia_cities": {
+    "moscow": "Moskova",
+    "saintPetersburg": "Saint Petersburg",
+    "yekaterinburg": "Yekaterinburg",
+    "kazan": "Kazan",
+    "novosibirsk": "Novosibirsk",
+    "samara": "Samara"
+  },
+  "germany_cities": {
+    "frankfurt": "Frankfurt",
+    "munich": "Münih"
+  },
+  "france_cities": {
+    "paris": "Paris"
+  },
+  "uk_cities": {
+    "london": "Londra"
+  },
+  "italy_cities": {
+    "milan": "Milano"
+  },
+  "spain_cities": {
+    "barcelona": "Barselona"
+  },
+  "latvia_cities": {
+    "riga": "Riga"
+  },
+  "turkey_cities": {
+    "istanbul": "İstanbul",
+    "ankara": "Ankara"
+  },
+  "china_cities": {
+    "beijing": "Pekin",
+    "urumqi": "Urumçi"
+  },
+  "south_korea_cities": {
+    "seoul": "Seul"
+  },
+  "japan_cities": {
+    "tokyo": "Tokyo"
+  },
+  "india_cities": {
+    "delhi": "Delhi"
+  },
+  "kazakhstan_cities": {
+    "nurSultan": "Nur-Sultan",
+    "almaty": "Almatı"
+  },
+  "kyrgyzstan_cities": {
+    "bishkek": "Bişkek"
+  },
+  "tajikistan_cities": {
+    "dushanbe": "Duşanbe"
+  },
+  "turkmenistan_cities": {
+    "ashgabat": "Aşkabat"
+  },
+  "malaysia_cities": {
+    "kualaLumpur": "Kuala Lumpur"
+  },
+  "thailand_cities": {
+    "bangkok": "Bangkok"
+  },
+  "indonesia_cities": {
+    "jakarta": "Cakarta"
+  },
+  "uae_cities": {
+    "dubai": "Dubai",
+    "sharjah": "Sharjah"
+  },
+  "israel_cities": {
+    "telAviv": "Tel Aviv"
+  },
+  "saudi_arabia_cities": {
+    "jeddah": "Cidde",
+    "riyadh": "Riyad"
+  },
+  "qatar_cities": {
+    "doha": "Doha"
+  },
+  "kuwait_cities": {
+    "kuwaitCity": "Kuveyt Şehri"
+  },
+  "oman_cities": {
+    "muscat": "Maskat"
+  },
+  "iran_cities": {
+    "tehran": "Tahran"
+  },
+  "usa_cities": {
+    "newYork": "New York"
+  },
+  "asia_visa": {
+    "japan": "Japonya",
+    "korea": "Kore",
+    "china": "Çin",
+    "malaysia": "Malezya",
+    "india": "Hindistan",
+    "israel": "İsrail",
+    "iran": "İran",
+    "saudi_arabia": "Suudi Arabistan",
+    "uae": "BAE"
+  },
+  "cis_visa": {
+    "russia": "Rusya",
+    "kazakhstan": "Kazakistan",
+    "kyrgyzstan": "Kırgızistan",
+    "tajikistan": "Tacikistan",
+    "armenia": "Ermenistan",
+    "belarus": "Belarus",
+    "moldova": "Moldova",
+    "ukraine": "Ukrayna"
+  },
+  "european_visa": {
+    "germany": "Almanya",
+    "france": "Fransa",
+    "italy": "İtalya",
+    "spain": "İspanya",
+    "latvia": "Letonya",
+    "lithuania": "Litvanya",
+    "estonia": "Estonya",
+    "switzerland": "İsviçre",
+    "sweden": "İsveç",
+    "norway": "Norveç",
+    "denmark": "Danimarka",
+    "netherlands": "Hollanda",
+    "uk": "Birleşik Krallık"
+  },
+  "middle_east_visa": {
+    "turkey": "Türkiye",
+    "qatar": "Katar",
+    "oman": "Umman",
+    "kuwait": "Kuveyt"
+  },
+  "north_america_visa": {
+    "usa": "ABD",
+    "canada": "Kanada"
   },
   "priceC": " Fiyat pazarlığa tabidir ",
   "skipBtn": " Atla "
