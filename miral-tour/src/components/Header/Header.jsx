@@ -295,7 +295,7 @@ function Header() {
                         </li>
                         <li className="parent_link_place">
                           <Link href={`/useful-informations`}>
-                            {t("menu.usefulInfo")}
+                            {t("menu.sub_uzb6")}
                           </Link>
                         </li>
                         <li className="parent_link_place">
