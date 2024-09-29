@@ -1,4 +1,10 @@
 {
+  "notifications": {
+    "success": "Başarı",
+    "sDesc": "Operatör yakında sizinle iletişime geçecektir!",
+    "error": "Gönderim Başarısız",
+    "eDesc": "Form verileri geçersiz. Lütfen girdileri kontrol edin ve tekrar deneyin."
+  },
   "menu": {
     "catalog": "Tur paketleri",
     "ownTrip": "Seyahatinizi Yapın",

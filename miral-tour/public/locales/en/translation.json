@@ -1,4 +1,10 @@
 {
+  "notifications": {
+    "success": "Success",
+    "sDesc": "The operator will contact you soon!",
+    "error": "Submission Failed",
+    "eDesc": "The form data is invalid. Please check the inputs and try again."
+  },
   "menu": {
     "catalog": "Tour packages",
     "ownTrip": "Make Your Trip",

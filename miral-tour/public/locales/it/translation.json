@@ -1,4 +1,10 @@
 {
+  "notifications": {
+    "success": "Il successo",
+    "sDesc": "L'operatore vi contatterà al più presto!",
+    "error": "Invio non riuscito",
+    "eDesc": "I dati del modulo non sono validi. Controllare i dati inseriti e riprovare."
+  },
   "menu": {
     "catalog": "Pacchetti turistici",
     "ownTrip": "Preparate il vostro viaggio",

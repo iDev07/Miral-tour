@@ -55,6 +55,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
       setDateRange(dates); // Add this line to update the dateRange state
     }
   };
+
   const allCities = cities.map((city) => ({
     value: city.id,
     label:
@@ -108,61 +109,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   const handleClassChange = (value, label) => {
     setTypeClass(value);
   };
-
-  // useEffect(() => {
-  //   if ("geolocation" in navigator) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       (position) => {
-  //         const { latitude, longitude } = position.coords;
-  //         // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  //       },
-  //       (error) => {
-  //         console.error("Geolocation error:", error.message);
-  //       }
-  //     );
-  //   } else {
-  //     console.error("Geolocation is not available in this browser.");
-  //   }
-  // }, []);
-  // function findCountry() {
-  //   // Check if country has already been retrieved
-  //   if (!country) {
-  //     let timeoutId;
-  //     // Create a promise for geolocation with a timeout
-  //     const geolocationPromise = new Promise((resolve, reject) => {
-  //       navigator.geolocation.getCurrentPosition(resolve, reject);
-  //       timeoutId = setTimeout(() => {
-  //         reject(new Error("Geolocation request timed out"));
-  //       }, 60000); // 60 seconds timeout
-  //     });
-
-  //     geolocationPromise
-  //       .then((position) => {
-  //         clearTimeout(timeoutId); // Clear the timeout
-  //         const { latitude, longitude } = position.coords;
-  //         const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-  //         fetch(url)
-  //           .then((res) => res.json())
-  //           .then((data) => {
-  //             setCountry(data.address.country);
-  //             setDefaultCountry({ value: 0, label: data.address.country });
-  //             setLoading(false);
-  //           })
-  //           .catch(() => {
-  //             console.log("Error Fetching API");
-  //           });
-  //       })
-  //       .catch((error) => {
-  //         console.error(error.message); // Handle timeout or other errors
-  //         setLoading(false);
-  //       });
-  //   }
-  // }
-  // console.log(country);
-  // Call findCountry only if country is not already set
-  // if (!country) {
-  //   findCountry();
-  // }
 
   const { RangePicker } = DatePicker;
   const content1 = (
@@ -269,19 +215,11 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
           content_ru: filteredPackage.content_ru,
           content_it: filteredPackage.content_it,
           content_tr: filteredPackage.content_tr,
-          // Add more properties as needed
         };
       });
 
     setSortedTours(filteredPackages);
   };
-
-  console.log(defaultCountry);
-  console.log(dateRange);
-
-  console.log(personCount);
-  console.log(typeGroup);
-  console.log(typeClass);
 
   return (
     <>

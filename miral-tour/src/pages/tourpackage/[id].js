@@ -20,6 +20,7 @@ import {
   Modal,
   Button,
   Table,
+  notification,
 } from "antd";
 
 function Tourpackage() {
@@ -130,58 +131,6 @@ function Tourpackage() {
     setTypeClass(value);
   };
 
-  // useEffect(() => {
-  //   if ("geolocation" in navigator) {
-  //     navigator.geolocation.getCurrentPosition(
-  //       (position) => {
-  //         const { latitude, longitude } = position.coords;
-  //         // console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-  //       },
-  //       (error) => {
-  //         console.error("Geolocation error:", error.message);
-  //       }
-  //     );
-  //   } else {
-  //     console.error("Geolocation is not available in this browser.");
-  //   }
-  // }, []);
-  // function findCountry() {
-  //   // Check if country has already been retrieved
-  //   if (!country) {
-  //     let timeoutId;
-  //     // Create a promise for geolocation with a timeout
-  //     const geolocationPromise = new Promise((resolve, reject) => {
-  //       navigator.geolocation.getCurrentPosition(resolve, reject);
-  //       timeoutId = setTimeout(() => {
-  //         reject(new Error("Geolocation request timed out"));
-  //       }, 60000); // 60 seconds timeout
-  //     });
-
-  //     geolocationPromise
-  //       .then((position) => {
-  //         clearTimeout(timeoutId); // Clear the timeout
-  //         const { latitude, longitude } = position.coords;
-  //         const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-  //         fetch(url)
-  //           .then((res) => res.json())
-  //           .then((data) => {
-  //             setCountry(data.address.country);
-  //             setDefaultCountry({ value: 0, label: data.address.country });
-  //             setLoading(false);
-  //           })
-  //           .catch(() => {
-  //             console.log("Error Fetching API");
-  //           });
-  //       })
-  //       .catch((error) => {
-  //         console.error(error.message); // Handle timeout or other errors
-  //         setLoading(false);
-  //       });
-  //   }
-  // }
-  // if (!country) {
-  //   findCountry();
-  // }
   const items = [
     {
       key: "1",
@@ -830,20 +779,10 @@ function Tourpackage() {
     borderRadius: 5,
     p: 4,
   };
-  const countries = [
-    { value: 0, label: country },
-    { value: 1, label: "Indonesia" },
-    { value: 2, label: "Malaysia" },
-    { value: 3, label: "Singapour" },
-    { value: 4, label: "UAE" },
-    { value: 5, label: "China" },
-    { value: 6, label: "Turkiye" },
-    { value: 7, label: "Other" },
-  ];
+
   const handleFormSubmit = async () => {
     try {
       const formData = new FormData();
-
       formData.append("tour_id", tourpackage.id);
       formData.append("arrival_time", dateRange || "Didn't fill");
       formData.append("country_id", value || "Didn't fill");
@@ -856,22 +795,30 @@ function Tourpackage() {
       formData.append("email", mailUser || "Didn't fill");
       formData.append("phone_number", numberUser || "Didn't fill");
       formData.append("comment", "");
-
-      // Make the POST request using Axios
       const response = await axios.post(
         "https://api.all4u-tour.uz/requests",
         formData
       );
-
-      // Check if the response status is 201
       if (response.status === 201) {
         setFormSubmitted(true);
-        console.log("Form successfully submitted!");
+        setIsModalOpen(false);
+        notification.success({
+          message: "Success",
+          description: "The operator will contact you soon!",
+        });
       } else {
         console.error("Failed to submit form. Status:", response.status);
       }
     } catch (error) {
-      console.error("Error during form submission:", error);
+      if (error.response && error.response.status === 422) {
+        notification.error({
+          message: "Submission Failed",
+          description:
+            "The form data is invalid. Please check the inputs and try again.",
+        });
+      } else {
+        console.error("Error during form submission:", error);
+      }
     }
   };
 
