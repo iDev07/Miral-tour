@@ -803,8 +803,8 @@ function Tourpackage() {
         setFormSubmitted(true);
         setIsModalOpen(false);
         notification.success({
-          message: "Success",
-          description: "The operator will contact you soon!",
+          message: t("notifications.success"),
+          description: t("notifications.sDesc"),
         });
       } else {
         console.error("Failed to submit form. Status:", response.status);
@@ -812,9 +812,8 @@ function Tourpackage() {
     } catch (error) {
       if (error.response && error.response.status === 422) {
         notification.error({
-          message: "Submission Failed",
-          description:
-            "The form data is invalid. Please check the inputs and try again.",
+          message: t("notifications.error"),
+          description: t("notifications.eDesc"),
         });
       } else {
         console.error("Error during form submission:", error);
