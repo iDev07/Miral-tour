@@ -161,7 +161,7 @@ function Usefuls() {
     { id: 5, name: t("asia_visa.india") },
     { id: 6, name: t("asia_visa.israel") },
     { id: 7, name: t("asia_visa.iran") },
-    { id: 8, name: t("asia_visa.saudiArabia") },
+    { id: 8, name: t("asia_visa.saudi_arabia") },
     { id: 9, name: t("asia_visa.uae") },
   ];
 
@@ -189,7 +189,7 @@ function Usefuls() {
     { id: 10, name: t("european_visa.norway") },
     { id: 11, name: t("european_visa.denmark") },
     { id: 12, name: t("european_visa.netherlands") },
-    { id: 13, name: t("european_visa.unitedKingdom") },
+    { id: 13, name: t("european_visa.uk") },
   ];
 
   const middle_east_visa = [
@@ -230,10 +230,10 @@ function Usefuls() {
                       </h1>
                     </div>
                     <p>{t("usefulsPage.introDesc")}</p>
-                    <Link href="#contactus">
+                    {/* <Link href="#contactus">
                       {t("usefulsPage.readMore")}
                       <ArrowOutwardIcon />{" "}
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </Container>
@@ -1715,7 +1715,7 @@ function Usefuls() {
                             fill="black"
                           />
                         </svg>
-                        <span>{t("usefulsPage.box1Desc2")}</span>
+                        <span>{t("usefulsPage.box1desc2")}</span>
                       </p>
                     </div>
                   </div>

@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { Container } from "@mui/material";
 import { Select } from "antd";
 import { useTranslation } from "react-i18next";
+import i18n from "../../../i18n";
 import { useAppSelector } from "../../../store/store";
 import { KeyboardArrowDown, ShoppingCart } from "@mui/icons-material";
 const DropdownContainer = styled.div`
@@ -79,7 +80,7 @@ const LanguageSelector = () => {
           <img
             src={language.flag}
             alt={language.name}
-            style={{ width: "20px", marginRight: "0px", marginBottom: "-3px" }}
+            style={{ width: "20px", marginRight: "0px", marginBottom: "-7px" }}
           />
           {/* {language.name} */}
         </Option>
