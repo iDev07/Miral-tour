@@ -60,29 +60,15 @@ const LanguageSelector = () => {
 };
 function Header() {
   const { t } = useTranslation();
-  // const { i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [tourpackages, setTourPackages] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [cities, setCities] = useState([]);
-
   const router = useRouter();
   const [scroll, setScroll] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredPackages, setFilteredPackages] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const cartQuantity = useAppSelector((state) => state.cart.quantity);
-  // const defaultLang =
-  //   typeof window !== "undefined" ? localStorage.getItem("lang") || "en" : "en";
-  // const [lang, setLang] = useState(defaultLang);
-  // const handleChange = (event) => {
-  //   setLang(event.target.value);
-  //   localStorage.setItem("lang", event.target.value);
-  //   i18n.changeLanguage(event.target.value);
-  //   window.location.reload();
-  // };
-  // console.log(defaultLang);
-
   const handleSearchChange = (event) => {
     const searchText = event.target.value;
     setSearchQuery(searchText);
@@ -90,7 +76,8 @@ function Header() {
       (tourpackage) =>
         tourpackage.title_uz.toLowerCase().includes(searchText.toLowerCase()) ||
         tourpackage.title_ru.toLowerCase().includes(searchText.toLowerCase()) ||
-        // tourpackage.title_it.toLowerCase().includes(searchText.toLowerCase()) ||
+        tourpackage.title_it.toLowerCase().includes(searchText.toLowerCase()) ||
+        tourpackage.title_tr.toLowerCase().includes(searchText.toLowerCase()) ||
         tourpackage.title_en.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredPackages(filtered);
@@ -114,7 +101,6 @@ function Header() {
       .all([
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/tourpackages`),
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/categories`),
-        axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/cities`),
       ])
       .then(
         axios.spread(

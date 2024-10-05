@@ -61,6 +61,7 @@ export default function Document() {
               (window,document,'script','dataLayer','GTM-K2D9KZS6');`,
           }}
         />
+
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
@@ -108,14 +109,14 @@ export default function Document() {
           }}
         ></script>
         {/* <!--End of Tawk.to Script--> */}
-        <script
+        {/* <script
           type="text/javascript"
           src="https://tpembars.com/entrypoint.js?marker=497204&trs=283545"
           async="async"
           data-noptimize="1"
           data-cfasync="false"
           data-wpfc-render="false"
-        />
+        /> */}
         {/* <script
           async
           src="https://tp.media/content?currency=usd&trs=283545&shmarker=497204.%2Favia&show_hotels=true&powered_by=true&locale=en&searchUrl=turbo-tour.uz%2Fflights&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100"
