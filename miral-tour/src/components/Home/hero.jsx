@@ -3,15 +3,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import { Container } from "@mui/material";
 import axios from "axios";
 import countryList from "react-select-country-list";
-import {
-  Popover,
-  Button,
-  Select,
-  Checkbox,
-  DatePicker,
-  Modal,
-  Input,
-} from "antd";
+import { Popover, Button, Select, Checkbox, DatePicker } from "antd";
 import { useTranslation } from "react-i18next";
 import OrderModal from "../OrderModal/OrderModal";
 
@@ -33,6 +25,7 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
   const [country, setCountry] = useState("");
   const [personCount, setPersonCount] = useState(2);
   const [childCount, setChildCount] = useState(0);
+  const [showResults, setShowResults] = useState(false);
   const [typeGroup, setTypeGroup] = useState({
     value: 0,
     label: t("constructorForm.typeOfGroup"),
@@ -41,7 +34,8 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
     value: 0,
     label: t("constructorForm.typeOfClass"),
   });
-  const [showResults, setShowResults] = useState(false);
+  const [selectAll, setSelectAll] = useState(false);
+  const CheckboxGroup = Checkbox.Group;
   const changeHandler = (value) => {
     setValue(value);
   };
@@ -69,25 +63,20 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
         ? city.name_tr
         : city.name_en,
   }));
-
-  const CheckboxGroup = Checkbox.Group;
   const onChange = (list) => {
     setCheckedList(list);
   };
-  const [selectAll, setSelectAll] = useState(false);
   const onCheckAllChange = (e) => {
     const allCityValues = allCities.map((city) => city.value);
     setCheckedList(e.target.checked ? allCityValues : []);
-    setSelectAll(e.target.checked); // Add this line to update selectAll state
+    setSelectAll(e.target.checked);
   };
-
   const handlePersonChange = (event) => {
     setPersonCount(parseInt(event.target.value, 10));
   };
   const handleChildChange = (event) => {
     setChildCount(parseInt(event.target.value, 10));
   };
-
   const increment = (setter) => {
     setter((prevValue) => prevValue + 1);
   };
@@ -158,19 +147,12 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
     const storedDayFilter = localStorage.getItem("dayFilter");
     const storedCategoryFilter = localStorage.getItem("categoryFilter");
     const storedCheckedList = JSON.parse(localStorage.getItem("checkedList"));
-
     setDayFilter(storedDayFilter || null);
     setCategoryFilter(storedCategoryFilter || null);
     setCheckedList(storedCheckedList || []);
   }, []);
   useEffect(() => {
-    // console.log("dayFilter:", dayFilter);
-    // console.log("categoryFilter:", categoryFilter);
-    // console.log("checkedList:", checkedList);
-
-    // console.log("Before filterTourPackages");
     filterTourPackages();
-    // console.log("After filterTourPackages");
   }, [dayFilter, categoryFilter, checkedList]);
 
   const filterTourPackages = () => {
@@ -354,46 +336,6 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                                   : category.name_en,
                             };
                           })}
-                          //   [
-
-                          //   {
-                          //     value: categories[0].id,
-                          //     label:
-                          //       i18n.language === "uz"
-                          //         ? categories[0].name_uz
-                          //         : i18n.language === "ru"
-                          //         ? categories[0].name_ru
-                          //         : categories[0].name_en,
-                          //   },
-                          //   {
-                          //     value: categories[1].id,
-                          //     label:
-                          //       i18n.language === "uz"
-                          //         ? categories[1].name_uz
-                          //         : i18n.language === "ru"
-                          //         ? categories[1].name_ru
-                          //         : categories[1].name_en,
-                          //   },
-                          //   {
-                          //     value: categories[2].id,
-                          //     label:
-                          //       i18n.language === "uz"
-                          //         ? categories[2].name_uz
-                          //         : i18n.language === "ru"
-                          //         ? categories[2].name_ru
-                          //         : categories[2].name_en,
-                          //   },
-                          //   {
-                          //     value: categories[3].id,
-                          //     label:
-                          //       i18n.language === "uz"
-                          //         ? categories[3].name_uz
-                          //         : i18n.language === "ru"
-                          //         ? categories[3].name_ru
-                          //         : categories[3].name_en,
-                          //   },
-
-                          // ]}
                         />
                       </div>
                       <div className="group_type">

@@ -77,9 +77,12 @@
                     h1 {
                       @media (max-width: 768px) {
                         margin: 15px 0;
-                        font-size: 25px;
+                        font-size: 23px;
                       }
                       margin: 40px 0;
+                    }
+                    p:nth-child(2) {
+                      margin: 50px 0;
                     }
                     p {
                       margin-bottom: 20px;

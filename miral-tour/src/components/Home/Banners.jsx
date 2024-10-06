@@ -53,7 +53,7 @@ function Banners() {
                                   <h1>{t("hero.titleBusiness")}</h1>
                                   <p>{t("hero.subTitleBusiness")}</p>
                                   {/* <Link href={"/business-tours"}> */}
-                                  {t("business.formBtn")}
+                                  <p>{t("business.formBtn")}</p>
                                   {/* </Link> */}
                                 </div>
                               </div>

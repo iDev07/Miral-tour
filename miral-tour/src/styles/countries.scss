@@ -14,6 +14,9 @@
       background-attachment: fixed;
       border-radius: 16px;
       .background_wrapper {
+        @media (max-width: 768px) {
+          padding: 10px;
+        }
         height: 40vh;
         background-color: #00000054;
         padding: 20px;
@@ -27,9 +30,10 @@
             @media (max-width: 768px) {
               max-width: 100%;
               font-size: 16px;
+              margin: 15px 0;
             }
             max-width: 80%;
-            // position: absolute;
+
             top: 30%;
             font-size: 25px;
             font-weight: 500;
@@ -37,6 +41,9 @@
             margin: 40px 0;
           }
           a {
+            @media (max-width: 768px) {
+              padding: 5px 10px;
+            }
             background-color: #4ee16e;
             color: #fff;
             border-radius: 6px;

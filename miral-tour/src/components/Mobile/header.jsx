@@ -9,7 +9,7 @@ import { Select } from "antd";
 import { useTranslation } from "react-i18next";
 import i18n from "../../../i18n";
 import { useAppSelector } from "../../../store/store";
-import { KeyboardArrowDown, ShoppingCart } from "@mui/icons-material";
+import { KeyboardArrowDown } from "@mui/icons-material";
 const DropdownContainer = styled.div`
   width: 100%;
   position: relative;
@@ -37,7 +37,7 @@ const DropdownList = styled.ul`
   list-style: none;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 10px;
   margin: 0;
   display: ${({ open }) => (open ? "block" : "none")};
@@ -45,9 +45,8 @@ const DropdownList = styled.ul`
 `;
 
 const DropdownItem = styled.li`
-  padding: 8px;
+  padding: 5px;
   cursor: pointer;
-  text-align: center;
   &:hover {
     background-color: #f0f0f0;
   }

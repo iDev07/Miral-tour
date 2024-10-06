@@ -92,7 +92,6 @@ function HomePage() {
           content="https://admin.all4u-tour.uz/images/logo/seo_logo1.png"
         />
       </Head>
-      <Background />
       {loading ? (
         <Loader />
       ) : (
