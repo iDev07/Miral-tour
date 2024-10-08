@@ -17,7 +17,7 @@ function AboutUsVideo() {
               src="https://www.youtube.com/embed/6vXU-oLPe_c?si=TiDf9iZ97H2UhvJu"
               title="YouTube video player"
               // frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
           </div>
