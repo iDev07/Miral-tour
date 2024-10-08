@@ -103,14 +103,11 @@ function Header() {
         axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/categories`),
       ])
       .then(
-        axios.spread(
-          (tourPackagesResponse, categoriesResponse, citiesResponse) => {
-            setTourPackages(tourPackagesResponse.data);
-            setCategories(categoriesResponse.data);
-            setCities(citiesResponse.data);
-            setLoading(false);
-          }
-        )
+        axios.spread((tourPackagesResponse, categoriesResponse) => {
+          setTourPackages(tourPackagesResponse.data);
+          setCategories(categoriesResponse.data);
+          setLoading(false);
+        })
       )
       .catch((error) => {
         console.error("An error occurred:", error);

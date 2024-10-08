@@ -178,230 +178,228 @@ const OrderModal = ({
         ]}
         width={1000}
       >
-        <form onSubmit={handleFormSubmit}>
-          <div className="order_modal">
-            <div className="order_modal_wrapper">
-              <div className="class_filter">
-                <div className="left_box_image">
-                  <div className="tour_image">
-                    <img
-                      src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
-                    />
+        <div className="order_modal">
+          <div className="order_modal_wrapper">
+            <div className="class_filter">
+              <div className="left_box_image">
+                <div className="tour_image">
+                  <img
+                    src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+                  />
+                </div>
+              </div>
+              <div className="right_box">
+                <div className="middle_selecteds">
+                  <div className="dates">
+                    <p>{t("orderModal.departureDate")}</p>
+                    <div className="dates_wrapper">
+                      <RangePicker
+                        format="DD-MM-YYYY"
+                        placeholder=""
+                        defaultValue={selectedDates}
+                        onChange={handleDateChange}
+                        inputReadOnly
+                      />
+                    </div>
+                  </div>
+                  <div className="count_persons">
+                    <div className="counts_wrapper">
+                      <div className="people_count">
+                        <p>{t("orderModal.countPeople")}</p>
+                        <div className="counter_wrapper">
+                          <div className="decrement">
+                            <button
+                              className="decrement_btn"
+                              onClick={decrement}
+                            >
+                              -
+                            </button>
+                          </div>
+                          <div className="value">
+                            <input
+                              type="number"
+                              value={persons}
+                              onChange={(e) => onPersonChange(e)}
+                              disabled
+                            />
+                          </div>
+                          <div className="increment">
+                            <button
+                              className="increment_btn"
+                              onClick={increment}
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="people_count">
+                        <p>{t("orderModal.countChildren")}</p>
+                        <div className="counter_wrapper childs_wrap">
+                          <div className="decrement">
+                            <button
+                              className="decrement_btn"
+                              onClick={decrementChild}
+                            >
+                              -
+                            </button>
+                          </div>
+                          <div className="value">
+                            <input
+                              type="number"
+                              value={childs}
+                              onChange={(e) => onChildChange(e)}
+                              disabled
+                            />
+                          </div>
+                          <div className="increment">
+                            <button
+                              className="increment_btn"
+                              onClick={incrementChild}
+                            >
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="right_box">
-                  <div className="middle_selecteds">
-                    <div className="dates">
-                      <p>{t("orderModal.departureDate")}</p>
-                      <div className="dates_wrapper">
-                        <RangePicker
-                          format="DD-MM-YYYY"
-                          placeholder=""
-                          defaultValue={selectedDates}
-                          onChange={handleDateChange}
-                          inputReadOnly
-                        />
-                      </div>
-                    </div>
-                    <div className="count_persons">
-                      <div className="counts_wrapper">
-                        <div className="people_count">
-                          <p>{t("orderModal.countPeople")}</p>
-                          <div className="counter_wrapper">
-                            <div className="decrement">
-                              <button
-                                className="decrement_btn"
-                                onClick={decrement}
-                              >
-                                -
-                              </button>
-                            </div>
-                            <div className="value">
-                              <input
-                                type="number"
-                                value={persons}
-                                onChange={(e) => onPersonChange(e)}
-                                disabled
-                              />
-                            </div>
-                            <div className="increment">
-                              <button
-                                className="increment_btn"
-                                onClick={increment}
-                              >
-                                +
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="people_count">
-                          <p>{t("orderModal.countChildren")}</p>
-                          <div className="counter_wrapper childs_wrap">
-                            <div className="decrement">
-                              <button
-                                className="decrement_btn"
-                                onClick={decrementChild}
-                              >
-                                -
-                              </button>
-                            </div>
-                            <div className="value">
-                              <input
-                                type="number"
-                                value={childs}
-                                onChange={(e) => onChildChange(e)}
-                                disabled
-                              />
-                            </div>
-                            <div className="increment">
-                              <button
-                                className="increment_btn"
-                                onClick={incrementChild}
-                              >
-                                +
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                <div className="top_selecteds">
+                  <div className="left_box">
+                    <div className="country">
+                      <p>{t("orderModal.from")}</p>
+                      <Select
+                        options={options}
+                        value={valueC}
+                        onChange={changeHandler}
+                      />
                     </div>
                   </div>
-                  <div className="top_selecteds">
+                  <div className="right_box">
+                    <p>{t("orderModal.to")}</p>
+                    <div className="where">
+                      <Select
+                        value={t("constructorForm.constCountry")}
+                        // options={countries}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bottom_selectds">
+                  <div className="wrapper">
                     <div className="left_box">
-                      <div className="country">
-                        <p>{t("orderModal.from")}</p>
-                        <Select
-                          options={options}
-                          value={valueC}
-                          onChange={changeHandler}
-                        />
-                      </div>
+                      <p>{t("orderModal.type_group")}</p>
+                      <Select
+                        value={type_group}
+                        style={{ width: 200, borderRadius: 0 }}
+                        // suffixIcon={null}
+                        onChange={handleGroupChange}
+                        options={[
+                          {
+                            value: 1,
+                            label: t("constructorForm.typeGroup1"),
+                          },
+                          {
+                            value: 2,
+                            label: t("constructorForm.typeGroup2"),
+                          },
+                          {
+                            value: 3,
+                            label: t("constructorForm.typeGroup3"),
+                          },
+                          {
+                            value: 4,
+                            label: t("constructorForm.typeGroup4"),
+                          },
+                        ]}
+                      />
                     </div>
                     <div className="right_box">
-                      <p>{t("orderModal.to")}</p>
-                      <div className="where">
-                        <Select
-                          value={t("constructorForm.constCountry")}
-                          // options={countries}
-                        />
-                      </div>
+                      <p>{t("orderModal.class_travel")}</p>
+                      <Select
+                        value={class_tour}
+                        style={{ width: 200, borderRadius: 0 }}
+                        onChange={handleClassChange}
+                        options={[
+                          {
+                            value: 1,
+                            label: t("constructorForm.typeOfClass1"),
+                          },
+                          {
+                            value: 2,
+                            label: t("constructorForm.typeOfClass2"),
+                          },
+                          {
+                            value: 3,
+                            label: t("constructorForm.typeOfClass3"),
+                          },
+                        ]}
+                      />
                     </div>
                   </div>
-
-                  <div className="bottom_selectds">
+                </div>
+                <div className="personal_info">
+                  <form>
                     <div className="wrapper">
-                      <div className="left_box">
-                        <p>{t("orderModal.type_group")}</p>
-                        <Select
-                          value={type_group}
-                          style={{ width: 200, borderRadius: 0 }}
-                          // suffixIcon={null}
-                          onChange={handleGroupChange}
-                          options={[
-                            {
-                              value: 1,
-                              label: t("constructorForm.typeGroup1"),
-                            },
-                            {
-                              value: 2,
-                              label: t("constructorForm.typeGroup2"),
-                            },
-                            {
-                              value: 3,
-                              label: t("constructorForm.typeGroup3"),
-                            },
-                            {
-                              value: 4,
-                              label: t("constructorForm.typeGroup4"),
-                            },
-                          ]}
-                        />
+                      <div className="top_fields">
+                        <div className="name">
+                          <p
+                            className={`top_label ${
+                              isInputFocused ? "active_label" : ""
+                            }`}
+                          >
+                            {t("orderModal.user_name")}
+                          </p>
+                          <Input
+                            placeholder={t("orderModal.name_placeholder")}
+                            onChange={handleNameChange}
+                            onFocus={handleInputFocus}
+                            required
+                          />
+                        </div>
+                        <div className="surname">
+                          <p
+                            className={`top_label ${
+                              isInputFocused ? "active_label" : ""
+                            }`}
+                          >
+                            {" "}
+                            {t("orderModal.user_surname")}
+                          </p>
+                          <Input
+                            onChange={handleSurNameChange}
+                            placeholder={t("orderModal.surname_placeholder")}
+                          />
+                        </div>
                       </div>
-                      <div className="right_box">
-                        <p>{t("orderModal.class_travel")}</p>
-                        <Select
-                          value={class_tour}
-                          style={{ width: 200, borderRadius: 0 }}
-                          onChange={handleClassChange}
-                          options={[
-                            {
-                              value: 1,
-                              label: t("constructorForm.typeOfClass1"),
-                            },
-                            {
-                              value: 2,
-                              label: t("constructorForm.typeOfClass2"),
-                            },
-                            {
-                              value: 3,
-                              label: t("constructorForm.typeOfClass3"),
-                            },
-                          ]}
-                        />
+                      <div className="contacts">
+                        <div className="mail">
+                          <p>{t("orderModal.user_mail")}</p>
+                          <Input
+                            type="mail"
+                            onChange={handleMailChange}
+                            required
+                            placeholder={t("orderModal.mail_placeholder")}
+                          />
+                        </div>
+                        <div className="number">
+                          <p>{t("orderModal.user_number")}</p>
+                          <Input
+                            type="text"
+                            onChange={handleNumberChange}
+                            placeholder={t("orderModal.number_placeholder")}
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="personal_info">
-                    <form>
-                      <div className="wrapper">
-                        <div className="top_fields">
-                          <div className="name">
-                            <p
-                              className={`top_label ${
-                                isInputFocused ? "active_label" : ""
-                              }`}
-                            >
-                              {t("orderModal.user_name")}
-                            </p>
-                            <Input
-                              placeholder={t("orderModal.name_placeholder")}
-                              onChange={handleNameChange}
-                              onFocus={handleInputFocus}
-                              required
-                            />
-                          </div>
-                          <div className="surname">
-                            <p
-                              className={`top_label ${
-                                isInputFocused ? "active_label" : ""
-                              }`}
-                            >
-                              {" "}
-                              {t("orderModal.user_surname")}
-                            </p>
-                            <Input
-                              onChange={handleSurNameChange}
-                              placeholder={t("orderModal.surname_placeholder")}
-                            />
-                          </div>
-                        </div>
-                        <div className="contacts">
-                          <div className="mail">
-                            <p>{t("orderModal.user_mail")}</p>
-                            <Input
-                              type="mail"
-                              onChange={handleMailChange}
-                              required
-                              placeholder={t("orderModal.mail_placeholder")}
-                            />
-                          </div>
-                          <div className="number">
-                            <p>{t("orderModal.user_number")}</p>
-                            <Input
-                              type="text"
-                              onChange={handleNumberChange}
-                              placeholder={t("orderModal.number_placeholder")}
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-        </form>
+        </div>
 
         {/* {formSubmitted && (
           <div className="hidden_form_notification">
