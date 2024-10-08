@@ -391,9 +391,25 @@ function Hero({ tourpackages, categories, cities, countriesBack }) {
                         />
                       </div>
                       <div className="search_btn">
-                        <button type="button" onClick={handleButtonClick}>
+                        {showResults ? (
+                          <button
+                            type="button"
+                            style={{
+                              backgroundColor: "red",
+                              color: "#fff",
+                            }}
+                            onClick={handleButtonClick}
+                          >
+                            {t("orderModal.cancel")}
+                          </button>
+                        ) : (
+                          <button type="button" onClick={handleButtonClick}>
+                            {t("constructorForm.findTourPackages")}
+                          </button>
+                        )}
+                        {/* <button type="button" onClick={handleButtonClick}>
                           {t("constructorForm.findTourPackages")}
-                        </button>
+                        </button> */}
                       </div>
                     </div>
 
