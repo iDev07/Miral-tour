@@ -10,7 +10,7 @@
   }
   .hero_wrapper {
     @media (max-width: 992px) {
-      height: 420px;
+      height: 360px;
     }
     // background: url("../../public/img/module_back-min.png"),
     //   rgb(241, 226, 226) 50% / cover no-repeat;
@@ -24,7 +24,7 @@
     background-size: cover;
     .this_wrap {
       @media (max-width: 992px) {
-        height: 420px;
+        height: 360px;
       }
       background-attachment: fixed;
       background: rgba(223, 220, 215, 0.205);

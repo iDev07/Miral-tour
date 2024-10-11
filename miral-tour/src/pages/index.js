@@ -114,7 +114,7 @@ function HomePage() {
       )}
       <Business_category />
       <Countries_category />
-      <AboutUsVideo />
+      {/* <AboutUsVideo /> */}
       <Autorent />
 
       {/* <Socials /> */}
