@@ -154,13 +154,13 @@
         }
         .close_modal {
           position: absolute;
-          top: -5px;
+          top: 10px;
           text-align: center;
-          left: -10px;
+          left: 5px;
           button {
             background-color: transparent;
             border: none;
-            padding: 20px;
+            padding: 5px;
             svg {
               font-size: 45px;
               color: #004074;

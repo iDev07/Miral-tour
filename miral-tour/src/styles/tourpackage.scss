@@ -113,6 +113,9 @@
           .price {
             .price_iclude {
               ul {
+                @media (max-width: 768px) {
+                  margin-left: 10px;
+                }
                 li {
                   list-style-image: url("/img/donee.png");
                 }
@@ -120,6 +123,9 @@
             }
             .price_not_include {
               ul {
+                @media (max-width: 768px) {
+                  margin-left: 10px;
+                }
                 li {
                   list-style-image: url("/img/close-square.png");
                 }
