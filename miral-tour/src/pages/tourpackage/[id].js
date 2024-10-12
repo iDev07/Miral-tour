@@ -779,7 +779,6 @@ function Tourpackage() {
     borderRadius: 5,
     p: 4,
   };
-
   const handleFormSubmit = async () => {
     try {
       const formData = new FormData();
@@ -960,7 +959,6 @@ function Tourpackage() {
       return;
     }
   };
-  console.log(typeof tourpackage.prices);
   return (
     <>
       {loading ? (
