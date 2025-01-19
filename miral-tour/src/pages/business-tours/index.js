@@ -24,7 +24,7 @@ function BusinessTours() {
     e.preventDefault();
 
     try {
-      const apiUrl = "https://api.all4u-tour.uz/business-requests";
+      const apiUrl = process.env.NEXT_PUBLIC_BASE_URL + "/business-requests";
 
       const formdata = new FormData();
       formdata.append("company_name", formData.company_name);

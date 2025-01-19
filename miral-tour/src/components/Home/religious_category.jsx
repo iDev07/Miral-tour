@@ -14,7 +14,7 @@ function Religious_category() {
   const [tourpackages, setTourPackages] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.all4u-tour.uz/tourpackages")
+      .get(process.env.NEXT_PUBLIC_BASE_URL + "/tourpackages")
       .then((response) => {
         setTourPackages(response.data);
         setLoading(false);

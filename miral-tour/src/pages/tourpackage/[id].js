@@ -27,7 +27,7 @@ function Tourpackage() {
   const [tourpackages, setTourPackages] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.all4u-tour.uz/tourpackages")
+      .get(process.env.NEXT_PUBLIC_BASE_URL + "/tourpackages")
       .then((response) => {
         setTourPackages(response.data);
         // console.log(response.data);
@@ -795,7 +795,7 @@ function Tourpackage() {
       formData.append("phone_number", numberUser || "Didn't fill");
       formData.append("comment", "");
       const response = await axios.post(
-        "https://api.all4u-tour.uz/requests",
+        process.env.NEXT_PUBLIC_BASE_URL + "/requests",
         formData
       );
       if (response.status === 201) {
@@ -1055,7 +1055,7 @@ function Tourpackage() {
                     <div className="left_box_image">
                       <div className="tour_image">
                         <img
-                          src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
                         />
                       </div>
                     </div>
@@ -1388,7 +1388,7 @@ function Tourpackage() {
                                     <SwiperSlide key={index}>
                                       <div className="tour_image">
                                         <img
-                                          src={`https://admin.all4u-tour.uz/images/tour/${image.image_url}`}
+                                          src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${image.image_url}`}
                                           alt={`${tourpackage.title_en}`}
                                         />
                                       </div>
@@ -1397,7 +1397,7 @@ function Tourpackage() {
                                 </Swiper>
                               ) : (
                                 <img
-                                  src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+                                  src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
                                   alt={tourpackage.title_uz}
                                 />
                               )}

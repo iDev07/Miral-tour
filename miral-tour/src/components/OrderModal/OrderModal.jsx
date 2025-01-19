@@ -124,7 +124,7 @@ const OrderModal = ({
       formData.append("phone_number", numberUser);
       formData.append("comment", "");
       const response = await axios.post(
-        "https://api.all4u-tour.uz/requests",
+        process.env.NEXT_PUBLIC_BASE_URL + "/requests",
         formData
       );
       if (response.status === 201) {
@@ -184,7 +184,7 @@ const OrderModal = ({
               <div className="left_box_image">
                 <div className="tour_image">
                   <img
-                    src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
                   />
                 </div>
               </div>
@@ -470,7 +470,7 @@ const OrderModal = ({
         <div className="image_box">
           <Link href={`/tourpackage/${tourpackage.id}`}>
             <img
-              src={`https://admin.all4u-tour.uz/images/tour/${tourpackage.image}`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${tourpackage.image}`}
               alt={tourpackage.title_en}
             />
           </Link>

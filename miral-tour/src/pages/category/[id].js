@@ -19,8 +19,8 @@ function Category() {
     // Fetch both tour packages and categories data
     axios
       .all([
-        axios.get("https://api.all4u-tour.uz/tourpackages"),
-        axios.get("https://api.all4u-tour.uz/categories"),
+        axios.get(process.env.NEXT_PUBLIC_BASE_URL + "/tourpackages"),
+        axios.get(process.env.NEXT_PUBLIC_BASE_URL + "/categories"),
       ])
       .then(
         axios.spread((tourPackagesResponse, categoriesResponse) => {

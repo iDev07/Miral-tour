@@ -84,7 +84,7 @@ function Cart() {
                       <div className="left_box">
                         <Link href={`/tourpackage/${item.id}`}>
                           <img
-                            src={`https://admin.all4u-tour.uz/images/tour/${item.image}`}
+                            src={`${process.env.NEXT_PUBLIC_IMAGE_URL}/tour/${item.image}`}
                             alt={item.title_en || "No image available"}
                           />
                         </Link>
