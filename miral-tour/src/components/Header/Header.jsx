@@ -296,9 +296,9 @@ function Header() {
                         <li className="parent_link_place">
                           <Link href={`/cities`}> {t("menu.sub_uzb4")}</Link>
                         </li>
-                        <li className="parent_link_place">
+                        {/* <li className="parent_link_place">
                           <Link href={`/visa`}> {t("menu.sub_uzb5")}</Link>
-                        </li>
+                        </li> */}
                         {/* {cities.map((city) => (
                           <li className="parent_link_place" key={city.id}>
                             <Link href={`/cities/${city.seo_url}`}>
